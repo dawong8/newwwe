@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap');
+
+
+/*reset*/
+* {
+	margin: 0;
+	scroll-behavior: smooth;
+  user-select: none;
+  -webkit-user-select: none; /* For Safari */
+  -moz-user-select: none;    /* For Firefox */
+  -ms-user-select: none;     /* For IE/Edge */
+}
+p {
+	margin-bottom: 0;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+
+body::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+body {
+
+	-ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+    background: #0c0c0c;
+}
+
+.site-container {
+	background-image: url("./public/wwe_back1.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.loading {
+    width: 100%;
+    height: 100vh;
+    background: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.hide {
+    display: none !important;
+}
+
+/* NAVBAR */
+
+.navbar {
+	width: 100%;
+	height: 3.5em;
+	position: fixed;
+	top: 0;
+	background: #131921;
+	display: flex;
+	justify-content: flex-start;
+	color: white;
+	font-family: "Chelsea Market", system-ui;
+	font-weight: 400;
+	font-style: normal;
+	padding: 0 5em;
+	z-index: 99;
+}
+
+.navitem {
+	cursor: pointer;
+	width: 7em;
+	text-align: center;
+	height: 100%;
+	line-height: 3.5em;
+  	transform: skew(-20deg);
+	border-left: 2px solid #131921;
+    border-right: 2px solid #131921;
+
+}
+
+.navitem:hover {
+	color: gold;
+	background: #424956;
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+}
+
+/* ROSTER PAGE */
+
+.roster, .reign-page {
+	width: 100%;
+	height: 100vh;
+	background: black;
+	opacity: .95;
+}
+
+.brand-selection {
+	padding-top: 5em;
+	display:flex;
+	justify-content: center;
+	position: relative;
+}
+
+.brand, .reign {
+	color: white;
+	background: #424956;
+
+	cursor: pointer;
+	width: 5em;
+	text-align: center;
+	line-height: 2em;
+  	transform: skew(-20deg);
+	border-left: 2px solid #424956;
+    border-right: 2px solid #424956;
+}
+
+.brand:hover, .reign:hover {
+	color: gold;
+	background: #424956;
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+}
+
+
+.selected-page, .selected-brand, .selected-reign {
+	color: gold;
+	background: #424956;
+	font-weight: bolder;
+	border-left: 2px solid white;
+	border-right: 2px solid white;
+}

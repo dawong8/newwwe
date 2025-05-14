@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
+.reign-container {
+    margin-bottom: 3px;
+}
+
+.reign-image-container {
+	display: flex;
+	justify-content: space-between;
+	width: 80%;
+    margin: 0 auto;
+    cursor: pointer;
+    height: 10em;
+    padding: 0 3em;
+    background: #897b35;
+ 	font-family: "Luckiest Guy", cursive;
+	color: white;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+
+}
+
+.reign-image-container:hover {
+	opacity: .9;
+}
+
+.reign-image-container {
+	position: relative;
+}
+.reign-background {
+	background: gold;
+}
+
+.reign-name {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+.reign-name h2 {
+	font-size: 3.5em;
+	text-align: center;
+
+}
+
+.reign-def {
+	display: flex; 
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	margin-right: 1.5em;
+}
+
+.num-defenses {
+    font-size: 3.5em;
+    margin: 0;
+}
+
+.defenses {
+	display: flex;
+	flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.def-container {
+  height: 5em;
+  background: #3131318a;
+  border-top: 3.125px solid black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding: 0 3em;
+  font-family: "Luckiest Guy", cursive;
+  box-sizing: border-box;
+}
+
+.def-people {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.def-people img {
+  max-height: 100%;
+  max-width: 100%;
+  height: auto;
+  width: auto;
+  display: block;
+  object-fit: contain;
+}
+
+
+.vacant {
+	height: 5em !important;
+    background: #474343 !important ;
+}
+
+.pastChamps-SMACKDOWN-odd {
+  background-color: #004683 !important; /* dark background for odd rows */
+}
+
+.pastChamps-SMACKDOWN-even {
+  background-color: #006ea3 !important; /* slightly different for even rows */
+}
+
+.pastChamps-RAW-odd {
+
+	background-color: #995858 !important; 
+}	
+ 
+
+.pastChamps-RAW-even {
+
+	background-color: #6f2b2b !important; 
+}	
+ 
+.pastChamps-TAG-odd {
+	background-color: #635300 !important;
+}
+
+.pastChamps-TAG-even {
+	background-color: #535353 !important;
+}
+
+.reign-num {
+	font-size: 2em;
+}
+
+.numCon {
+	display: flex;
+	justify-content: space-between;
+}
+
+.noVis {
+	visibility:hidden;
+}
+
+.tagName {
+	font-size: 2em !important;
+}
+
+.tagName > span {
+	font-size: 22px !important;
+    color: palegoldenrod;
+}
+
+.sort {
+	color: white;
+	margin-left: 1em;
+	cursor: pointer;
+    padding-top: 4px;
+}
+
+.sort:hover {
+	color: gold;
+	opacity: .9;
+}
+
+[class*="pastChamps-"][class$="-odd"] {
+  background: #373669;
+}
+
+[class*="pastChamps-"][class$="-even"] {
+  background: #595899;
+}
+
+#roster {
+	position: relative;
+}
+
+.wrestler-modal {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    background: black;
+    width: 100%;
+    height: 100vh;
+    color: white;
+    display: flex;
+    padding: 10% 20%;
+    justify-content: space-around;
+
+}
+
+.select-name {
+  font-family: "Luckiest Guy", cursive;
+
+}
+
+.selected-wrestler-image {
+	  display: block;
+  height: 125%; /* 100 / 0.8 = 125 to fit full image and show only top 80% */
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.crop-top {
+  height: 80%;
+  overflow: hidden;
+  position: relative;
+}

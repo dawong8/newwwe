@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<title>CWE | Clippyland Wrestling Entertainment</title>
+	<link rel="stylesheet" type="text/css" href="./style.css">
+	<link rel="stylesheet" type="text/css" href="./superstar.css">
+	<link rel="stylesheet" type="text/css" href="./reign.css">
+
+</head>
+<body>
+	<div class="site-container hide" id="official-site">
+		<div class="navbar">
+			<div class="navitem selected-page" id="home">
+				HOME
+			</div>
+			<div class="navitem" id="rosterpg">
+				ROSTER
+			</div>
+			<div class="navitem" id="titles">
+				TITLES
+			</div>
+			<div class="navitem" id="shop">
+				SHOP
+			</div>
+			<div class="navitem" id="apply">
+				APPLY
+			</div>
+		</div>
+
+		<div class="roster hide page" id="roster">
+			<div class="brand-selection">
+				<div class="brand selected-brand" id="all"> ALL </div>
+				<div class="brand" id="raw"> RAW </div>
+				<div class="brand" id="sd"> SD </div>
+				<div class="brand" id="nxt"> NXT </div>
+				<div class="brand" id="alumni"> ALUMNI </div>
+				<div class="brand" id="hof"> HoF </div>
+			</div>
+			<div class="roster-display-page" id="roster-list">
+
+				
+			</div>
+			<div class="wrestler-modal hide">
+				<div class="crop-top"><img src="https://dawong8.github.io/portfolio/public/celine.png" class="selected-wrestler-image" /> </div>
+				<div>
+					<h2 class="select-name"> JASON RUSH </h2>
+					<div class="accolates"> </div>
+				</div> 
+			</div>
+		</div>
+
+		<div class="reign-page hide page" id="reigns">
+			<div class="brand-selection">
+				<div class="reign selected-reign" id="rawreign"> RAW </div>
+				<div class="reign" id="sdreign"> SD </div>
+				<div class="reign" id="usreign"> US </div>
+				<div class="reign" id="hdreign"> HD </div>
+				<div class="reign" id="tagreign"> TAG </div>
+				<div class="reign" id="triosreign"> TRIOS </div>
+				<div class="reign" id="worldreign"> WORLD </div>
+				<div class="reign" id="alphareign"> ALPHA </div>
+				<div class="reign" id="mtagreign"> MTAG </div>
+				<div class="reign" id="nxtreign"> NXT </div>
+				<div class="reign" id="mnxtreign"> MNXT </div>
+				<div class="sort" data-sort="RAW"> <span class="glyphicon glyphicon-sort"></span> </div>
+			</div>
+
+			<div class="reign-display-page" id="reign-list">
+			</div>
+		</div>
+	</div>
+
+
+
+	<div class="loading" id="loading-page">
+		<h1> LOADING </h1>
+	</div>
+
+	<script>
+	  window.addEventListener("load", () => {
+	    document.getElementById("loading-page").classList.add("hide");
+	    document.getElementById("official-site").classList.remove("hide");
+	  });
+	</script>
+	<script type="text/javascript" src="./titleHistory.js"></script>
+
+	<script type="text/javascript" src="./roster.js"></script>
+	<script type="text/javascript" src="./alumni.js"></script>
+	<script type="text/javascript" src="./logic.js"></script>
+	<script type="text/javascript" src="./reign.js"></script>
+
+</body>
+</html>
