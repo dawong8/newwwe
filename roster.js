@@ -3,7 +3,12 @@ const rosterArray = [ // currrent roster
   name: "LISA_LOST", 
   brand: "RAW",
   gender: "F" 
-}, 
+},
+{
+  name: "CARLA_GARCIA", 
+  brand: "SD",
+  gender: "F" 
+},  
 {
   name: "HENRY_TATE", 
   brand: "RAW",
@@ -111,7 +116,7 @@ const rosterArray = [ // currrent roster
 },
 {
   name: "NELLY_STORM", 
-  brand: "SD", 
+  brand: "RAW", 
   gender: "F"
 },
 {
@@ -121,37 +126,37 @@ const rosterArray = [ // currrent roster
 },
 {
   name: "UPSKIRT_KIRA", 
-  brand: "NXT", 
+  brand: "SD", 
   gender: "F"
 },
   {
   name: "X4", 
-  brand: "NXT", 
+  brand: "SD", 
   gender: "F"
 },
   {
   name: "X3", 
-  brand: "NXT", 
+  brand: "SD", 
   gender: "F"
 },
   {
   name: "X2", 
-  brand: "NXT", 
+  brand: "SD", 
   gender: "F"
 },
   {
-  name: "LORNA_BLISS", 
+  name: "LORNA_LIGHT", 
   brand: "NXT", 
   gender: "F"
 },
   {
   name: "CELINE", 
-  brand: "NXT", 
+  brand: "RAW", 
   gender: "F"
 },
   {
   name: "SCARLETT_WINGS", 
-  brand: "NXT", 
+  brand: "SD", 
   gender: "F"
 },
 {

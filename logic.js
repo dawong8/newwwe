@@ -17,6 +17,9 @@ const generateRoster = (brand) => {
 
 	for(let i in arr.sort(compareAlpha)) {
 		let superstar = arr[i]; 
+		if (brand != "NXT" && superstar.gender === "M" && superstar.brand === "NXT") {
+			continue;
+		}
 		if (superstar.brand === brand || brand === "SD" && superstar.gender === "M" || brand === "ALL") {
 			let $imageContainer = $(`<div class='superstar-container' data-gender='${superstar.gender}' data-superstar='${superstar.name}' />`);
 
@@ -51,8 +54,8 @@ const generateChampPage = () => {
 	let rawChamp = titleHistory["RAW"][titleHistory["RAW"].length-1].name; 
 	let sdChamp = titleHistory["SMACKDOWN"][titleHistory["SMACKDOWN"].length-1].name; 
 
-	let usChamp = titleHistory["HARDCORE"][titleHistory["HARDCORE"].length-1].name; 
-	let hdChamp = titleHistory["US"][titleHistory["US"].length-1].name; 
+	let hdChamp = titleHistory["HARDCORE"][titleHistory["HARDCORE"].length-1].name; 
+	let usChamp = titleHistory["US"][titleHistory["US"].length-1].name; 
 
 
 	let menChamp = titleHistory["WORLD-TOP"][titleHistory["WORLD-TOP"].length-1].name; 
@@ -148,11 +151,11 @@ const generateChampPage = () => {
 
 		switch(superstar.brand) {
 			case "SD":
-			case "HARDCORE":
+			case "US":
 				color = "SD";
 				break;
 			case "RAW":
-			case "US":
+			case "HARDCORE":
 				color = "RAW"; 
 				break;
 			case "NXT":
