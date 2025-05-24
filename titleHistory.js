@@ -584,7 +584,13 @@ const titleHistory = {
 			"number": 99, 
 			"name": "PARIS_MONET",
 			"reign": 2,
-			"defenses": ["AMA_BIG&NELLY_STORM", "AMA_BIG&NELLY_STORM"]
+			"defenses": ["AMA_BIG&NELLY_STORM", "AMA_BIG&NELLY_STORM", "AMA_BIG", "AMA_BIG"]
+		},
+		{
+			"number": 100, 
+			"name": "SLADER",
+			"reign": 1,
+			"defenses": ["PARIS_MONET"]
 		}
 	],
 	"SMACKDOWN": [
@@ -1110,7 +1116,7 @@ const titleHistory = {
 			"number": 85, 
 			"name": "HALIE_QUINN",
 			"reign": 4,
-			"defenses": ["TERESA_SHARP", "BROOK_TAYLOR", "CYNTHIA_RAMIREZ", "CYNTHIA_RAMIREZ", "CYNTHIA_RAMIREZ&CARLA_GARCIA", "CARLA_GARCIA"]
+			"defenses": ["TERESA_SHARP", "BROOK_TAYLOR", "CYNTHIA_RAMIREZ", "CYNTHIA_RAMIREZ", "CYNTHIA_RAMIREZ&CARLA_GARCIA", "CARLA_GARCIA", "BROOK_TAYLOR", "BROOK_TAYLOR-DQ", "BROOK_TAYLOR-DQ", "BROOK_TAYLOR"]
 		}
 
 	], 
@@ -1343,7 +1349,7 @@ const titleHistory = {
 			"number": 41, 
 			"name": "LORNA_LIGHT",
 			"reign": 1,
-			"defenses": ["BELINDA_LEE&SAM_GOLDEN"], 
+			"defenses": ["BELINDA_LEE&SAM_GOLDEN", "SAM_GOLDEN", "SAM_GOLDEN"], 
 		}
 	],
 	"ELIMINATION_CHAMBER": {
@@ -1376,7 +1382,9 @@ const titleHistory = {
 		"HALIE_QUINN": 1, 
 		"JOHNNY_AMERICA": 1,
 		"CRYSTAL": 1, 
-		"TONY_TORNADO": 1
+		"TONY_TORNADO": 1,
+		"DANNY_PUMPKIN": 1,
+		"SLADER": 1
 	},
 	"ROYAL_RUMBLE":{
 		"ASUKA": 1
@@ -1760,7 +1768,13 @@ const titleHistory = {
 			"number": 65, 
 			"name": "NEON PARTY",
 			"members": "NELLY_STORM[3]&SLADER[3]",
-			"defenses": ["TICKLED PINK (JESSICA_CUP, NATASHA_IVY)", "METALLIC ANGELS (VERONICA_STEEL, JANE_MACK)", "SILENT ROSE (SLOANE, LAUREN_SNOW)"]
+			"defenses": ["TICKLED PINK (JESSICA_CUP, NATASHA_IVY)", "METALLIC ANGELS (VERONICA_STEEL, JANE_MACK)", "SILENT ROSE (SLOANE, LAUREN_SNOW)", "TICKLED PINK (JESSICA_CUP, NATASHA_IVY)", "TICKLED PINK (JESSICA_CUP, NATASHA_IVY)"]
+		},
+		{
+			"number": 66, 
+			"name": "LA ROSA",
+			"members": "CYNTHIA_RAMIREZ[4]&CARLA_GARCIA[1]",
+			"defenses": ["NEON PARTY (NELLY_STORM, SLADER)"]
 		}
 		
 	],
@@ -1971,15 +1985,13 @@ const titleHistory = {
 		},
 		{
 			"number": 36, 
-			"name": "JUNGO",
-			"reign": 3,
-			"defenses": ["MASK_GIRL&NATASHA_IVY", "NATASHA_IVY", "MICHELLE_VELVET", "MICHELLE_VELVET"]
+			"name": "VACATED"
 		},
 		{
 			"number": 37, 
 			"name": "CELINE",
 			"reign": 1,
-			"defenses": ["JUNGO", "JUNGO", "JULIET_SUNSET", "NATASHA_IVY", "NATASHA_IVY"]
+			"defenses": ["JUNGO", "JUNGO", "JULIET_SUNSET", "NATASHA_IVY", "NATASHA_IVY", "BLAIRE_COUNTY", "JANINE", "SLOANE&JANINE&LAUREN_SNOW&JULIET_SUNSET&JUNGO", "LAUREN_SNOW", "LAUREN_SNOW&SLOANE", "SLOANE", "JUJU_FUN", "JUJU_FUN"]
 		}
 	],
 	"US": [
@@ -2169,7 +2181,7 @@ const titleHistory = {
 			"number": 32, 
 			"name": "NORI",
 			"reign": 1,
-			"defenses": ["CRYSTAL"]
+			"defenses": ["CRYSTAL", "ALICIA_HOUSE", "ALICIA_HOUSE"]
 		}
 	],
 	"ALPHA-TOP":[

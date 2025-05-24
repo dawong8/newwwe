@@ -328,8 +328,6 @@ function figureTagReignCount(titleArray, name) {
 		if (titleArray[a].members.includes(name)) {
 			let index = titleArray[a].members.indexOf(name); 
 			let reign = titleArray[a].members.substring(index+name.length+1, index+name.length+2);
-			console.log("what is ", titleArray[a].members, index, reign)
-
 			return reign; 
 		}
 	}

@@ -246,7 +246,7 @@ $(".sort").click(function () {
 	  if (isTag) {
 	  	let membersTagArr = entry.members.split('&'); 
 	  	for (let p in membersTagArr) {
-	  		const [_, name, count] = membersTagArr[p].match(/^([A-Z_]+)\[(\d+)\]$/);
+	  		const [_, name, count] = membersTagArr[p].match(/^([A-Z0-9_]+)\[(\d+)\]$/);
 			reignCounts[name] =  count == 1 || count > reignCounts[name] ? count : reignCounts[name];
 	  	}
 	  } else {
