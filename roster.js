@@ -16,7 +16,7 @@ const rosterArray = [ // currrent roster
 }, 
 {
   name: "NICK_GOODE", 
-  brand: "NXT",
+  brand: "RAW",
   gender: "M" 
 },
 {
@@ -61,7 +61,7 @@ const rosterArray = [ // currrent roster
 }, 
 {
   name: "WILL_PHERBY", 
-  brand: "NXT", 
+  brand: "RAW", 
   gender: "M"
 },
 {
@@ -130,17 +130,17 @@ const rosterArray = [ // currrent roster
   gender: "F"
 },
   {
-  name: "X4", 
+  name: "X_FOUR", 
   brand: "SD", 
   gender: "F"
 },
   {
-  name: "X3", 
+  name: "X_THREE", 
   brand: "SD", 
   gender: "F"
 },
   {
-  name: "X2", 
+  name: "X_TWO", 
   brand: "SD", 
   gender: "F"
 },
@@ -205,7 +205,7 @@ const rosterArray = [ // currrent roster
   gender: "F"
 },
 {
-  name: "JANINE", 
+  name: "JUST_JANINE", 
   brand: "RAW", 
   gender: "F"
 },
@@ -296,7 +296,7 @@ const rosterArray = [ // currrent roster
 },
 {
   name: "TURBO", 
-  brand: "NXT", 
+  brand: "RAW", 
   gender: "M"
 },
 {
@@ -315,7 +315,7 @@ const rosterArray = [ // currrent roster
   gender: "M"
 },
 {
-  name: "ANTONIO_DASHING", 
+  name: "TONY_DASHER", 
   brand: "RAW", 
   gender: "M"
 },
