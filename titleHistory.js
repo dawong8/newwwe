@@ -596,7 +596,7 @@ const titleHistory = {
 			"number": 101, 
 			"name": "PARIS_MONET",
 			"reign": 3,
-			"defenses": ["SLADER", "SLADER", "NELLY_STORM"]
+			"defenses": ["SLADER", "SLADER", "NELLY_STORM", "SLADER", "AMA_BIG"]
 		}
 	],
 	"SMACKDOWN": [
@@ -1128,7 +1128,7 @@ const titleHistory = {
 			"number": 84, 
 			"name": "X_TWO",
 			"reign": 1,
-			"defenses": ["X_THREE&X_FOUR&HALIE_QUINN"]
+			"defenses": ["X_THREE&X_FOUR&HALIE_QUINN", "CYNTHIA_RAMIREZ", "CYNTHIA_RAMIREZ", "UPSKIRT_KIRA", "VERONICA_STEEL", "UPSKIRT_KIRA&BROOK_TAYLOR"]
 		}
 
 	], 
@@ -1786,7 +1786,7 @@ const titleHistory = {
 			"number": 66, 
 			"name": "LA ROSA",
 			"members": "CYNTHIA_RAMIREZ[4]&CARLA_GARCIA[1]",
-			"defenses": ["NEON PARTY (NELLY_STORM, SLADER)", "TICKLED PINK (JESSICA_CUP, NATASHA_IVY)", "SILENT ROSE (SLOANE, LAUREN_SNOW)", "TICKLED PINK (JESSICA_CUP, NATASHA_IVY)",]
+			"defenses": ["NEON PARTY (NELLY_STORM, SLADER)", "TICKLED PINK (JESSICA_CUP, NATASHA_IVY)", "SILENT ROSE (SLOANE, LAUREN_SNOW)", "TICKLED PINK (JESSICA_CUP, NATASHA_IVY)", "XXX GIRLS (X_FOUR, X_THREE)", "XXX GIRLS (X_FOUR, X_THREE)", "METALLIC ANGELS (VERONICA_STEEL, JANE_MACK)"]
 		}
 		
 	],
@@ -2009,7 +2009,7 @@ const titleHistory = {
 			"number": 36, 
 			"name": "JULIET_SUNSET",
 			"reign": 1,
-			"defenses": ["CELINE"]
+			"defenses": ["CELINE", "BLAIRE_COUNTY", "BLAIRE_COUNTY"]
 		}
 	],
 	"US": [
@@ -2211,7 +2211,13 @@ const titleHistory = {
 			"number": 32, 
 			"name": "CRYSTAL",
 			"reign": 3,
-			"defenses": ["X_THREE"]
+			"defenses": ["X_THREE", "X_THREE", "X_FOUR", "NORI"]
+		},
+		{
+			"number": 33, 
+			"name": "SCARLETT_WINGS",
+			"reign": 2,
+			"defenses": ["CRYSTAL", "CRYSTAL"]
 		}
 	],
 	"ALPHA-TOP":[
@@ -2503,7 +2509,7 @@ const titleHistory = {
 			"number": 46, 
 			"name": "HENRY_TATE",
 			"reign": 2,
-			"defenses": ["TONY_DASHER", "WILL_PHERBY", "WILL_PHERBY"]
+			"defenses": ["TONY_DASHER", "WILL_PHERBY", "WILL_PHERBY", "POSI"]
 		}
 	],
 	"WORLD-TOP":[
@@ -2876,10 +2882,34 @@ const titleHistory = {
 			"defenses": ["MR_ENVIRONMENT&TYSON_EVERETT"], 
 		},
 		{
-			"number": 61, 
+			"number": 63, 
 			"name": "MR_ENVIRONMENT",
 			"reign": 5,
-			"defenses": ["JOHNNY_AMERICA", "JOHNNY_AMERICA"], 
+			"defenses": ["JOHNNY_AMERICA", "JOHNNY_AMERICA", "TONY_TORNADO", "BEN_SEED"], 
+		},
+		{
+			"number": 64, 
+			"name": "RUSSELL_RUSH",
+			"reign": 4,
+			"defenses": ["MR_ENVIRONMENT"], 
+		},
+		{
+			"number": 65, 
+			"name": "BRETT_HUNTER",
+			"reign": 2,
+			"defenses": ["RUSSELL_RUSH", "MR_ENVIRONMENT", "MR_ENVIRONMENT", "CLIFF_LEMON", "CLIFF_LEMON", "BRENT_HUNTER", "BRENT_HUNTER"], 
+		},
+		{
+			"number": 66, 
+			"name": "RUSSELL_RUSH",
+			"reign": 5,
+			"defenses": ["BRETT_HUNTER&BRENT_HUNTER", "BRETT_HUNTER", "ALEX_CONNOR", "DANNY_PUMPKIN", "ALEX_CONNOR", "MR_ENVIRONMENT"], 
+		},
+		{
+			"number": 67, 
+			"name": "CALLUM_WOLF",
+			"reign": 8,
+			"defenses": ["RUSSELL_RUSH", "RUSSELL_RUSH", "MR_ENVIRONMENT", "BEN_SEED"], 
 		}
 	],
 	"MENS-NXT":[
@@ -3360,7 +3390,19 @@ const titleHistory = {
 			"number": 34, 
 			"name": "THE FRATERNITY",
 			"members": "RUSSELL_RUSH[1]&BEN_SEED[1]",
-			"defenses": ["BIG BROTHERS (MR_ENVIRONMENT, RYAN_PAGE)", "VACATION TIME (DANNY_PUMPKIN, JOEY_JET)", "TOTAL DOMINATION (FRED_CHATTY, TYSON_EVERETT)"]
+			"defenses": ["BIG BROTHERS (MR_ENVIRONMENT, RYAN_PAGE)", "VACATION TIME (DANNY_PUMPKIN, JOEY_JET)", "TOTAL DOMINATION (FRED_CHATTY, TYSON_EVERETT)", "VACATION TIME (DANNY_PUMPKIN, JOEY_JET)", "VACATION TIME (DANNY_PUMPKIN, JOEY_JET)", "VACATION TIME (DANNY_PUMPKIN, JOEY_JET)"]
+		},
+		{
+			"number": 35, 
+			"name": "THE BANG BROS",
+			"members": "ALEX_CONNOR[2]&WYATT_WIPER[2]",
+			"defenses": ["THE FRATERNITY (RUSSELL_RUSH, BEN_SEED)", "TOTAL DOMINATION (FRED_CHATTY, TYSON_EVERETT)", "TOTAL DOMINATION (FRED_CHATTY, TYSON_EVERETT)"]
+		},
+		{
+			"number": 36, 
+			"name": "THE GOOD BOYS",
+			"members": "WILL_PHERBY[1]&JOEY_JET[2]",
+			"defenses": ["THE BANG BROS (ALEX_CONNOR, WYATT_WIPER)", "THE BANG BROS (ALEX_CONNOR, WYATT_WIPER)"]
 		}
 	],
 	"TRIOS":[

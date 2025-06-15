@@ -94,6 +94,7 @@
 .vacant {
 	height: 5em !important;
     background: #474343 !important ;
+    cursor: initial;
 }
 
 .pastChamps-SMACKDOWN-odd {
@@ -200,4 +201,11 @@
   height: 80%;
   overflow: hidden;
   position: relative;
+}
+
+.reign-pic {
+  width: 10em;
+    height: 10em;
+    object-fit: cover;
+    object-position: 100% 0%;
 }

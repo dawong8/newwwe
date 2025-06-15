@@ -40,7 +40,7 @@ const generateReign = (titleName) => {
 				$tagPicsContainer.append($mem3);
 			}
 			$imgContainer.append($tagPicsContainer);
-		} else {
+		} else if (notvacant) {
 			const $img = $(`<img class='reign-pic' src=${formatUrl(arr[i].name)} onerror="this.src='./public/vacant.png';this.onerror='';"/>`);
 			$imgContainer.append($img);
 		}
@@ -261,7 +261,12 @@ $(".sort").click(function () {
 	}));
 
 	// Step 3: Sort descending
-	arr.sort((a, b) => b.totalReigns - a.totalReigns);
+	arr.sort((a, b) => {
+	  if (b.totalReigns !== a.totalReigns) {
+	    return b.totalReigns - a.totalReigns;
+	  }
+	  return a.name.localeCompare(b.name);
+	});
 
 	for(let i in arr) {
 		const $container = $("<div class='reign-container'/>");
