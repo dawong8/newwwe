@@ -596,7 +596,7 @@ const titleHistory = {
 			"number": 101, 
 			"name": "PARIS_MONET",
 			"reign": 3,
-			"defenses": ["SLADER", "SLADER", "NELLY_STORM", "SLADER", "AMA_BIG"]
+			"defenses": ["SLADER", "SLADER", "NELLY_STORM", "SLADER", "AMA_BIG", "AMA_BIG"]
 		}
 	],
 	"SMACKDOWN": [
@@ -1129,6 +1129,12 @@ const titleHistory = {
 			"name": "X_TWO",
 			"reign": 1,
 			"defenses": ["X_THREE&X_FOUR&HALIE_QUINN", "CYNTHIA_RAMIREZ", "CYNTHIA_RAMIREZ", "UPSKIRT_KIRA", "VERONICA_STEEL", "UPSKIRT_KIRA&BROOK_TAYLOR"]
+		},
+		{
+			"number": 85, 
+			"name": "X_THREE",
+			"reign": 1,
+			"defenses": ["X_TWO", "X_TWO"]
 		}
 
 	], 
@@ -1787,6 +1793,18 @@ const titleHistory = {
 			"name": "LA ROSA",
 			"members": "CYNTHIA_RAMIREZ[4]&CARLA_GARCIA[1]",
 			"defenses": ["NEON PARTY (NELLY_STORM, SLADER)", "TICKLED PINK (JESSICA_CUP, NATASHA_IVY)", "SILENT ROSE (SLOANE, LAUREN_SNOW)", "TICKLED PINK (JESSICA_CUP, NATASHA_IVY)", "XXX GIRLS (X_FOUR, X_THREE)", "XXX GIRLS (X_FOUR, X_THREE)", "METALLIC ANGELS (VERONICA_STEEL, JANE_MACK)"]
+		},
+		{
+			"number": 67, 
+			"name": "COUNTRY ROUGH",
+			"members": "TORNADO_MAY[1]&BLAIRE_COUNTY[1]",
+			"defenses": ["LA ROSA (CYNTHIA_RAMIREZ, CARLA_GARCIA)", "LA ROSA (CYNTHIA_RAMIREZ, CARLA_GARCIA)"]
+		},
+		{
+			"number": 68, 
+			"name": "METALLIC ANGELS",
+			"members": "BROOK_TAYLOR[1]&JANE_MACK[4]",
+			"defenses": ["COUNTRY ROUGH (TORNADO_MAY, BLAIRE_COUNTY)", "LA ROSA (CYNTHIA_RAMIREZ, CARLA_GARCIA)", "THE WILDSIDE (JUNGO, JULIET_SUNSET)", "SILENT ROSE (SLOANE, LAUREN_SNOW)"]
 		}
 		
 	],
@@ -2009,7 +2027,25 @@ const titleHistory = {
 			"number": 36, 
 			"name": "JULIET_SUNSET",
 			"reign": 1,
-			"defenses": ["CELINE", "BLAIRE_COUNTY", "BLAIRE_COUNTY"]
+			"defenses": ["CELINE", "BLAIRE_COUNTY", "BLAIRE_COUNTY", "LISA_LOST", "LAUREN_SNOW"]
+		},
+		{
+			"number": 37, 
+			"name": "SUKARI",
+			"reign": 1,
+			"defenses": ["JULIET_SUNSET", "JULIET_SUNSET", "JUJU_FUN", "NATASHA_IVY"]
+		},
+		{
+			"number": 37, 
+			"name": "SLADER",
+			"reign": 1,
+			"defenses": ["SUKARI", "LAUREN_SNOW"]
+		},
+		{
+			"number": 38, 
+			"name": "MASK_GIRL",
+			"reign": 2,
+			"defenses": ["SLADER", "SLADER"]
 		}
 	],
 	"US": [
@@ -2217,7 +2253,13 @@ const titleHistory = {
 			"number": 33, 
 			"name": "SCARLETT_WINGS",
 			"reign": 2,
-			"defenses": ["CRYSTAL", "CRYSTAL"]
+			"defenses": ["CRYSTAL", "CRYSTAL", "TORNADO_MAY-DQ"]
+		},
+		{
+			"number": 34, 
+			"name": "TORNADO_MAY",
+			"reign": 1,
+			"defenses": ["SCARLETT_WINGS", "CRYSTAL&SCARLETT_WINGS"]
 		}
 	],
 	"ALPHA-TOP":[
@@ -3060,7 +3102,7 @@ const titleHistory = {
 			"number": 26, 
 			"name": "DADDY_TODD",
 			"reign": 2,
-			"defenses": ["ANGELO_KNIGHT&DAMON_KNIGHT&HARDBEAR&LOGAN_GURT"]
+			"defenses": ["ANGELO_KNIGHT&DAMON_KNIGHT&HARDBEAR&LOGAN_GURT", "ANGELO_KNIGHT"]
 		}
 	],
 	"DOM-TOP":[
@@ -3403,6 +3445,12 @@ const titleHistory = {
 			"name": "THE GOOD BOYS",
 			"members": "WILL_PHERBY[1]&JOEY_JET[2]",
 			"defenses": ["THE BANG BROS (ALEX_CONNOR, WYATT_WIPER)", "THE BANG BROS (ALEX_CONNOR, WYATT_WIPER)"]
+		},
+		{
+			"number": 37, 
+			"name": "THE FRATERNITY",
+			"members": "RUSSELL_RUSH[2]&BEN_SEED[2]",
+			"defenses": ["THE GOOD BOYS (WILL_PHERBY, JOEY_JET)", "THE GOOD BOYS (WILL_PHERBY, JOEY_JET)"]
 		}
 	],
 	"TRIOS":[
@@ -3522,7 +3570,7 @@ const titleHistory = {
 			"number": 21, 
 			"name": "METALLIC ANGELS",
 			"members": "JANE_MACK[4]&BROOK_TAYLOR[4]&VERONICA_STEEL[4]",
-			"defenses": ["XXX GIRLS (X_TWO, X_THREE, X_FOUR"]
+			"defenses": ["XXX GIRLS (X_TWO, X_THREE, X_FOUR)"]
 		},
 		{
 			"number": 22, 
@@ -3534,8 +3582,13 @@ const titleHistory = {
 			"number": 23, 
 			"name": "METALLIC ANGELS",
 			"members": "JANE_MACK[5]&BROOK_TAYLOR[5]&VERONICA_STEEL[5]",
-			"defenses": ["XXX GIRLS (X_TWO, X_THREE, X_FOUR"]
+			"defenses": ["XXX GIRLS (X_TWO, X_THREE, X_FOUR)"]
+		},
+		{
+			"number": 24, 
+			"name": "JADE ASSASSINS",
+			"members": "SUKARI[1]&AMA_BIG[1]&JUJU_FUN[1]",
+			"defenses": ["METALLIC ANGELS (JANE_MACK, BROOK_TAYLOR, VERONICA_STEEL)", "METALLIC ANGELS (JANE_MACK, BROOK_TAYLOR, VERONICA_STEEL)", "METALLIC ANGELS (JANE_MACK, BROOK_TAYLOR, VERONICA_STEEL)"]
 		}
-		
 	]
 };

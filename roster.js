@@ -129,6 +129,21 @@ const rosterArray = [ // currrent roster
   brand: "SD", 
   gender: "F"
 },
+{
+  name: "TORNADO_MAY", 
+  brand: "SD", 
+  gender: "F"
+},
+{
+  name: "SUKARI", 
+  brand: "RAW", 
+  gender: "F"
+},
+{
+  name: "MALA_MALA", 
+  brand: "NXT", 
+  gender: "F"
+},
   {
   name: "X_FOUR", 
   brand: "SD", 
