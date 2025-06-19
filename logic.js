@@ -2,6 +2,13 @@ const $rosterList = $("#roster-list");
 
 
 const generateRoster = (brand) => {
+
+	$rosterList.removeClass("hide");
+	if ($("#hof-page").hasClass("hide") === false) {
+		$("#hof-page").addClass("hide");
+	}
+	console.log("generated roster called")
+
 	let arr = brand === "ALUMNI" ? alumniArray : rosterArray;
 
 	if (brand === 'ALL') {
@@ -306,6 +313,15 @@ $("#alumni").click(function() {
 	$(".selected-brand").removeClass("selected-brand"); 
 	$(this).addClass("selected-brand");
 })
+
+$("#hof").click(function() {
+	$("#hof-page").removeClass("hide");
+	$rosterList.addClass("hide");
+	$(".selected-brand").removeClass("selected-brand"); 
+	$(this).addClass("selected-brand");
+
+})
+
 function figureReignCount(titleArray, name) {
 
 
@@ -400,3 +416,5 @@ $(document).on("click", ".superstar-container:not(.nonclickable)", function() {
 $(".wrestler-modal").click(function() {
 	$(this).addClass("hide");
 })
+
+

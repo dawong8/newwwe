@@ -76,7 +76,7 @@ const rosterArray = [ // currrent roster
 },
 {
   name: "LAUREN_SNOW", 
-  brand: "RAW",
+  brand: "SD",
   gender: "F" 
 }, 
 {
@@ -151,7 +151,7 @@ const rosterArray = [ // currrent roster
 },
   {
   name: "X_THREE", 
-  brand: "SD", 
+  brand: "RAW", 
   gender: "F"
 },
   {
@@ -326,8 +326,38 @@ const rosterArray = [ // currrent roster
 },
 {
   name: "DADDY_TODD", 
+  brand: "RAW", 
+  gender: "M"
+},
+{
+  name: "PLAYBOY_CAM", 
   brand: "NXT", 
   gender: "M"
+},
+{
+  name: "LONI_ENERGY", 
+  brand: "NXT", 
+  gender: "F"
+},
+{
+  name: "JORDAN_SKY", 
+  brand: "NXT", 
+  gender: "F"
+},
+{
+  name: "LEENA", 
+  brand: "NXT", 
+  gender: "F"
+},
+{
+  name: "THE_MONARCH", 
+  brand: "NXT", 
+  gender: "F"
+},
+{
+  name: "ROSIE_FOX", 
+  brand: "NXT", 
+  gender: "F"
 },
 {
   name: "TONY_DASHER", 

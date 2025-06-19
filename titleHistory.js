@@ -597,7 +597,20 @@ const titleHistory = {
 			"name": "PARIS_MONET",
 			"reign": 3,
 			"defenses": ["SLADER", "SLADER", "NELLY_STORM", "SLADER", "AMA_BIG", "AMA_BIG"]
+		},
+		{
+			"number": 102, 
+			"name": "AMA_BIG",
+			"reign": 3,
+			"defenses": ["PARIS_MONET", "CELINE", "CELINE", "JULIET_SUNSET"]
+		},
+		{
+			"number": 103, 
+			"name": "NELLY_STORM",
+			"reign": 2,
+			"defenses": ["AMA_BIG", "AMA_BIG-DQ", "AMA_BIG", "PARIS_MONET", "PARIS_MONET", "CELINE", "JESSICA_CUP", "LAUREN_SNOW"]
 		}
+
 	],
 	"SMACKDOWN": [
 		{
@@ -1135,6 +1148,18 @@ const titleHistory = {
 			"name": "X_THREE",
 			"reign": 1,
 			"defenses": ["X_TWO", "X_TWO"]
+		},
+		{
+			"number": 86, 
+			"name": "X_TWO",
+			"reign": 2,
+			"defenses": ["X_THREE", "X_THREE", "BROOK_TAYLOR-DQ", "VERONICA_STEEL- DQ", "JANE_MACK"]
+		},
+		{
+			"number": 87, 
+			"name": "BROOK_TAYLOR",
+			"reign": 1,
+			"defenses": ["X_TWO", "VERONICA_STEEL-DQ", "VERONICA_STEEL", "VERONICA_STEEL&JANE_MACK"]
 		}
 
 	], 
@@ -1368,6 +1393,12 @@ const titleHistory = {
 			"name": "LORNA_LIGHT",
 			"reign": 1,
 			"defenses": ["BELINDA_LEE&SAM_GOLDEN", "SAM_GOLDEN", "SAM_GOLDEN"], 
+		},
+		{
+			"number": 42, 
+			"name": "JORDAN_SKY",
+			"reign": 1,
+			"defenses": ["LORNA_LIGHT", "LORNA_LIGHT", "MALA_MALA", "BELINDA_LEE", "ROSIE_FOX"], 
 		}
 	],
 	"ELIMINATION_CHAMBER": {
@@ -1805,6 +1836,12 @@ const titleHistory = {
 			"name": "METALLIC ANGELS",
 			"members": "BROOK_TAYLOR[1]&JANE_MACK[4]",
 			"defenses": ["COUNTRY ROUGH (TORNADO_MAY, BLAIRE_COUNTY)", "LA ROSA (CYNTHIA_RAMIREZ, CARLA_GARCIA)", "THE WILDSIDE (JUNGO, JULIET_SUNSET)", "SILENT ROSE (SLOANE, LAUREN_SNOW)"]
+		},
+		{
+			"number": 69, 
+			"name": "SHADOW VIXENS",
+			"members": "CELINE[1]&X_THREE[1]",
+			"defenses": ["METALLIC ANGELS (BROOK_TAYLOR, JANE_MACK)", "LA ROSA (CYNTHIA_RAMIREZ, CARLA_GARCIA)"]
 		}
 		
 	],
@@ -2046,6 +2083,12 @@ const titleHistory = {
 			"name": "MASK_GIRL",
 			"reign": 2,
 			"defenses": ["SLADER", "SLADER"]
+		},
+		{
+			"number": 39, 
+			"name": "SUKARI",
+			"reign": 2,
+			"defenses": ["MASK_GIRL&JULIET_SUNSET", "NATASHA_IVY", "JULIET_SUNSET", "NATASHA_IVY"]
 		}
 	],
 	"US": [
@@ -2259,7 +2302,7 @@ const titleHistory = {
 			"number": 34, 
 			"name": "TORNADO_MAY",
 			"reign": 1,
-			"defenses": ["SCARLETT_WINGS", "CRYSTAL&SCARLETT_WINGS"]
+			"defenses": ["SCARLETT_WINGS", "CRYSTAL&SCARLETT_WINGS", "CRYSTAL"]
 		}
 	],
 	"ALPHA-TOP":[
@@ -2551,7 +2594,7 @@ const titleHistory = {
 			"number": 46, 
 			"name": "HENRY_TATE",
 			"reign": 2,
-			"defenses": ["TONY_DASHER", "WILL_PHERBY", "WILL_PHERBY", "POSI"]
+			"defenses": ["TONY_DASHER", "WILL_PHERBY", "WILL_PHERBY", "POSI", "WYATT_WIPER", "WILL_PHERBY&WYATT_WIPER"]
 		}
 	],
 	"WORLD-TOP":[
@@ -2951,7 +2994,13 @@ const titleHistory = {
 			"number": 67, 
 			"name": "CALLUM_WOLF",
 			"reign": 8,
-			"defenses": ["RUSSELL_RUSH", "RUSSELL_RUSH", "MR_ENVIRONMENT", "BEN_SEED"], 
+			"defenses": ["RUSSELL_RUSH", "RUSSELL_RUSH", "MR_ENVIRONMENT", "BEN_SEED", "CLIFF_LEMON", "TONY_TORNADO"], 
+		},
+		{
+			"number": 68, 
+			"name": "BRENT_HUNTER",
+			"reign": 1,
+			"defenses": ["CALLUM_WOLF&BRETT_HUNTER", "BRETT_HUNTER"], 
 		}
 	],
 	"MENS-NXT":[
@@ -3103,6 +3152,12 @@ const titleHistory = {
 			"name": "DADDY_TODD",
 			"reign": 2,
 			"defenses": ["ANGELO_KNIGHT&DAMON_KNIGHT&HARDBEAR&LOGAN_GURT", "ANGELO_KNIGHT"]
+		},
+		{
+			"number": 27, 
+			"name": "PLAYBOY_CAM",
+			"reign": 1,
+			"defenses": ["DADDY_TODD"]
 		}
 	],
 	"DOM-TOP":[
@@ -3589,6 +3644,12 @@ const titleHistory = {
 			"name": "JADE ASSASSINS",
 			"members": "SUKARI[1]&AMA_BIG[1]&JUJU_FUN[1]",
 			"defenses": ["METALLIC ANGELS (JANE_MACK, BROOK_TAYLOR, VERONICA_STEEL)", "METALLIC ANGELS (JANE_MACK, BROOK_TAYLOR, VERONICA_STEEL)", "METALLIC ANGELS (JANE_MACK, BROOK_TAYLOR, VERONICA_STEEL)"]
+		},
+		{
+			"number": 25, 
+			"name": "SILENT ROSE",
+			"members": "TERESA_SHARP[3]&X_TWO[2]&LAUREN_SNOW[3]",
+			"defenses": ["JADE ASSASSINS (SUKARI, AMA_BIG, JUJU_FUN)", "JADE ASSASSINS (SUKARI, AMA_BIG, JUJU_FUN)", "JADE ASSASSINS (SUKARI, AMA_BIG, JUJU_FUN)", "METALLIC ANGELS (JANE_MACK, BROOK_TAYLOR, VERONICA_STEEL)"]
 		}
 	]
 };
