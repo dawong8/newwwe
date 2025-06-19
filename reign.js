@@ -137,6 +137,8 @@ const generateReign = (titleName) => {
 
 
 $("#sdreign").click(function () {
+	$('.reign-display-page').animate({ scrollTop: 0 }, 'fast');
+
 	$(".selected-reign").removeClass("selected-reign");
 	$(this).addClass("selected-reign");
 	generateReign("SMACKDOWN");
@@ -144,6 +146,8 @@ $("#sdreign").click(function () {
 })
 
 $("#rawreign").click(function () {
+		$('.reign-display-page').animate({ scrollTop: 0 }, 'fast');
+
 	$(".selected-reign").removeClass("selected-reign");
 	$(this).addClass("selected-reign");
 	generateReign("RAW");
@@ -152,6 +156,8 @@ $("#rawreign").click(function () {
 })
 
 $("#usreign").click(function () {
+		$('.reign-display-page').animate({ scrollTop: 0 }, 'fast');
+
 	$(".selected-reign").removeClass("selected-reign");
 	$(this).addClass("selected-reign");
 	generateReign("US");
@@ -160,6 +166,8 @@ $("#usreign").click(function () {
 })
 
 $("#hdreign").click(function () {
+		$('.reign-display-page').animate({ scrollTop: 0 }, 'fast');
+
 	$(".selected-reign").removeClass("selected-reign");
 	$(this).addClass("selected-reign");
 	generateReign("HARDCORE");
@@ -168,6 +176,8 @@ $("#hdreign").click(function () {
 })
 
 $("#triosreign").click(function () {
+		$('.reign-display-page').animate({ scrollTop: 0 }, 'fast');
+
 	$(".selected-reign").removeClass("selected-reign");
 	$(this).addClass("selected-reign");
 	generateReign("TRIOS");
@@ -176,6 +186,8 @@ $("#triosreign").click(function () {
 })
 
 $("#tagreign").click(function () {
+		$('.reign-display-page').animate({ scrollTop: 0 }, 'fast');
+
 	$(".selected-reign").removeClass("selected-reign");
 	$(this).addClass("selected-reign");
 	generateReign("TAG");
@@ -184,6 +196,8 @@ $("#tagreign").click(function () {
 })
 
 $("#worldreign").click(function () {
+		$('.reign-display-page').animate({ scrollTop: 0 }, 'fast');
+
 	$(".selected-reign").removeClass("selected-reign");
 	$(this).addClass("selected-reign");
 	generateReign("WORLD-TOP");
@@ -192,6 +206,8 @@ $("#worldreign").click(function () {
 })
 
 $("#alphareign").click(function () {
+		$('.reign-display-page').animate({ scrollTop: 0 }, 'fast');
+
 	$(".selected-reign").removeClass("selected-reign");
 	$(this).addClass("selected-reign");
 	generateReign("ALPHA-TOP");
@@ -200,6 +216,8 @@ $("#alphareign").click(function () {
 })
 
 $("#mtagreign").click(function () {
+		$('.reign-display-page').animate({ scrollTop: 0 }, 'fast');
+
 	$(".selected-reign").removeClass("selected-reign");
 	$(this).addClass("selected-reign");
 	generateReign("MENS-TAG");
@@ -208,6 +226,8 @@ $("#mtagreign").click(function () {
 })
 
 $("#tagreign").click(function () {
+		$('.reign-display-page').animate({ scrollTop: 0 }, 'fast');
+
 	$(".selected-reign").removeClass("selected-reign");
 	$(this).addClass("selected-reign");
 	generateReign("TAG");
@@ -216,6 +236,8 @@ $("#tagreign").click(function () {
 })
 
 $("#nxtreign").click(function () {
+		$('.reign-display-page').animate({ scrollTop: 0 }, 'fast');
+
 	$(".selected-reign").removeClass("selected-reign");
 	$(this).addClass("selected-reign");
 	generateReign("NXT");
@@ -224,6 +246,8 @@ $("#nxtreign").click(function () {
 })
 
 $("#mnxtreign").click(function () {
+		$('.reign-display-page').animate({ scrollTop: 0 }, 'fast');
+
 	$(".selected-reign").removeClass("selected-reign");
 	$(this).addClass("selected-reign");
 	generateReign("MENS-NXT");
@@ -233,6 +257,9 @@ $("#mnxtreign").click(function () {
 
 
 $(".sort").click(function () {
+
+		$('.reign-display-page').animate({ scrollTop: 0 }, 'fast');
+
 	$reignList.empty(); 
 	// determine which title
 	const titleName = $(".sort").attr("data-sort");

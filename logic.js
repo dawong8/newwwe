@@ -275,6 +275,7 @@ $("#rosterpg").click(function() {
 })
 
 $("#titles").click(function() {
+	
 	$(".selected-page").removeClass("selected-page");
 	$(this).addClass("selected-page");
 	$(".page").addClass("hide");
@@ -285,36 +286,42 @@ $("#titles").click(function() {
 
 
 $("#all").click(function() {
+$('.roster-display-page').animate({ scrollTop: 0 }, 'fast');
 	generateRoster("ALL");
 	$(".selected-brand").removeClass("selected-brand"); 
 	$(this).addClass("selected-brand");
 })
 
 $("#raw").click(function() {
+$('.roster-display-page').animate({ scrollTop: 0 }, 'fast');
 	generateRoster("RAW");
 	$(".selected-brand").removeClass("selected-brand"); 
 	$(this).addClass("selected-brand");
 })
 
 $("#sd").click(function() {
+$('.roster-display-page').animate({ scrollTop: 0 }, 'fast');
 	generateRoster("SD");
 	$(".selected-brand").removeClass("selected-brand"); 
 	$(this).addClass("selected-brand");
 })
 
 $("#nxt").click(function() {
+$('.roster-display-page').animate({ scrollTop: 0 }, 'fast');
 	generateRoster("NXT");
 	$(".selected-brand").removeClass("selected-brand"); 
 	$(this).addClass("selected-brand");
 })
 
 $("#alumni").click(function() {
+$('.roster-display-page').animate({ scrollTop: 0 }, 'fast');
 	generateRoster("ALUMNI");
 	$(".selected-brand").removeClass("selected-brand"); 
 	$(this).addClass("selected-brand");
 })
 
 $("#hof").click(function() {
+$('.roster-display-page').animate({ scrollTop: 0 }, 'fast');
 	$("#hof-page").removeClass("hide");
 	$rosterList.addClass("hide");
 	$(".selected-brand").removeClass("selected-brand"); 
