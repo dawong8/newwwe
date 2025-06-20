@@ -46,7 +46,7 @@ const rosterArray = [ // currrent roster
 }, 
 {
   name: "SAM_GOLDEN", 
-  brand: "NXT", 
+  brand: "RAW", 
   gender: "F"
 }, 
 {
@@ -341,7 +341,7 @@ const rosterArray = [ // currrent roster
 },
 {
   name: "JORDAN_SKY", 
-  brand: "NXT", 
+  brand: "SD", 
   gender: "F"
 },
 {
@@ -351,7 +351,7 @@ const rosterArray = [ // currrent roster
 },
 {
   name: "THE_MONARCH", 
-  brand: "NXT", 
+  brand: "RAW", 
   gender: "F"
 },
 {
