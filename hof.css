@@ -32,7 +32,7 @@ display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
-    width: 15em;
+    width: 18em;
     text-align: center;
 
 }
@@ -43,7 +43,7 @@ height: 10em;
 object-fit: cover;
 border-radius: 6px;
 object-position: 100% 0%;
-margin-bottom: 2px;
+margin-bottom: 5px;
 }
 
 

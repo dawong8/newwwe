@@ -21,7 +21,7 @@ const rosterArray = [ // currrent roster
 },
 {
   name: "JUNGO", 
-  brand: "RAW", 
+  brand: "SD", 
   gender: "F"
 }, 
 {
@@ -55,24 +55,9 @@ const rosterArray = [ // currrent roster
   gender: "F"
 }, 
 {
-  name: "PARIS_MONET", 
-  brand: "RAW", 
-  gender: "F"
-}, 
-{
   name: "WILL_PHERBY", 
   brand: "RAW", 
   gender: "M"
-},
-{
-  name: "TERESA_SHARP", 
-  brand: "SD",
-  gender: "F" 
-}, 
-{
-  name: "SLOANE", 
-  brand: "RAW", 
-  gender: "F"
 },
 {
   name: "LAUREN_SNOW", 
@@ -90,43 +75,13 @@ const rosterArray = [ // currrent roster
   gender: "F"
 },
 {
-  name: "MICHELLE_VELVET", 
-  brand: "RAW",
-  gender: "F" 
-}, 
-{
-  name: "CORA_JADE", 
-  brand: "SD", 
-  gender: "F"
-},
-{
-  name: "ROXANNE_PEREZ", 
-  brand: "SD",
-  gender: "F" 
-}, 
-{
-  name: "SLADER", 
-  brand: "RAW", 
-  gender: "F"
-},
-{
   name: "NORI", 
   brand: "SD", 
   gender: "F"
 },
 {
-  name: "NELLY_STORM", 
-  brand: "RAW", 
-  gender: "F"
-},
-{
   name: "BLAIRE_COUNTY", 
   brand: "RAW", 
-  gender: "F"
-},
-{
-  name: "UPSKIRT_KIRA", 
-  brand: "SD", 
   gender: "F"
 },
 {
@@ -161,7 +116,7 @@ const rosterArray = [ // currrent roster
 },
   {
   name: "LORNA_LIGHT", 
-  brand: "NXT", 
+  brand: "SD", 
   gender: "F"
 },
   {
@@ -176,22 +131,12 @@ const rosterArray = [ // currrent roster
 },
 {
   name: "BELINDA_LEE", 
-  brand: "NXT", 
+  brand: "SD", 
   gender: "F"
 },
 {
   name: "NATASHA_IVY", 
   brand: "RAW", 
-  gender: "F"
-},
-{
-  name: "AMA_BIG", 
-  brand: "RAW", 
-  gender: "F"
-},
-{
-  name: "CYNTHIA_RAMIREZ", 
-  brand: "SD", 
   gender: "F"
 },
 {
@@ -206,11 +151,6 @@ const rosterArray = [ // currrent roster
 },
 {
   name: "JULIET_SUNSET", 
-  brand: "RAW", 
-  gender: "F"
-},
-{
-  name: "MASK_GIRL", 
   brand: "RAW", 
   gender: "F"
 },
@@ -341,7 +281,7 @@ const rosterArray = [ // currrent roster
 },
 {
   name: "JORDAN_SKY", 
-  brand: "SD", 
+  brand: "RAW", 
   gender: "F"
 },
 {

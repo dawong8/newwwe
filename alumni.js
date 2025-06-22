@@ -87,7 +87,52 @@ const alumniArray = [
         "gender": "F"
     },
     {
+        "name": "NELLY_STORM",
+        "brand": "ALUMNI",
+        "gender": "F"
+    },
+    {
+        "name": "AMA_BIG",
+        "brand": "ALUMNI",
+        "gender": "F"
+    },
+    {
         "name": "JASMINE_LOVE",
+        "brand": "ALUMNI",
+        "gender": "F"
+    },
+    {
+        "name": "TERESA_SHARP",
+        "brand": "ALUMNI",
+        "gender": "F"
+    },
+    {
+        "name": "PARIS_MONET",
+        "brand": "ALUMNI",
+        "gender": "F"
+    },
+    {
+        "name": "SLOANE",
+        "brand": "ALUMNI",
+        "gender": "F"
+    },
+    {
+        "name": "MICHELLE_VELVET",
+        "brand": "ALUMNI",
+        "gender": "F"
+    },
+    {
+        "name": "SLADER",
+        "brand": "ALUMNI",
+        "gender": "F"
+    },
+    {
+        "name": "UPSKIRT_KIRA",
+        "brand": "ALUMNI",
+        "gender": "F"
+    },
+    {
+        "name": "MASK_GIRL",
         "brand": "ALUMNI",
         "gender": "F"
     },
@@ -96,6 +141,12 @@ const alumniArray = [
         "brand": "ALUMNI",
         "gender": "F"
     },
+    {
+        "name": "CYNTHIA_RAMIREZ", 
+        "brand": "ALUMNI",
+        "gender": "F"
+    },
+
     {
         "name": "JESSICA_WILD",
         "brand": "ALUMNI",

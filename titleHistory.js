@@ -609,6 +609,12 @@ const titleHistory = {
 			"name": "NELLY_STORM",
 			"reign": 2,
 			"defenses": ["AMA_BIG", "AMA_BIG-DQ", "AMA_BIG", "PARIS_MONET", "PARIS_MONET", "CELINE", "JESSICA_CUP", "LAUREN_SNOW"]
+		},
+		{
+			"number": 104, 
+			"name": "JORDAN_SKY",
+			"reign": 1,
+			"defenses": ["NELLY_STORM", "NELLY_STORM", "NELLY_STORM"]
 		}
 
 	],
@@ -2321,6 +2327,12 @@ const titleHistory = {
 			"name": "JORDAN_SKY",
 			"reign": 1,
 			"defenses": ["TORNADO_MAY", "TORNADO_MAY", "CRYSTAL", "CARLA_GARCIA", "CARLA_GARCIA", "TORNADO_MAY&CARLA_GARCIA&CYNTHIA_RAMIREZ", "CYNTHIA_RAMIREZ", "SCARLETT_WINGS"]
+		},
+		{
+			"number": 36, 
+			"name": "JUNGO",
+			"reign": 3,
+			"defenses": ["JORDAN_SKY", "JORDAN_SKY"]
 		}
 	],
 	"ALPHA-TOP":[
@@ -3722,6 +3734,12 @@ const titleHistory = {
 			"name": "SILENT ROSE",
 			"members": "TERESA_SHARP[3]&X_TWO[2]&LAUREN_SNOW[3]",
 			"defenses": ["JADE ASSASSINS (SUKARI, AMA_BIG, JUJU_FUN)", "JADE ASSASSINS (SUKARI, AMA_BIG, JUJU_FUN)", "JADE ASSASSINS (SUKARI, AMA_BIG, JUJU_FUN)", "METALLIC ANGELS (JANE_MACK, BROOK_TAYLOR, VERONICA_STEEL)"]
+		},
+		{
+			"number": 26, 
+			"name": "LINGERIE GALS",
+			"members": "HALIE_QUINN[2]&ALICIA_HOUSE[1]&CRYSTAL[1]",
+			"defenses": ["SILENT ROSE (TERESA_SHARP, X_TWO, LAUREN_SNOW)", "JADE ASSASSINS (SUKARI, AMA_BIG, JUJU_FUN)"]
 		}
 	]
 };
