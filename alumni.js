@@ -97,6 +97,11 @@ const alumniArray = [
         "gender": "F"
     },
     {
+      "name": "HALIE_QUINN", 
+      "brand": "ALUMNI", 
+      "gender": "F"
+    },
+    {
         "name": "JASMINE_LOVE",
         "brand": "ALUMNI",
         "gender": "F"

@@ -614,7 +614,7 @@ const titleHistory = {
 			"number": 104, 
 			"name": "JORDAN_SKY",
 			"reign": 1,
-			"defenses": ["NELLY_STORM", "NELLY_STORM", "NELLY_STORM"]
+			"defenses": ["NELLY_STORM", "NELLY_STORM", "NELLY_STORM", "JESSICA_CUP", "JESSICA_CUP", "JESSICA_CUP"]
 		}
 
 	],
@@ -3740,6 +3740,12 @@ const titleHistory = {
 			"name": "LINGERIE GALS",
 			"members": "HALIE_QUINN[2]&ALICIA_HOUSE[1]&CRYSTAL[1]",
 			"defenses": ["SILENT ROSE (TERESA_SHARP, X_TWO, LAUREN_SNOW)", "JADE ASSASSINS (SUKARI, AMA_BIG, JUJU_FUN)"]
+		},
+		{
+			"number": 27, 
+			"name": "JADE ASSASSINS",
+			"members": "SUKARI[2]&NATASHA_IVY[1]&JUJU_FUN[2]",
+			"defenses": ["LINGERIE GALS (HALIE_QUINN, ALICIA_HOUSE, CRYSTAL)"]
 		}
 	]
 };

@@ -96,7 +96,7 @@ const rosterArray = [ // currrent roster
 },
 {
   name: "MALA_MALA", 
-  brand: "NXT", 
+  brand: "SD", 
   gender: "F"
 },
   {
@@ -137,11 +137,6 @@ const rosterArray = [ // currrent roster
 {
   name: "NATASHA_IVY", 
   brand: "RAW", 
-  gender: "F"
-},
-{
-  name: "HALIE_QUINN", 
-  brand: "SD", 
   gender: "F"
 },
 {
