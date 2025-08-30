@@ -2362,7 +2362,13 @@ const titleHistory = {
 			"name": "JUNGO",
 			"reign": 3,
 			"defenses": ["JORDAN_SKY", "JORDAN_SKY"]
-		}
+		},
+		{
+			"number": 36, 
+			"name": "JANE_MACK",
+			"reign": 1,
+			"defenses": ["JUNGO", "VERONICA_STEEL", "VERONICA_STEEL-DQ", "VERONICA_STEEL-DQ", "VERONICA_STEEL", "SCARLETT_WINGS"]
+		},
 	],
 	"ALPHA-TOP":[
 		{
@@ -2678,6 +2684,12 @@ const titleHistory = {
 			"name": "WILL_PHERBY",
 			"reign": 1,
 			"defenses": ["NICK_GOODE&MERCENARY", "NICK_GOODE", "MERCENARY", "TURBO", "DANNY_PUMPKIN", "TONY_TORNADO"]
+		},
+		{
+			"number": 54, 
+			"name": "ALEX_CONNOR",
+			"reign": 1,
+			"defenses": ["WILL_PHERBY", "NICK_GOODE", "NICK_GOODE", "TONY_TORNADO", "DANNY_PUMPKIN", "TURBO", "POSI"]
 		}
 	],
 	"WORLD-TOP":[
@@ -3107,7 +3119,13 @@ const titleHistory = {
 			"number": 72, 
 			"name": "MR_ENVIRONMENT",
 			"reign": 7,
-			"defenses": ["WYATT_WIPER", "WYATT_WIPER"], 
+			"defenses": ["WYATT_WIPER", "WYATT_WIPER", "RUSSELL_RUSH", "BEN_SEED", "BEN_SEED&BRENT_HUNTER"], 
+		},
+		{
+			"number": 73, 
+			"name": "HENRY_TATE",
+			"reign": 1,
+			"defenses": ["MR_ENVIRONMENT", "MR_ENVIRONMENT&BEN_SEED", "BEN_SEED", "BEN_SEED", "WYATT_WIPER&MR_ENVIRONMENT"], 
 		}
 	],
 	"MENS-NXT":[
@@ -3625,6 +3643,12 @@ const titleHistory = {
 			"name": "THE FRATERNITY",
 			"members": "BRENT_HUNTER[5]&TYSON_EVERETT[2]",
 			"defenses": ["AROUSAL CHOCOLATE (TONY_TORNADO, POSI)", "LOUNGEWEAR (MERCENARY, KRIPPLER)", "LOUNGEWEAR (MERCENARY, KRIPPLER)"]
+		},
+		{
+			"number": 39, 
+			"name": "TONY TIME",
+			"members": "TONY_DASHER[1]&TONY_TORNADO[3]",
+			"defenses": ["THE FRATERNITY (BRENT_HUNTER, TYSON_EVERETT)", "THE GOOD BOYS (WILL_PHERBY, JOEY_JET)", "THE GOOD BOYS (WILL_PHERBY, JOEY_JET)"]
 		}
 	],
 	"TRIOS":[
@@ -3785,7 +3809,7 @@ const titleHistory = {
 		{
 			"number": 28, 
 			"name": "METALLIC ANGELS",
-			"members": "SCARLETT_WINGS[1]&BROOK_TAYLOR[6]&VERONICA_STEEL[6]",
+			"members": "BROOK_TAYLOR[6]&SCARLETT_WINGS[1]&VERONICA_STEEL[6]",
 			"defenses": ["JADE ASSASSINS (SUKARI, AMA_BIG, JUJU_FUN)", "JADE ASSASSINS (SUKARI, AMA_BIG, JUJU_FUN)", "JADE ASSASSINS (SUKARI, AMA_BIG, JUJU_FUN)"]
 		}
 	]
