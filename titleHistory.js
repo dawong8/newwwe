@@ -621,6 +621,16 @@ const titleHistory = {
 			"name": "THE_MONARCH",
 			"reign": 1,
 			"defenses": ["JORDAN_SKY", "CELINE", "JORDAN_SKY&CELINE", "JORDAN_SKY-DQ"]
+		},
+		{
+			"number": 105, 
+			"name": "VACATED"
+		},
+		{
+			"number": 106, 
+			"name": "JORDAN_SKY",
+			"reign": 2,
+			"defenses": ["JESSICA_CUP&CRYSTAL&BLAIRE_COUNTY&JULIET_SUNSET", "JULIET_SUNSET", "JULIET_SUNSET", "JESSICA_CUP", "NATASHA_IVY", "THE_MONARCH"]
 		}
 
 	],
@@ -1875,10 +1885,22 @@ const titleHistory = {
 			"defenses": ["METALLIC ANGELS (BROOK_TAYLOR, JANE_MACK)", "LA ROSA (CYNTHIA_RAMIREZ, CARLA_GARCIA)", "SILENT ROSE (SLOANE, SAM_GOLDEN)"]
 		},
 		{
-			"number": 67, 
+			"number": 70, 
 			"name": "ALL NATURAL",
 			"members": "LORNA_LIGHT[1]&TORNADO_MAY[2]",
 			"defenses": ["SHADOW VIXENS (CELINE, X_THREE)", "SHADOW VIXENS (CELINE, X_THREE)", "METALLIC ANGELS (SCARLETT_WINGS, VERONICA_STEEL)", "METALLIC ANGELS (SCARLETT_WINGS, VERONICA_STEEL)", "METALLIC ANGELS (BROOK_TAYLOR, VERONICA_STEEL)", "JADE ASSASSINS (JUJU_FUN, SUKARI)"]
+		},
+		{
+			"number": 71, 
+			"name": "METALLIC ANGELS",
+			"members": "BROOK_TAYLOR[2]&NATASHA_IVY[3]",
+			"defenses": ["ALL NATURAL (LORNA_LIGHT, TORNADO_MAY)"]
+		},
+		{
+			"number": 72, 
+			"name": "ALL NATURAL",
+			"members": "LORNA_LIGHT[2]&TORNADO_MAY[3]",
+			"defenses": ["METALLIC ANGELS (BROOK_TAYLOR, VERONICA_STEEL)", "METALLIC ANGELS (BROOK_TAYLOR, VERONICA_STEEL)", "JADE ASSASSINS (JUJU_FUN, SUKARI)", "METALLIC ANGELS (SCARLETT_WINGS, VERONICA_STEEL)"]
 		}
 		
 	],
@@ -2385,7 +2407,13 @@ const titleHistory = {
 			"number": 38, 
 			"name": "JANE_MACK",
 			"reign": 2,
-			"defenses": ["BROOK_TAYLOR", "BROOK_TAYLOR", "BROOK_TAYLOR&VERONICA_STEEL&SCARLETT_WINGS", "ALICIA_HOUSE"]
+			"defenses": ["BROOK_TAYLOR", "BROOK_TAYLOR", "BROOK_TAYLOR&VERONICA_STEEL&SCARLETT_WINGS", "ALICIA_HOUSE", "ALICIA_HOUSE"]
+		},
+		{
+			"number": 39, 
+			"name": "LAUREN_SNOW",
+			"reign": 1,
+			"defenses": ["JANE_MACK", "JANE_MACK", "JANE_MACK", "ALICIA_HOUSE", "NORI"]
 		},
 	],
 	"ALPHA-TOP":[
@@ -3171,7 +3199,7 @@ const titleHistory = {
 			"number": 75, 
 			"name": "WYATT_WIPER",
 			"reign": 2,
-			"defenses": ["RUSSELL_RUSH", "RUSSELL_RUSH", "JOHNNY_AMERICA", "BEN_SEED"], 
+			"defenses": ["RUSSELL_RUSH", "RUSSELL_RUSH", "JOHNNY_AMERICA", "BEN_SEED", "HENRY_TATE", "MR_ENVIRONMENT"], 
 		}
 	],
 	"MENS-NXT":[
@@ -3694,7 +3722,7 @@ const titleHistory = {
 			"number": 39, 
 			"name": "TONY TIME",
 			"members": "TONY_DASHER[1]&TONY_TORNADO[3]",
-			"defenses": ["THE FRATERNITY (BRENT_HUNTER, TYSON_EVERETT)", "THE GOOD BOYS (WILL_PHERBY, JOEY_JET)", "THE GOOD BOYS (WILL_PHERBY, JOEY_JET)"]
+			"defenses": ["THE FRATERNITY (BRENT_HUNTER, TYSON_EVERETT)", "THE GOOD BOYS (WILL_PHERBY, JOEY_JET)", "THE GOOD BOYS (WILL_PHERBY, JOEY_JET)", "LOUNGEWEAR (MERCENARY, KRIPPLER)", "THE FRATERNITY (BRENT_HUNTER, TYSON_EVERETT)"]
 		}
 	],
 	"TRIOS":[
