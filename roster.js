@@ -1,12 +1,12 @@
 const rosterArray = [ // currrent roster
 {
   name: "LISA_LOST", 
-  brand: "RAW",
+  brand: "SD",
   gender: "F" 
 },
 {
   name: "CARLA_GARCIA", 
-  brand: "SD",
+  brand: "RAW",
   gender: "F" 
 },  
 {
@@ -26,7 +26,7 @@ const rosterArray = [ // currrent roster
 }, 
 {
   name: "CRYSTAL", 
-  brand: "SD", 
+  brand: "RAW", 
   gender: "F"
 }, 
 {
@@ -41,12 +41,12 @@ const rosterArray = [ // currrent roster
 }, 
 {
   name: "JUJU_FUN", 
-  brand: "RAW", 
+  brand: "SD", 
   gender: "F"
 }, 
 {
   name: "SAM_GOLDEN", 
-  brand: "RAW", 
+  brand: "SD", 
   gender: "F"
 }, 
 {
@@ -106,12 +106,12 @@ const rosterArray = [ // currrent roster
 },
   {
   name: "X_THREE", 
-  brand: "RAW", 
+  brand: "SD", 
   gender: "F"
 },
   {
   name: "X_TWO", 
-  brand: "SD", 
+  brand: "RAW", 
   gender: "F"
 },
   {
@@ -121,7 +121,7 @@ const rosterArray = [ // currrent roster
 },
   {
   name: "CELINE", 
-  brand: "RAW", 
+  brand: "SD", 
   gender: "F"
 },
   {
