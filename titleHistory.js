@@ -1174,10 +1174,16 @@ const titleHistory = {
 			"defenses": ["X_TWO", "VERONICA_STEEL-DQ", "VERONICA_STEEL", "VERONICA_STEEL&JANE_MACK", "UPSKIRT_KIRA", "UPSKIRT_KIRA"]
 		},
 		{
-			"number": 67, 
+			"number": 88, 
 			"name": "JUNGO",
 			"reign": 2,
 			"defenses": ["BROOK_TAYLOR", "BROOK_TAYLOR", "X_TWO", "X_TWO&BROOK_TAYLOR", "CRYSTAL"]
+		},
+		{
+			"number": 89, 
+			"name": "CELINE",
+			"reign": 1,
+			"defenses": ["JUNGO", "JUNGO", "LISA_LOST". "JUJU_FUN"]
 		}
 		
 
@@ -1872,7 +1878,7 @@ const titleHistory = {
 			"number": 67, 
 			"name": "ALL NATURAL",
 			"members": "LORNA_LIGHT[1]&TORNADO_MAY[2]",
-			"defenses": ["SHADOW VIXENS (CELINE, X_THREE)"]
+			"defenses": ["SHADOW VIXENS (CELINE, X_THREE)", "SHADOW VIXENS (CELINE, X_THREE)", "METALLIC ANGELS (SCARLETT_WINGS, VERONICA_STEEL)", "METALLIC ANGELS (SCARLETT_WINGS, VERONICA_STEEL)", "METALLIC ANGELS (BROOK_TAYLOR, VERONICA_STEEL)", "JADE ASSASSINS (JUJU_FUN, SUKARI)"]
 		}
 		
 	],
@@ -2135,7 +2141,7 @@ const titleHistory = {
 			"number": 42, 
 			"name": "JULIET_SUNSET",
 			"reign": 2,
-			"defenses": ["SUKARI&JUST_JANINE&JESSICA_CUP", "JESSICA_CUP", "SUKARI", "SUKARI"]
+			"defenses": ["SUKARI&JUST_JANINE&JESSICA_CUP", "JESSICA_CUP", "SUKARI", "SUKARI", "NATASHA_IVY", "CRYSTAL", "CRYSTAL", "JUST_JANINE", "CARLA_GARCIA"]
 		}
 	],
 	"US": [
@@ -2368,6 +2374,18 @@ const titleHistory = {
 			"name": "JANE_MACK",
 			"reign": 1,
 			"defenses": ["JUNGO", "VERONICA_STEEL", "VERONICA_STEEL-DQ", "VERONICA_STEEL-DQ", "VERONICA_STEEL", "SCARLETT_WINGS"]
+		},
+		{
+			"number": 37, 
+			"name": "BROOK_TAYLOR",
+			"reign": 1,
+			"defenses": ["JANE_MACK", "JANE_MACK-DQ", "JANE_MACK"]
+		},
+		{
+			"number": 38, 
+			"name": "JANE_MACK",
+			"reign": 2,
+			"defenses": ["BROOK_TAYLOR", "BROOK_TAYLOR", "BROOK_TAYLOR&VERONICA_STEEL&SCARLETT_WINGS", "ALICIA_HOUSE"]
 		},
 	],
 	"ALPHA-TOP":[
@@ -2690,7 +2708,17 @@ const titleHistory = {
 			"name": "ALEX_CONNOR",
 			"reign": 1,
 			"defenses": ["WILL_PHERBY", "NICK_GOODE", "NICK_GOODE", "TONY_TORNADO", "DANNY_PUMPKIN", "TURBO", "POSI"]
-		}
+		},
+		{
+			"number": 55, 
+			"name": "VACATED"
+		},
+		{
+			"number": 56, 
+			"name": "CLIFF_LEMON",
+			"reign": 2,
+			"defenses": ["WILL_PHERBY&MERCENARY&TURBO&DANNY_PUMPKIN&TONY_DASHER&POSI", "POSI", "POSI", "ALEX_CONNOR", "ALEX_CONNOR-DQ", "ALEX_CONNOR", "TURBO"]
+		},
 	],
 	"WORLD-TOP":[
 		{
@@ -3126,6 +3154,24 @@ const titleHistory = {
 			"name": "HENRY_TATE",
 			"reign": 1,
 			"defenses": ["MR_ENVIRONMENT", "MR_ENVIRONMENT&BEN_SEED", "BEN_SEED", "BEN_SEED", "WYATT_WIPER&MR_ENVIRONMENT"], 
+		},
+		{
+			"number": 74, 
+			"name": "KRIPPLER",
+			"reign": 2,
+			"defenses": ["HENRY_TATE", "HENRY_TATE&MR_ENVIRONMENT"], 
+		},
+		{
+			"number": 75, 
+			"name": "RUSSELL_RUSH",
+			"reign": 6,
+			"defenses": ["KRIPPLER", "CALLUM_WOLF", "CALLUM_WOLF"], 
+		},
+		{
+			"number": 75, 
+			"name": "WYATT_WIPER",
+			"reign": 2,
+			"defenses": ["RUSSELL_RUSH", "RUSSELL_RUSH", "JOHNNY_AMERICA", "BEN_SEED"], 
 		}
 	],
 	"MENS-NXT":[
@@ -3810,7 +3856,7 @@ const titleHistory = {
 			"number": 28, 
 			"name": "METALLIC ANGELS",
 			"members": "BROOK_TAYLOR[6]&SCARLETT_WINGS[1]&VERONICA_STEEL[6]",
-			"defenses": ["JADE ASSASSINS (SUKARI, AMA_BIG, JUJU_FUN)", "JADE ASSASSINS (SUKARI, AMA_BIG, JUJU_FUN)", "JADE ASSASSINS (SUKARI, AMA_BIG, JUJU_FUN)"]
+			"defenses": ["JADE ASSASSINS (SUKARI, NATASHA_IVY, JUJU_FUN)", "JADE ASSASSINS (SUKARI, NATASHA_IVY, JUJU_FUN)", "JADE ASSASSINS (SUKARI, NATASHA_IVY, JUJU_FUN)"]
 		}
 	]
 };
