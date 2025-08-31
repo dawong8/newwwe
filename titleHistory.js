@@ -1183,7 +1183,7 @@ const titleHistory = {
 			"number": 89, 
 			"name": "CELINE",
 			"reign": 1,
-			"defenses": ["JUNGO", "JUNGO", "LISA_LOST". "JUJU_FUN"]
+			"defenses": ["JUNGO", "JUNGO", "LISA_LOST", "JUJU_FUN"]
 		}
 		
 
