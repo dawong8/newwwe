@@ -631,6 +631,12 @@ const titleHistory = {
 			"name": "JORDAN_SKY",
 			"reign": 2,
 			"defenses": ["JESSICA_CUP&CRYSTAL&BLAIRE_COUNTY&JULIET_SUNSET", "JULIET_SUNSET", "JULIET_SUNSET", "JESSICA_CUP", "NATASHA_IVY", "THE_MONARCH"]
+		},
+		{
+			"number": 107, 
+			"name": "X_TWO",
+			"reign": 1,
+			"defenses": ["JORDAN_SKY", "JORDAN_SKY", "THE_MONARCH", "THE_MONARCH"]
 		}
 
 	],
@@ -2164,6 +2170,12 @@ const titleHistory = {
 			"name": "JULIET_SUNSET",
 			"reign": 2,
 			"defenses": ["SUKARI&JUST_JANINE&JESSICA_CUP", "JESSICA_CUP", "SUKARI", "SUKARI", "NATASHA_IVY", "CRYSTAL", "CRYSTAL", "JUST_JANINE", "CARLA_GARCIA"]
+		},
+		{
+			"number": 43, 
+			"name": "SUKARI",
+			"reign": 3,
+			"defenses": ["JULIET_SUNSET", "JULIET_SUNSET", "JESSICA_CUP"]
 		}
 	],
 	"US": [
@@ -3196,10 +3208,16 @@ const titleHistory = {
 			"defenses": ["KRIPPLER", "CALLUM_WOLF", "CALLUM_WOLF"], 
 		},
 		{
-			"number": 75, 
+			"number": 76, 
 			"name": "WYATT_WIPER",
 			"reign": 2,
 			"defenses": ["RUSSELL_RUSH", "RUSSELL_RUSH", "JOHNNY_AMERICA", "BEN_SEED", "HENRY_TATE", "MR_ENVIRONMENT"], 
+		},
+		{
+			"number": 77, 
+			"name": "RUSSELL_RUSH",
+			"reign": 7,
+			"defenses": ["WYATT_WIPER", "WYATT_WIPER&BEN_SEED", "HENRY_TATE", "HENRY_TATE"], 
 		}
 	],
 	"MENS-NXT":[
