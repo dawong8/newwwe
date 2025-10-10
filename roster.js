@@ -281,7 +281,7 @@ const rosterArray = [ // currrent roster
 },
 {
   name: "LEENA", 
-  brand: "NXT", 
+  brand: "SD", 
   gender: "F"
 },
 {
@@ -291,7 +291,7 @@ const rosterArray = [ // currrent roster
 },
 {
   name: "ROSIE_FOX", 
-  brand: "NXT", 
+  brand: "RAW", 
   gender: "F"
 },
 {
