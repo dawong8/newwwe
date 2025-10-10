@@ -3765,6 +3765,7 @@ const titleHistory = {
 			"name": "THE FRATERNITY",
 			"members": "BRENT_HUNTER[6]&TYSON_EVERETT[3]",
 			"defenses": ["TONY TIME (TONY_DASHER, TONY_TORNADO)"]
+		}
 		
 	],
 	"TRIOS":[
