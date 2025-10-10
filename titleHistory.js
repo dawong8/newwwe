@@ -636,7 +636,7 @@ const titleHistory = {
 			"number": 107, 
 			"name": "X_TWO",
 			"reign": 1,
-			"defenses": ["JORDAN_SKY", "JORDAN_SKY", "THE_MONARCH", "THE_MONARCH"]
+			"defenses": ["JORDAN_SKY", "JORDAN_SKY", "THE_MONARCH", "THE_MONARCH", "ROSIE_FOX", "BLAIRE_COUNTY"]
 		}
 
 	],
@@ -1199,7 +1199,7 @@ const titleHistory = {
 			"number": 89, 
 			"name": "CELINE",
 			"reign": 1,
-			"defenses": ["JUNGO", "JUNGO", "LISA_LOST", "JUJU_FUN"]
+			"defenses": ["JUNGO", "JUNGO", "LISA_LOST", "JUJU_FUN", "MALA_MALA", "MALA_MALA"]
 		}
 		
 
@@ -1907,6 +1907,12 @@ const titleHistory = {
 			"name": "ALL NATURAL",
 			"members": "LORNA_LIGHT[2]&TORNADO_MAY[3]",
 			"defenses": ["METALLIC ANGELS (BROOK_TAYLOR, VERONICA_STEEL)", "METALLIC ANGELS (BROOK_TAYLOR, VERONICA_STEEL)", "JADE ASSASSINS (JUJU_FUN, SUKARI)", "METALLIC ANGELS (SCARLETT_WINGS, VERONICA_STEEL)"]
+		},
+		{
+			"number": 73, 
+			"name": "FLY HIGH",
+			"members": "JORDAN_SKY[1]&THE_MONARCH[1]",
+			"defenses": ["ALL NATURAL (LORNA_LIGHT, TORNADO_MAY)", "ALL NATURAL (LORNA_LIGHT, TORNADO_MAY)", "METALLIC ANGELS (BROOK_TAYLOR, VERONICA_STEEL)"]
 		}
 		
 	],
@@ -2176,6 +2182,12 @@ const titleHistory = {
 			"name": "SUKARI",
 			"reign": 3,
 			"defenses": ["JULIET_SUNSET", "JULIET_SUNSET", "JESSICA_CUP"]
+		},
+		{
+			"number": 44, 
+			"name": "CRYSTAL",
+			"reign": 1,
+			"defenses": ["SUKARI", "SUKARI-DQ"]
 		}
 	],
 	"US": [
@@ -2425,7 +2437,7 @@ const titleHistory = {
 			"number": 39, 
 			"name": "LAUREN_SNOW",
 			"reign": 1,
-			"defenses": ["JANE_MACK", "JANE_MACK", "JANE_MACK", "ALICIA_HOUSE", "NORI"]
+			"defenses": ["JANE_MACK", "JANE_MACK", "JANE_MACK", "ALICIA_HOUSE", "NORI", "LISA_LOST", "LISA_LOST&LEENA&NORI", "SAM_GOLDEN"]
 		},
 	],
 	"ALPHA-TOP":[
@@ -2759,6 +2771,12 @@ const titleHistory = {
 			"reign": 2,
 			"defenses": ["WILL_PHERBY&MERCENARY&TURBO&DANNY_PUMPKIN&TONY_DASHER&POSI", "POSI", "POSI", "ALEX_CONNOR", "ALEX_CONNOR-DQ", "ALEX_CONNOR", "TURBO"]
 		},
+		{
+			"number": 57, 
+			"name": "WILL_PHERBY",
+			"reign": 2,
+			"defenses": ["CLIFF_LEMON", "CLIFF_LEMON&POSI"]
+		}
 	],
 	"WORLD-TOP":[
 		{
@@ -3217,7 +3235,7 @@ const titleHistory = {
 			"number": 77, 
 			"name": "RUSSELL_RUSH",
 			"reign": 7,
-			"defenses": ["WYATT_WIPER", "WYATT_WIPER&BEN_SEED", "HENRY_TATE", "HENRY_TATE"], 
+			"defenses": ["WYATT_WIPER", "WYATT_WIPER&BEN_SEED", "HENRY_TATE", "HENRY_TATE", "RYAN_PAGE", "KRIPPLER"], 
 		}
 	],
 	"MENS-NXT":[
@@ -3374,7 +3392,7 @@ const titleHistory = {
 			"number": 27, 
 			"name": "PLAYBOY_CAM",
 			"reign": 1,
-			"defenses": ["DADDY_TODD", "LOGAN_GURT&DAMON_KNIGHT", "LOGAN_GURT", "DAMON_KNIGHT", "ANGELO_KNIGHT", "ANGELO_KNIGHT"]
+			"defenses": ["DADDY_TODD", "LOGAN_GURT&DAMON_KNIGHT", "LOGAN_GURT", "DAMON_KNIGHT", "ANGELO_KNIGHT", "ANGELO_KNIGHT", "HARDBEAR"]
 		}
 	],
 	"DOM-TOP":[
@@ -3741,7 +3759,13 @@ const titleHistory = {
 			"name": "TONY TIME",
 			"members": "TONY_DASHER[1]&TONY_TORNADO[3]",
 			"defenses": ["THE FRATERNITY (BRENT_HUNTER, TYSON_EVERETT)", "THE GOOD BOYS (WILL_PHERBY, JOEY_JET)", "THE GOOD BOYS (WILL_PHERBY, JOEY_JET)", "LOUNGEWEAR (MERCENARY, KRIPPLER)", "THE FRATERNITY (BRENT_HUNTER, TYSON_EVERETT)"]
-		}
+		},
+		{
+			"number": 40, 
+			"name": "THE FRATERNITY",
+			"members": "BRENT_HUNTER[6]&TYSON_EVERETT[3]",
+			"defenses": ["TONY TIME (TONY_DASHER, TONY_TORNADO)"]
+		
 	],
 	"TRIOS":[
 		{
