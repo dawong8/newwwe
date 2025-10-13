@@ -637,6 +637,12 @@ const titleHistory = {
 			"name": "X_TWO",
 			"reign": 1,
 			"defenses": ["JORDAN_SKY", "JORDAN_SKY", "THE_MONARCH", "THE_MONARCH", "ROSIE_FOX", "BLAIRE_COUNTY"]
+		},
+		{
+			"number": 108, 
+			"name": "SUKARI",
+			"reign": 1,
+			"defenses": ["X_TWO", "X_TWO", "JORDAN_SKY"]
 		}
 
 	],
@@ -1199,7 +1205,7 @@ const titleHistory = {
 			"number": 89, 
 			"name": "CELINE",
 			"reign": 1,
-			"defenses": ["JUNGO", "JUNGO", "LISA_LOST", "JUJU_FUN", "MALA_MALA", "MALA_MALA"]
+			"defenses": ["JUNGO", "JUNGO", "LISA_LOST", "JUJU_FUN", "MALA_MALA", "MALA_MALA", "ALICIA_HOUSE", "X_FOUR"]
 		}
 		
 
@@ -1913,6 +1919,12 @@ const titleHistory = {
 			"name": "FLY HIGH",
 			"members": "JORDAN_SKY[1]&THE_MONARCH[1]",
 			"defenses": ["ALL NATURAL (LORNA_LIGHT, TORNADO_MAY)", "ALL NATURAL (LORNA_LIGHT, TORNADO_MAY)", "METALLIC ANGELS (BROOK_TAYLOR, VERONICA_STEEL)"]
+		},
+		{
+			"number": 74, 
+			"name": "CITY GIRLS",
+			"members": "CRYSTAL[2]&ROSE_FOX[1]",
+			"defenses": ["FLY HIGH (JORDAN_SKY, THE_MONARCH)"]
 		}
 		
 	],
@@ -2187,7 +2199,13 @@ const titleHistory = {
 			"number": 44, 
 			"name": "CRYSTAL",
 			"reign": 1,
-			"defenses": ["SUKARI", "SUKARI-DQ"]
+			"defenses": ["SUKARI", "SUKARI-DQ", "ROSIE_FOX"]
+		},
+		{
+			"number": 45, 
+			"name": "JULIET_SUNSET",
+			"reign": 3,
+			"defenses": ["CRYSTAL"]
 		}
 	],
 	"US": [
