@@ -1923,7 +1923,7 @@ const titleHistory = {
 		{
 			"number": 74, 
 			"name": "CITY GIRLS",
-			"members": "CRYSTAL[2]&ROSE_FOX[1]",
+			"members": "CRYSTAL[2]&ROSIE_FOX[1]",
 			"defenses": ["FLY HIGH (JORDAN_SKY, THE_MONARCH)"]
 		}
 		
