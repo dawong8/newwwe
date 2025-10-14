@@ -116,7 +116,7 @@ const rosterArray = [ // currrent roster
 },
   {
   name: "LORNA_LIGHT", 
-  brand: "SD", 
+  brand: "RAW", 
   gender: "F"
 },
   {
@@ -131,7 +131,7 @@ const rosterArray = [ // currrent roster
 },
 {
   name: "BELINDA_LEE", 
-  brand: "SD", 
+  brand: "RAW", 
   gender: "F"
 },
 {
@@ -286,7 +286,7 @@ const rosterArray = [ // currrent roster
 },
 {
   name: "THE_MONARCH", 
-  brand: "RAW", 
+  brand: "SD", 
   gender: "F"
 },
 {
