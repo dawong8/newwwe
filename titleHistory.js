@@ -1205,7 +1205,13 @@ const titleHistory = {
 			"number": 89, 
 			"name": "CELINE",
 			"reign": 1,
-			"defenses": ["JUNGO", "JUNGO", "LISA_LOST", "JUJU_FUN", "MALA_MALA", "MALA_MALA", "ALICIA_HOUSE", "X_FOUR"]
+			"defenses": ["JUNGO", "JUNGO", "LISA_LOST", "JUJU_FUN", "MALA_MALA", "MALA_MALA", "ALICIA_HOUSE", "X_FOUR", "LAUREN_SNOW"]
+		},
+		{
+			"number": 90, 
+			"name": "THE_MONARCH",
+			"reign": 1,
+			"defenses": ["CELINE", "CELINE", "MALA_MALA", "JUNGO", "JUNGO", "X_FOUR"]
 		}
 		
 
@@ -1924,7 +1930,7 @@ const titleHistory = {
 			"number": 74, 
 			"name": "CITY GIRLS",
 			"members": "CRYSTAL[2]&ROSIE_FOX[1]",
-			"defenses": ["FLY HIGH (JORDAN_SKY, THE_MONARCH)"]
+			"defenses": ["FLY HIGH (JORDAN_SKY, THE_MONARCH)", "ALL NATURAL (LORNA_LIGHT, TORNADO_MAY)", "ALL NATURAL (LORNA_LIGHT, TORNADO_MAY)"]
 		}
 		
 	],
@@ -2457,6 +2463,18 @@ const titleHistory = {
 			"reign": 1,
 			"defenses": ["JANE_MACK", "JANE_MACK", "JANE_MACK", "ALICIA_HOUSE", "NORI", "LISA_LOST", "LISA_LOST&LEENA&NORI", "SAM_GOLDEN"]
 		},
+		{
+			"number": 40, 
+			"name": "THE_MONARCH",
+			"reign": 1,
+			"defenses": ["LAUREN_SNOW", "LAUREN_SNOW", "VERONICA_STEEL"]
+		},
+		{
+			"number": 37, 
+			"name": "TORNADO_MAY",
+			"reign": 2,
+			"defenses": ["THE_MONARCH", "LEENA", "LEENA", "SAM_GOLDEN"]
+		}
 	],
 	"ALPHA-TOP":[
 		{
@@ -2793,7 +2811,7 @@ const titleHistory = {
 			"number": 57, 
 			"name": "WILL_PHERBY",
 			"reign": 2,
-			"defenses": ["CLIFF_LEMON", "CLIFF_LEMON&POSI"]
+			"defenses": ["CLIFF_LEMON", "CLIFF_LEMON&POSI", "ALEX_CONNOR", "CLIFF_LEMON", "CLIP_MAVERICK", "JOEY_JET"]
 		}
 	],
 	"WORLD-TOP":[
@@ -3254,6 +3272,18 @@ const titleHistory = {
 			"name": "RUSSELL_RUSH",
 			"reign": 7,
 			"defenses": ["WYATT_WIPER", "WYATT_WIPER&BEN_SEED", "HENRY_TATE", "HENRY_TATE", "RYAN_PAGE", "KRIPPLER"], 
+		},
+		{
+			"number": 78, 
+			"name": "TYSON_EVERETT",
+			"reign": 3,
+			"defenses": ["RUSSELL_RUSH", "WYATT_WIPER", "KRIPPLER", "JASON_HONEY"], 
+		},
+		{
+			"number": 79, 
+			"name": "HENRY_TATE",
+			"reign": 2,
+			"defenses": ["TYSON_EVERETT", "TYSON_EVERETT"], 
 		}
 	],
 	"MENS-NXT":[
