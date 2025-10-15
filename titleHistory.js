@@ -1458,6 +1458,16 @@ const titleHistory = {
 			"name": "LONI_ENERGY",
 			"reign": 1,
 			"defenses": ["JORDAN_SKY&ROSIE_FOX", "BELINDA_LEE", "BELINDA_LEE", "ROSIE_FOX", "LEENA", "LEENA"], 
+		},
+		{
+			"number": 43, 
+			"name": "SUMMER_HAYES",
+			"reign": 1,
+			"defenses": ["LONI_ENERGY", "LONI_ENERGY"], 
+		},
+		{
+			"number": 44, 
+			"name": "VACATED"
 		}
 	],
 	"ELIMINATION_CHAMBER": {
