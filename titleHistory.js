@@ -2222,6 +2222,12 @@ const titleHistory = {
 			"name": "JULIET_SUNSET",
 			"reign": 3,
 			"defenses": ["CRYSTAL"]
+		},
+		{
+			"number": 46, 
+			"name": "SUMMER_HAYES",
+			"reign": 1,
+			"defenses": ["JULIET_SUNSET", "JULIET_SUNSET", "BLAIRE_COUNTY", "JESSICA_CUP", "LORNA_LIGHT"]
 		}
 	],
 	"US": [
@@ -2483,7 +2489,7 @@ const titleHistory = {
 			"number": 37, 
 			"name": "TORNADO_MAY",
 			"reign": 2,
-			"defenses": ["THE_MONARCH", "LEENA", "LEENA", "SAM_GOLDEN"]
+			"defenses": ["THE_MONARCH", "LEENA", "LEENA", "SAM_GOLDEN", "LISA_LOST"]
 		}
 	],
 	"ALPHA-TOP":[
@@ -2822,6 +2828,18 @@ const titleHistory = {
 			"name": "WILL_PHERBY",
 			"reign": 2,
 			"defenses": ["CLIFF_LEMON", "CLIFF_LEMON&POSI", "ALEX_CONNOR", "CLIFF_LEMON", "CLIP_MAVERICK", "JOEY_JET"]
+		},
+		{
+			"number": 58, 
+			"name": "DAMON_KNIGHT",
+			"reign": 1,
+			"defenses": ["WILL_PHERBY", "TURBO", "TONY_DASHER"]
+		},
+		{
+			"number": 59, 
+			"name": "MERCENARY",
+			"reign": 3,
+			"defenses": ["DAMON_KNIGHT", "TURBO", "POSI"]
 		}
 	],
 	"WORLD-TOP":[
@@ -3823,6 +3841,12 @@ const titleHistory = {
 			"name": "THE FRATERNITY",
 			"members": "BRENT_HUNTER[6]&TYSON_EVERETT[3]",
 			"defenses": ["TONY TIME (TONY_DASHER, TONY_TORNADO)"]
+		},
+		{
+			"number": 41, 
+			"name": "GOT SPIKES?",
+			"members": "DAMON_KNIGHT[1]&DADDY_TODD[1]",
+			"defenses": ["THE FRATERNITY (BRENT_HUNTER, TYSON_EVERETT)", "THE FRATERNITY (BRENT_HUNTER, TYSON_EVERETT)", "TONY TIME (TONY_DASHER, TONY_TORNADO)", "LOUNGEWEAR (MERCENARY, KRIPPLER)", "LOUNGEWEAR (MERCENARY, KRIPPLER)"]
 		}
 		
 	],
@@ -3986,6 +4010,12 @@ const titleHistory = {
 			"name": "METALLIC ANGELS",
 			"members": "BROOK_TAYLOR[6]&SCARLETT_WINGS[1]&VERONICA_STEEL[6]",
 			"defenses": ["JADE ASSASSINS (SUKARI, NATASHA_IVY, JUJU_FUN)", "JADE ASSASSINS (SUKARI, NATASHA_IVY, JUJU_FUN)", "JADE ASSASSINS (SUKARI, NATASHA_IVY, JUJU_FUN)"]
+		},
+		{
+			"number": 29, 
+			"name": "POTENTIAL RELEASE",
+			"members": "LONI_ENERGY[1]&X_FOUR[3]&LEENA[1]",
+			"defenses": ["METALLIC ANGELS (SCARLETT_WINGS, BROOK_TAYLOR, VERONICA_STEEL)"]
 		}
 	]
 };
