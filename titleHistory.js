@@ -1947,6 +1947,12 @@ const titleHistory = {
 			"name": "POW POW",
 			"members": "LONI_ENERGY[1]&LEENA[1]",
 			"defenses": ["CITY GIRLS (CRYSTAL, ROSIE_FOX)", "ALL NATURAL (LORNA_LIGHT, TORNADO_MAY)"]
+		},
+		{
+			"number": 76, 
+			"name": "CITY GIRLS",
+			"members": "CRYSTAL[3]&ROSIE_FOX[2]",
+			"defenses": ["POW POW (LONI_ENERGY, LEENA)"]
 		}
 		
 	],
@@ -4020,12 +4026,8 @@ const titleHistory = {
 		{
 			"number": 29, 
 			"name": "POW POW",
-			"members": "LONI_ENERGY[1]&X_FOUR[3]&LEENA[1]",
+			"members": "LEENA[1]&X_FOUR[3]&LONI_ENERGY[1]",
 			"defenses": ["METALLIC ANGELS (SCARLETT_WINGS, BROOK_TAYLOR, VERONICA_STEEL)"]
-		},
-		{
-			"number": 30, 
-			"name": "VACATED"
 		}
 	]
 };
