@@ -4013,7 +4013,7 @@ const titleHistory = {
 		},
 		{
 			"number": 29, 
-			"name": "POTENTIAL RELEASE",
+			"name": "POW POW",
 			"members": "LONI_ENERGY[1]&X_FOUR[3]&LEENA[1]",
 			"defenses": ["METALLIC ANGELS (SCARLETT_WINGS, BROOK_TAYLOR, VERONICA_STEEL)"]
 		}
