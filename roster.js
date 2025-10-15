@@ -271,7 +271,12 @@ const rosterArray = [ // currrent roster
 },
 {
   name: "LONI_ENERGY", 
-  brand: "NXT", 
+  brand: "SD", 
+  gender: "F"
+},
+{
+  name: "SUMMER_HAYES", 
+  brand: "RAW", 
   gender: "F"
 },
 {
@@ -326,7 +331,7 @@ const rosterArray = [ // currrent roster
 },
 {
   name: "DAMON_KNIGHT", 
-  brand: "NXT", 
+  brand: "RAW", 
   gender: "M"
 },
 {
