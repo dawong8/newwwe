@@ -642,7 +642,13 @@ const titleHistory = {
 			"number": 108, 
 			"name": "SUKARI",
 			"reign": 1,
-			"defenses": ["X_TWO", "X_TWO", "JORDAN_SKY"]
+			"defenses": ["X_TWO", "X_TWO", "JORDAN_SKY", "CRYSTAL", "CRYSTAL"]
+		},
+		{
+			"number": 109, 
+			"name": "JULIET_SUNSET",
+			"reign": 1,
+			"defenses": ["SUKARI&CRYSTAL", "CRYSTAL", "SUKARI", "JUST_JANINE", "JESSICA_CUP", "CRYSTAL&LORNA_LIGHT&BLAIRE_COUNTY&X_TWO", "JORDAN_SKY"]
 		}
 
 	],
@@ -1211,7 +1217,7 @@ const titleHistory = {
 			"number": 90, 
 			"name": "THE_MONARCH",
 			"reign": 1,
-			"defenses": ["CELINE", "CELINE", "MALA_MALA", "JUNGO", "JUNGO", "X_FOUR"]
+			"defenses": ["CELINE", "CELINE", "MALA_MALA", "JUNGO", "JUNGO", "X_FOUR", "JUNGO", "LAUREN_SNOW"]
 		}
 		
 
@@ -2239,7 +2245,7 @@ const titleHistory = {
 			"number": 46, 
 			"name": "SUMMER_HAYES",
 			"reign": 1,
-			"defenses": ["JULIET_SUNSET", "JULIET_SUNSET", "BLAIRE_COUNTY", "JESSICA_CUP", "LORNA_LIGHT"]
+			"defenses": ["JULIET_SUNSET", "JULIET_SUNSET", "BLAIRE_COUNTY", "JESSICA_CUP", "LORNA_LIGHT", "ROSIE_FOX", "LORNA_LIGHT", "NATASHA_IVY", "CARLA_GARCIA"]
 		}
 	],
 	"US": [
@@ -2501,7 +2507,7 @@ const titleHistory = {
 			"number": 37, 
 			"name": "TORNADO_MAY",
 			"reign": 2,
-			"defenses": ["THE_MONARCH", "LEENA", "LEENA", "SAM_GOLDEN", "LISA_LOST"]
+			"defenses": ["THE_MONARCH", "LEENA", "LEENA", "SAM_GOLDEN", "LISA_LOST", "LEENA", "SAM_GOLDEN", "JUJU_FUN"]
 		}
 	],
 	"ALPHA-TOP":[
@@ -2852,6 +2858,12 @@ const titleHistory = {
 			"name": "MERCENARY",
 			"reign": 3,
 			"defenses": ["DAMON_KNIGHT", "TURBO", "POSI"]
+		},
+		{
+			"number": 60, 
+			"name": "DANNY_PUMPKIN",
+			"reign": 1,
+			"defenses": ["MERCENARY", "TURBO", "KRIPPLER", "JASON_HONEY"]
 		}
 	],
 	"WORLD-TOP":[
@@ -3324,6 +3336,36 @@ const titleHistory = {
 			"name": "HENRY_TATE",
 			"reign": 2,
 			"defenses": ["TYSON_EVERETT", "TYSON_EVERETT"], 
+		},
+		{
+			"number": 80, 
+			"name": "TONY_TORNADO",
+			"reign": 2,
+			"defenses": ["HENRY_TATE", "HENRY_TATE", "JOHNNY_AMERICA"], 
+		},
+		{
+			"number": 81, 
+			"name": "HENRY_TATE",
+			"reign": 3,
+			"defenses": ["TONY_TORNADO", "TONY_TORNADO", "BEN_SEED", "MR_ENVIRONMENT"], 
+		},
+		{
+			"number": 82, 
+			"name": "CALLUM_WOLF",
+			"reign": 9,
+			"defenses": ["HENRY_TATE", "RUSSELL_RUSH&HENRY_TATE", "TONY_TORNADO", "TONY_TORNADO", "MR_ENVIRONMENT", "WYATT_WIPER"], 
+		},
+		{
+			"number": 83, 
+			"name": "BRETT_HUNTER",
+			"reign": 3,
+			"defenses": ["CALLUM_WOLF"], 
+		},
+		{
+			"number": 84, 
+			"name": "HENRY_TATE",
+			"reign": 4,
+			"defenses": ["BRETT_HUNTER", "CALLUM_WOLF", "BRENT_HUNTER&BRETT_HUNTER"], 
 		}
 	],
 	"MENS-NXT":[
