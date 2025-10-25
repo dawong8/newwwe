@@ -650,7 +650,6 @@ const titleHistory = {
 			"reign": 1,
 			"defenses": ["SUKARI&CRYSTAL", "CRYSTAL", "SUKARI", "JUST_JANINE", "JESSICA_CUP", "CRYSTAL&LORNA_LIGHT&BLAIRE_COUNTY&X_TWO", "JORDAN_SKY"]
 		}
-
 	],
 	"SMACKDOWN": [
 		{
@@ -1958,7 +1957,7 @@ const titleHistory = {
 			"number": 76, 
 			"name": "CITY GIRLS",
 			"members": "CRYSTAL[3]&ROSIE_FOX[2]",
-			"defenses": ["POW POW (LONI_ENERGY, LEENA)"]
+			"defenses": ["POW POW (LONI_ENERGY, LEENA)", "METALLIC ANGELS (BROOK_TAYLOR, VERONICA_STEEL)"]
 		}
 		
 	],
