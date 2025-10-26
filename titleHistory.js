@@ -649,6 +649,12 @@ const titleHistory = {
 			"name": "JULIET_SUNSET",
 			"reign": 1,
 			"defenses": ["SUKARI&CRYSTAL", "CRYSTAL", "SUKARI", "JUST_JANINE", "JESSICA_CUP", "CRYSTAL&LORNA_LIGHT&BLAIRE_COUNTY&X_TWO", "JORDAN_SKY"]
+		},
+		{
+			"number": 110, 
+			"name": "X_TWO",
+			"reign": 2,
+			"defenses": ["JULIET_SUNSET", "JULIET_SUNSET"]
 		}
 	],
 	"SMACKDOWN": [
@@ -2245,6 +2251,18 @@ const titleHistory = {
 			"name": "SUMMER_HAYES",
 			"reign": 1,
 			"defenses": ["JULIET_SUNSET", "JULIET_SUNSET", "BLAIRE_COUNTY", "JESSICA_CUP", "LORNA_LIGHT", "ROSIE_FOX", "LORNA_LIGHT", "NATASHA_IVY", "CARLA_GARCIA"]
+		},
+		{
+			"number": 47, 
+			"name": "LORNA_LIGHT",
+			"reign": 1,
+			"defenses": ["SUMMER_HAYES", "CARLA_GARCIA", "SUMMER_HAYES-DQ"]
+		},
+		{
+			"number": 48, 
+			"name": "SUMMER_HAYES",
+			"reign": 2,
+			"defenses": ["LORNA_LIGHT", "LORNA_LIGHT", "CELINE"]
 		}
 	],
 	"US": [
@@ -3522,6 +3540,9 @@ const titleHistory = {
 			"name": "PLAYBOY_CAM",
 			"reign": 1,
 			"defenses": ["DADDY_TODD", "LOGAN_GURT&DAMON_KNIGHT", "LOGAN_GURT", "DAMON_KNIGHT", "ANGELO_KNIGHT", "ANGELO_KNIGHT", "HARDBEAR"]
+		},{
+			"number": 28,
+			"name": "VACATED"
 		}
 	],
 	"DOM-TOP":[
