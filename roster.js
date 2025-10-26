@@ -36,7 +36,7 @@ const rosterArray = [ // currrent roster
 }, 
 {
   name: "LOGAN_GURT", 
-  brand: "NXT", 
+  brand: "RAW", 
   gender: "M"
 }, 
 {
@@ -266,7 +266,7 @@ const rosterArray = [ // currrent roster
 },
 {
   name: "PLAYBOY_CAM", 
-  brand: "NXT", 
+  brand: "RAW", 
   gender: "M"
 },
 {
