@@ -654,7 +654,13 @@ const titleHistory = {
 			"number": 110, 
 			"name": "X_TWO",
 			"reign": 2,
-			"defenses": ["JULIET_SUNSET", "JULIET_SUNSET"]
+			"defenses": ["JULIET_SUNSET", "JULIET_SUNSET", "SUKARI"]
+		},
+		{
+			"number": 111, 
+			"name": "SUMMER_HAYES",
+			"reign": 1,
+			"defenses": ["X_TWO", "CRYSTAL"]
 		}
 	],
 	"SMACKDOWN": [
@@ -1222,9 +1228,8 @@ const titleHistory = {
 			"number": 90, 
 			"name": "THE_MONARCH",
 			"reign": 1,
-			"defenses": ["CELINE", "CELINE", "MALA_MALA", "JUNGO", "JUNGO", "X_FOUR", "JUNGO", "LAUREN_SNOW"]
+			"defenses": ["CELINE", "CELINE", "MALA_MALA", "JUNGO", "JUNGO", "X_FOUR", "JUNGO", "LAUREN_SNOW", "ALICIA_HOUSE", "ALICIA_HOUSE"]
 		}
-		
 
 	], 
 	"NXT": [
@@ -1964,6 +1969,18 @@ const titleHistory = {
 			"name": "CITY GIRLS",
 			"members": "CRYSTAL[3]&ROSIE_FOX[2]",
 			"defenses": ["POW POW (LONI_ENERGY, LEENA)", "METALLIC ANGELS (BROOK_TAYLOR, VERONICA_STEEL)"]
+		},
+		{
+			"number": 77, 
+			"name": "SKY & HAYES",
+			"members": "JORDAN_SKY[2]&SUMMER_HAYES[1]",
+			"defenses": ["CITY GIRLS (CRYSTAL, ROSIE_FOX)", "METALLIC ANGELS (BROOK_TAYLOR, VERONICA_STEEL)", "CITY GIRLS (CRYSTAL, ROSIE_FOX)"]
+		},
+		{
+			"number": 78, 
+			"name": "METALLIC ANGELS",
+			"members": "BROOK_TAYLOR[3]&VERONICA_STEEL[3]",
+			"defenses": ["SKY & HAYES (JORDAN_SKY, SUMMER_HAYES)"]
 		}
 		
 	],
@@ -2262,7 +2279,13 @@ const titleHistory = {
 			"number": 48, 
 			"name": "SUMMER_HAYES",
 			"reign": 2,
-			"defenses": ["LORNA_LIGHT", "LORNA_LIGHT", "CELINE"]
+			"defenses": ["LORNA_LIGHT", "LORNA_LIGHT", "CELINE", "CARLA_GARCIA", "CARLA_GARCIA", "BELINDA_LEE"]
+		},
+		{
+			"number": 49, 
+			"name": "SUKARI",
+			"reign": 4,
+			"defenses": ["SUMMER_HAYES"]
 		}
 	],
 	"US": [
@@ -2524,7 +2547,13 @@ const titleHistory = {
 			"number": 37, 
 			"name": "TORNADO_MAY",
 			"reign": 2,
-			"defenses": ["THE_MONARCH", "LEENA", "LEENA", "SAM_GOLDEN", "LISA_LOST", "LEENA", "SAM_GOLDEN", "JUJU_FUN"]
+			"defenses": ["THE_MONARCH", "LEENA", "LEENA", "SAM_GOLDEN", "LISA_LOST", "LEENA", "SAM_GOLDEN", "JUJU_FUN", "LEENA", "LISA_LOST"]
+		},
+		{
+			"number": 38, 
+			"name": "SCARLETT_WINGS",
+			"reign": 3,
+			"defenses": ["TORNADO_MAY", "TORNADO_MAY", "LEENA", "JUJU_FUN"]
 		}
 	],
 	"ALPHA-TOP":[
