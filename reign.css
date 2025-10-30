@@ -88,6 +88,10 @@
   width: auto;
   display: block;
   object-fit: contain;
+	width: 6em;
+    /* height: 10em; */
+    object-fit: cover;
+    object-position: 100% 0%;
 }
 
 
