@@ -660,7 +660,7 @@ const titleHistory = {
 			"number": 111, 
 			"name": "SUMMER_HAYES",
 			"reign": 1,
-			"defenses": ["X_TWO", "CRYSTAL"]
+			"defenses": ["X_TWO", "CRYSTAL", "JORDAN_SKY", "JORDAN_SKY", "JULIET_SUNSET"]
 		}
 	],
 	"SMACKDOWN": [
@@ -1229,6 +1229,12 @@ const titleHistory = {
 			"name": "THE_MONARCH",
 			"reign": 1,
 			"defenses": ["CELINE", "CELINE", "MALA_MALA", "JUNGO", "JUNGO", "X_FOUR", "JUNGO", "LAUREN_SNOW", "ALICIA_HOUSE", "ALICIA_HOUSE"]
+		},
+		{
+			"number": 91, 
+			"name": "MALA_MALA",
+			"reign": 1,
+			"defenses": ["THE_MONARCH", "THE_MONARCH", "CELINE"]
 		}
 
 	], 
@@ -1981,6 +1987,12 @@ const titleHistory = {
 			"name": "METALLIC ANGELS",
 			"members": "BROOK_TAYLOR[3]&VERONICA_STEEL[3]",
 			"defenses": ["SKY & HAYES (JORDAN_SKY, SUMMER_HAYES)"]
+		},
+		{
+			"number": 79, 
+			"name": "CITY GIRLS",
+			"members": "CRYSTAL[4]&ROSIE_FOX[3]",
+			"defenses": ["METALLIC ANGELS (BROOK_TAYLOR, VERONICA_STEEL)", "METALLIC ANGELS (BROOK_TAYLOR, VERONICA_STEEL)", "POW POW (LONI_ENERGY, LEENA)", "METALLIC ANGELS (BROOK_TAYLOR, VERONICA_STEEL)"]
 		}
 		
 	],
@@ -2554,6 +2566,12 @@ const titleHistory = {
 			"name": "SCARLETT_WINGS",
 			"reign": 3,
 			"defenses": ["TORNADO_MAY", "TORNADO_MAY", "LEENA", "JUJU_FUN"]
+		},
+		{
+			"number": 32, 
+			"name": "X_THREE",
+			"reign": 2,
+			"defenses": ["SCARLETT_WINGS"]
 		}
 	],
 	"ALPHA-TOP":[
@@ -2910,6 +2928,12 @@ const titleHistory = {
 			"name": "DANNY_PUMPKIN",
 			"reign": 1,
 			"defenses": ["MERCENARY", "TURBO", "KRIPPLER", "JASON_HONEY"]
+		},
+		{
+			"number": 61, 
+			"name": "PLAYBOY_CAM",
+			"reign": 1,
+			"defenses": ["DANNY_PUMPKIN", "TURBO", "JASON_HONEY", "FRED_CHATTY", "TONY_TORNADO&JASON_HONEY&MERCENARY"]
 		}
 	],
 	"WORLD-TOP":[
@@ -3412,6 +3436,12 @@ const titleHistory = {
 			"name": "HENRY_TATE",
 			"reign": 4,
 			"defenses": ["BRETT_HUNTER", "CALLUM_WOLF", "BRENT_HUNTER&BRETT_HUNTER"], 
+		},
+		{
+			"number": 85, 
+			"name": "JOEY_JET",
+			"reign": 1,
+			"defenses": ["HENRY_TATE", "HENRY_TATE", "BRENT_HUNTER"], 
 		}
 	],
 	"MENS-NXT":[
@@ -3950,7 +3980,12 @@ const titleHistory = {
 			"name": "GOT SPIKES?",
 			"members": "DAMON_KNIGHT[1]&DADDY_TODD[1]",
 			"defenses": ["THE FRATERNITY (BRENT_HUNTER, TYSON_EVERETT)", "THE FRATERNITY (BRENT_HUNTER, TYSON_EVERETT)", "TONY TIME (TONY_DASHER, TONY_TORNADO)", "LOUNGEWEAR (MERCENARY, KRIPPLER)", "LOUNGEWEAR (MERCENARY, KRIPPLER)"]
-		}
+		},{
+			"number": 42, 
+			"name": "THE HUNTER BROTHERS",
+			"members": "BRETT_HUNTER[5]&BRENT_HUNTER[7]",
+			"defenses": ["GOT SPIKES? (DAMON_KNIGHT, DADDY_TODD)", "THE FRATERNITY (BEN_SEED, TYSON_EVERETT)", "GOT SPIKES? (DAMON_KNIGHT, DADDY_TODD)", "THE FRATERNITY (BEN_SEED, TYSON_EVERETT)"]
+		},
 		
 	],
 	"TRIOS":[
@@ -4118,7 +4153,7 @@ const titleHistory = {
 			"number": 29, 
 			"name": "POW POW",
 			"members": "LEENA[1]&X_FOUR[3]&LONI_ENERGY[1]",
-			"defenses": ["METALLIC ANGELS (SCARLETT_WINGS, BROOK_TAYLOR, VERONICA_STEEL)"]
+			"defenses": ["METALLIC ANGELS (SCARLETT_WINGS, BROOK_TAYLOR, VERONICA_STEEL)", "METALLIC ANGELS (SCARLETT_WINGS, BROOK_TAYLOR, VERONICA_STEEL)"]
 		}
 	]
 };
