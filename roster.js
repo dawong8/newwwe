@@ -256,7 +256,7 @@ const rosterArray = [ // currrent roster
 },
 {
   name: "HARDBEAR", 
-  brand: "NXT", 
+  brand: "RAW", 
   gender: "M"
 },
 {
@@ -306,7 +306,7 @@ const rosterArray = [ // currrent roster
 },
 {
   name: "ANGELO_KNIGHT", 
-  brand: "NXT", 
+  brand: "RAW", 
   gender: "M"
 },
 {
