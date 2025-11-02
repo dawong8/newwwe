@@ -661,6 +661,18 @@ const titleHistory = {
 			"name": "SUMMER_HAYES",
 			"reign": 1,
 			"defenses": ["X_TWO", "CRYSTAL", "JORDAN_SKY", "JORDAN_SKY", "JULIET_SUNSET"]
+		},
+		{
+			"number": 112, 
+			"name": "X_TWO",
+			"reign": 3,
+			"defenses": ["SUMMER_HAYES"]
+		},
+		{
+			"number": 113, 
+			"name": "SUMMER_HAYES",
+			"reign": 2,
+			"defenses": ["X_TWO", "X_TWO&JORDAN_SKY"]
 		}
 	],
 	"SMACKDOWN": [
@@ -1234,7 +1246,7 @@ const titleHistory = {
 			"number": 91, 
 			"name": "MALA_MALA",
 			"reign": 1,
-			"defenses": ["THE_MONARCH", "THE_MONARCH", "CELINE"]
+			"defenses": ["THE_MONARCH", "THE_MONARCH", "CELINE", "ALICIA_HOUSE&CELINE"]
 		}
 
 	], 
@@ -1524,7 +1536,8 @@ const titleHistory = {
 		"CRYSTAL": 1, 
 		"TONY_TORNADO": 1,
 		"DANNY_PUMPKIN": 1,
-		"SLADER": 1
+		"SLADER": 1,
+		"JOEY_JET": 1,
 	},
 	"ROYAL_RUMBLE":{
 		"ASUKA": 1,
@@ -2297,7 +2310,7 @@ const titleHistory = {
 			"number": 49, 
 			"name": "SUKARI",
 			"reign": 4,
-			"defenses": ["SUMMER_HAYES"]
+			"defenses": ["SUMMER_HAYES", "LORNA_LIGHT", "LORNA_LIGHT"]
 		}
 	],
 	"US": [
@@ -2571,7 +2584,7 @@ const titleHistory = {
 			"number": 32, 
 			"name": "X_THREE",
 			"reign": 2,
-			"defenses": ["SCARLETT_WINGS"]
+			"defenses": ["SCARLETT_WINGS", "X_FOUR", "X_FOUR"]
 		}
 	],
 	"ALPHA-TOP":[
@@ -2934,6 +2947,12 @@ const titleHistory = {
 			"name": "PLAYBOY_CAM",
 			"reign": 1,
 			"defenses": ["DANNY_PUMPKIN", "TURBO", "JASON_HONEY", "FRED_CHATTY", "TONY_TORNADO&JASON_HONEY&MERCENARY"]
+		},
+		{
+			"number": 62, 
+			"name": "MERCENARY",
+			"reign": 4,
+			"defenses": ["PLAYBOY_CAM", "POSI"]
 		}
 	],
 	"WORLD-TOP":[
@@ -3442,6 +3461,12 @@ const titleHistory = {
 			"name": "JOEY_JET",
 			"reign": 1,
 			"defenses": ["HENRY_TATE", "HENRY_TATE", "BRENT_HUNTER"], 
+		},
+		{
+			"number": 86, 
+			"name": "WYATT_WIPER",
+			"reign": 3,
+			"defenses": ["JOEY_JET", "JOEY_JET", "BRENT_HUNTER", "BRENT_HUNTER", "CALLUM_WOLF", "CALLUM_WOLF", "MR_ENVIRONMENT", "TYSON_EVERETT", "TYSON_EVERETT"], 
 		}
 	],
 	"MENS-NXT":[
@@ -3986,6 +4011,12 @@ const titleHistory = {
 			"members": "BRETT_HUNTER[5]&BRENT_HUNTER[7]",
 			"defenses": ["GOT SPIKES? (DAMON_KNIGHT, DADDY_TODD)", "THE FRATERNITY (BEN_SEED, TYSON_EVERETT)", "GOT SPIKES? (DAMON_KNIGHT, DADDY_TODD)", "THE FRATERNITY (BEN_SEED, TYSON_EVERETT)"]
 		},
+		{
+			"number": 43, 
+			"name": "TONY TIME",
+			"members": "TONY_DASHER[2]&TONY_TORNADO[4]",
+			"defenses": ["THE HUNTER BROTHERS (BRETT_HUNTER, BRENT_HUNTER)", "THE HUNTER BROTHERS (BRETT_HUNTER, BRENT_HUNTER)", "THE HUNTER BROTHERS (BRETT_HUNTER, BRENT_HUNTER)"]
+		}
 		
 	],
 	"TRIOS":[
