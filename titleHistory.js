@@ -672,7 +672,7 @@ const titleHistory = {
 			"number": 113, 
 			"name": "SUMMER_HAYES",
 			"reign": 2,
-			"defenses": ["X_TWO", "X_TWO&JORDAN_SKY"]
+			"defenses": ["X_TWO", "X_TWO&JORDAN_SKY", "JULIET_SUNSET", "JORDAN_SKY"]
 		}
 	],
 	"SMACKDOWN": [
