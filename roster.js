@@ -31,7 +31,7 @@ const rosterArray = [ // currrent roster
 }, 
 {
   name: "BROOK_TAYLOR", 
-  brand: "SD", 
+  brand: "RAW", 
   gender: "F"
 }, 
 {
@@ -41,7 +41,7 @@ const rosterArray = [ // currrent roster
 }, 
 {
   name: "JUJU_FUN", 
-  brand: "SD", 
+  brand: "RAW", 
   gender: "F"
 }, 
 {
@@ -66,7 +66,7 @@ const rosterArray = [ // currrent roster
 }, 
 {
   name: "JANE_MACK", 
-  brand: "SD", 
+  brand: "RAW", 
   gender: "F"
 },
 {
@@ -76,7 +76,7 @@ const rosterArray = [ // currrent roster
 },
 {
   name: "NORI", 
-  brand: "SD", 
+  brand: "RAW", 
   gender: "F"
 },
 {
@@ -86,12 +86,12 @@ const rosterArray = [ // currrent roster
 },
 {
   name: "TORNADO_MAY", 
-  brand: "SD", 
+  brand: "RAW", 
   gender: "F"
 },
 {
   name: "SUKARI", 
-  brand: "RAW", 
+  brand: "SD", 
   gender: "F"
 },
 {
@@ -281,7 +281,7 @@ const rosterArray = [ // currrent roster
 },
 {
   name: "JORDAN_SKY", 
-  brand: "RAW", 
+  brand: "SD", 
   gender: "F"
 },
 {
@@ -291,7 +291,7 @@ const rosterArray = [ // currrent roster
 },
 {
   name: "THE_MONARCH", 
-  brand: "SD", 
+  brand: "RAW", 
   gender: "F"
 },
 {
