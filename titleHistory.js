@@ -673,6 +673,12 @@ const titleHistory = {
 			"name": "SUMMER_HAYES",
 			"reign": 2,
 			"defenses": ["X_TWO", "X_TWO&JORDAN_SKY", "JULIET_SUNSET", "JORDAN_SKY"]
+		},
+		{
+			"number": 114, 
+			"name": "THE_MONARCH",
+			"reign": 2,
+			"defenses": ["SUMMER_HAYES", "SUMMER_HAYES", "BROOK_TAYLOR", "BROOK_TAYLOR", "X_TWO"]
 		}
 	],
 	"SMACKDOWN": [
@@ -1246,9 +1252,8 @@ const titleHistory = {
 			"number": 91, 
 			"name": "MALA_MALA",
 			"reign": 1,
-			"defenses": ["THE_MONARCH", "THE_MONARCH", "CELINE", "ALICIA_HOUSE&CELINE"]
+			"defenses": ["THE_MONARCH", "THE_MONARCH", "CELINE", "ALICIA_HOUSE&CELINE", "SCARLETT_WINGS"]
 		}
-
 	], 
 	"NXT": [
 		{
@@ -2006,6 +2011,12 @@ const titleHistory = {
 			"name": "CITY GIRLS",
 			"members": "CRYSTAL[4]&ROSIE_FOX[3]",
 			"defenses": ["METALLIC ANGELS (BROOK_TAYLOR, VERONICA_STEEL)", "METALLIC ANGELS (BROOK_TAYLOR, VERONICA_STEEL)", "POW POW (LONI_ENERGY, LEENA)", "METALLIC ANGELS (BROOK_TAYLOR, VERONICA_STEEL)"]
+		},
+		{
+			"number": 80, 
+			"name": "ALL NATURAL",
+			"members": "LORNA_LIGHT[3]&TORNADO_MAY[4]",
+			"defenses": ["CITY GIRLS (CRYSTAL, ROSIE_FOX)", "POW POW (LONI_ENERGY, LEENA)", "POW POW (LONI_ENERGY, LEENA)"]
 		}
 		
 	],
@@ -2310,7 +2321,7 @@ const titleHistory = {
 			"number": 49, 
 			"name": "SUKARI",
 			"reign": 4,
-			"defenses": ["SUMMER_HAYES", "LORNA_LIGHT", "LORNA_LIGHT"]
+			"defenses": ["SUMMER_HAYES", "LORNA_LIGHT", "LORNA_LIGHT", "JUJU_FUN"]
 		}
 	],
 	"US": [
@@ -2585,6 +2596,12 @@ const titleHistory = {
 			"name": "X_THREE",
 			"reign": 2,
 			"defenses": ["SCARLETT_WINGS", "X_FOUR", "X_FOUR"]
+		},
+		{
+			"number": 32, 
+			"name": "JORDAN_SKY",
+			"reign": 2,
+			"defenses": ["X_THREE", "X_THREE", "LISA_LOST", "LAUREN_SNOW", "LAUREN_SNOW"]
 		}
 	],
 	"ALPHA-TOP":[
@@ -2953,6 +2970,18 @@ const titleHistory = {
 			"name": "MERCENARY",
 			"reign": 4,
 			"defenses": ["PLAYBOY_CAM", "POSI"]
+		},
+		{
+			"number": 63, 
+			"name": "PLAYBOY_CAM",
+			"reign": 2,
+			"defenses": ["MERCENARY"]
+		},
+		{
+			"number": 64, 
+			"name": "MERCENARY",
+			"reign": 5,
+			"defenses": ["PLAYBOY_CAM", "LOGAN_GURT", "TURBO", "TURBO"]
 		}
 	],
 	"WORLD-TOP":[
@@ -3467,6 +3496,18 @@ const titleHistory = {
 			"name": "WYATT_WIPER",
 			"reign": 3,
 			"defenses": ["JOEY_JET", "JOEY_JET", "BRENT_HUNTER", "BRENT_HUNTER", "CALLUM_WOLF", "CALLUM_WOLF", "MR_ENVIRONMENT", "TYSON_EVERETT", "TYSON_EVERETT"], 
+		},
+		{
+			"number": 87, 
+			"name": "MR_ENVIRONMENT",
+			"reign": 8,
+			"defenses": ["WYATT_WIPER", "BEN_SEED", "TONY_TORNADO", "JOEY_JET"], 
+		},
+		{
+			"number": 88, 
+			"name": "WYATT_WIPER",
+			"reign": 4,
+			"defenses": ["MR_ENVIRONMENT"], 
 		}
 	],
 	"MENS-NXT":[
