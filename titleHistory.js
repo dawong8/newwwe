@@ -679,6 +679,12 @@ const titleHistory = {
 			"name": "THE_MONARCH",
 			"reign": 2,
 			"defenses": ["SUMMER_HAYES", "SUMMER_HAYES", "BROOK_TAYLOR", "BROOK_TAYLOR", "X_TWO"]
+		},
+		{
+			"number": 115, 
+			"name": "X_TWO",
+			"reign": 4,
+			"defenses": ["THE_MONARCH&SUMMER_HAYES", "THE_MONARCH", "LORNA_LIGHT", "THE_MONARCH", "SUMMER_HAYES"]
 		}
 	],
 	"SMACKDOWN": [
@@ -1253,6 +1259,12 @@ const titleHistory = {
 			"name": "MALA_MALA",
 			"reign": 1,
 			"defenses": ["THE_MONARCH", "THE_MONARCH", "CELINE", "ALICIA_HOUSE&CELINE", "SCARLETT_WINGS"]
+		},
+		{
+			"number": 92, 
+			"name": "JORDAN_SKY",
+			"reign": 1,
+			"defenses": ["MALA_MALA", "MALA_MALA", "CELINE", "SCARLETT_WINGS", "SCARLETT_WINGS", "JUNGO"]
 		}
 	], 
 	"NXT": [
@@ -2322,6 +2334,12 @@ const titleHistory = {
 			"name": "SUKARI",
 			"reign": 4,
 			"defenses": ["SUMMER_HAYES", "LORNA_LIGHT", "LORNA_LIGHT", "JUJU_FUN"]
+		},
+		{
+			"number": 50, 
+			"name": "JUJU_FUN",
+			"reign": 1,
+			"defenses": ["SUKARI", "BELINDA_LEE", "BLAIRE_COUNTY", "CARLA_GARCIA"]
 		}
 	],
 	"US": [
@@ -2602,6 +2620,12 @@ const titleHistory = {
 			"name": "JORDAN_SKY",
 			"reign": 2,
 			"defenses": ["X_THREE", "X_THREE", "LISA_LOST", "LAUREN_SNOW", "LAUREN_SNOW"]
+		},
+		{
+			"number": 33, 
+			"name": "SUKARI",
+			"reign": 1,
+			"defenses": ["JORDAN_SKY"]
 		}
 	],
 	"ALPHA-TOP":[
@@ -3508,6 +3532,12 @@ const titleHistory = {
 			"name": "WYATT_WIPER",
 			"reign": 4,
 			"defenses": ["MR_ENVIRONMENT"], 
+		},
+		{
+			"number": 89, 
+			"name": "PLAYBOY_CAM",
+			"reign": 1,
+			"defenses": ["WYATT_WIPER"], 
 		}
 	],
 	"MENS-NXT":[
