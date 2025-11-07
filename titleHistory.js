@@ -3016,7 +3016,7 @@ const titleHistory = {
 		{
 			"number": 65, 
 			"name": "ALEX_CONNOR",
-			"reign": 5,
+			"reign": 2,
 			"defenses": ["MERCENARY", "MERCENARY", "ANGELO_KNIGHT", "HARDBEAR", "DADDY_TODD"]
 		}
 	],
