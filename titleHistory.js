@@ -1973,7 +1973,7 @@ const titleHistory = {
 		{
 			"number": 71, 
 			"name": "METALLIC ANGELS",
-			"members": "BROOK_TAYLOR[2]&NATASHA_IVY[3]",
+			"members": "BROOK_TAYLOR[2]&NATASHA_IVY[2]",
 			"defenses": ["ALL NATURAL (LORNA_LIGHT, TORNADO_MAY)"]
 		},
 		{
