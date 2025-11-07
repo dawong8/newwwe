@@ -2340,6 +2340,12 @@ const titleHistory = {
 			"name": "JUJU_FUN",
 			"reign": 1,
 			"defenses": ["SUKARI", "BELINDA_LEE", "BLAIRE_COUNTY", "CARLA_GARCIA"]
+		},
+		{
+			"number": 51, 
+			"name": "NATASHA_IVY",
+			"reign": 2,
+			"defenses": ["JUST_JANINE", "CRYSTAL", "CRYSTAL", "CARLA_GARCIA", "BELINDA_LEE"]
 		}
 	],
 	"US": [
@@ -2625,7 +2631,7 @@ const titleHistory = {
 			"number": 33, 
 			"name": "SUKARI",
 			"reign": 1,
-			"defenses": ["JORDAN_SKY"]
+			"defenses": ["JORDAN_SKY", "X_THREE", "X_THREE"]
 		}
 	],
 	"ALPHA-TOP":[
@@ -3006,6 +3012,12 @@ const titleHistory = {
 			"name": "MERCENARY",
 			"reign": 5,
 			"defenses": ["PLAYBOY_CAM", "LOGAN_GURT", "TURBO", "TURBO"]
+		},
+		{
+			"number": 65, 
+			"name": "ALEX_CONNOR",
+			"reign": 5,
+			"defenses": ["MERCENARY", "MERCENARY", "ANGELO_KNIGHT", "HARDBEAR", "DADDY_TODD"]
 		}
 	],
 	"WORLD-TOP":[
@@ -3537,7 +3549,13 @@ const titleHistory = {
 			"number": 89, 
 			"name": "PLAYBOY_CAM",
 			"reign": 1,
-			"defenses": ["WYATT_WIPER"], 
+			"defenses": ["WYATT_WIPER", "WYATT_WIPER", "JOEY_JET", "JOHNNY_AMERICA", "JOHNNY_AMERICA", "BEN_SEED", "CALLUM_WOLF", "BRENT_HUNTER", "RUSSELL_RUSH"], 
+		},
+		{
+			"number": 90, 
+			"name": "WYATT_WIPER",
+			"reign": 5,
+			"defenses": ["MR_ENVIRONMENT&PLAYBOY_CAM", "PLAYBOY_CAM", "PLAYBOY_CAM", "TONY_TORNADO"], 
 		}
 	],
 	"MENS-NXT":[
