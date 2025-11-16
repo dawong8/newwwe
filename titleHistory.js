@@ -3570,7 +3570,7 @@ const titleHistory = {
 			"defenses": ["MR_ENVIRONMENT&PLAYBOY_CAM", "PLAYBOY_CAM", "PLAYBOY_CAM", "TONY_TORNADO"], 
 		},
 		{
-			"number": 91
+			"number": 91,
 			"name": "RUSSELL_RUSH",
 			"reign": 8,
 			"defenses": ["WYATT_WIPER"], 
