@@ -684,7 +684,7 @@ const titleHistory = {
 			"number": 115, 
 			"name": "X_TWO",
 			"reign": 4,
-			"defenses": ["THE_MONARCH&SUMMER_HAYES", "THE_MONARCH", "LORNA_LIGHT", "THE_MONARCH", "SUMMER_HAYES"]
+			"defenses": ["THE_MONARCH&SUMMER_HAYES", "THE_MONARCH", "LORNA_LIGHT", "THE_MONARCH", "SUMMER_HAYES", "JANE_MACK"]
 		}
 	],
 	"SMACKDOWN": [
@@ -1265,6 +1265,18 @@ const titleHistory = {
 			"name": "JORDAN_SKY",
 			"reign": 1,
 			"defenses": ["MALA_MALA", "MALA_MALA", "CELINE", "SCARLETT_WINGS", "SCARLETT_WINGS", "JUNGO"]
+		},
+		{
+			"number": 93, 
+			"name": "MALA_MALA",
+			"reign": 2,
+			"defenses": ["JORDAN_SKY&SCARLETT_WINGS", "SCARLETT_WINGS", "SCARLETT_WINGS"]
+		},
+		{
+			"number": 94, 
+			"name": "SCARLETT_WINGS",
+			"reign": 1,
+			"defenses": ["MALA_MALA", "MALA_MALA", "JUNGO", "LAUREN_SNOW"]
 		}
 	], 
 	"NXT": [
@@ -3017,7 +3029,7 @@ const titleHistory = {
 			"number": 65, 
 			"name": "ALEX_CONNOR",
 			"reign": 2,
-			"defenses": ["MERCENARY", "MERCENARY", "ANGELO_KNIGHT", "HARDBEAR", "DADDY_TODD"]
+			"defenses": ["MERCENARY", "MERCENARY", "ANGELO_KNIGHT", "HARDBEAR", "DADDY_TODD", "TURBO"]
 		}
 	],
 	"WORLD-TOP":[
@@ -3556,6 +3568,12 @@ const titleHistory = {
 			"name": "WYATT_WIPER",
 			"reign": 5,
 			"defenses": ["MR_ENVIRONMENT&PLAYBOY_CAM", "PLAYBOY_CAM", "PLAYBOY_CAM", "TONY_TORNADO"], 
+		},
+		{
+			"number": 91
+			"name": "RUSSELL_RUSH",
+			"reign": 8,
+			"defenses": ["WYATT_WIPER"], 
 		}
 	],
 	"MENS-NXT":[
