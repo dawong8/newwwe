@@ -685,6 +685,12 @@ const titleHistory = {
 			"name": "X_TWO",
 			"reign": 4,
 			"defenses": ["THE_MONARCH&SUMMER_HAYES", "THE_MONARCH", "LORNA_LIGHT", "THE_MONARCH", "SUMMER_HAYES", "JANE_MACK"]
+		},
+		{
+			"number": 116, 
+			"name": "SUMMER_HAYES",
+			"reign": 3,
+			"defenses": ["X_TWO", "LORNA_LIGHT", "LORNA_LIGHT", "LORNA_LIGHT&THE_MONARCH"]
 		}
 	],
 	"SMACKDOWN": [
@@ -2041,8 +2047,7 @@ const titleHistory = {
 			"name": "ALL NATURAL",
 			"members": "LORNA_LIGHT[3]&TORNADO_MAY[4]",
 			"defenses": ["CITY GIRLS (CRYSTAL, ROSIE_FOX)", "POW POW (LONI_ENERGY, LEENA)", "POW POW (LONI_ENERGY, LEENA)"]
-		}
-		
+		}	
 	],
 	"HARDCORE": [
 		{
@@ -3573,7 +3578,7 @@ const titleHistory = {
 			"number": 91,
 			"name": "RUSSELL_RUSH",
 			"reign": 8,
-			"defenses": ["WYATT_WIPER"], 
+			"defenses": ["WYATT_WIPER", "PLAYBOY_CAM", "PLAYBOY_CAM"], 
 		}
 	],
 	"MENS-NXT":[
