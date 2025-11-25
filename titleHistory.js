@@ -1288,7 +1288,7 @@ const titleHistory = {
 			"number": 95, 
 			"name": "JORDAN_SKY",
 			"reign": 2,
-			"defenses": ["SCARLETT_WINGS", "SCARLETT_WINGS", "JUNGO", "JUNGO", "MALA_MALA" "ALICIA_HOUSE"]
+			"defenses": ["SCARLETT_WINGS", "SCARLETT_WINGS", "JUNGO", "JUNGO", "MALA_MALA", "ALICIA_HOUSE", "MALA_MALA&CELINE"]
 		}
 	], 
 	"NXT": [
