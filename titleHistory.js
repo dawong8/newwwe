@@ -690,7 +690,7 @@ const titleHistory = {
 			"number": 116, 
 			"name": "SUMMER_HAYES",
 			"reign": 3,
-			"defenses": ["X_TWO", "LORNA_LIGHT", "LORNA_LIGHT", "LORNA_LIGHT&THE_MONARCH"]
+			"defenses": ["X_TWO", "LORNA_LIGHT", "LORNA_LIGHT", "LORNA_LIGHT&THE_MONARCH", "X_TWO", "BROOK_TAYLOR", "BROOK_TAYLOR"]
 		}
 	],
 	"SMACKDOWN": [
@@ -1283,6 +1283,12 @@ const titleHistory = {
 			"name": "SCARLETT_WINGS",
 			"reign": 1,
 			"defenses": ["MALA_MALA", "MALA_MALA", "JUNGO", "LAUREN_SNOW"]
+		},
+		{
+			"number": 95, 
+			"name": "JORDAN_SKY",
+			"reign": 2,
+			"defenses": ["SCARLETT_WINGS", "SCARLETT_WINGS", "JUNGO", "JUNGO", "MALA_MALA" "ALICIA_HOUSE"]
 		}
 	], 
 	"NXT": [
@@ -2047,7 +2053,13 @@ const titleHistory = {
 			"name": "ALL NATURAL",
 			"members": "LORNA_LIGHT[3]&TORNADO_MAY[4]",
 			"defenses": ["CITY GIRLS (CRYSTAL, ROSIE_FOX)", "POW POW (LONI_ENERGY, LEENA)", "POW POW (LONI_ENERGY, LEENA)"]
-		}	
+		},
+		{
+			"number": 81, 
+			"name": "BIG TIMERS",
+			"members": "THE_MONARCH[2]&TAMINA[2]",
+			"defenses": ["ALL NATURAL (LORNA_LIGHT, TORNADO_MAY)", "ALL NATURAL (LORNA_LIGHT, TORNADO_MAY)", "CITY GIRLS (CRYSTAL, ROSIE_FOX)", "ALL NATURAL (LORNA_LIGHT, TORNADO_MAY)", "POW POW (LONI_ENERGY, LEENA)", "POW POW (LONI_ENERGY, LEENA)"]
+		}		
 	],
 	"HARDCORE": [
 		{
