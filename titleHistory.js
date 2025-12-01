@@ -1289,6 +1289,18 @@ const titleHistory = {
 			"name": "JORDAN_SKY",
 			"reign": 2,
 			"defenses": ["SCARLETT_WINGS", "SCARLETT_WINGS", "JUNGO", "JUNGO", "MALA_MALA", "ALICIA_HOUSE", "MALA_MALA&CELINE"]
+		},
+		{
+			"number": 96, 
+			"name": "SCARLETT_WINGS",
+			"reign": 2,
+			"defenses": ["JORDAN_SKY", "JORDAN_SKY-DQ", "X_FOUR", "CELINE"]
+		},
+		{
+			"number": 95, 
+			"name": "JORDAN_SKY",
+			"reign": 3,
+			"defenses": ["SCARLETT_WINGS", "CELINE", "CELINE", "X_FOUR", "MALA_MALA"]
 		}
 	], 
 	"NXT": [
@@ -2375,6 +2387,12 @@ const titleHistory = {
 			"name": "NATASHA_IVY",
 			"reign": 2,
 			"defenses": ["JUST_JANINE", "CRYSTAL", "CRYSTAL", "CARLA_GARCIA", "BELINDA_LEE"]
+		},
+		{
+			"number": 52, 
+			"name": "VIOLET_JADE",
+			"reign": 1,
+			"defenses": ["NATASHA_IVY", "LORNA_LIGHT", "LORNA_LIGHT"]
 		}
 	],
 	"US": [
