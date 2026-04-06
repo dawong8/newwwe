@@ -1,4 +1,69 @@
 const rosterArray = [ 
+    {
+  name: "KYLER_BLAKE", 
+  brand: "NXT",
+  gender: "M" 
+},
+    {
+  name: "CLARKSON_WILDE", 
+  brand: "NXT",
+  gender: "M" 
+},
+    {
+  name: "NOAH_ACE", 
+  brand: "NXT",
+  gender: "M" 
+},
+    {
+  name: "ELI_BOLTON", 
+  brand: "NXT",
+  gender: "M" 
+},
+    {
+  name: "TOBASCO_CRUZ", 
+  brand: "NXT",
+  gender: "M" 
+},
+    {
+  name: "TRAVIS_WEST", 
+  brand: "NXT",
+  gender: "M" 
+},
+    {
+  name: "HUGGIE_HOBBS", 
+  brand: "NXT",
+  gender: "M" 
+},
+    {
+  name: "BRAD_WOODS", 
+  brand: "NXT",
+  gender: "M" 
+},
+    {
+  name: "VIKTOR_MAXX", 
+  brand: "NXT",
+  gender: "M" 
+},
+    {
+  name: "XION_OWENS", 
+  brand: "NXT",
+  gender: "M" 
+},
+    {
+  name: "BILLY_PONG", 
+  brand: "NXT",
+  gender: "M" 
+},
+    {
+  name: "PETER_PONG", 
+  brand: "NXT",
+  gender: "M" 
+},
+  {
+  name: "ELI_BOLTON", 
+  brand: "NXT",
+  gender: "M" 
+},
   {
   name: "RAINY_GLIDE", 
   brand: "NXT",
