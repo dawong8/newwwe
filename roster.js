@@ -14,11 +14,7 @@ const rosterArray = [
   brand: "NXT",
   gender: "M" 
 },
-    {
-  name: "ELI_BOLTON", 
-  brand: "NXT",
-  gender: "M" 
-},
+
     {
   name: "TOBASCO_CRUZ", 
   brand: "NXT",
