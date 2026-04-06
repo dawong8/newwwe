@@ -1555,6 +1555,12 @@ const titleHistory = {
 		{
 			"number": 44, 
 			"name": "VACATED"
+		},
+		{
+			"number": 45, 
+			"name": "DAISY_MAYFIELD",
+			"reign": 1,
+			"defenses": ["GIGI_FITNESS"], 
 		}
 	],
 	"ELIMINATION_CHAMBER": {
@@ -3769,6 +3775,12 @@ const titleHistory = {
 		},{
 			"number": 28,
 			"name": "VACATED"
+		},
+		{
+			"number": 29, 
+			"name": "BRAD_WOODS",
+			"reign": 1,
+			"defenses": ["TOBASCO_CRUZ&CLARKSON_WILDE&VIKTOR_MAXX"]
 		}
 	],
 	"DOM-TOP":[
