@@ -1,5 +1,10 @@
 const rosterArray = [ 
   {
+  name: "RAINY_GLIDE", 
+  brand: "NXT",
+  gender: "F" 
+},
+  {
   name: "GINA_FONG", 
   brand: "NXT",
   gender: "F" 
