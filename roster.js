@@ -1,4 +1,39 @@
 const rosterArray = [ 
+  {
+  name: "GINA_FONG", 
+  brand: "NXT",
+  gender: "F" 
+},
+  {
+  name: "MEI_LING", 
+  brand: "NXT",
+  gender: "F" 
+},
+  {
+  name: "MORGAN_NITRA", 
+  brand: "NXT",
+  gender: "F" 
+},
+  {
+  name: "SARAH_LAY", 
+  brand: "NXT",
+  gender: "F" 
+},
+  {
+  name: "QUEEN_AMINAT", 
+  brand: "NXT",
+  gender: "F" 
+},
+  {
+  name: "GRETCHEN", 
+  brand: "NXT",
+  gender: "F" 
+},
+  {
+  name: "DRIANA", 
+  brand: "NXT",
+  gender: "F" 
+},
 {
   name: "DAISY_MAYFIELD", 
   brand: "NXT",
