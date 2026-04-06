@@ -1,4 +1,21 @@
-const rosterArray = [ // currrent roster
+const rosterArray = [ 
+{
+  name: "DAISY_MAYFIELD", 
+  brand: "NXT",
+  gender: "F" 
+},
+  {
+  name: "AOD", 
+  brand: "NXT",
+  gender: "F" 
+},
+  {
+  name: "BECCA_FIELDS", 
+  brand: "NXT",
+  gender: "F" 
+},
+  
+  // currrent roster
 {
   name: "LISA_LOST", 
   brand: "SD",
