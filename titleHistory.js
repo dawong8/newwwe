@@ -690,7 +690,7 @@ const titleHistory = {
 			"number": 116, 
 			"name": "SUMMER_HAYES",
 			"reign": 3,
-			"defenses": ["X_TWO", "LORNA_LIGHT", "LORNA_LIGHT", "LORNA_LIGHT&THE_MONARCH", "X_TWO", "BROOK_TAYLOR", "BROOK_TAYLOR"]
+			"defenses": ["X_TWO", "LORNA_LIGHT", "LORNA_LIGHT", "LORNA_LIGHT&THE_MONARCH", "X_TWO", "BROOK_TAYLOR", "BROOK_TAYLOR", "AOD-DQ"]
 		}
 	],
 	"SMACKDOWN": [
@@ -1560,7 +1560,7 @@ const titleHistory = {
 			"number": 45, 
 			"name": "DAISY_MAYFIELD",
 			"reign": 1,
-			"defenses": ["GIGI_FITNESS"], 
+			"defenses": ["GIGI_FITNESS", "GIGI_FITNESS-DQ", "MORGAN_NITRA"], 
 		}
 	],
 	"ELIMINATION_CHAMBER": {
@@ -3780,7 +3780,7 @@ const titleHistory = {
 			"number": 29, 
 			"name": "BRAD_WOODS",
 			"reign": 1,
-			"defenses": ["TOBASCO_CRUZ&CLARKSON_WILDE&VIKTOR_MAXX"]
+			"defenses": ["TOBASCO_CRUZ&CLARKSON_WILDE&VIKTOR_MAXX", "PETER_PONG&VIKTOR_MAXX"]
 		}
 	],
 	"DOM-TOP":[
