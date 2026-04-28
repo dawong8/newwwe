@@ -2411,6 +2411,12 @@ const titleHistory = {
 			"name": "VIOLET_JADE",
 			"reign": 1,
 			"defenses": ["NATASHA_IVY", "LORNA_LIGHT", "LORNA_LIGHT"]
+		},
+		{
+			"number": 53, 
+			"name": "RAINY_BRIGHT",
+			"reign": 1,
+			"defenses": ["VIOLET_JADE", "LORNA_LIGHT", "CRYSTAL"]
 		}
 	],
 	"US": [
@@ -2702,7 +2708,7 @@ const titleHistory = {
 			"number": 34, 
 			"name": "DAISY_MAYFIELD",
 			"reign": 1,
-			"defenses": ["SUKARI"]
+			"defenses": ["SUKARI", "SUKARI", "X_FOUR", "CELINE", "X_THREE"]
 		}
 	],
 	"ALPHA-TOP":[
