@@ -52,12 +52,12 @@ const rosterArray = [
 },
     {
   name: "BILLY_PONG", 
-  brand: "NXT",
+  brand: "RAW",
   gender: "M" 
 },
     {
   name: "PETER_PONG", 
-  brand: "NXT",
+  brand: "RAW",
   gender: "M" 
 },
   {
@@ -107,7 +107,7 @@ const rosterArray = [
 },
 {
   name: "DAISY_MAYFIELD", 
-  brand: "NXT",
+  brand: "SD",
   gender: "F" 
 },
   {
