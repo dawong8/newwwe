@@ -690,7 +690,13 @@ const titleHistory = {
 			"number": 116, 
 			"name": "SUMMER_HAYES",
 			"reign": 3,
-			"defenses": ["X_TWO", "LORNA_LIGHT", "LORNA_LIGHT", "LORNA_LIGHT&THE_MONARCH", "X_TWO", "BROOK_TAYLOR", "BROOK_TAYLOR", "AOD-DQ"]
+			"defenses": ["X_TWO", "LORNA_LIGHT", "LORNA_LIGHT", "LORNA_LIGHT&THE_MONARCH", "X_TWO", "BROOK_TAYLOR", "BROOK_TAYLOR", "AOD-DQ", "MOLLY_HOLLY-DQ"]
+		},
+		{
+			"number": 117, 
+			"name": "ASUKA",
+			"reign": 3,
+			"defenses": ["SUMMER_HAYES"]
 		}
 	],
 	"SMACKDOWN": [
@@ -1300,7 +1306,7 @@ const titleHistory = {
 			"number": 95, 
 			"name": "JORDAN_SKY",
 			"reign": 3,
-			"defenses": ["SCARLETT_WINGS", "CELINE", "CELINE", "X_FOUR", "MALA_MALA"]
+			"defenses": ["SCARLETT_WINGS", "CELINE", "CELINE", "X_FOUR", "MALA_MALA", "LAUREN_SNOW", "LAUREN_SNOW"]
 		}
 	], 
 	"NXT": [
@@ -1560,7 +1566,13 @@ const titleHistory = {
 			"number": 45, 
 			"name": "DAISY_MAYFIELD",
 			"reign": 1,
-			"defenses": ["GIGI_FITNESS", "GIGI_FITNESS-DQ", "MORGAN_NITRA"], 
+			"defenses": ["GIGI_FITNESS", "GIGI_FITNESS-DQ", "MORGAN_NITRA", "SARAH_LAY", "SARAH_LAY"], 
+		},
+		{
+			"number": 46, 
+			"name": "AOD",
+			"reign": 1,
+			"defenses": ["DAISY_MAYFIELD", "DAISY_MAYFIELD"], 
 		}
 	],
 	"ELIMINATION_CHAMBER": {
@@ -2685,6 +2697,12 @@ const titleHistory = {
 			"name": "SUKARI",
 			"reign": 1,
 			"defenses": ["JORDAN_SKY", "X_THREE", "X_THREE"]
+		},
+		{
+			"number": 34, 
+			"name": "DAISY_MAYFIELD",
+			"reign": 1,
+			"defenses": ["SUKARI"]
 		}
 	],
 	"ALPHA-TOP":[
@@ -3780,7 +3798,7 @@ const titleHistory = {
 			"number": 29, 
 			"name": "BRAD_WOODS",
 			"reign": 1,
-			"defenses": ["TOBASCO_CRUZ&CLARKSON_WILDE&VIKTOR_MAXX", "PETER_PONG&VIKTOR_MAXX"]
+			"defenses": ["TOBASCO_CRUZ&CLARKSON_WILDE&VIKTOR_MAXX", "PETER_PONG&VIKTOR_MAXX", "PETER_PONG", "PETER_PONG&BILLY_PONG"]
 		}
 	],
 	"DOM-TOP":[
