@@ -66,8 +66,8 @@ const rosterArray = [
   gender: "M" 
 },
   {
-  name: "RAINY_GLIDE", 
-  brand: "NXT",
+  name: "RAINY_BRIGHT", 
+  brand: "RAW",
   gender: "F" 
 },
   {
