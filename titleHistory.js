@@ -696,7 +696,7 @@ const titleHistory = {
 			"number": 117, 
 			"name": "ASUKA",
 			"reign": 3,
-			"defenses": ["SUMMER_HAYES"]
+			"defenses": ["SUMMER_HAYES", "SUMMER_HAYES", "JICKIE_MAMES", "BELINDA_LEE", "X_TWO", "TORNADO_MAY"]
 		}
 	],
 	"SMACKDOWN": [
@@ -1306,7 +1306,7 @@ const titleHistory = {
 			"number": 95, 
 			"name": "JORDAN_SKY",
 			"reign": 3,
-			"defenses": ["SCARLETT_WINGS", "CELINE", "CELINE", "X_FOUR", "MALA_MALA", "LAUREN_SNOW", "LAUREN_SNOW"]
+			"defenses": ["SCARLETT_WINGS", "CELINE", "CELINE", "X_FOUR", "MALA_MALA", "LAUREN_SNOW", "LAUREN_SNOW", "SCARLETT_WINGS"]
 		}
 	], 
 	"NXT": [
