@@ -122,41 +122,7 @@ const rosterArray = [
 },
   
   // currrent roster
-{
-  name: "LISA_LOST", 
-  brand: "SD",
-  gender: "F" 
-},
-{
-  name: "CARLA_GARCIA", 
-  brand: "RAW",
-  gender: "F" 
-},  
-{
-  name: "HENRY_TATE", 
-  brand: "RAW",
-  gender: "M" 
-}, 
-{
-  name: "NICK_GOODE", 
-  brand: "RAW",
-  gender: "M" 
-},
-{
-  name: "JUNGO", 
-  brand: "SD", 
-  gender: "F"
-}, 
-{
-  name: "CRYSTAL", 
-  brand: "RAW", 
-  gender: "F"
-}, 
-{
-  name: "BROOK_TAYLOR", 
-  brand: "RAW", 
-  gender: "F"
-}, 
+
 {
   name: "LOGAN_GURT", 
   brand: "RAW", 
