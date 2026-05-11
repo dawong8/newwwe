@@ -16,7 +16,7 @@ const rosterArray = [
 },
     {
   name: "NOAH_ACE", 
-  brand: "NXT",
+  brand: "RAW",
   gender: "M" 
 },
 
