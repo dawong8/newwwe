@@ -11,7 +11,7 @@ const rosterArray = [
 },
     {
   name: "CLARKSON_WILDE", 
-  brand: "NXT",
+  brand: "RAW",
   gender: "M" 
 },
     {
@@ -22,12 +22,12 @@ const rosterArray = [
 
     {
   name: "TOBASCO_CRUZ", 
-  brand: "NXT",
+  brand: "RAW",
   gender: "M" 
 },
     {
   name: "TRAVIS_WEST", 
-  brand: "NXT",
+  brand: "RAW",
   gender: "M" 
 },
     {
@@ -37,7 +37,7 @@ const rosterArray = [
 },
     {
   name: "BRAD_WOODS", 
-  brand: "NXT",
+  brand: "RAW",
   gender: "M" 
 },
     {
@@ -82,12 +82,12 @@ const rosterArray = [
 },
   {
   name: "MORGAN_NITRA", 
-  brand: "NXT",
+  brand: "RAW",
   gender: "F" 
 },
   {
   name: "SARAH_LAY", 
-  brand: "NXT",
+  brand: "SD",
   gender: "F" 
 },
   {
@@ -112,7 +112,7 @@ const rosterArray = [
 },
   {
   name: "AOD", 
-  brand: "NXT",
+  brand: "RAW",
   gender: "F" 
 },
   {
@@ -216,51 +216,6 @@ const rosterArray = [
   {
   name: "SCARLETT_WINGS", 
   brand: "SD", 
-  gender: "F"
-},
-{
-  name: "BELINDA_LEE", 
-  brand: "RAW", 
-  gender: "F"
-},
-{
-  name: "NATASHA_IVY", 
-  brand: "RAW", 
-  gender: "F"
-},
-{
-  name: "JESSICA_CUP", 
-  brand: "RAW", 
-  gender: "F"
-},
-{
-  name: "JULIET_SUNSET", 
-  brand: "RAW", 
-  gender: "F"
-},
-{
-  name: "ALICIA_HOUSE", 
-  brand: "SD", 
-  gender: "F"
-},
-{
-  name: "JUST_JANINE", 
-  brand: "RAW", 
-  gender: "F"
-},
-{
-  name: "CARMELLA", 
-  brand: "RAW", 
-  gender: "F"
-},
-{
-  name: "NAOMI", 
-  brand: "RAW", 
-  gender: "F"
-},
-{
-  name: "TAMINA", 
-  brand: "RAW", 
   gender: "F"
 },
 {
