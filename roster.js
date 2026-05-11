@@ -1,7 +1,7 @@
 const rosterArray = [ 
         {
   name: "GIGI_FITNESS", 
-  brand: "NXT",
+  brand: "SD",
   gender: "F" 
 },
     {
@@ -42,7 +42,7 @@ const rosterArray = [
 },
     {
   name: "VIKTOR_MAXX", 
-  brand: "NXT",
+  brand: "RAW",
   gender: "M" 
 },
     {
@@ -77,7 +77,7 @@ const rosterArray = [
 },
   {
   name: "MEI_LING", 
-  brand: "NXT",
+  brand: "RAW",
   gender: "F" 
 },
   {
@@ -117,7 +117,7 @@ const rosterArray = [
 },
   {
   name: "BECCA_FIELDS", 
-  brand: "NXT",
+  brand: "SD",
   gender: "F" 
 },
   
