@@ -4397,10 +4397,6 @@ const titleHistory = {
 			"name": "POW POW",
 			"members": "LEENA[1]&X_FOUR[3]&LONI_ENERGY[1]",
 			"defenses": ["METALLIC ANGELS (SCARLETT_WINGS, BROOK_TAYLOR, VERONICA_STEEL)", "METALLIC ANGELS (SCARLETT_WINGS, BROOK_TAYLOR, VERONICA_STEEL)"]
-		},
-		{
-			"number": 30, 
-			"name": "VACATED"
 		}
 	]
 };
