@@ -697,6 +697,12 @@ const titleHistory = {
 			"name": "ASUKA",
 			"reign": 3,
 			"defenses": ["SUMMER_HAYES", "SUMMER_HAYES", "JICKIE_MAMES", "BELINDA_LEE", "X_TWO", "TORNADO_MAY"]
+		},
+		{
+			"number": 118, 
+			"name": "SUMMER_HAYES",
+			"reign": 4,
+			"defenses": ["ASUKA"]
 		}
 	],
 	"SMACKDOWN": [
@@ -1572,7 +1578,7 @@ const titleHistory = {
 			"number": 46, 
 			"name": "AOD",
 			"reign": 1,
-			"defenses": ["DAISY_MAYFIELD", "DAISY_MAYFIELD"], 
+			"defenses": ["DAISY_MAYFIELD", "DAISY_MAYFIELD", "DRIANA", "DRIANA", "DRIANA", "MORGAN_NITRA", "MORGAN_NITRA"], 
 		}
 	],
 	"ELIMINATION_CHAMBER": {
@@ -2089,7 +2095,19 @@ const titleHistory = {
 			"name": "BIG TIMERS",
 			"members": "THE_MONARCH[2]&TAMINA[2]",
 			"defenses": ["ALL NATURAL (LORNA_LIGHT, TORNADO_MAY)", "ALL NATURAL (LORNA_LIGHT, TORNADO_MAY)", "CITY GIRLS (CRYSTAL, ROSIE_FOX)", "ALL NATURAL (LORNA_LIGHT, TORNADO_MAY)", "POW POW (LONI_ENERGY, LEENA)", "POW POW (LONI_ENERGY, LEENA)"]
-		}		
+		},
+		{
+			"number": 82, 
+			"name": "GOLDEN SUN",
+			"members": "SUMMER_HAYES[2]&MEI_LING[1]",
+			"defenses": ["BIG TIMERS (THE_MONARCH, TAMINA)"]
+		},
+		{
+			"number": 83, 
+			"name": "HOT BITCHES",
+			"members": "BECCA_FIELDS[1]&GIGI_FITNESS[1]",
+			"defenses": ["GOLDEN SUN (SUMMER_HAYES, MEI_LING)"]
+		}	
 	],
 	"HARDCORE": [
 		{
@@ -3095,6 +3113,12 @@ const titleHistory = {
 			"name": "ALEX_CONNOR",
 			"reign": 2,
 			"defenses": ["MERCENARY", "MERCENARY", "ANGELO_KNIGHT", "HARDBEAR", "DADDY_TODD", "TURBO"]
+		},
+		{
+			"number": 66, 
+			"name": "VIKTOR_MAXX",
+			"reign": 1,
+			"defenses": ["ALEX_CONNOR", "MERCENARY", "ANGELO_KNIGHT", "TONY_TORNADO", "TONY_TORNADO", "TURBO", "MERCENARY&HARDBEAR", "DANNY_PUMPKIN", "WILL_PHERBY"]
 		}
 	],
 	"WORLD-TOP":[
@@ -3804,7 +3828,7 @@ const titleHistory = {
 			"number": 29, 
 			"name": "BRAD_WOODS",
 			"reign": 1,
-			"defenses": ["TOBASCO_CRUZ&CLARKSON_WILDE&VIKTOR_MAXX", "PETER_PONG&VIKTOR_MAXX", "PETER_PONG", "PETER_PONG&BILLY_PONG"]
+			"defenses": ["TOBASCO_CRUZ&CLARKSON_WILDE&VIKTOR_MAXX", "PETER_PONG&VIKTOR_MAXX", "PETER_PONG", "PETER_PONG&BILLY_PONG", "NOAH_ACE", "KYLER_BLAKE", "HUGGIE_HOBBS"]
 		}
 	],
 	"DOM-TOP":[
@@ -4194,6 +4218,12 @@ const titleHistory = {
 			"name": "TONY TIME",
 			"members": "TONY_DASHER[2]&TONY_TORNADO[4]",
 			"defenses": ["THE HUNTER BROTHERS (BRETT_HUNTER, BRENT_HUNTER)", "THE HUNTER BROTHERS (BRETT_HUNTER, BRENT_HUNTER)", "THE HUNTER BROTHERS (BRETT_HUNTER, BRENT_HUNTER)"]
+		},
+		{
+			"number": 44, 
+			"name": "PONG BROS",
+			"members": "PETER_PONG[1]&BILLY_PONG[1]",
+			"defenses": ["TONY TIME (TONY_DASHER, TONY_TORNADO)"]
 		}
 		
 	],
