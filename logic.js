@@ -100,7 +100,7 @@ const generateChampPage = () => {
 
 	const triosObj = {
 			name: triosChampNames, 
-			members: triosChampMembers.match(/\w+(?=\[\d+\])/g) || "",
+			members: (triosChampMembers || "").match(/\w+(?=\[\d+\])/g) ,
 			titleName: "TRIOS"
 		};
 
