@@ -3119,6 +3119,10 @@ const titleHistory = {
 			"name": "VIKTOR_MAXX",
 			"reign": 1,
 			"defenses": ["ALEX_CONNOR", "MERCENARY", "ANGELO_KNIGHT", "TONY_TORNADO", "TONY_TORNADO", "TURBO", "MERCENARY&HARDBEAR", "DANNY_PUMPKIN", "WILL_PHERBY"]
+		},
+		{
+			"number": 67, 
+			"name": "VACATED"
 		}
 	],
 	"WORLD-TOP":[
@@ -4393,6 +4397,10 @@ const titleHistory = {
 			"name": "POW POW",
 			"members": "LEENA[1]&X_FOUR[3]&LONI_ENERGY[1]",
 			"defenses": ["METALLIC ANGELS (SCARLETT_WINGS, BROOK_TAYLOR, VERONICA_STEEL)", "METALLIC ANGELS (SCARLETT_WINGS, BROOK_TAYLOR, VERONICA_STEEL)"]
+		},
+		{
+			"number": 30, 
+			"name": "VACATED"
 		}
 	]
 };
