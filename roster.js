@@ -6,7 +6,7 @@ const rosterArray = [
 },
     {
   name: "KYLER_BLAKE", 
-  brand: "NXT",
+  brand: "RAW",
   gender: "M" 
 },
     {
@@ -32,7 +32,7 @@ const rosterArray = [
 },
     {
   name: "HUGGIE_HOBBS", 
-  brand: "NXT",
+  brand: "RAW",
   gender: "M" 
 },
     {
@@ -47,7 +47,7 @@ const rosterArray = [
 },
     {
   name: "XION_OWENS", 
-  brand: "NXT",
+  brand: "RAW",
   gender: "M" 
 },
     {
