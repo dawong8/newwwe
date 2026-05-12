@@ -3153,7 +3153,7 @@ const titleHistory = {
 			"name": "TOBASCO_CRUZ",
 			"reign": 1,
 			"defenses": ["TRAVIS_WEST"]
-		
+		}
 	],
 	"WORLD-TOP":[
 		{
