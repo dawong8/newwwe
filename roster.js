@@ -1,4 +1,28 @@
-const rosterArray = [ 
+const rosterArray = [ {
+  name: "ALICIA_BLADE", 
+  brand: "NXT",
+  gender: "F" 
+},{
+  name: "CAROLINA_CHAZ", 
+  brand: "NXT",
+  gender: "F" 
+},{
+  name: "KEISHA_MILLER", 
+  brand: "NXT",
+  gender: "F" 
+},{
+  name: "RINA", 
+  brand: "NXT",
+  gender: "F" 
+},{
+  name: "GLENDA_SANCHEZ", 
+  brand: "NXT",
+  gender: "F" 
+},{
+  name: "BRADLY_WEST", 
+  brand: "NXT",
+  gender: "M" 
+},
         {
   name: "GIGI_FITNESS", 
   brand: "SD",
@@ -333,41 +357,7 @@ const rosterArray = [
   brand: "SD", 
   gender: "F"
 },
-{
-  name: "THE_MONARCH", 
-  brand: "RAW", 
-  gender: "F"
-},
-{
-  name: "ROSIE_FOX", 
-  brand: "RAW", 
-  gender: "F"
-},
-{
-  name: "TONY_DASHER", 
-  brand: "RAW", 
-  gender: "M"
-},
-{
-  name: "ANGELO_KNIGHT", 
-  brand: "RAW", 
-  gender: "M"
-},
-{
-  name: "ALEX_CONNOR", 
-  brand: "RAW", 
-  gender: "M"
-},
-{
-  name: "DANNY_PUMPKIN", 
-  brand: "RAW", 
-  gender: "M"
-},
-{
-  name: "TONY_TORNADO", 
-  brand: "RAW", 
-  gender: "M"
-},
+
 {
   name: "MERCENARY", 
   brand: "RAW", 
