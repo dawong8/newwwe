@@ -1591,6 +1591,12 @@ const titleHistory = {
 			"name": "QUEEN_AMINAT",
 			"reign": 1,
 			"defenses": ["DRIANA&AOD"], 
+		},
+		{
+			"number": 48, 
+			"name": "ALICIA_BLADE",
+			"reign": 1,
+			"defenses": ["QUEEN_AMINAT"], 
 		}
 	],
 	"ELIMINATION_CHAMBER": {
@@ -3879,6 +3885,12 @@ const titleHistory = {
 			"name": "ELI_BOLTON",
 			"reign": 1,
 			"defenses": ["BRAD_WOODS"]
+		},
+		{
+			"number": 31, 
+			"name": "BRADLY_WEST",
+			"reign": 1,
+			"defenses": ["ELI_BOLTON"]
 		}
 	],
 	"DOM-TOP":[
