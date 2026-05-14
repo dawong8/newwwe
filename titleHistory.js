@@ -4461,6 +4461,12 @@ const titleHistory = {
 			"name": "POW POW",
 			"members": "LEENA[1]&X_FOUR[3]&LONI_ENERGY[1]",
 			"defenses": ["METALLIC ANGELS (SCARLETT_WINGS, BROOK_TAYLOR, VERONICA_STEEL)", "METALLIC ANGELS (SCARLETT_WINGS, BROOK_TAYLOR, VERONICA_STEEL)"]
+		},
+		{
+			"number": 30, 
+			"name": "PHARAOH'S QUEST",
+			"members": "KEISHA_MILLER[1]&QUEEN_AMINAT[1]&RINA[1]",
+			"defenses": ["POW POW (LEENA, X_FOUR, LONI_ENERGY)"]
 		}
 	]
 };
