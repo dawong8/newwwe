@@ -708,7 +708,7 @@ const titleHistory = {
 			"number": 119, 
 			"name": "AOD",
 			"reign": 1,
-			"defenses": ["SUMMER_HAYES"]
+			"defenses": ["SUMMER_HAYES", "SUMMER_HAYES"]
 		}
 	],
 	"SMACKDOWN": [
@@ -1596,7 +1596,7 @@ const titleHistory = {
 			"number": 48, 
 			"name": "ALICIA_BLADE",
 			"reign": 1,
-			"defenses": ["QUEEN_AMINAT"], 
+			"defenses": ["QUEEN_AMINAT", "GINA_FONG", "TT_SLIM"], 
 		}
 	],
 	"ELIMINATION_CHAMBER": {
@@ -2756,7 +2756,7 @@ const titleHistory = {
 			"number": 35, 
 			"name": "SARAH_LAY",
 			"reign": 1,
-			"defenses": ["DAISY_MAYFIELD"]
+			"defenses": ["DAISY_MAYFIELD", "DAISY_MAYFIELD"]
 		}
 	],
 	"ALPHA-TOP":[
@@ -3159,6 +3159,12 @@ const titleHistory = {
 			"name": "TOBASCO_CRUZ",
 			"reign": 1,
 			"defenses": ["TRAVIS_WEST"]
+		},
+		{
+			"number": 69, 
+			"name": "TRAVIS_WEST",
+			"reign": 1,
+			"defenses": ["TOBASCO_CRUZ&NOAH_ACE", "HUGGIE_HOBBS"]
 		}
 	],
 	"WORLD-TOP":[
@@ -3712,7 +3718,13 @@ const titleHistory = {
 			"number": 93,
 			"name": "VIKTOR_MAXX",
 			"reign": 1,
-			"defenses": ["CLARKSON_WILDE"], 
+			"defenses": ["CLARKSON_WILDE", "BRAD_WOODS", "BRAD_WOODS&CLARKSON_WILDE"], 
+		},
+		{
+			"number": 94,
+			"name": "CLARKSON_WILDE",
+			"reign": 1,
+			"defenses": ["VIKTOR_MAXX"], 
 		}
 	],
 	"MENS-NXT":[
@@ -3890,7 +3902,7 @@ const titleHistory = {
 			"number": 31, 
 			"name": "BRADLY_WEST",
 			"reign": 1,
-			"defenses": ["ELI_BOLTON"]
+			"defenses": ["ELI_BOLTON", "ELI_BOLTON"]
 		}
 	],
 	"DOM-TOP":[
@@ -4291,7 +4303,7 @@ const titleHistory = {
 			"number": 45, 
 			"name": "KARATE KIDZ",
 			"members": "KYLER_BLAKE[1]&XION_OWENS[1]",
-			"defenses": ["PONG BROS (BILLY_PONG, PETER_PONG)"]
+			"defenses": ["PONG BROS (BILLY_PONG, PETER_PONG)", "HUGGIE & NOAH (HUGGIE_HOBBS, NOAH_ACE)"]
 		}
 		
 	],
