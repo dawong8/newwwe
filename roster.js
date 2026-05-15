@@ -4,7 +4,7 @@ const rosterArray = [ {
   gender: "F" 
 },{
   name: "TT_SLIM", 
-  brand: "NXT",
+  brand: "SD",
   gender: "F" 
 },{
   name: "CAROLINA_CHAZ", 
@@ -24,7 +24,7 @@ const rosterArray = [ {
   gender: "F" 
 },{
   name: "BRADLY_WEST", 
-  brand: "NXT",
+  brand: "RAW",
   gender: "M" 
 },
         {
