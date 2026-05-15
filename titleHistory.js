@@ -3742,7 +3742,7 @@ const titleHistory = {
 			"number": 94,
 			"name": "CLARKSON_WILDE",
 			"reign": 1,
-			"defenses": ["VIKTOR_MAXX", "KYLER_DRAKE-DQ", "BRADLY_WEST-DQ", "KYLER_BLAKE"], 
+			"defenses": ["VIKTOR_MAXX", "KYLER_BLAKE-DQ", "BRADLY_WEST-DQ", "KYLER_BLAKE"], 
 		},
 		{
 			"number": 95,
