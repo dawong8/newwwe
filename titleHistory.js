@@ -2767,7 +2767,7 @@ const titleHistory = {
 		{
 			"number": 36, 
 			"name": "DAISY_MAYFIELD",
-			"reign": 1,
+			"reign": 2,
 			"defenses": ["SARAH_LAY"]
 		}
 	],
