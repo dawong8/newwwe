@@ -4518,7 +4518,7 @@ const titleHistory = {
 		},
 		{
 			"number": 30, 
-			"name": "PHARAOH'S QUEST",
+			"name": "THE PYRAMID",
 			"members": "KEISHA_MILLER[1]&QUEEN_AMINAT[1]&RINA[1]",
 			"defenses": ["POW POW (LEENA, X_FOUR, LONI_ENERGY)"]
 		}
