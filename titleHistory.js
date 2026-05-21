@@ -708,7 +708,7 @@ const titleHistory = {
 			"number": 119, 
 			"name": "AOD",
 			"reign": 1,
-			"defenses": ["SUMMER_HAYES", "SUMMER_HAYES"]
+			"defenses": ["SUMMER_HAYES", "SUMMER_HAYES", "SUMMER_HAYES"]
 		}
 	],
 	"SMACKDOWN": [
@@ -1318,7 +1318,7 @@ const titleHistory = {
 			"number": 95, 
 			"name": "JORDAN_SKY",
 			"reign": 3,
-			"defenses": ["SCARLETT_WINGS", "CELINE", "CELINE", "X_FOUR", "MALA_MALA", "LAUREN_SNOW", "LAUREN_SNOW", "SCARLETT_WINGS", "DAISY_MAYFIELD"]
+			"defenses": ["SCARLETT_WINGS", "CELINE", "CELINE", "X_FOUR", "MALA_MALA", "LAUREN_SNOW", "LAUREN_SNOW", "SCARLETT_WINGS", "DAISY_MAYFIELD", "TT_SLIM"]
 		}
 	], 
 	"NXT": [
@@ -1596,7 +1596,13 @@ const titleHistory = {
 			"number": 48, 
 			"name": "ALICIA_BLADE",
 			"reign": 1,
-			"defenses": ["QUEEN_AMINAT", "GINA_FONG", "TT_SLIM", "DRIANA-DQ", "DRIANA", "QUEEN_AMINAT"], 
+			"defenses": ["QUEEN_AMINAT", "GINA_FONG", "TT_SLIM", "DRIANA-DQ", "DRIANA", "QUEEN_AMINAT", "BONNIE_REN"], 
+		},
+		{
+			"number": 49, 
+			"name": "CAROLINA_CHAZ",
+			"reign": 1,
+			"defenses": ["ALICIA_BLADE&BONNIE_REN&DRIANA&GLENDA_SANCHEZ"], 
 		}
 	],
 	"ELIMINATION_CHAMBER": {
@@ -1612,7 +1618,8 @@ const titleHistory = {
 		"LIV_MORGAN": 1, 
 		"THE_MIZ": 1,
 		"BRENT_HUNTER": 1,
-		"LISA_LOST": 1
+		"LISA_LOST": 1,
+		"BILLY_PONG": 1,
 	},
 	"MITB": {
 		"JELINA_LOPEZ": 1, 
@@ -2130,7 +2137,7 @@ const titleHistory = {
 			"number": 84, 
 			"name": "GOLDEN SUN",
 			"members": "SUMMER_HAYES[3]&MEI_LING[2]",
-			"defenses": ["HOT BITCHES (BECCA_FIELDS, GIGI_FITNESS)"]
+			"defenses": ["HOT BITCHES (BECCA_FIELDS, GIGI_FITNESS)", "THE PYRAMID (RINA, KEISHA_MILLER)"]
 		}	
 	],
 	"HARDCORE": [
@@ -2768,7 +2775,7 @@ const titleHistory = {
 			"number": 36, 
 			"name": "DAISY_MAYFIELD",
 			"reign": 2,
-			"defenses": ["SARAH_LAY"]
+			"defenses": ["SARAH_LAY", "TT_SLIM", "BECCA_FIELDS"]
 		}
 	],
 	"ALPHA-TOP":[
@@ -3754,7 +3761,7 @@ const titleHistory = {
 			"number": 96,
 			"name": "CLARKSON_WILDE",
 			"reign": 2,
-			"defenses": ["BRAD_WOODS"], 
+			"defenses": ["BRAD_WOODS", "BILLY_PONG"], 
 		}
 	],
 	"MENS-NXT":[
@@ -3938,7 +3945,7 @@ const titleHistory = {
 			"number": 32, 
 			"name": "ELI_BOLTON",
 			"reign": 2,
-			"defenses": ["BRADLY_WEST"]
+			"defenses": ["BRADLY_WEST", "FENIX", "FENIX"]
 		}
 	],
 	"DOM-TOP":[
@@ -4345,7 +4352,7 @@ const titleHistory = {
 			"number": 46, 
 			"name": "FLYING FUEGOS",
 			"members": "TRAVIS_WEST[1]&TOBASCO_CRUZ[1]",
-			"defenses": ["KARATE KIDZ (KYLER_BLAKE, XION_OWENS)"]
+			"defenses": ["KARATE KIDZ (KYLER_BLAKE, XION_OWENS)", "PONG BROS (BILLY_PONG, PETER_PONG)", "PONG BROS (BILLY_PONG, PETER_PONG)", "KARATE KIDZ (KYLER_BLAKE, XION_OWENS)"]
 		}
 		
 	],
