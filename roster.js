@@ -25,11 +25,11 @@ const rosterArray = [ {
   gender: "F" 
 },{
   name: "KEISHA_MILLER", 
-  brand: "RAW",
+  brand: "SD",
   gender: "F" 
 },{
   name: "RINA", 
-  brand: "RAW",
+  brand: "SD",
   gender: "F" 
 },{
   name: "GLENDA_SANCHEZ", 
@@ -133,7 +133,7 @@ const rosterArray = [ {
 },
   {
   name: "QUEEN_AMINAT", 
-  brand: "RAW",
+  brand: "SD",
   gender: "F" 
 },
   {
@@ -369,30 +369,5 @@ const rosterArray = [ {
   brand: "SD", 
   gender: "F"
 },
-{
-  name: "LEENA", 
-  brand: "SD", 
-  gender: "F"
-},
 
-{
-  name: "MERCENARY", 
-  brand: "RAW", 
-  gender: "M"
-},
-{
-  name: "DAMON_KNIGHT", 
-  brand: "RAW", 
-  gender: "M"
-},
-{
-  name: "WYATT_WIPER", 
-  brand: "RAW", 
-  gender: "M"
-},
-{
-  name: "JOEY_JET", 
-  brand: "RAW", 
-  gender: "M"
-}
 ];
