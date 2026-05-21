@@ -42,7 +42,7 @@ const rosterArray = [ {
 },
         {
   name: "GIGI_FITNESS", 
-  brand: "SD",
+  brand: "RAW",
   gender: "F" 
 },
     {
@@ -163,42 +163,6 @@ const rosterArray = [ {
 },
   
   // currrent roster
-
-{
-  name: "LOGAN_GURT", 
-  brand: "RAW", 
-  gender: "M"
-}, 
-{
-  name: "JUJU_FUN", 
-  brand: "RAW", 
-  gender: "F"
-}, 
-{
-  name: "SAM_GOLDEN", 
-  brand: "SD", 
-  gender: "F"
-}, 
-{
-  name: "VERONICA_STEEL", 
-  brand: "SD", 
-  gender: "F"
-}, 
-{
-  name: "WILL_PHERBY", 
-  brand: "RAW", 
-  gender: "M"
-},
-{
-  name: "LAUREN_SNOW", 
-  brand: "SD",
-  gender: "F" 
-}, 
-{
-  name: "JANE_MACK", 
-  brand: "RAW", 
-  gender: "F"
-},
 {
   name: "GIGI_DOLIN", 
   brand: "SD", 
