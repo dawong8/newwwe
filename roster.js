@@ -13,7 +13,7 @@ const rosterArray = [ {
   gender: "M" 
 },{
   name: "ALICIA_BLADE", 
-  brand: "NXT",
+  brand: "RAW",
   gender: "F" 
 },{
   name: "TT_SLIM", 
@@ -25,11 +25,11 @@ const rosterArray = [ {
   gender: "F" 
 },{
   name: "KEISHA_MILLER", 
-  brand: "NXT",
+  brand: "RAW",
   gender: "F" 
 },{
   name: "RINA", 
-  brand: "NXT",
+  brand: "RAW",
   gender: "F" 
 },{
   name: "GLENDA_SANCHEZ", 
@@ -113,7 +113,7 @@ const rosterArray = [ {
 },
   {
   name: "GINA_FONG", 
-  brand: "NXT",
+  brand: "RAW",
   gender: "F" 
 },
   {
@@ -133,7 +133,7 @@ const rosterArray = [ {
 },
   {
   name: "QUEEN_AMINAT", 
-  brand: "NXT",
+  brand: "RAW",
   gender: "F" 
 },
   {
