@@ -200,11 +200,90 @@
 				</div>
 			</div>
 			<div class="wrestler-modal hide">
-				<div class="crop-top"><img src="https://dawong8.github.io/portfolio/public/celine.png" class="selected-wrestler-image" /> </div>
-				<div>
-					<h2 class="select-name"> JASON RUSH </h2>
-					<div class="accolates"> </div>
-				</div> 
+				<div class="wrestler-modal-card">
+					<div class="wrestler-modal-img-wrap">
+						<img src="" class="selected-wrestler-image" />
+						<div class="wrestler-modal-gradient"></div>
+						<h2 class="select-name">JASON RUSH</h2>
+					</div>
+					<div class="wrestler-modal-details">
+						<h3 class="wrestler-modal-section-title">CHAMPIONSHIP HISTORY</h3>
+						<div class="accolates"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="shop-page hide page" id="shop-page">
+			<div class="shop-layout">
+				<div class="shop-sidebar">
+					<div class="shop-cat selected-shop-cat" id="shop-all"> ALL </div>
+					<div class="shop-cat" id="shop-women"> WOMEN </div>
+					<div class="shop-cat" id="shop-men"> MEN </div>
+				</div>
+				<div class="shop-grid" id="shop-grid"></div>
+			</div>
+			<div class="shop-modal hide" id="shop-modal">
+				<div class="shop-modal-content">
+					<div class="shop-modal-close">&times;</div>
+					<img class="shop-modal-img" id="shop-modal-img" src="" />
+					<div class="shop-modal-info">
+						<h2 id="shop-modal-name"></h2>
+						<p class="shop-modal-price">$24.99</p>
+						<div class="shop-modal-sizes">
+							<label>Size:</label>
+							<select id="shop-size-select">
+								<option value="S">S</option>
+								<option value="M" selected>M</option>
+								<option value="L">L</option>
+								<option value="XL">XL</option>
+								<option value="XXL">XXL</option>
+							</select>
+						</div>
+						<button class="shop-add-cart" id="shop-add-cart">ADD TO CART</button>
+						<p class="shop-cart-msg hide" id="shop-cart-msg">Added to cart!</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="apply-page hide page" id="apply-page">
+			<div class="apply-form-container">
+				<h1 class="apply-title">JOIN CWE</h1>
+				<form class="apply-form" id="apply-form" onsubmit="return false;">
+					<div class="apply-field">
+						<label for="apply-name">Ring Name</label>
+						<input type="text" id="apply-name" placeholder="Enter your ring name" required />
+					</div>
+					<div class="apply-field">
+						<label for="apply-email">Email</label>
+						<input type="email" id="apply-email" placeholder="you@example.com" required />
+					</div>
+					<div class="apply-field">
+						<label for="apply-brand">Preferred Brand</label>
+						<select id="apply-brand">
+							<option value="RAW">RAW</option>
+							<option value="SD">SmackDown</option>
+							<option value="NXT">NXT</option>
+						</select>
+					</div>
+					<div class="apply-field">
+						<label for="apply-style">Wrestling Style</label>
+						<select id="apply-style">
+							<option value="technical">Technical</option>
+							<option value="highflyer">High Flyer</option>
+							<option value="powerhouse">Powerhouse</option>
+							<option value="brawler">Brawler</option>
+							<option value="allrounder">All-Rounder</option>
+						</select>
+					</div>
+					<div class="apply-field">
+						<label for="apply-bio">Why do you want to join?</label>
+						<textarea id="apply-bio" rows="4" placeholder="Tell us about yourself..."></textarea>
+					</div>
+					<button type="submit" class="apply-submit">SUBMIT APPLICATION</button>
+					<p class="apply-msg hide" id="apply-msg">Application submitted!</p>
+				</form>
 			</div>
 		</div>
 
@@ -247,6 +326,7 @@
 	<script type="text/javascript" src="./alumni.js"></script>
 	<script type="text/javascript" src="./logic.js"></script>
 	<script type="text/javascript" src="./reign.js"></script>
+	<script type="text/javascript" src="./shop.js"></script>
 
 </body>
 </html>

@@ -1,4533 +1,905 @@
-const titleHistory = {
-	"RAW": [
-		{
-			"number": 1, 
-			"name": "AJ_LEE",
-			"reign": 1,
-			"defenses": ["TAELER_HENDRIX", "TAELER_HENDRIX"]
-		},
-		{
-			"number": 2, 
-			"name": "VACATED"
-		},
-		{
-			"number": 3, 
-			"name": "VIOLET_JADE",
-			"reign": 1,
-			"defenses": ["VICTORIA_WINTERS", "TAELER_HENDRIX", "NIA_JAX"]
-		},
-		{
-			"number": 4, 
-			"name": "VICTORIA_WINTERS",
-			"reign": 1,
-			"defenses": ["VIOLET_JADE", "TAELER_HENDRIX", "AMY_ORTON"]
-		},
-		{
-			"number": 5, 
-			"name": "VIOLET_JADE",
-			"reign": 2,
-			"defenses": ["VICTORIA_WINTERS", "NIA_JAX", "STEPHANIE_MCMAHON"]
-		},
-		{
-			"number": 6, 
-			"name": "TAMINA",
-			"reign": 1,
-			"defenses": ["VIOLET_JADE"]
-		},
-		{
-			"number": 7, 
-			"name": "SANTANA_GARRETT",
-			"reign": 1,
-			"defenses": ["TAMINA", "TAELER_HENDRIX", "AMY_ORTON"]
-		},
-		{
-			"number": 8, 
-			"name": "VIOLET_JADE",
-			"reign": 3,
-			"defenses": ["SANTANA_GARRETT", "SUMMER_RAE"]
-		},
-		{
-			"number": 9, 
-			"name": "TAELER_HENDRIX",
-			"reign": 1,
-			"defenses": ["VIOLET_JADE", "VIOLET_JADE", "NIA_JAX"]
-		},
-		{
-			"number": 10, 
-			"name": "VIOLET_JADE",
-			"reign": 4,
-			"defenses": ["TAELER_HENDRIX", "AMY_ORTON", "TAELER_HENDRIX", "SANTANA_GARRETT", "AMY_ORTON", "SANTANA_GARRETT&TAELER_HENDRIX"]
-		},
-		{
-			"number": 11, 
-			"name": "KAINE",
-			"reign": 1,
-			"defenses": ["VIOLET_JADE", "TAELER_HENDRIX"]
-		},
-		{
-			"number": 12, 
-			"name": "TAELER_HENDRIX",
-			"reign": 2,
-			"defenses": ["NATALYA&KAINE&NIA_JAX", "JASMINE_LOVE", "MANDY_ROSE", "ALISON_JANS"]
-		},
-		{
-			"number": 13, 
-			"name": "JASMINE_LOVE",
-			"reign": 1,
-			"defenses": ["TAELER_HENDRIX", "MANDY_ROSE", "NATALYA"]
-		},
-		{
-			"number": 14, 
-			"name": "NIKKI_CROSS",
-			"reign": 1,
-			"defenses": ["JASMINE_LOVE", "AMY_ORTON", "PEYTON_ROYCE", "NATALYA"]
-		},
-		{
-			"number": 15, 
-			"name": "SANTANA_GARRETT",
-			"reign": 2,
-			"defenses": ["NIKKI_CROSS"]
-		},
-		{
-			"number": 16, 
-			"name": "VIOLET_JADE",
-			"reign": 5,
-			"defenses": ["SANTANA_GARRETT", "BETH_PHOENIX", "NATALYA"]
-		},
-		{
-			"number": 17, 
-			"name": "BETH_PHOENIX",
-			"reign": 1,
-			"defenses": ["NATALYA&VIOLET_JADE"]
-		},
-		{
-			"number": 18, 
-			"name": "VIOLET_JADE",
-			"reign": 6,
-			"defenses": ["BETH_PHOENIX", "BETH_PHOENIX", "NATALYA", "CARMELLA"]
-		},
-		{
-			"number": 19, 
-			"name": "TAELER_HENDRIX",
-			"reign": 3,
-			"defenses": ["NATALYA&BETH_PHOENIX&VIOLET_JADE", "BETH_PHOENIX"]
-		},
-		{
-			"number": 20, 
-			"name": "NAOMI",
-			"reign": 1,
-			"defenses": ["TAELER_HENDRIX", "BETH_PHOENIX-DQ", "BETH_PHOENIX", "NIKKI_CROSS"]
-		},
-		{
-			"number": 21, 
-			"name": "NATALYA",
-			"reign": 1,
-			"defenses": ["NAOMI", "CRYSTAL"]
-		},
-		{
-			"number": 22, 
-			"name": "BETH_PHOENIX",
-			"reign": 2,
-			"defenses": ["NATALYA", "NAOMI", "TERRI_RENNELS-DQ"]
-		},
-		{
-			"number": 23, 
-			"name": "EMMA",
-			"reign": 1,
-			"defenses": ["BETH_PHOENIX", "ARIEL", "BETH_PHOENIX", "NATALYA", "BETH_PHOENIX"]
-		},
-		{
-			"number": 24, 
-			"name": "NIKKI_BELLA",
-			"reign": 1,
-			"defenses": ["EMMA", "NAOMI", "EMMA", "JASMINE_LOVE", "BETH_PHOENIX", "NATALYA", "BETH_PHOENIX", "BRIE_BELLA"]
-		},
-		{
-			"number": 25, 
-			"name": "VACATED"
-		},
-		{
-			"number": 26, 
-			"name": "KAINE",
-			"reign": 2,
-			"defenses": ["NATALYA", "NATALYA", "PAIGE", "PAIGE", "EMMA", "PAIGE", "NATALYA"]
-		},
-		{
-			"number": 27, 
-			"name": "VACATED"
-		},
-		{
-			"number": 28, 
-			"name": "PAIGE",
-			"reign": 1,
-			"defenses": ["JASMINE_LOVE&LIV_MORGAN", "BETH_PHOENIX", "JASMINE_LOVE", "CALI", "MICKIE_JAMES"]
-		},
-		{
-			"number": 29, 
-			"name": "ALISON_JANS",
-			"reign": 1,
-			"defenses": ["PAIGE", "MICKIE_JAMES"]
-		},
-		{
-			"number": 30, 
-			"name": "LAURA_VEE",
-			"reign": 1,
-			"defenses": ["ALICIA_FOX&ALISON_JANS", "JASMINE_LOVE", "ALISON_JANS", "ALISON_JANS", "VICTORIA_WINTERS", "JELINA_LOPEZ", "JELINA_LOPEZ", "JASMINE_LOVE", "CANDICE_MICHELLE", "ALISON_JANS", "FLORA", "LIV_MORGAN"]
-		},
-		{
-			"number": 31, 
-			"name": "SELITA_MENDES",
-			"reign": 1,
-			"defenses": ["LAURA_VEE", "JELINA_LOPEZ", "CRYSTAL"]
-		},
-		{
-			"number": 32, 
-			"name": "JELINA_LOPEZ",
-			"reign": 1,
-			"defenses": ["SELITA_MENDES&FLORA", "SELITA_MENDES", "FLORA", "SELITA_MENDES", "SELITA_MENDES", "ALISON_JANS"]
-		},
-		{
-			"number": 33, 
-			"name": "SELITA_MENDES",
-			"reign": 2,
-			"defenses": ["JESSICA_WILD&JELINA_LOPEZ&FLORA", "AORI_SATO", "JELINA_LOPEZ"]
-		},
-		{
-			"number": 34, 
-			"name": "ALISON_JANS",
-			"reign": 2,
-			"defenses": ["SELITA_MENDES&JELINA_LOPEZ&FLORA", "IRINA_PETROVA", "JELINA_LOPEZ"]
-		},
-		{
-			"number": 35, 
-			"name": "FLORA",
-			"reign": 1,
-			"defenses": ["ALISON_JANS", "ALISON_JANS", "JELINA_LOPEZ", "SELITA_MENDES", "ALISON_JANS-DQ", "ALISON_JANS&VICTORIA_WINTERS", "VICTORIA_WINTERS"]
-		},
-		{
-			"number": 36, 
-			"name": "JELINA_LOPEZ",
-			"reign": 2,
-			"defenses": ["FLORA", "FLORA", "VICTORIA_WINTERS", "FLORA"]
-		},
-		{
-			"number": 37, 
-			"name": "SELITA_MENDES",
-			"reign": 3,
-			"defenses": ["JELINA_LOPEZ&FLORA&ALISON_JANS", "FLORA", "AORI_SATO", "TERRI_RENNELS", "JELINA_LOPEZ"]
-		},
-		{
-			"number": 38, 
-			"name": "JELINA_LOPEZ",
-			"reign": 3,
-			"defenses": ["SELITA_MENDES"]
-		},
-		{
-			"number": 39, 
-			"name": "FLORA",
-			"reign": 2,
-			"defenses": ["JELINA_LOPEZ", "ALISON_JANS"]
-		},
-		{
-			"number": 40, 
-			"name": "ALISON_JANS",
-			"reign": 3,
-			"defenses": ["FLORA", "FLORA", "FLORA"]
-		},
-		{
-			"number": 41, 
-			"name": "FLORA",
-			"reign": 3,
-			"defenses": ["ALISON_JANS"]
-		},
-		{
-			"number": 42, 
-			"name": "ALISON_JANS",
-			"reign": 4,
-			"defenses": ["JELINA_LOPEZ&FLORA", "JESSICA_WILD", "JELINA_LOPEZ", "TERRI_RENNELS", "JELINA_LOPEZ", "FLORA"]
-		},
-		{
-			"number": 43, 
-			"name": "FLORA",
-			"reign": 4,
-			"defenses": ["ALISON_JANS"]
-		},
-		{
-			"number": 44, 
-			"name": "VACATED"
-		},
-		{
-			"number": 45, 
-			"name": "FLORA",
-			"reign": 5,
-			"defenses": ["SELITA_MENDES&JELINA_LOPEZ"]
-		},
-		{
-			"number": 46, 
-			"name": "SELITA_MENDES",
-			"reign": 4,
-			"defenses": ["FLORA"]
-		},
-		{
-			"number": 47, 
-			"name": "CALI",
-			"reign": 1,
-			"defenses": ["SELITA_MENDES"]
-		},
-		{
-			"number": 48, 
-			"name": "SELITA_MENDES",
-			"reign": 5,
-			"defenses": ["CALI", "FLORA"]
-		},
-		{
-			"number": 49, 
-			"name": "AMANDA_GREEN",
-			"reign": 1,
-			"defenses": ["SELITA_MENDES", "SELITA_MENDES", "FLORA", "JELINA_LOPEZ"]
-		},
-		{
-			"number": 50, 
-			"name": "VACATED"
-		},
-		{
-			"number": 51, 
-			"name": "JELINA_LOPEZ",
-			"reign": 4,
-			"defenses": ["VINCE_MCMAHON-GIVEN"]
-		},
-		{
-			"number": 52, 
-			"name": "ALISON_JANS",
-			"reign": 5,
-			"defenses": ["JELINA_LOPEZ", "TIFFANY_COOK"]
-		},
-		{
-			"number": 53, 
-			"name": "AMANDA_GREEN",
-			"reign": 2,
-			"defenses": ["ALISON_JANS", "FLORA", "SELITA_MENDES", "JELINA_LOPEZ", "LAURA_VEE", "VIOLET_JADE", "STEPHANIE_MCMAHON", "MOLITA", "CHRISTINA_FROST", "KAINE"]
-		},
-		{
-			"number": 54, 
-			"name": "ANGELA_ROSE",
-			"reign": 1,
-			"defenses": ["AMANDA_GREEN", "AMANDA_GREEN", "HEAVY_FLO", "CHRISTINA_FROST"]
-		},
-		{
-			"number": 55, 
-			"name": "CHRISTINA_FROST",
-			"reign": 1,
-			"defenses": ["ANGELA_ROSE"]
-		},
-		{
-			"number": 56, 
-			"name": "DAKOTA_KAI",
-			"reign": 1,
-			"defenses": ["CHRISTINA_FROST", "CHRISTINA_FROST", "CHRISTINA_FROST", "ANGELA_ROSE"]
-		},
-		{
-			"number": 57, 
-			"name": "AMANDA_GREEN",
-			"reign": 3,
-			"defenses": ["DAKOTA_KAI", "SUZUKI", "ANGELA_ROSE"]
-		},
-		{
-			"number": 58, 
-			"name": "VACATED"
-		},
-		{
-			"number": 59, 
-			"name": "ASUKA",
-			"reign": 1,
-			"defenses": ["CHELSEA_GREEN&LIV_MORGAN&TAMINA"]
-		},
-		{
-			"number": 60, 
-			"name": "CHELSEA_GREEN",
-			"reign": 1,
-			"defenses": ["ASUKA", "ASUKA", "LIV_MORGAN", "TAMINA", "DANA_BROOKE"]
-		},
-		{
-			"number": 61, 
-			"name": "LIV_MORGAN",
-			"reign": 1,
-			"defenses": ["CHELSEA_GREEN", "CHELSEA_GREEN", "ASUKA", "TAMINA", "CHELSEA_GREEN", "CHARLOTTE_FLAIR", "ASUKA"]
-		},
-		{
-			"number": 62, 
-			"name": "ASUKA",
-			"reign": 2,
-			"defenses": ["LIV_MORGAN"]
-		},
-		{
-			"number": 63, 
-			"name": "SHAYNA_BASZLER",
-			"reign": 1,
-			"defenses": ["ASUKA"]
-		},
-		{
-			"number": 64, 
-			"name": "KAIRI",
-			"reign": 1,
-			"defenses": ["SHAYNA_BASZLER", "SHAYNA_BASZLER", "CHELSEA_GREEN", "CHELSEA_GREEN"]
-		},
-		{
-			"number": 65, 
-			"name": "RONDA_ROUSEY",
-			"reign": 1,
-			"defenses": ["KAIRI", "KAIRI&CHELSEA_GREEN", "MINA_SHIRAKAWA"]
-		},
-		{
-			"number": 66, 
-			"name": "SYURI",
-			"reign": 1,
-			"defenses": ["RONDA_ROUSEY"]
-		},
-		{
-			"number": 67, 
-			"name": "RONDA_ROUSEY",
-			"reign": 2,
-			"defenses": ["SYURI&MAYU_IWATANI&UNAGI_SAYAKA&TAM_NAKANO-WARGAMES"]
-		},
-		{
-			"number": 68, 
-			"name": "KAIRI",
-			"reign": 2,
-			"defenses": ["SAYA_KAMITANI&RONDA_ROUSEY", "RONDA_ROUSEY", "DANA_BROOKE&CHELSEA_GREEN&RONDA_ROUSEY", "RONDA_ROUSEY", "TIFFANY_STRATTON-DQ", "TIFFANY_STRATTON"]
-		},
-		{
-			"number": 69, 
-			"name": "SHAYNA_BASZLER",
-			"reign": 2,
-			"defenses": ["KAIRI", "MINA_SHIRAKAWA"]
-		},
-		{
-			"number": 70, 
-			"name": "LIV_MORGAN",
-			"reign": 2,
-			"defenses": ["SHAYNA_BASZLER", "RONDA_ROUSEY", "TIFFANY_STRATTON-DQ"]
-		},
-		{
-			"number": 71, 
-			"name": "TIFFANY_STRATTON",
-			"reign": 1,
-			"defenses": ["LIV_MORGAN"]
-		},
-		{
-			"number": 72, 
-			"name": "RONDA_ROUSEY",
-			"reign": 3,
-			"defenses": ["MINA_SHIRAKAWA&KAIRI&TIFFANY_STRATTON", "CHELSEA_GREEN", "KAIRI", "MINA_SHIRAKAWA"]
-		},
-		{
-			"number": 73, 
-			"name": "KAIRI",
-			"reign": 3,
-			"defenses": ["RONDA_ROUSEY", "RONDA_ROUSEY"]
-		},
-		{
-			"number": 74, 
-			"name": "SHAYNA_BASZLER",
-			"reign": 3,
-			"defenses": ["KAIRI", "KAIRI"]
-		},
-		{
-			"number": 75, 
-			"name": "KAIRI",
-			"reign": 4,
-			"defenses": ["SHAYNA_BASZLER", "CHELSEA_GREEN", "TIFFANY_STRATTON", "RONDA_ROUSEY&SHAYNA_BASZLER", "UNAGI_SAYAKA-MITB", "ALBA_FYRE"]
-		},
-		{
-			"number": 76, 
-			"name": "CHELSEA_GREEN",
-			"reign": 2,
-			"defenses": ["KAIRI"]
-		},
-		{
-			"number": 77, 
-			"name": "KAIRI",
-			"reign": 5,
-			"defenses": ["CHELSEA_GREEN&RONDA_ROUSEY&SHAYNA_BASZLER", "RONDA_ROUSEY-DQ", "RONDA_ROUSEY&MANDY_ROSE&LACEY_EVANS - THE GREAT WAR", "DANA_BROOKE", "DANA_BROOKE&CARMELLA", "ALEXA_BLISS", "ALEXA_BLISS", "TAMINA", "UNAGI_SAYAKA", "NIKKI_CROSS"], 
-		},
-		{
-			"number": 78, 
-			"name": "UNAGI_SAYAKA",
-			"reign": 1,
-			"defenses": ["KAIRI", "TIFFANY_STRATTON", "TIFFANY_STRATTON", "ALEXA_BLISS", "ASUKA"]
-		},
-		{
-			"number": 79, 
-			"name": "GIGI_DOLIN",
-			"reign": 1,
-			"defenses": ["UNAGI_SAYAKA", "XIA_LI", "KAIRI"]
-		},
-		{
-			"number": 80, 
-			"name": "BLU",
-			"reign": 1,
-			"defenses": ["GIGI_DOLIN", "ALISON_JANS-DQ"]
-		},
-		{
-			"number": 81, 
-			"name": "LIV_MORGAN",
-			"reign": 3,
-			"defenses": ["BLU - WRESTLEMANIA: WINNER TAKES ALL"]
-		},
-		{
-			"number": 82, 
-			"name": "VACATED"
-		},
-		{
-			"number": 83, 
-			"name": "GIGI_DOLIN",
-			"reign": 2,
-			"defenses": ["ASUKA&UNAGI_SAYAKA&ALEXA_BLISS", "UNAGI_SAYAKA", "TIFFANY_STRATTON", "TIFFANY_STRATTON&UNAGI_SAYAKA", "BETH_PHOENIX - DQ", "UNAGI_SAYAKA&BETH_PHOENIX", "BETH_PHOENIX"]
-		},
-		{
-			"number": 83, 
-			"name": "STARLIGHT_KID",
-			"reign": 1,
-			"defenses": ["GIGI_DOLIN - MITB"]
-		},
-		{
-			"number": 84, 
-			"name": "BETH_PHOENIX",
-			"reign": 3,
-			"defenses": ["STARLIGHT_KID", "ASUKA", "GIGI_DOLIN"]
-		},
-		{
-			"number": 85, 
-			"name": "TIFFANY_STRATTON",
-			"reign": 2,
-			"defenses": ["BETH_PHOENIX", "BETH_PHOENIX", "PEYTON_ROYCE", "BILLIE_KAY", "PEYTON_ROYCE", "XIA_LI"]
-		},
-		{
-			"number": 86, 
-			"name": "AZM",
-			"reign": 1,
-			"defenses": ["UNAGI_SAYAKA&TIFFANY_STRATTON", "UNAGI_SAYAKA", "TIFFANY_STRATTON", "RAM_KAICHOW", "GIGI_DOLIN", "STARLIGHT_KID"]
-		},
-		{
-			"number": 87, 
-			"name": "MASK_GIRL",
-			"reign": 1,
-			"defenses": ["AZM", "BETH_PHOENIX"]
-		},
-		{
-			"number": 88, 
-			"name": "AZM",
-			"reign": 2,
-			"defenses": ["MASK_GIRL", "MASK_GIRL", "UNAGI_SAYAKA", "STARLIGHT_KID", "BETH_PHOENIX", "MASK_GIRL", "HALIE_QUINN"]
-		},
-		{
-			"number": 89, 
-			"name": "CYNTHIA_RAMIREZ",
-			"reign": 1,
-			"defenses": ["AZM"]
-		},
-		{
-			"number": 90, 
-			"name": "AMA_BIG",
-			"reign": 1,
-			"defenses": ["CYNTHIA_RAMIREZ", "CYNTHIA_RAMIREZ", "HALIE_QUINN", "CYNTHIA_RAMIREZ&HALIE_QUINN", "CYNTHIA_RAMIREZ", "JULIET_SUNSET", "CARMELLA", "JESSICA_CUP", "ALICIA_HOUSE"]
-		},
-		{
-			"number": 91, 
-			"name": "CYNTHIA_RAMIREZ",
-			"reign": 2,
-			"defenses": ["AMA_BIG", "AMA_BIG-DQ", "HALIE_QUINN-DQ", "HALIE_QUINN", "HALIE_QUINN&AMA_BIG"]
-		},
-		{
-			"number": 92, 
-			"name": "HALIE_QUINN",
-			"reign": 1,
-			"defenses": ["CYNTHIA_RAMIREZ", "CYNTHIA_RAMIREZ", "AMA_BIG", "AMA_BIG"]
-		},
-		{
-			"number": 93, 
-			"name": "AMA_BIG",
-			"reign": 2,
-			"defenses": ["HALIE_QUINN&CYNTHIA_RAMIREZ", "CYNTHIA_RAMIREZ", "HALIE_QUINN", "JESSICA_CUP", "JUST_JANINE", "JESSICA_CUP&HALIE_QUINN&CYNTHIA_RAMIREZ", "VERONICA_STEEL", "JANE_MACK"]
-		},
-		{
-			"number": 94, 
-			"name": "BROOK_TAYLOR",
-			"reign": 1,
-			"defenses": ["AMA_BIG", "CYNTHIA_RAMIREZ-DQ"]
-		},
-		{
-			"number": 95, 
-			"name": "CYNTHIA_RAMIREZ",
-			"reign": 3,
-			"defenses": ["BROOK_TAYLOR", "JANE_MACK", "VERONICA_STEEL", "BROOK_TAYLOR-DQ", "BROOK_TAYLOR", "AMA_BIG"]
-		},
-		{
-			"number": 96, 
-			"name": "BROOK_TAYLOR",
-			"reign": 2,
-			"defenses": ["TERESA_SHARP&CYNTHIA_RAMIREZ&AMA_BIG", "CYNTHIA_RAMIREZ"]
-		},
-		{
-			"number": 97, 
-			"name": "PARIS_MONET",
-			"reign": 1,
-			"defenses": ["BROOK_TAYLOR", "BROOK_TAYLOR", "CYNTHIA_RAMIREZ", "TERESA_SHARP", "AMA_BIG", "AMA_BIG", "JUJU_FUN&MASK_GIRL&JESSICA_CUP", "JESSICA_CUP", "LAUREN_SNOW", "LAUREN_SNOW"]
-		},
-		{
-			"number": 98, 
-			"name": "NELLY_STORM",
-			"reign": 1,
-			"defenses": ["PARIS_MONET", "PARIS_MONET", "AMA_BIG", "AMA_BIG", "PARIS_MONET", "JUST_JANINE", "MICHELLE_VELVET"]
-		},
-		{
-			"number": 99, 
-			"name": "PARIS_MONET",
-			"reign": 2,
-			"defenses": ["AMA_BIG&NELLY_STORM", "AMA_BIG&NELLY_STORM", "AMA_BIG", "AMA_BIG"]
-		},
-		{
-			"number": 100, 
-			"name": "SLADER",
-			"reign": 1,
-			"defenses": ["PARIS_MONET", "PARIS_MONET-DQ"]
-		},
-		{
-			"number": 101, 
-			"name": "PARIS_MONET",
-			"reign": 3,
-			"defenses": ["SLADER", "SLADER", "NELLY_STORM", "SLADER", "AMA_BIG", "AMA_BIG"]
-		},
-		{
-			"number": 102, 
-			"name": "AMA_BIG",
-			"reign": 3,
-			"defenses": ["PARIS_MONET", "CELINE", "CELINE", "JULIET_SUNSET"]
-		},
-		{
-			"number": 103, 
-			"name": "NELLY_STORM",
-			"reign": 2,
-			"defenses": ["AMA_BIG", "AMA_BIG-DQ", "AMA_BIG", "PARIS_MONET", "PARIS_MONET", "CELINE", "JESSICA_CUP", "LAUREN_SNOW"]
-		},
-		{
-			"number": 104, 
-			"name": "JORDAN_SKY",
-			"reign": 1,
-			"defenses": ["NELLY_STORM", "NELLY_STORM", "NELLY_STORM", "JESSICA_CUP", "JESSICA_CUP", "JESSICA_CUP"]
-		},
-		{
-			"number": 104, 
-			"name": "THE_MONARCH",
-			"reign": 1,
-			"defenses": ["JORDAN_SKY", "CELINE", "JORDAN_SKY&CELINE", "JORDAN_SKY-DQ"]
-		},
-		{
-			"number": 105, 
-			"name": "VACATED"
-		},
-		{
-			"number": 106, 
-			"name": "JORDAN_SKY",
-			"reign": 2,
-			"defenses": ["JESSICA_CUP&CRYSTAL&BLAIRE_COUNTY&JULIET_SUNSET", "JULIET_SUNSET", "JULIET_SUNSET", "JESSICA_CUP", "NATASHA_IVY", "THE_MONARCH"]
-		},
-		{
-			"number": 107, 
-			"name": "X_TWO",
-			"reign": 1,
-			"defenses": ["JORDAN_SKY", "JORDAN_SKY", "THE_MONARCH", "THE_MONARCH", "ROSIE_FOX", "BLAIRE_COUNTY"]
-		},
-		{
-			"number": 108, 
-			"name": "SUKARI",
-			"reign": 1,
-			"defenses": ["X_TWO", "X_TWO", "JORDAN_SKY", "CRYSTAL", "CRYSTAL"]
-		},
-		{
-			"number": 109, 
-			"name": "JULIET_SUNSET",
-			"reign": 1,
-			"defenses": ["SUKARI&CRYSTAL", "CRYSTAL", "SUKARI", "JUST_JANINE", "JESSICA_CUP", "CRYSTAL&LORNA_LIGHT&BLAIRE_COUNTY&X_TWO", "JORDAN_SKY"]
-		},
-		{
-			"number": 110, 
-			"name": "X_TWO",
-			"reign": 2,
-			"defenses": ["JULIET_SUNSET", "JULIET_SUNSET", "SUKARI"]
-		},
-		{
-			"number": 111, 
-			"name": "SUMMER_HAYES",
-			"reign": 1,
-			"defenses": ["X_TWO", "CRYSTAL", "JORDAN_SKY", "JORDAN_SKY", "JULIET_SUNSET"]
-		},
-		{
-			"number": 112, 
-			"name": "X_TWO",
-			"reign": 3,
-			"defenses": ["SUMMER_HAYES"]
-		},
-		{
-			"number": 113, 
-			"name": "SUMMER_HAYES",
-			"reign": 2,
-			"defenses": ["X_TWO", "X_TWO&JORDAN_SKY", "JULIET_SUNSET", "JORDAN_SKY"]
-		},
-		{
-			"number": 114, 
-			"name": "THE_MONARCH",
-			"reign": 2,
-			"defenses": ["SUMMER_HAYES", "SUMMER_HAYES", "BROOK_TAYLOR", "BROOK_TAYLOR", "X_TWO"]
-		},
-		{
-			"number": 115, 
-			"name": "X_TWO",
-			"reign": 4,
-			"defenses": ["THE_MONARCH&SUMMER_HAYES", "THE_MONARCH", "LORNA_LIGHT", "THE_MONARCH", "SUMMER_HAYES", "JANE_MACK"]
-		},
-		{
-			"number": 116, 
-			"name": "SUMMER_HAYES",
-			"reign": 3,
-			"defenses": ["X_TWO", "LORNA_LIGHT", "LORNA_LIGHT", "LORNA_LIGHT&THE_MONARCH", "X_TWO", "BROOK_TAYLOR", "BROOK_TAYLOR", "AOD-DQ", "MOLLY_HOLLY-DQ"]
-		},
-		{
-			"number": 117, 
-			"name": "ASUKA",
-			"reign": 3,
-			"defenses": ["SUMMER_HAYES", "SUMMER_HAYES", "JICKIE_MAMES", "BELINDA_LEE", "X_TWO", "TORNADO_MAY"]
-		},
-		{
-			"number": 118, 
-			"name": "SUMMER_HAYES",
-			"reign": 4,
-			"defenses": ["ASUKA"]
-		},
-		{
-			"number": 119, 
-			"name": "AOD",
-			"reign": 1,
-			"defenses": ["SUMMER_HAYES", "SUMMER_HAYES", "SUMMER_HAYES"]
+// ============================================================
+// TITLE HISTORY DATA
+// ============================================================
+// HOW TO ADD A NEW REIGN:
+//   Solo title: { name: "WRESTLER_NAME", defenses: ["OPPONENT1", "OPPONENT2"] }
+//   Tag title:  { name: "TEAM_NAME", members: ["MEMBER1", "MEMBER2"], defenses: ["OPPOSING TEAM (member1, member2)"] }
+//   Trios:      { name: "TEAM_NAME", members: ["M1", "M2", "M3"], defenses: ["OPPOSING TEAM (m1, m2, m3)"] }
+//   Vacated:    "VACATED"
+//
+// ORDER MATTERS - newest reign goes at the BOTTOM of each array.
+// "number" and "reign" are auto-calculated, no need to track them.
+// ============================================================
+
+// --- Processing functions (auto-compute number & reign) ---
+function processTitle(rawEntries) {
+	const processed = [];
+	const reignCounts = {};
+	let number = 1;
+	for (const entry of rawEntries) {
+		if (entry === "VACATED") {
+			processed.push({ number: number++, name: "VACATED" });
+		} else {
+			reignCounts[entry.name] = (reignCounts[entry.name] || 0) + 1;
+			processed.push({
+				number: number++,
+				name: entry.name,
+				reign: reignCounts[entry.name],
+				defenses: entry.defenses || []
+			});
 		}
+	}
+	return processed;
+}
+
+function processTagTitle(rawEntries) {
+	const processed = [];
+	const memberReignCounts = {};
+	let number = 1;
+	for (const entry of rawEntries) {
+		if (entry === "VACATED") {
+			processed.push({ number: number++, name: "VACATED" });
+		} else {
+			const membersStr = entry.members.map(m => {
+				memberReignCounts[m] = (memberReignCounts[m] || 0) + 1;
+				return m + "[" + memberReignCounts[m] + "]";
+			}).join("&");
+			processed.push({
+				number: number++,
+				name: entry.name,
+				members: membersStr,
+				defenses: entry.defenses || []
+			});
+		}
+	}
+	return processed;
+}
+
+// --- Raw title data (easy to edit - just add entries at the bottom!) ---
+const rawTitleData = {
+	"RAW": [
+		{ name: "AJ_LEE", defenses: ["TAELER_HENDRIX","TAELER_HENDRIX"] },
+		"VACATED",
+		{ name: "VIOLET_JADE", defenses: ["VICTORIA_WINTERS","TAELER_HENDRIX","NIA_JAX"] },
+		{ name: "VICTORIA_WINTERS", defenses: ["VIOLET_JADE","TAELER_HENDRIX","AMY_ORTON"] },
+		{ name: "VIOLET_JADE", defenses: ["VICTORIA_WINTERS","NIA_JAX","STEPHANIE_MCMAHON"] },
+		{ name: "TAMINA", defenses: ["VIOLET_JADE"] },
+		{ name: "SANTANA_GARRETT", defenses: ["TAMINA","TAELER_HENDRIX","AMY_ORTON"] },
+		{ name: "VIOLET_JADE", defenses: ["SANTANA_GARRETT","SUMMER_RAE"] },
+		{ name: "TAELER_HENDRIX", defenses: ["VIOLET_JADE","VIOLET_JADE","NIA_JAX"] },
+		{ name: "VIOLET_JADE", defenses: ["TAELER_HENDRIX","AMY_ORTON","TAELER_HENDRIX","SANTANA_GARRETT","AMY_ORTON","SANTANA_GARRETT&TAELER_HENDRIX"] },
+		{ name: "KAINE", defenses: ["VIOLET_JADE","TAELER_HENDRIX"] },
+		{ name: "TAELER_HENDRIX", defenses: ["NATALYA&KAINE&NIA_JAX","JASMINE_LOVE","MANDY_ROSE","ALISON_JANS"] },
+		{ name: "JASMINE_LOVE", defenses: ["TAELER_HENDRIX","MANDY_ROSE","NATALYA"] },
+		{ name: "NIKKI_CROSS", defenses: ["JASMINE_LOVE","AMY_ORTON","PEYTON_ROYCE","NATALYA"] },
+		{ name: "SANTANA_GARRETT", defenses: ["NIKKI_CROSS"] },
+		{ name: "VIOLET_JADE", defenses: ["SANTANA_GARRETT","BETH_PHOENIX","NATALYA"] },
+		{ name: "BETH_PHOENIX", defenses: ["NATALYA&VIOLET_JADE"] },
+		{ name: "VIOLET_JADE", defenses: ["BETH_PHOENIX","BETH_PHOENIX","NATALYA","CARMELLA"] },
+		{ name: "TAELER_HENDRIX", defenses: ["NATALYA&BETH_PHOENIX&VIOLET_JADE","BETH_PHOENIX"] },
+		{ name: "NAOMI", defenses: ["TAELER_HENDRIX","BETH_PHOENIX-DQ","BETH_PHOENIX","NIKKI_CROSS"] },
+		{ name: "NATALYA", defenses: ["NAOMI","CRYSTAL"] },
+		{ name: "BETH_PHOENIX", defenses: ["NATALYA","NAOMI","TERRI_RENNELS-DQ"] },
+		{ name: "EMMA", defenses: ["BETH_PHOENIX","ARIEL","BETH_PHOENIX","NATALYA","BETH_PHOENIX"] },
+		{ name: "NIKKI_BELLA", defenses: ["EMMA","NAOMI","EMMA","JASMINE_LOVE","BETH_PHOENIX","NATALYA","BETH_PHOENIX","BRIE_BELLA"] },
+		"VACATED",
+		{ name: "KAINE", defenses: ["NATALYA","NATALYA","PAIGE","PAIGE","EMMA","PAIGE","NATALYA"] },
+		"VACATED",
+		{ name: "PAIGE", defenses: ["JASMINE_LOVE&LIV_MORGAN","BETH_PHOENIX","JASMINE_LOVE","CALI","MICKIE_JAMES"] },
+		{ name: "ALISON_JANS", defenses: ["PAIGE","MICKIE_JAMES"] },
+		{ name: "LAURA_VEE", defenses: ["ALICIA_FOX&ALISON_JANS","JASMINE_LOVE","ALISON_JANS","ALISON_JANS","VICTORIA_WINTERS","JELINA_LOPEZ","JELINA_LOPEZ","JASMINE_LOVE","CANDICE_MICHELLE","ALISON_JANS","FLORA","LIV_MORGAN"] },
+		{ name: "SELITA_MENDES", defenses: ["LAURA_VEE","JELINA_LOPEZ","CRYSTAL"] },
+		{ name: "JELINA_LOPEZ", defenses: ["SELITA_MENDES&FLORA","SELITA_MENDES","FLORA","SELITA_MENDES","SELITA_MENDES","ALISON_JANS"] },
+		{ name: "SELITA_MENDES", defenses: ["JESSICA_WILD&JELINA_LOPEZ&FLORA","AORI_SATO","JELINA_LOPEZ"] },
+		{ name: "ALISON_JANS", defenses: ["SELITA_MENDES&JELINA_LOPEZ&FLORA","IRINA_PETROVA","JELINA_LOPEZ"] },
+		{ name: "FLORA", defenses: ["ALISON_JANS","ALISON_JANS","JELINA_LOPEZ","SELITA_MENDES","ALISON_JANS-DQ","ALISON_JANS&VICTORIA_WINTERS","VICTORIA_WINTERS"] },
+		{ name: "JELINA_LOPEZ", defenses: ["FLORA","FLORA","VICTORIA_WINTERS","FLORA"] },
+		{ name: "SELITA_MENDES", defenses: ["JELINA_LOPEZ&FLORA&ALISON_JANS","FLORA","AORI_SATO","TERRI_RENNELS","JELINA_LOPEZ"] },
+		{ name: "JELINA_LOPEZ", defenses: ["SELITA_MENDES"] },
+		{ name: "FLORA", defenses: ["JELINA_LOPEZ","ALISON_JANS"] },
+		{ name: "ALISON_JANS", defenses: ["FLORA","FLORA","FLORA"] },
+		{ name: "FLORA", defenses: ["ALISON_JANS"] },
+		{ name: "ALISON_JANS", defenses: ["JELINA_LOPEZ&FLORA","JESSICA_WILD","JELINA_LOPEZ","TERRI_RENNELS","JELINA_LOPEZ","FLORA"] },
+		{ name: "FLORA", defenses: ["ALISON_JANS"] },
+		"VACATED",
+		{ name: "FLORA", defenses: ["SELITA_MENDES&JELINA_LOPEZ"] },
+		{ name: "SELITA_MENDES", defenses: ["FLORA"] },
+		{ name: "CALI", defenses: ["SELITA_MENDES"] },
+		{ name: "SELITA_MENDES", defenses: ["CALI","FLORA"] },
+		{ name: "AMANDA_GREEN", defenses: ["SELITA_MENDES","SELITA_MENDES","FLORA","JELINA_LOPEZ"] },
+		"VACATED",
+		{ name: "JELINA_LOPEZ", defenses: ["VINCE_MCMAHON-GIVEN"] },
+		{ name: "ALISON_JANS", defenses: ["JELINA_LOPEZ","TIFFANY_COOK"] },
+		{ name: "AMANDA_GREEN", defenses: ["ALISON_JANS","FLORA","SELITA_MENDES","JELINA_LOPEZ","LAURA_VEE","VIOLET_JADE","STEPHANIE_MCMAHON","MOLITA","CHRISTINA_FROST","KAINE"] },
+		{ name: "ANGELA_ROSE", defenses: ["AMANDA_GREEN","AMANDA_GREEN","HEAVY_FLO","CHRISTINA_FROST"] },
+		{ name: "CHRISTINA_FROST", defenses: ["ANGELA_ROSE"] },
+		{ name: "DAKOTA_KAI", defenses: ["CHRISTINA_FROST","CHRISTINA_FROST","CHRISTINA_FROST","ANGELA_ROSE"] },
+		{ name: "AMANDA_GREEN", defenses: ["DAKOTA_KAI","SUZUKI","ANGELA_ROSE"] },
+		"VACATED",
+		{ name: "ASUKA", defenses: ["CHELSEA_GREEN&LIV_MORGAN&TAMINA"] },
+		{ name: "CHELSEA_GREEN", defenses: ["ASUKA","ASUKA","LIV_MORGAN","TAMINA","DANA_BROOKE"] },
+		{ name: "LIV_MORGAN", defenses: ["CHELSEA_GREEN","CHELSEA_GREEN","ASUKA","TAMINA","CHELSEA_GREEN","CHARLOTTE_FLAIR","ASUKA"] },
+		{ name: "ASUKA", defenses: ["LIV_MORGAN"] },
+		{ name: "SHAYNA_BASZLER", defenses: ["ASUKA"] },
+		{ name: "KAIRI", defenses: ["SHAYNA_BASZLER","SHAYNA_BASZLER","CHELSEA_GREEN","CHELSEA_GREEN"] },
+		{ name: "RONDA_ROUSEY", defenses: ["KAIRI","KAIRI&CHELSEA_GREEN","MINA_SHIRAKAWA"] },
+		{ name: "SYURI", defenses: ["RONDA_ROUSEY"] },
+		{ name: "RONDA_ROUSEY", defenses: ["SYURI&MAYU_IWATANI&UNAGI_SAYAKA&TAM_NAKANO-WARGAMES"] },
+		{ name: "KAIRI", defenses: ["SAYA_KAMITANI&RONDA_ROUSEY","RONDA_ROUSEY","DANA_BROOKE&CHELSEA_GREEN&RONDA_ROUSEY","RONDA_ROUSEY","TIFFANY_STRATTON-DQ","TIFFANY_STRATTON"] },
+		{ name: "SHAYNA_BASZLER", defenses: ["KAIRI","MINA_SHIRAKAWA"] },
+		{ name: "LIV_MORGAN", defenses: ["SHAYNA_BASZLER","RONDA_ROUSEY","TIFFANY_STRATTON-DQ"] },
+		{ name: "TIFFANY_STRATTON", defenses: ["LIV_MORGAN"] },
+		{ name: "RONDA_ROUSEY", defenses: ["MINA_SHIRAKAWA&KAIRI&TIFFANY_STRATTON","CHELSEA_GREEN","KAIRI","MINA_SHIRAKAWA"] },
+		{ name: "KAIRI", defenses: ["RONDA_ROUSEY","RONDA_ROUSEY"] },
+		{ name: "SHAYNA_BASZLER", defenses: ["KAIRI","KAIRI"] },
+		{ name: "KAIRI", defenses: ["SHAYNA_BASZLER","CHELSEA_GREEN","TIFFANY_STRATTON","RONDA_ROUSEY&SHAYNA_BASZLER","UNAGI_SAYAKA-MITB","ALBA_FYRE"] },
+		{ name: "CHELSEA_GREEN", defenses: ["KAIRI"] },
+		{ name: "KAIRI", defenses: ["CHELSEA_GREEN&RONDA_ROUSEY&SHAYNA_BASZLER","RONDA_ROUSEY-DQ","RONDA_ROUSEY&MANDY_ROSE&LACEY_EVANS - THE GREAT WAR","DANA_BROOKE","DANA_BROOKE&CARMELLA","ALEXA_BLISS","ALEXA_BLISS","TAMINA","UNAGI_SAYAKA","NIKKI_CROSS"] },
+		{ name: "UNAGI_SAYAKA", defenses: ["KAIRI","TIFFANY_STRATTON","TIFFANY_STRATTON","ALEXA_BLISS","ASUKA"] },
+		{ name: "GIGI_DOLIN", defenses: ["UNAGI_SAYAKA","XIA_LI","KAIRI"] },
+		{ name: "BLU", defenses: ["GIGI_DOLIN","ALISON_JANS-DQ"] },
+		{ name: "LIV_MORGAN", defenses: ["BLU - WRESTLEMANIA: WINNER TAKES ALL"] },
+		"VACATED",
+		{ name: "GIGI_DOLIN", defenses: ["ASUKA&UNAGI_SAYAKA&ALEXA_BLISS","UNAGI_SAYAKA","TIFFANY_STRATTON","TIFFANY_STRATTON&UNAGI_SAYAKA","BETH_PHOENIX - DQ","UNAGI_SAYAKA&BETH_PHOENIX","BETH_PHOENIX"] },
+		{ name: "STARLIGHT_KID", defenses: ["GIGI_DOLIN - MITB"] },
+		{ name: "BETH_PHOENIX", defenses: ["STARLIGHT_KID","ASUKA","GIGI_DOLIN"] },
+		{ name: "TIFFANY_STRATTON", defenses: ["BETH_PHOENIX","BETH_PHOENIX","PEYTON_ROYCE","BILLIE_KAY","PEYTON_ROYCE","XIA_LI"] },
+		{ name: "AZM", defenses: ["UNAGI_SAYAKA&TIFFANY_STRATTON","UNAGI_SAYAKA","TIFFANY_STRATTON","RAM_KAICHOW","GIGI_DOLIN","STARLIGHT_KID"] },
+		{ name: "MASK_GIRL", defenses: ["AZM","BETH_PHOENIX"] },
+		{ name: "AZM", defenses: ["MASK_GIRL","MASK_GIRL","UNAGI_SAYAKA","STARLIGHT_KID","BETH_PHOENIX","MASK_GIRL","HALIE_QUINN"] },
+		{ name: "CYNTHIA_RAMIREZ", defenses: ["AZM"] },
+		{ name: "AMA_BIG", defenses: ["CYNTHIA_RAMIREZ","CYNTHIA_RAMIREZ","HALIE_QUINN","CYNTHIA_RAMIREZ&HALIE_QUINN","CYNTHIA_RAMIREZ","JULIET_SUNSET","CARMELLA","JESSICA_CUP","ALICIA_HOUSE"] },
+		{ name: "CYNTHIA_RAMIREZ", defenses: ["AMA_BIG","AMA_BIG-DQ","HALIE_QUINN-DQ","HALIE_QUINN","HALIE_QUINN&AMA_BIG"] },
+		{ name: "HALIE_QUINN", defenses: ["CYNTHIA_RAMIREZ","CYNTHIA_RAMIREZ","AMA_BIG","AMA_BIG"] },
+		{ name: "AMA_BIG", defenses: ["HALIE_QUINN&CYNTHIA_RAMIREZ","CYNTHIA_RAMIREZ","HALIE_QUINN","JESSICA_CUP","JUST_JANINE","JESSICA_CUP&HALIE_QUINN&CYNTHIA_RAMIREZ","VERONICA_STEEL","JANE_MACK"] },
+		{ name: "BROOK_TAYLOR", defenses: ["AMA_BIG","CYNTHIA_RAMIREZ-DQ"] },
+		{ name: "CYNTHIA_RAMIREZ", defenses: ["BROOK_TAYLOR","JANE_MACK","VERONICA_STEEL","BROOK_TAYLOR-DQ","BROOK_TAYLOR","AMA_BIG"] },
+		{ name: "BROOK_TAYLOR", defenses: ["TERESA_SHARP&CYNTHIA_RAMIREZ&AMA_BIG","CYNTHIA_RAMIREZ"] },
+		{ name: "PARIS_MONET", defenses: ["BROOK_TAYLOR","BROOK_TAYLOR","CYNTHIA_RAMIREZ","TERESA_SHARP","AMA_BIG","AMA_BIG","JUJU_FUN&MASK_GIRL&JESSICA_CUP","JESSICA_CUP","LAUREN_SNOW","LAUREN_SNOW"] },
+		{ name: "NELLY_STORM", defenses: ["PARIS_MONET","PARIS_MONET","AMA_BIG","AMA_BIG","PARIS_MONET","JUST_JANINE","MICHELLE_VELVET"] },
+		{ name: "PARIS_MONET", defenses: ["AMA_BIG&NELLY_STORM","AMA_BIG&NELLY_STORM","AMA_BIG","AMA_BIG"] },
+		{ name: "SLADER", defenses: ["PARIS_MONET","PARIS_MONET-DQ"] },
+		{ name: "PARIS_MONET", defenses: ["SLADER","SLADER","NELLY_STORM","SLADER","AMA_BIG","AMA_BIG"] },
+		{ name: "AMA_BIG", defenses: ["PARIS_MONET","CELINE","CELINE","JULIET_SUNSET"] },
+		{ name: "NELLY_STORM", defenses: ["AMA_BIG","AMA_BIG-DQ","AMA_BIG","PARIS_MONET","PARIS_MONET","CELINE","JESSICA_CUP","LAUREN_SNOW"] },
+		{ name: "JORDAN_SKY", defenses: ["NELLY_STORM","NELLY_STORM","NELLY_STORM","JESSICA_CUP","JESSICA_CUP","JESSICA_CUP"] },
+		{ name: "THE_MONARCH", defenses: ["JORDAN_SKY","CELINE","JORDAN_SKY&CELINE","JORDAN_SKY-DQ"] },
+		"VACATED",
+		{ name: "JORDAN_SKY", defenses: ["JESSICA_CUP&CRYSTAL&BLAIRE_COUNTY&JULIET_SUNSET","JULIET_SUNSET","JULIET_SUNSET","JESSICA_CUP","NATASHA_IVY","THE_MONARCH"] },
+		{ name: "X_TWO", defenses: ["JORDAN_SKY","JORDAN_SKY","THE_MONARCH","THE_MONARCH","ROSIE_FOX","BLAIRE_COUNTY"] },
+		{ name: "SUKARI", defenses: ["X_TWO","X_TWO","JORDAN_SKY","CRYSTAL","CRYSTAL"] },
+		{ name: "JULIET_SUNSET", defenses: ["SUKARI&CRYSTAL","CRYSTAL","SUKARI","JUST_JANINE","JESSICA_CUP","CRYSTAL&LORNA_LIGHT&BLAIRE_COUNTY&X_TWO","JORDAN_SKY"] },
+		{ name: "X_TWO", defenses: ["JULIET_SUNSET","JULIET_SUNSET","SUKARI"] },
+		{ name: "SUMMER_HAYES", defenses: ["X_TWO","CRYSTAL","JORDAN_SKY","JORDAN_SKY","JULIET_SUNSET"] },
+		{ name: "X_TWO", defenses: ["SUMMER_HAYES"] },
+		{ name: "SUMMER_HAYES", defenses: ["X_TWO","X_TWO&JORDAN_SKY","JULIET_SUNSET","JORDAN_SKY"] },
+		{ name: "THE_MONARCH", defenses: ["SUMMER_HAYES","SUMMER_HAYES","BROOK_TAYLOR","BROOK_TAYLOR","X_TWO"] },
+		{ name: "X_TWO", defenses: ["THE_MONARCH&SUMMER_HAYES","THE_MONARCH","LORNA_LIGHT","THE_MONARCH","SUMMER_HAYES","JANE_MACK"] },
+		{ name: "SUMMER_HAYES", defenses: ["X_TWO","LORNA_LIGHT","LORNA_LIGHT","LORNA_LIGHT&THE_MONARCH","X_TWO","BROOK_TAYLOR","BROOK_TAYLOR","AOD-DQ","MOLLY_HOLLY-DQ"] },
+		{ name: "ASUKA", defenses: ["SUMMER_HAYES","SUMMER_HAYES","JICKIE_MAMES","BELINDA_LEE","X_TWO","TORNADO_MAY"] },
+		{ name: "SUMMER_HAYES", defenses: ["ASUKA"] },
+		{ name: "AOD", defenses: ["SUMMER_HAYES","SUMMER_HAYES","SUMMER_HAYES"] }
 	],
 	"SMACKDOWN": [
-		{
-			"number": 1, 
-			"name": "PAIGE",
-			"reign": 1,
-			"defenses": ["KAITLYN&TORRIE_WILSON&ASUKA", "MANDY_ROSE", "KAITLYN", "KAITLYN", "KAITLYN"]
-		},
-		{
-			"number": 2, 
-			"name": "KAINE",
-			"reign": 1,
-			"defenses": ["PAIGE", "LAURA_VEE", "CALI", "LAURA_VEE", "CALI&LAURA_VEE", "NATALYA", "CHAROLETTE", "SASHA_BANKS", "LITA", "BAYLEY", "BECKY_LYNCH"]
-		},
-		{
-			"number": 3, 
-			"name": "TRISH_STRATUS",
-			"reign": 1,
-			"defenses": ["KAINE"]
-		},
-		{
-			"number": 4, 
-			"name": "KAINE",
-			"reign": 2,
-			"defenses": ["TRISH_STRATUS", "RONDA_ROUSEY", "CALI", "EVA_MARIE", "MICHELLE_MCCOOL", "CALI", "TRISH_STRATUS", "JASMINE_LOVE"]
-		},
-		{
-			"number": 5, 
-			"name": "LAURA_VEE",
-			"reign": 1,
-			"defenses": ["KAINE", "EVA_MARIE", "NATALYA", "JASMINE_LOVE", "CALI"]
-		},
-		{
-			"number": 6, 
-			"name": "VIOLET_JADE",
-			"reign": 1,
-			"defenses": ["LAURA_VEE", "LAURA_VEE"]
-		},
-		{
-			"number": 7, 
-			"name": "LAURA_VEE",
-			"reign": 2,
-			"defenses": ["VIOLET_JADE&VICTORIA_WINTERS", "VIOLET_JADE", "SABLE", "LAYLA", "VICTORIA_WINTERS", "HEAVY_FLO", "CALI", "ALISON_JANS", "TESSA_BLANCHARD", "EMBER_MOON", "EMBER_MOON", "NIA_JAX", "EMBER_MOON"]
-		},
-		{
-			"number": 8, 
-			"name": "ALISON_JANS",
-			"reign": 1,
-			"defenses": ["LAURA_VEE", "SABLE"]
-		},
-		{
-			"number": 9, 
-			"name": "MARYSE",
-			"reign": 1,
-			"defenses": ["ALISON_JANS", "TESSA_BLANCHARD", "ALISON_JANS", "HEAVY_FLO", "EMBER_MOON", "CALI", "EVA_MARIE", "LAURA_VEE", "TESSA_BLANCHARD", "TRISH_STRATUS", "MICKIE_JAMES"]
-		},
-		{
-			"number": 10, 
-			"name": "KAITLYN",
-			"reign": 1,
-			"defenses": ["MARYSE", "ALISON_JANS", "NIA_JAX&EMBER_MOON"]
-		},
-		{
-			"number": 11, 
-			"name": "MARYSE",
-			"reign": 2,
-			"defenses": ["KAITLYN", "TESSA_BLANCHARD"]
-		},
-		{
-			"number": 12, 
-			"name": "HEAVY_FLO",
-			"reign": 1,
-			"defenses": ["MARYSE", "EMBER_MOON"]
-		},
-		{
-			"number": 13, 
-			"name": "TESSA_BLANCHARD",
-			"reign": 1,
-			"defenses": ["HEAVY_FLO", "KAITLYN", "ALISON_JANS", "TAMINA", "EMBER_MOON"]
-		},
-		{
-			"number": 14, 
-			"name": "KAITLYN",
-			"reign": 2,
-			"defenses": ["TESSA_BLANCHARD", "VICTORIA_WINTERS", "EMBER_MOON-DQ"]
-		},
-		{
-			"number": 15, 
-			"name": "AJ_LEE",
-			"reign": 1,
-			"defenses": ["KAITLYN", "KAITLYN", "TAMINA"]
-		},
-		{
-			"number": 16, 
-			"name": "ASUKA",
-			"reign": 1,
-			"defenses": ["AJ_LEE", "NIA_JAX", "ALISON_JANS", "TESSA_BLANCHARD", "ALISON_JANS", "VICTORIA_WINTERS", "EMBER_MOON", "HEAVY_FLO", "BLU", "EMBER_MOON"]
-		},
-		{
-			"number": 17, 
-			"name": "BLU",
-			"reign": 1,
-			"defenses": ["ASUKA", "ASUKA", "ASUKA", "ARIEL", "PAIGE", "HEAVY_FLO", "ASUKA", "SUMMER_RAE"]
-		},
-		{
-			"number": 18, 
-			"name": "ASUKA",
-			"reign": 2,
-			"defenses": ["PAIGE&BLU", "PAIGE", "SEVEN", "SEVEN", "SEVEN"]
-		},
-		{
-			"number": 19, 
-			"name": "MOLITA",
-			"reign": 1,
-			"defenses": ["ASUKA", "SUKI-DQ", "AMBER_LEE", "GIGI_MONDAY", "HEAVY_FLO-DQ", "LINDSEY_SPARKS", "POLLY_SEAN", "AMY_ORTON"]
-		},
-		{
-			"number": 20, 
-			"name": "BLU",
-			"reign": 2,
-			"defenses": ["MOLITA", "MOLITA"]
-		},
-		{
-			"number": 21, 
-			"name": "MOLITA",
-			"reign": 2,
-			"defenses": ["HEAVY_FLO&BLU"]
-		},
-		{
-			"number": 22, 
-			"name": "AMY_ORTON",
-			"reign": 1,
-			"defenses": ["MOLITA"]
-		},
-		{
-			"number": 23, 
-			"name": "BLU",
-			"reign": 3,
-			"defenses": ["MOLITA&AMY_ORTON", "ARIEL", "HEAVY_FLO", "MOLITA", "SUKI", "AMBER_LEE", "HEAVY_FLO", "MOLITA", "HEAVY_FLO", "SEVEN"]
-		},
-		{
-			"number": 24, 
-			"name": "VACATED"
-		},
-		{
-			"number": 25, 
-			"name": "LINDSEY_SPARKS",
-			"reign": 1,
-			"defenses": ["CHRISTINA_FROST&HEAVY_FLO&MOLITA&POLLY_SEAN&SEVEN", "HEAVY_FLO"]
-		},
-		{
-			"number": 26, 
-			"name": "MOLITA",
-			"reign": 3,
-			"defenses": ["LINDSEY_SPARKS"]
-		},
-		{
-			"number": 27, 
-			"name": "LINDSEY_SPARKS",
-			"reign": 2,
-			"defenses": ["MOLITA"]
-		},
-		{
-			"number": 25, 
-			"name": "MOLITA",
-			"reign": 4,
-			"defenses": ["LINDSEY_SPARKS", "LINDSEY_SPARKS"]
-		},
-		{
-			"number": 26, 
-			"name": "JASMINE_LOVE",
-			"reign": 1,
-			"defenses": ["MOLITA", "MOLITA", "SEVEN-DQ", "SEVEN"]
-		},
-		{
-			"number": 27, 
-			"name": "MARISSA_SUNSHINE",
-			"reign": 1,
-			"defenses": ["JASMINE_LOVE", "JASMINE_LOVE", "MOLITA"]
-		},
-		{
-			"number": 28, 
-			"name": "NICOLE_SUNSHINE",
-			"reign": 1,
-			"defenses": ["MARISSA_SUNSHINE", "MARISSA_SUNSHINE", "MARISSA_SUNSHINE", "LOLA_STARR", "POLLY_SEAN", "POLLY_SEAN"]
-		},
-		{
-			"number": 29, 
-			"name": "AMANDA_GREEN",
-			"reign": 1,
-			"defenses": ["NICOLE_SUNSHINE", "JASMINE_LOVE"]
-		},
-		{
-			"number": 30, 
-			"name": "LINDSEY_SPARKS",
-			"reign": 3,
-			"defenses": ["AMANDA_GREEN-FORFEIT", "MIKU", "POLLY_SEAN", "POLLY_SEAN"]
-		},
-		{
-			"number": 31, 
-			"name": "VICTORIA_WINTERS",
-			"reign": 1,
-			"defenses": ["LINDSEY_SPARKS", "LINDSEY_SPARKS", "POLLY_SEAN"]
-		},
-		{
-			"number": 32, 
-			"name": "NICOLE_SUNSHINE",
-			"reign": 2,
-			"defenses": ["TIFFANY_VIOLET&VICTORIA_WINTERS", "MARISSA_SUNSHINE", "VICTORIA_WINTERS", "LAYLA"]
-		},
-		{
-			"number": 33, 
-			"name": "FLORA",
-			"reign": 1,
-			"defenses": ["NICOLE_SUNSHINE", "BAYLEY", "POLLY_SEAN"]
-		},
-		{
-			"number": 34, 
-			"name": "POLLY_SEAN",
-			"reign": 1,
-			"defenses": ["FLORA", "TIFFANY_VIOLET-DQ"]
-		},
-		{
-			"number": 35, 
-			"name": "SELITA_MENDES",
-			"reign": 1,
-			"defenses": ["POLLY_SEAN", "POLLY_SEAN", "VICTORIA_WINTERS&FLORA&POLLY_SEAN"]
-		},
-        	{
-			"number": 36, 
-			"name": "VACATED"
-		},
-		{
-			"number": 37, 
-			"name": "SARRAY",
-			"reign": 1,
-			"defenses": ["SONYA_DEVILLE&RHEA_RIPLEY"]
-		},
-		{
-			"number": 38, 
-			"name": "SONYA_DEVILLE",
-			"reign": 1,
-			"defenses": ["SARRAY", "LACEY_EVANS"]
-		},
-		{
-			"number": 39, 
-			"name": "LACEY_EVANS",
-			"reign": 1,
-			"defenses": ["SONYA_DEVILLE", "SONYA_DEVILLE", "SONYA_DEVILLE", "SARRAY", "RHEA_RIPLEY", "SARRAY", "RAQUEL_RODRIGUEZ"]
-		},
-		{
-			"number": 40, 
-			"name": "IYO_SKY",
-			"reign": 1,
-			"defenses": ["LACEY_EVANS", "LACEY_EVANS", "RHEA_RIPLEY"]
-		},
-		{
-			"number": 41, 
-			"name": "MANDY_ROSE",
-			"reign": 1,
-			"defenses": ["IYO_SKY", "IYO_SKY", "DAKOTA_KAI", "BAYLEY", "XIA_LI", "XIA_LI"]
-		},
-		{
-			"number": 42, 
-			"name": "MAYU_IWATANI",
-			"reign": 1,
-			"defenses": ["MANDY_ROSE"]
-		},
-		{
-			"number": 43, 
-			"name": "MANDY_ROSE",
-			"reign": 2,
-			"defenses": ["SYURI&MAYU_IWATANI&UNAGI_SAYAKA&TAM_NAKANO-WARGAMES", "MAYU_IWATANI-DQ", "MAYU_IWATANI"]
-		},
-		{
-			"number": 44, 
-			"name": "AZM",
-			"reign": 1,
-			"defenses": ["MANDY_ROSE", "MANDY_ROSE", "SONYA_DEVILLE&MANDY_ROSE", "RAQUEL_RODRIGUEZ", "SONYA_DEVILLE"]
-		},
-		{
-			"number": 45, 
-			"name": "MANDY_ROSE",
-			"reign": 3,
-			"defenses": ["AZM&SONYA_DEVILLE", "MAYU_IWATANI",  "IYO_SKY"]
-		},
-		{
-			"number": 46, 
-			"name": "TAM_NAKANO",
-			"reign": 1,
-			"defenses": ["MANDY_ROSE", "MANDY_ROSE&RHEA_RIPLEY&IYO_SKY&MAYU_IWATANI", "MANDY_ROSE", "RHEA_RIPLEY", "LACEY_EVANS"]
-		},
-		{
-			"number": 47, 
-			"name": "LACEY_EVANS",
-			"reign": 2,
-			"defenses": ["TAM_NAKANO&MANDY_ROSE", "BAYLEY", "IYO_SKY"]
-		},
-		{
-			"number": 48, 
-			"name": "IYO_SKY",
-			"reign": 2,
-			"defenses": ["LACEY_EVANS", "MANDY_ROSE", "LACEY_EVANS", "SONYA_DEVILLE", "MANDY_ROSE", "LACEY_EVANS", "RHEA_RIPLEY", "RAQUEL_RODRIGUEZ", "RAQUEL_RODRIGUEZ", "RHEA_RIPLEY", "MANDY_ROSE-DQ", "RONDA_ROUSEY&MANDY_ROSE&LACEY_EVANS - THE GREAT WAR"]
-		},
-		{
-			"number": 49, 
-			"name": "VACATED"
-		},
-		{
-			"number": 50, 
-			"name": "CHELSEA_GREEN",
-			"reign": 1,
-			"defenses": ["DAKOTA_KAI&LIV_MORGAN&MADISON_RAYNE&VELVET_SKY&ANGELINA_LOVE&SHOTZI&NAOMI", "BAYLEY", "DAKOTA_KAI"]
-		},
-		{
-			"number": 51, 
-			"name": "DAKOTA_KAI",
-			"reign": 1,
-			"defenses": ["CHELSEA_GREEN", "CHELSEA_GREEN", "CANDICE_LERAE-DQ"]
-		},
-		{
-			"number": 52, 
-			"name": "CANDICE_LERAE",
-			"reign": 1,
-			"defenses": ["DAKOTA_KAI", "DAKOTA_KAI", "BAYLEY", "SASHA_BANKS-DQ", "SASHA_BANKS", "IYO_SKY", "IYO_SKY", "CHELSEA_GREEN&STARLIGHT_KID", "IYO_SKY"]
-		},
-		{
-			"number": 53, 
-			"name": "LIV_MORGAN",
-			"reign": 1,
-			"defenses": ["CANDICE_LERAE", "DAKOTA_KAI", "BAYLEY", "CHELSEA_GREEN", "IYO_SKY", "BLU - WRESTLEMANIA: WINNER TAKES ALL"]
-		},
-		{
-			"number": 54, 
-			"name": "VACATED"
-		},
-		{
-			"number": 55, 
-			"name": "STARLIGHT_KID",
-			"reign": 1,
-			"defenses": ["CANDICE_LERAE&IYO_SKY&CHELSEA_GREEN", "CANDICE_LERAE", "CHELSEA_GREEN", "DAKOTA_KAI", "IYO_SKY"]
-		},
-		{
-			"number": 56, 
-			"name": "SASHA_BANKS",
-			"reign": 1,
-			"defenses": ["STARLIGHT_KID"]
-		},
-		{
-			"number": 57, 
-			"name": "LIV_MORGAN",
-			"reign": 2,
-			"defenses": ["SASHA_BANKS", "CHELSEA_GREEN", "CANDICE_LERAE", "IYO_SKY", "DAKOTA_KAI", "ALISON_JANS", "BAYLEY", "DAKOTA_KAI", "IYO_SKY", "CHELSEA_GREEN"]
-		},
-		{
-			"number": 58, 
-			"name": "SASHA_BANKS",
-			"reign": 2,
-			"defenses": ["LIV_MORGAN", "ROXANNE_PEREZ-DQ", "ROXANNE_PEREZ", "ROXANNE_PEREZ&CORA_JADE"]
-		},
-		{
-			"number": 59, 
-			"name": "CORA_JADE",
-			"reign": 1,
-			"defenses": ["SASHA_BANKS&ROXANNE_PEREZ", "SASHA_BANKS", "ROXANNE_PEREZ-DQ", "ROXANNE_PEREZ", "DAKOTA_KAI", "ROXANNE_PEREZ-DQ"]
-		},
-		{
-			"number": 60, 
-			"name": "DAKOTA_KAI",
-			"reign": 2,
-			"defenses": ["CORA_JADE", "CORA_JADE", "ROXANNE_PEREZ"]
-		},
-		{
-			"number": 61, 
-			"name": "LIV_MORGAN",
-			"reign": 3,
-			"defenses": ["DAKOTA_KAI", "DAKOTA_KAI", "MICHELLE_VELVET", "MICHELLE_VELVET"]
-		},
-		{
-			"number": 62, 
-			"name": "ALISON_JANS",
-			"reign": 2,
-			"defenses": ["LIV_MORGAN"]
-		},
-		{
-			"number": 63, 
-			"name": "LIV_MORGAN",
-			"reign": 4,
-			"defenses": ["ALISON_JANS", "DAKOTA_KAI", "LISA_LOST"]
-		},
-		{
-			"number": 64, 
-			"name": "ALISON_JANS",
-			"reign": 3,
-			"defenses": ["LIV_MORGAN", "CORA_JADE", "JUNGO-DQ"]
-		},
-		{
-			"number": 65, 
-			"name": "LIV_MORGAN",
-			"reign": 5,
-			"defenses": ["ALISON_JANS", "ALISON_JANS", "ALISON_JANS"]
-		},
-		{
-			"number": 66, 
-			"name": "CORA_JADE",
-			"reign": 2,
-			"defenses": ["LIV_MORGAN", "ALISON_JANS", "ROXANNE_PEREZ", "ROXANNE_PEREZ", "MICHELLE_VELVET", "MICHELLE_VELVET"]
-		},
-		{
-			"number": 67, 
-			"name": "JUNGO",
-			"reign": 1,
-			"defenses": ["CORA_JADE"]
-		},
-		{
-			"number": 68, 
-			"name": "LIV_MORGAN",
-			"reign": 6,
-			"defenses": ["JUNGO", "CORA_JADE", "CORA_JADE&ROXANNE_PEREZ&MICHELLE_VELVET", "CORA_JADE", "JUNGO", "ROXANNE_PEREZ", "JUNGO", "SLOANE", "CORA_JADE", "NELLY_STORM"]
-		},
-		{
-			"number": 69, 
-			"name": "NELLY_STORM",
-			"reign": 1,
-			"defenses": ["LIV_MORGAN", "ROXANNE_PEREZ"]
-		},
-		{
-			"number": 70, 
-			"name": "PARIS_MONET",
-			"reign": 1,
-			"defenses": ["NELLY_STORM", "NELLY_STORM", "CORA_JADE", "CORA_JADE", "GIGI_DOLIN", "ROXANNE_PEREZ", "SLOANE", "JUNGO-DQ", "JUNGO", "JUST_JANINE", "JUST_JANINE"]
-		},
-		{
-			"number": 71, 
-			"name": "VACATED"
-		},
-		{
-			"number": 72, 
-			"name": "HALIE_QUINN",
-			"reign": 1,
-			"defenses": ["ROXANNE_PEREZ&NELLY_STORM&SLADER&MASK_GIRL&CORA_JADE&GIGI_DOLIN", "ALICIA_HOUSE", "SLOANE", "CRYSTAL", "CRYSTAL-DQ"]
-		},
-		{
-			"number": 73, 
-			"name": "PARIS_MONET",
-			"reign": 2,
-			"defenses": ["HALIE_QUINN", "HALIE_QUINN", "SLOANE", "SLOANE"]
-		},
-		{
-			"number": 74, 
-			"name": "CRYSTAL",
-			"reign": 1,
-			"defenses": ["PARIS_MONET", "PARIS_MONET-DQ"]
-		},
-		{
-			"number": 75, 
-			"name": "NELLY_STORM",
-			"reign": 2,
-			"defenses": ["CRYSTAL", "PARIS_MONET-DQ", "CRYSTAL&PARIS_MONET"]
-		},
-		{
-			"number": 76, 
-			"name": "PARIS_MONET",
-			"reign": 3,
-			"defenses": ["NELLY_STORM", "NELLY_STORM", "CRYSTAL"]
-		},
-		{
-			"number": 76, 
-			"name": "NELLY_STORM",
-			"reign": 3,
-			"defenses": ["PARIS_MONET", "PARIS_MONET&HALIE_QUINN", "HALIE_QUINN&JUST_JANINE", "JUST_JANINE"]
-		},
-		{
-			"number": 77, 
-			"name": "HALIE_QUINN",
-			"reign": 2,
-			"defenses": ["NELLY_STORM", "ALICIA_HOUSE", "JUST_JANINE&NELLY_STORM"]
-		},
-		{
-			"number": 78, 
-			"name": "NELLY_STORM",
-			"reign": 4,
-			"defenses": ["HALIE_QUINN", "HALIE_QUINN", "HALIE_QUINN"]
-		},
-		{
-			"number": 79, 
-			"name": "TERESA_SHARP",
-			"reign": 1,
-			"defenses": ["NELLY_STORM", "BROOK_TAYLOR", "BROOK_TAYLOR"]
-		},
-		{
-			"number": 80, 
-			"name": "HALIE_QUINN",
-			"reign": 3,
-			"defenses": ["TERESA_SHARP&NELLY_STORM", "BROOK_TAYLOR", "TERESA_SHARP", "TERESA_SHARP"]
-		},
-		{
-			"number": 81, 
-			"name": "CYNTHIA_RAMIREZ",
-			"reign": 1,
-			"defenses": ["HALIE_QUINN", "HALIE_QUINN", "TERESA_SHARP&BROOK_TAYLOR", "BROOK_TAYLOR", "NELLY_STORM"]
-		},
-		{
-			"number": 82, 
-			"name": "NELLY_STORM",
-			"reign": 5,
-			"defenses": ["CYNTHIA_RAMIREZ", "CYNTHIA_RAMIREZ&HALIE_QUINN", "HALIE_QUINN", "TERESA_SHARP"]
-		},
-		{
-			"number": 83, 
-			"name": "CYNTHIA_RAMIREZ",
-			"reign": 2,
-			"defenses": ["NELLY_STORM", "TERESA_SHARP&BROOK_TAYLOR", "BROOK_TAYLOR", "TERESA_SHARP", "CRYSTAL", "VERONICA_STEEL", "VERONICA_STEEL"]
-		},
-		{
-			"number": 84, 
-			"name": "TERESA_SHARP",
-			"reign": 2,
-			"defenses": ["CYNTHIA_RAMIREZ", "HALIE_QUINN"]
-		},
-		{
-			"number": 85, 
-			"name": "HALIE_QUINN",
-			"reign": 4,
-			"defenses": ["TERESA_SHARP", "BROOK_TAYLOR", "CYNTHIA_RAMIREZ", "CYNTHIA_RAMIREZ", "CYNTHIA_RAMIREZ&CARLA_GARCIA", "CARLA_GARCIA", "BROOK_TAYLOR", "BROOK_TAYLOR-DQ", "BROOK_TAYLOR-DQ", "BROOK_TAYLOR"]
-		},
-		{
-			"number": 84, 
-			"name": "X_TWO",
-			"reign": 1,
-			"defenses": ["X_THREE&X_FOUR&HALIE_QUINN", "CYNTHIA_RAMIREZ", "CYNTHIA_RAMIREZ", "UPSKIRT_KIRA", "VERONICA_STEEL", "UPSKIRT_KIRA&BROOK_TAYLOR"]
-		},
-		{
-			"number": 85, 
-			"name": "X_THREE",
-			"reign": 1,
-			"defenses": ["X_TWO", "X_TWO"]
-		},
-		{
-			"number": 86, 
-			"name": "X_TWO",
-			"reign": 2,
-			"defenses": ["X_THREE", "X_THREE", "BROOK_TAYLOR-DQ", "VERONICA_STEEL- DQ", "JANE_MACK"]
-		},
-		{
-			"number": 87, 
-			"name": "BROOK_TAYLOR",
-			"reign": 1,
-			"defenses": ["X_TWO", "VERONICA_STEEL-DQ", "VERONICA_STEEL", "VERONICA_STEEL&JANE_MACK", "UPSKIRT_KIRA", "UPSKIRT_KIRA"]
-		},
-		{
-			"number": 88, 
-			"name": "JUNGO",
-			"reign": 2,
-			"defenses": ["BROOK_TAYLOR", "BROOK_TAYLOR", "X_TWO", "X_TWO&BROOK_TAYLOR", "CRYSTAL"]
-		},
-		{
-			"number": 89, 
-			"name": "CELINE",
-			"reign": 1,
-			"defenses": ["JUNGO", "JUNGO", "LISA_LOST", "JUJU_FUN", "MALA_MALA", "MALA_MALA", "ALICIA_HOUSE", "X_FOUR", "LAUREN_SNOW"]
-		},
-		{
-			"number": 90, 
-			"name": "THE_MONARCH",
-			"reign": 1,
-			"defenses": ["CELINE", "CELINE", "MALA_MALA", "JUNGO", "JUNGO", "X_FOUR", "JUNGO", "LAUREN_SNOW", "ALICIA_HOUSE", "ALICIA_HOUSE"]
-		},
-		{
-			"number": 91, 
-			"name": "MALA_MALA",
-			"reign": 1,
-			"defenses": ["THE_MONARCH", "THE_MONARCH", "CELINE", "ALICIA_HOUSE&CELINE", "SCARLETT_WINGS"]
-		},
-		{
-			"number": 92, 
-			"name": "JORDAN_SKY",
-			"reign": 1,
-			"defenses": ["MALA_MALA", "MALA_MALA", "CELINE", "SCARLETT_WINGS", "SCARLETT_WINGS", "JUNGO"]
-		},
-		{
-			"number": 93, 
-			"name": "MALA_MALA",
-			"reign": 2,
-			"defenses": ["JORDAN_SKY&SCARLETT_WINGS", "SCARLETT_WINGS", "SCARLETT_WINGS"]
-		},
-		{
-			"number": 94, 
-			"name": "SCARLETT_WINGS",
-			"reign": 1,
-			"defenses": ["MALA_MALA", "MALA_MALA", "JUNGO", "LAUREN_SNOW"]
-		},
-		{
-			"number": 95, 
-			"name": "JORDAN_SKY",
-			"reign": 2,
-			"defenses": ["SCARLETT_WINGS", "SCARLETT_WINGS", "JUNGO", "JUNGO", "MALA_MALA", "ALICIA_HOUSE", "MALA_MALA&CELINE"]
-		},
-		{
-			"number": 96, 
-			"name": "SCARLETT_WINGS",
-			"reign": 2,
-			"defenses": ["JORDAN_SKY", "JORDAN_SKY-DQ", "X_FOUR", "CELINE"]
-		},
-		{
-			"number": 95, 
-			"name": "JORDAN_SKY",
-			"reign": 3,
-			"defenses": ["SCARLETT_WINGS", "CELINE", "CELINE", "X_FOUR", "MALA_MALA", "LAUREN_SNOW", "LAUREN_SNOW", "SCARLETT_WINGS", "DAISY_MAYFIELD", "TT_SLIM"]
-		}
-	], 
-	"NXT": [
-		{
-			"number": 1, 
-			"name": "ASUKA",
-			"reign": 1,
-			"defenses": ["NIKKI_CROSS", "EMBER_MOON", "TAELER_HENDRIX", "SUMMER_RAE", "NIKKI_CROSS", "EMBER_MOON&BILLIE_KAY", "IVORY", "KAINE"]
-		},
-		{
-			"number": 2, 
-			"name": "VIOLET_JADE",
-			"reign": 1,
-			"defenses": ["ASUKA", "ASUKA", "NIKKI_CROSS", "SANTANA_GARRETT", "KAINE"]
-		},
-		{
-			"number": 3, 
-			"name": "MICHELLE_MCCOOL",
-			"reign": 1,
-			"defenses": ["VIOLET_JADE", "VICTORIA_WINTERS"]
-		},
-		{
-			"number": 4, 
-			"name": "VACATED"
-		},
-		{
-			"number": 5, 
-			"name": "VIOLET_JADE",
-			"reign": 2,
-			"defenses": ["SANTANA_GARRETT&SABLE"]
-		},
-		{
-			"number": 6, 
-			"name": "SANTANA_GARRETT",
-			"reign": 1,
-			"defenses": ["NIA_JAX&VIOLET_JADE&KAINE"]
-		},
-		{
-			"number": 7, 
-			"name": "KAINE",
-			"reign": 1,
-			"defenses": ["SANTANA_GARRETT", "NIA_JAX"]
-		},
-		{
-			"number": 8, 
-			"name": "VACATED"
-		},
-		{
-			"number": 9, 
-			"name": "JELINA_LOPEZ",
-			"reign": 1,
-			"defenses": ["TIFFANY_COOK", "TIFFANY_COOK", "GAIL_KIM", "TIFFANY_COOK", "DARK_JENNA", "DARK_JENNA", "CHAROLETTE", "BLU"]
-		},
-		{
-			"number": 10, 
-			"name": "BLU",
-			"reign": 1,
-			"defenses": ["JELINA_LOPEZ", "RONDA_ROUSEY", "JELINA_LOPEZ&GIGI_MONDAY", "JELINA_LOPEZ"]
-		},
-		{
-			"number": 11, 
-			"name": "VACATED"
-		},
-		{
-			"number": 12, 
-			"name": "MIKU",
-			"reign": 1,
-			"defenses": ["RONDA_ROUSEY&ZELINA_VEGA&SELITA_MENDES", "TIFFANY_COOK"]
-		},
-		{
-			"number": 13, 
-			"name": "SELITA_MENDES",
-			"reign": 1,
-			"defenses": ["MIKU", "MIKU", "SEVEN"]
-		},
-		{
-			"number": 14, 
-			"name": "MIKU",
-			"reign": 2,
-			"defenses": ["SELITA_MENDES", "CHAROLETTE", "POLLY_SEAN", "GAIL_KIM&GIGI_MONDAY"]
-		},
-		{
-			"number": 15, 
-			"name": "FLORA",
-			"reign": 1,
-			"defenses": ["MIKU", "TIFFANY_COOK", "AMBER_LEE", "IRINA_PETROVA", "MIKU", "AMBER_LEE"]
-		},
-		{
-			"number": 16, 
-			"name": "MIKU",
-			"reign": 3,
-			"defenses": ["MOLITA&FLORA"]
-		},
-		{
-			"number": 17, 
-			"name": "VACATED"
-		},
-		{
-			"number": 18, 
-			"name": "RONDA_ROUSEY",
-			"reign": 1,
-			"defenses": ["BAYLEY&ANGELA_ROSE&CHAROLETTE&SUKI&DANA_BROOKE", "TIFFANY_VIOLET-DQ", "ANGELA_ROSE", "TIFFANY_VIOLET", "TIFFANY_VIOLET"]
-		},
-		{
-			"number": 19, 
-			"name": "ANGELA_ROSE",
-			"reign": 1,
-			"defenses": ["RONDA_ROUSEY", "SUKI"]
-		},
-		{
-			"number": 20, 
-			"name": "VACATED"
-		},
-		{
-			"number": 21, 
-			"name": "NIKKITA_LYONS",
-			"reign": 1,
-			"defenses": ["ZOEY_STARK&CORA_JADE", "ZOEY_STARK"]
-		},
-		{
-			"number": 22, 
-			"name": "ROXANNE_PEREZ",
-			"reign": 1,
-			"defenses": ["NIKKITA_LYONS", "ZOEY_STARK", "AMI_SOHREI", "RAM_KAICHOW-DQ", "RAM_KAICHOW", "ZOEY_STARK&RAM_KAICHOW&AMI_SOHREI&CORA_JADE"]
-		},
-		{
-			"number": 23, 
-			"name": "RIHO",
-			"reign": 1,
-			"defenses": ["ROXANNE_PEREZ", "NIKKITA_LYONS", "BIANCA_BELAIR&NIKKITA_LYONS", "ZOEY_STARK"]
-		},
-		{
-			"number": 24, 
-			"name": "ROXANNE_PEREZ",
-			"reign": 2,
-			"defenses": ["RIHO"]
-		},
-		{
-			"number": 25, 
-			"name": "MAYU_IWATANI",
-			"reign": 1,
-			"defenses": ["ROXANNE_PEREZ&LACEY_EVANS", "LACEY_EVANS-DQ", "RONDA_ROUSEY&MANDY_ROSE&LACEY_EVANS - THE GREAT WAR"]
-		},
-		{
-			"number": 26, 
-			"name": "VACATED"
-		},
-		{
-			"number": 27, 
-			"name": "RAM_KAICHOW",
-			"reign": 1,
-			"defenses": ["JAKARA_JACKSON&MARIAH_MAY&ZOEY_STARK", "ZOEY_STARK", "BIANCA_BELAIR"], 
-		},
-		{
-			"number": 28, 
-			"name": "ANGELINA_LOVE",
-			"reign": 1,
-			"defenses": ["RAM_KAICHOW", "RAM_KAICHOW", "NIKKITA_LYONS", "JAKARA_JACKSON", "MADISON_RAYNE"], 
-		},
-		{
-			"number": 29, 
-			"name": "VELVET_SKY",
-			"reign": 1,
-			"defenses": ["ANGELINA_LOVE&MADISON_RAYNE", "MARIAH_MAY"], 
-		},
-		{
-			"number": 30, 
-			"name": "ANGELINA_LOVE",
-			"reign": 2,
-			"defenses": ["VELVET_SKY&MADISON_RAYNE"], 
-		},
-		{
-			"number": 31, 
-			"name": "MADISON_RAYNE",
-			"reign": 1,
-			"defenses": ["ANGELINA_LOVE", "ANGELINA_LOVE", "VELVET_SKY"], 
-		},
-		{
-			"number": 32, 
-			"name": "MICHELLE_VELVET",
-			"reign": 1,
-			"defenses": ["MADISON_RAYNE", "MADISON_RAYNE", "SLADER", "HALIE_QUINN"], 
-		},
-		{
-			"number": 33, 
-			"name": "VACATED"
-		},
-		{
-			"number": 34, 
-			"name": "SLADER",
-			"reign": 1,
-			"defenses": ["KIRA", "LISA_LOST", "HALIE_QUINN"], 
-		},
-		{
-			"number": 35, 
-			"name": "NELLY_STORM",
-			"reign": 1,
-			"defenses": ["SLADER", "SLADER&BLAIRE_COUNTY", "BELINDA_LEE", "SLADER", "SLADER", "BELINDA_LEE&UPSKIRT_KIRA", "NATASHA_IVY"], 
-		},
-		{
-			"number": 36, 
-			"name": "PARIS_MONET",
-			"reign": 1,
-			"defenses": ["NELLY_STORM", "NATASHA_IVY"], 
-		},
-		{
-			"number": 37, 
-			"name": "BROOK_TAYLOR",
-			"reign": 1,
-			"defenses": ["PARIS_MONET", "PARIS_MONET", "BELINDA_LEE", "SAM_GOLDEN"], 
-		},
-		{
-			"number": 38, 
-			"name": "UPSKIRT_KIRA",
-			"reign": 1,
-			"defenses": ["BROOK_TAYLOR", "BELINDA_LEE", "BELINDA_LEE", "SAM_GOLDEN", "JUJU_FUN", "NORI", "BLAIRE_COUNTY", "NORI"], 
-		},
-		{
-			"number": 39, 
-			"name": "CELINE",
-			"reign": 1,
-			"defenses": ["UPSKIRT_KIRA", "UPSKIRT_KIRA", "UPSKIRT_KIRA", "SAM_GOLDEN", "SCARLETT_WINGS-DQ", "SAM_GOLDEN", "X_TWO", "X_FOUR", "SCARLETT_WINGS", "LORNA_LIGHT"], 
-		},
-		{
-			"number": 40, 
-			"name": "VACATED"
-		},
-		{
-			"number": 41, 
-			"name": "LORNA_LIGHT",
-			"reign": 1,
-			"defenses": ["BELINDA_LEE&SAM_GOLDEN", "SAM_GOLDEN", "SAM_GOLDEN"], 
-		},
-		{
-			"number": 42, 
-			"name": "JORDAN_SKY",
-			"reign": 1,
-			"defenses": ["LORNA_LIGHT", "LORNA_LIGHT", "MALA_MALA", "BELINDA_LEE", "ROSIE_FOX"], 
-		},
-		{
-			"number": 42, 
-			"name": "LONI_ENERGY",
-			"reign": 1,
-			"defenses": ["JORDAN_SKY&ROSIE_FOX", "BELINDA_LEE", "BELINDA_LEE", "ROSIE_FOX", "LEENA", "LEENA"], 
-		},
-		{
-			"number": 43, 
-			"name": "SUMMER_HAYES",
-			"reign": 1,
-			"defenses": ["LONI_ENERGY", "LONI_ENERGY"], 
-		},
-		{
-			"number": 44, 
-			"name": "VACATED"
-		},
-		{
-			"number": 45, 
-			"name": "DAISY_MAYFIELD",
-			"reign": 1,
-			"defenses": ["GIGI_FITNESS", "GIGI_FITNESS-DQ", "MORGAN_NITRA", "SARAH_LAY", "SARAH_LAY"], 
-		},
-		{
-			"number": 46, 
-			"name": "AOD",
-			"reign": 1,
-			"defenses": ["DAISY_MAYFIELD", "DAISY_MAYFIELD", "DRIANA", "DRIANA", "DRIANA", "MORGAN_NITRA", "MORGAN_NITRA"], 
-		},
-		{
-			"number": 47, 
-			"name": "QUEEN_AMINAT",
-			"reign": 1,
-			"defenses": ["DRIANA&AOD"], 
-		},
-		{
-			"number": 48, 
-			"name": "ALICIA_BLADE",
-			"reign": 1,
-			"defenses": ["QUEEN_AMINAT", "GINA_FONG", "TT_SLIM", "DRIANA-DQ", "DRIANA", "QUEEN_AMINAT", "BONNIE_REN"], 
-		},
-		{
-			"number": 49, 
-			"name": "CAROLINA_CHAZ",
-			"reign": 1,
-			"defenses": ["ALICIA_BLADE&BONNIE_REN&DRIANA&GLENDA_SANCHEZ"], 
-		}
+		{ name: "PAIGE", defenses: ["KAITLYN&TORRIE_WILSON&ASUKA","MANDY_ROSE","KAITLYN","KAITLYN","KAITLYN"] },
+		{ name: "KAINE", defenses: ["PAIGE","LAURA_VEE","CALI","LAURA_VEE","CALI&LAURA_VEE","NATALYA","CHAROLETTE","SASHA_BANKS","LITA","BAYLEY","BECKY_LYNCH"] },
+		{ name: "TRISH_STRATUS", defenses: ["KAINE"] },
+		{ name: "KAINE", defenses: ["TRISH_STRATUS","RONDA_ROUSEY","CALI","EVA_MARIE","MICHELLE_MCCOOL","CALI","TRISH_STRATUS","JASMINE_LOVE"] },
+		{ name: "LAURA_VEE", defenses: ["KAINE","EVA_MARIE","NATALYA","JASMINE_LOVE","CALI"] },
+		{ name: "VIOLET_JADE", defenses: ["LAURA_VEE","LAURA_VEE"] },
+		{ name: "LAURA_VEE", defenses: ["VIOLET_JADE&VICTORIA_WINTERS","VIOLET_JADE","SABLE","LAYLA","VICTORIA_WINTERS","HEAVY_FLO","CALI","ALISON_JANS","TESSA_BLANCHARD","EMBER_MOON","EMBER_MOON","NIA_JAX","EMBER_MOON"] },
+		{ name: "ALISON_JANS", defenses: ["LAURA_VEE","SABLE"] },
+		{ name: "MARYSE", defenses: ["ALISON_JANS","TESSA_BLANCHARD","ALISON_JANS","HEAVY_FLO","EMBER_MOON","CALI","EVA_MARIE","LAURA_VEE","TESSA_BLANCHARD","TRISH_STRATUS","MICKIE_JAMES"] },
+		{ name: "KAITLYN", defenses: ["MARYSE","ALISON_JANS","NIA_JAX&EMBER_MOON"] },
+		{ name: "MARYSE", defenses: ["KAITLYN","TESSA_BLANCHARD"] },
+		{ name: "HEAVY_FLO", defenses: ["MARYSE","EMBER_MOON"] },
+		{ name: "TESSA_BLANCHARD", defenses: ["HEAVY_FLO","KAITLYN","ALISON_JANS","TAMINA","EMBER_MOON"] },
+		{ name: "KAITLYN", defenses: ["TESSA_BLANCHARD","VICTORIA_WINTERS","EMBER_MOON-DQ"] },
+		{ name: "AJ_LEE", defenses: ["KAITLYN","KAITLYN","TAMINA"] },
+		{ name: "ASUKA", defenses: ["AJ_LEE","NIA_JAX","ALISON_JANS","TESSA_BLANCHARD","ALISON_JANS","VICTORIA_WINTERS","EMBER_MOON","HEAVY_FLO","BLU","EMBER_MOON"] },
+		{ name: "BLU", defenses: ["ASUKA","ASUKA","ASUKA","ARIEL","PAIGE","HEAVY_FLO","ASUKA","SUMMER_RAE"] },
+		{ name: "ASUKA", defenses: ["PAIGE&BLU","PAIGE","SEVEN","SEVEN","SEVEN"] },
+		{ name: "MOLITA", defenses: ["ASUKA","SUKI-DQ","AMBER_LEE","GIGI_MONDAY","HEAVY_FLO-DQ","LINDSEY_SPARKS","POLLY_SEAN","AMY_ORTON"] },
+		{ name: "BLU", defenses: ["MOLITA","MOLITA"] },
+		{ name: "MOLITA", defenses: ["HEAVY_FLO&BLU"] },
+		{ name: "AMY_ORTON", defenses: ["MOLITA"] },
+		{ name: "BLU", defenses: ["MOLITA&AMY_ORTON","ARIEL","HEAVY_FLO","MOLITA","SUKI","AMBER_LEE","HEAVY_FLO","MOLITA","HEAVY_FLO","SEVEN"] },
+		"VACATED",
+		{ name: "LINDSEY_SPARKS", defenses: ["CHRISTINA_FROST&HEAVY_FLO&MOLITA&POLLY_SEAN&SEVEN","HEAVY_FLO"] },
+		{ name: "MOLITA", defenses: ["LINDSEY_SPARKS"] },
+		{ name: "LINDSEY_SPARKS", defenses: ["MOLITA"] },
+		{ name: "MOLITA", defenses: ["LINDSEY_SPARKS","LINDSEY_SPARKS"] },
+		{ name: "JASMINE_LOVE", defenses: ["MOLITA","MOLITA","SEVEN-DQ","SEVEN"] },
+		{ name: "MARISSA_SUNSHINE", defenses: ["JASMINE_LOVE","JASMINE_LOVE","MOLITA"] },
+		{ name: "NICOLE_SUNSHINE", defenses: ["MARISSA_SUNSHINE","MARISSA_SUNSHINE","MARISSA_SUNSHINE","LOLA_STARR","POLLY_SEAN","POLLY_SEAN"] },
+		{ name: "AMANDA_GREEN", defenses: ["NICOLE_SUNSHINE","JASMINE_LOVE"] },
+		{ name: "LINDSEY_SPARKS", defenses: ["AMANDA_GREEN-FORFEIT","MIKU","POLLY_SEAN","POLLY_SEAN"] },
+		{ name: "VICTORIA_WINTERS", defenses: ["LINDSEY_SPARKS","LINDSEY_SPARKS","POLLY_SEAN"] },
+		{ name: "NICOLE_SUNSHINE", defenses: ["TIFFANY_VIOLET&VICTORIA_WINTERS","MARISSA_SUNSHINE","VICTORIA_WINTERS","LAYLA"] },
+		{ name: "FLORA", defenses: ["NICOLE_SUNSHINE","BAYLEY","POLLY_SEAN"] },
+		{ name: "POLLY_SEAN", defenses: ["FLORA","TIFFANY_VIOLET-DQ"] },
+		{ name: "SELITA_MENDES", defenses: ["POLLY_SEAN","POLLY_SEAN","VICTORIA_WINTERS&FLORA&POLLY_SEAN"] },
+		"VACATED",
+		{ name: "SARRAY", defenses: ["SONYA_DEVILLE&RHEA_RIPLEY"] },
+		{ name: "SONYA_DEVILLE", defenses: ["SARRAY","LACEY_EVANS"] },
+		{ name: "LACEY_EVANS", defenses: ["SONYA_DEVILLE","SONYA_DEVILLE","SONYA_DEVILLE","SARRAY","RHEA_RIPLEY","SARRAY","RAQUEL_RODRIGUEZ"] },
+		{ name: "IYO_SKY", defenses: ["LACEY_EVANS","LACEY_EVANS","RHEA_RIPLEY"] },
+		{ name: "MANDY_ROSE", defenses: ["IYO_SKY","IYO_SKY","DAKOTA_KAI","BAYLEY","XIA_LI","XIA_LI"] },
+		{ name: "MAYU_IWATANI", defenses: ["MANDY_ROSE"] },
+		{ name: "MANDY_ROSE", defenses: ["SYURI&MAYU_IWATANI&UNAGI_SAYAKA&TAM_NAKANO-WARGAMES","MAYU_IWATANI-DQ","MAYU_IWATANI"] },
+		{ name: "AZM", defenses: ["MANDY_ROSE","MANDY_ROSE","SONYA_DEVILLE&MANDY_ROSE","RAQUEL_RODRIGUEZ","SONYA_DEVILLE"] },
+		{ name: "MANDY_ROSE", defenses: ["AZM&SONYA_DEVILLE","MAYU_IWATANI","IYO_SKY"] },
+		{ name: "TAM_NAKANO", defenses: ["MANDY_ROSE","MANDY_ROSE&RHEA_RIPLEY&IYO_SKY&MAYU_IWATANI","MANDY_ROSE","RHEA_RIPLEY","LACEY_EVANS"] },
+		{ name: "LACEY_EVANS", defenses: ["TAM_NAKANO&MANDY_ROSE","BAYLEY","IYO_SKY"] },
+		{ name: "IYO_SKY", defenses: ["LACEY_EVANS","MANDY_ROSE","LACEY_EVANS","SONYA_DEVILLE","MANDY_ROSE","LACEY_EVANS","RHEA_RIPLEY","RAQUEL_RODRIGUEZ","RAQUEL_RODRIGUEZ","RHEA_RIPLEY","MANDY_ROSE-DQ","RONDA_ROUSEY&MANDY_ROSE&LACEY_EVANS - THE GREAT WAR"] },
+		"VACATED",
+		{ name: "CHELSEA_GREEN", defenses: ["DAKOTA_KAI&LIV_MORGAN&MADISON_RAYNE&VELVET_SKY&ANGELINA_LOVE&SHOTZI&NAOMI","BAYLEY","DAKOTA_KAI"] },
+		{ name: "DAKOTA_KAI", defenses: ["CHELSEA_GREEN","CHELSEA_GREEN","CANDICE_LERAE-DQ"] },
+		{ name: "CANDICE_LERAE", defenses: ["DAKOTA_KAI","DAKOTA_KAI","BAYLEY","SASHA_BANKS-DQ","SASHA_BANKS","IYO_SKY","IYO_SKY","CHELSEA_GREEN&STARLIGHT_KID","IYO_SKY"] },
+		{ name: "LIV_MORGAN", defenses: ["CANDICE_LERAE","DAKOTA_KAI","BAYLEY","CHELSEA_GREEN","IYO_SKY","BLU - WRESTLEMANIA: WINNER TAKES ALL"] },
+		"VACATED",
+		{ name: "STARLIGHT_KID", defenses: ["CANDICE_LERAE&IYO_SKY&CHELSEA_GREEN","CANDICE_LERAE","CHELSEA_GREEN","DAKOTA_KAI","IYO_SKY"] },
+		{ name: "SASHA_BANKS", defenses: ["STARLIGHT_KID"] },
+		{ name: "LIV_MORGAN", defenses: ["SASHA_BANKS","CHELSEA_GREEN","CANDICE_LERAE","IYO_SKY","DAKOTA_KAI","ALISON_JANS","BAYLEY","DAKOTA_KAI","IYO_SKY","CHELSEA_GREEN"] },
+		{ name: "SASHA_BANKS", defenses: ["LIV_MORGAN","ROXANNE_PEREZ-DQ","ROXANNE_PEREZ","ROXANNE_PEREZ&CORA_JADE"] },
+		{ name: "CORA_JADE", defenses: ["SASHA_BANKS&ROXANNE_PEREZ","SASHA_BANKS","ROXANNE_PEREZ-DQ","ROXANNE_PEREZ","DAKOTA_KAI","ROXANNE_PEREZ-DQ"] },
+		{ name: "DAKOTA_KAI", defenses: ["CORA_JADE","CORA_JADE","ROXANNE_PEREZ"] },
+		{ name: "LIV_MORGAN", defenses: ["DAKOTA_KAI","DAKOTA_KAI","MICHELLE_VELVET","MICHELLE_VELVET"] },
+		{ name: "ALISON_JANS", defenses: ["LIV_MORGAN"] },
+		{ name: "LIV_MORGAN", defenses: ["ALISON_JANS","DAKOTA_KAI","LISA_LOST"] },
+		{ name: "ALISON_JANS", defenses: ["LIV_MORGAN","CORA_JADE","JUNGO-DQ"] },
+		{ name: "LIV_MORGAN", defenses: ["ALISON_JANS","ALISON_JANS","ALISON_JANS"] },
+		{ name: "CORA_JADE", defenses: ["LIV_MORGAN","ALISON_JANS","ROXANNE_PEREZ","ROXANNE_PEREZ","MICHELLE_VELVET","MICHELLE_VELVET"] },
+		{ name: "JUNGO", defenses: ["CORA_JADE"] },
+		{ name: "LIV_MORGAN", defenses: ["JUNGO","CORA_JADE","CORA_JADE&ROXANNE_PEREZ&MICHELLE_VELVET","CORA_JADE","JUNGO","ROXANNE_PEREZ","JUNGO","SLOANE","CORA_JADE","NELLY_STORM"] },
+		{ name: "NELLY_STORM", defenses: ["LIV_MORGAN","ROXANNE_PEREZ"] },
+		{ name: "PARIS_MONET", defenses: ["NELLY_STORM","NELLY_STORM","CORA_JADE","CORA_JADE","GIGI_DOLIN","ROXANNE_PEREZ","SLOANE","JUNGO-DQ","JUNGO","JUST_JANINE","JUST_JANINE"] },
+		"VACATED",
+		{ name: "HALIE_QUINN", defenses: ["ROXANNE_PEREZ&NELLY_STORM&SLADER&MASK_GIRL&CORA_JADE&GIGI_DOLIN","ALICIA_HOUSE","SLOANE","CRYSTAL","CRYSTAL-DQ"] },
+		{ name: "PARIS_MONET", defenses: ["HALIE_QUINN","HALIE_QUINN","SLOANE","SLOANE"] },
+		{ name: "CRYSTAL", defenses: ["PARIS_MONET","PARIS_MONET-DQ"] },
+		{ name: "NELLY_STORM", defenses: ["CRYSTAL","PARIS_MONET-DQ","CRYSTAL&PARIS_MONET"] },
+		{ name: "PARIS_MONET", defenses: ["NELLY_STORM","NELLY_STORM","CRYSTAL"] },
+		{ name: "NELLY_STORM", defenses: ["PARIS_MONET","PARIS_MONET&HALIE_QUINN","HALIE_QUINN&JUST_JANINE","JUST_JANINE"] },
+		{ name: "HALIE_QUINN", defenses: ["NELLY_STORM","ALICIA_HOUSE","JUST_JANINE&NELLY_STORM"] },
+		{ name: "NELLY_STORM", defenses: ["HALIE_QUINN","HALIE_QUINN","HALIE_QUINN"] },
+		{ name: "TERESA_SHARP", defenses: ["NELLY_STORM","BROOK_TAYLOR","BROOK_TAYLOR"] },
+		{ name: "HALIE_QUINN", defenses: ["TERESA_SHARP&NELLY_STORM","BROOK_TAYLOR","TERESA_SHARP","TERESA_SHARP"] },
+		{ name: "CYNTHIA_RAMIREZ", defenses: ["HALIE_QUINN","HALIE_QUINN","TERESA_SHARP&BROOK_TAYLOR","BROOK_TAYLOR","NELLY_STORM"] },
+		{ name: "NELLY_STORM", defenses: ["CYNTHIA_RAMIREZ","CYNTHIA_RAMIREZ&HALIE_QUINN","HALIE_QUINN","TERESA_SHARP"] },
+		{ name: "CYNTHIA_RAMIREZ", defenses: ["NELLY_STORM","TERESA_SHARP&BROOK_TAYLOR","BROOK_TAYLOR","TERESA_SHARP","CRYSTAL","VERONICA_STEEL","VERONICA_STEEL"] },
+		{ name: "TERESA_SHARP", defenses: ["CYNTHIA_RAMIREZ","HALIE_QUINN"] },
+		{ name: "HALIE_QUINN", defenses: ["TERESA_SHARP","BROOK_TAYLOR","CYNTHIA_RAMIREZ","CYNTHIA_RAMIREZ","CYNTHIA_RAMIREZ&CARLA_GARCIA","CARLA_GARCIA","BROOK_TAYLOR","BROOK_TAYLOR-DQ","BROOK_TAYLOR-DQ","BROOK_TAYLOR"] },
+		{ name: "X_TWO", defenses: ["X_THREE&X_FOUR&HALIE_QUINN","CYNTHIA_RAMIREZ","CYNTHIA_RAMIREZ","UPSKIRT_KIRA","VERONICA_STEEL","UPSKIRT_KIRA&BROOK_TAYLOR"] },
+		{ name: "X_THREE", defenses: ["X_TWO","X_TWO"] },
+		{ name: "X_TWO", defenses: ["X_THREE","X_THREE","BROOK_TAYLOR-DQ","VERONICA_STEEL- DQ","JANE_MACK"] },
+		{ name: "BROOK_TAYLOR", defenses: ["X_TWO","VERONICA_STEEL-DQ","VERONICA_STEEL","VERONICA_STEEL&JANE_MACK","UPSKIRT_KIRA","UPSKIRT_KIRA"] },
+		{ name: "JUNGO", defenses: ["BROOK_TAYLOR","BROOK_TAYLOR","X_TWO","X_TWO&BROOK_TAYLOR","CRYSTAL"] },
+		{ name: "CELINE", defenses: ["JUNGO","JUNGO","LISA_LOST","JUJU_FUN","MALA_MALA","MALA_MALA","ALICIA_HOUSE","X_FOUR","LAUREN_SNOW"] },
+		{ name: "THE_MONARCH", defenses: ["CELINE","CELINE","MALA_MALA","JUNGO","JUNGO","X_FOUR","JUNGO","LAUREN_SNOW","ALICIA_HOUSE","ALICIA_HOUSE"] },
+		{ name: "MALA_MALA", defenses: ["THE_MONARCH","THE_MONARCH","CELINE","ALICIA_HOUSE&CELINE","SCARLETT_WINGS"] },
+		{ name: "JORDAN_SKY", defenses: ["MALA_MALA","MALA_MALA","CELINE","SCARLETT_WINGS","SCARLETT_WINGS","JUNGO"] },
+		{ name: "MALA_MALA", defenses: ["JORDAN_SKY&SCARLETT_WINGS","SCARLETT_WINGS","SCARLETT_WINGS"] },
+		{ name: "SCARLETT_WINGS", defenses: ["MALA_MALA","MALA_MALA","JUNGO","LAUREN_SNOW"] },
+		{ name: "JORDAN_SKY", defenses: ["SCARLETT_WINGS","SCARLETT_WINGS","JUNGO","JUNGO","MALA_MALA","ALICIA_HOUSE","MALA_MALA&CELINE"] },
+		{ name: "SCARLETT_WINGS", defenses: ["JORDAN_SKY","JORDAN_SKY-DQ","X_FOUR","CELINE"] },
+		{ name: "JORDAN_SKY", defenses: ["SCARLETT_WINGS","CELINE","CELINE","X_FOUR","MALA_MALA","LAUREN_SNOW","LAUREN_SNOW","SCARLETT_WINGS","DAISY_MAYFIELD","TT_SLIM"] }
 	],
-	"ELIMINATION_CHAMBER": {
-		"ALISON_JANS": 1, 
-		"SUMMER_RAE": 1, 
-		"JELINA_LOPEZ": 1, 
-		"HEAVY_FLO": 1, 
-		"AMY_ORTON": 1, 
-		"TIFFANY_VIOLET": 1, 
-		"NICOLE_SUNSHINE": 1,
-		"ADAM_PEARCE": 1, 
-		"MANDY_ROSE": 1,
-		"LIV_MORGAN": 1, 
-		"THE_MIZ": 1,
-		"BRENT_HUNTER": 1,
-		"LISA_LOST": 1,
-		"BILLY_PONG": 1,
-	},
-	"MITB": {
-		"JELINA_LOPEZ": 1, 
-		"SUKI": 1, 
-		"FLORA": 1, 
-		"TERRI_RENNELS": 1, 
-		"VICTORIA_WINTERS": 1, 
-		"TIFFANY_VIOLET": 1,
-		"DANA_BROOKE": 1,
-		"RIDGE_HOLLAND": 1,
-		"UNAGI_SAYAKA": 1,
-		"STARLIGHT_KID": 1,
-		"JULIUS_CREED": 1,
-		"HALIE_QUINN": 1, 
-		"JOHNNY_AMERICA": 1,
-		"CRYSTAL": 1, 
-		"TONY_TORNADO": 1,
-		"DANNY_PUMPKIN": 1,
-		"SLADER": 1,
-		"JOEY_JET": 1,
-	},
-	"ROYAL_RUMBLE":{
-		"ASUKA": 1,
-	},
-	"TAG": [
-		{
-			"number": 1, 
-			"name": "DIVAS OF DOOM",
-			"members": "BETH_PHOENIX[1]&NATALYA[1]",
-			"defenses": ["FAB LOVE (JASMINE_LOVE, CARMELLA)", "BELLA TWINS", "AMBER_LEE, GAIL_KIM"]
-		},
-		{
-			"number": 2, 
-			"name": "FAB LOVE",
-			"members": "JASMINE_LOVE[1]&CARMELLA[1]",
-			"defenses": ["DIVAS OF DOOM (BETH_PHOENIX, NATALYA)"]
-		},
-		{
-			"number": 3, 
-			"name": "HEAVY PUNISHERS",
-			"members": "HEAVY_FLO[1]&TAMINA[1]",
-			"defenses": ["FAB LOVE (JASMINE_LOVE, CARMELLA)", "CELESTIAL GUARDIANS (LOLA_STARR, EMBER_MOON)", "GIGI_MONDAY, ZELINA_VEGA" ]
-		},
-		{
-			"number": 4, 
-			"name": "TWISTED BLISS",
-			"members": "ALEXA_BLISS[1]&NIKKI_CROSS[1]",
-			"defenses": ["HEAVY PUNISHERS (HEAVY_FLO, TAMINA)"]
-		},
-		{
-			"number": 5, 
-			"name": "FAB LOVE",
-			"members": "JASMINE_LOVE[2]&CARMELLA[2]",
-			"defenses": ["TWISTED BLISS (ALEXA_BLISS, NIKKI_CROSS)", "TWISTED BLISS (ALEXA_BLISS, NIKKI_CROSS)", "RED & GOLD (MANDY_ROSE, EVA_MARIE)", "AMBER_LEE, GAIL_KIM",  "HEAVY PUNISHERS (HEAVY_FLO, TAMINA)"]
-		},
-		{
-			"number": 6, 
-			"name": "RED & GOLD",
-			"members": "MANDY_ROSE[1]&EVA_MARIE[1]",
-			"defenses": ["FAB LOVE (JASMINE_LOVE, CARMELLA)", "HEAVY PUNISHERS (HEAVY_FLO, TAMINA)", "CELESTIAL GUARDIANS (LOLA_STARR, EMBER_MOON)"]
-		},
-		{
-			"number": 7, 
-			"name": "ASUKA, BLU",
-			"members": "ASUKA[1]&BLU[1]",
-			"defenses": ["RED & GOLD (MANDY_ROSE, EVA_MARIE)", "HEAVY PUNISHERS (HEAVY_FLO, TAMINA)", "TWISTED BLISS (ALEXA_BLISS, NIKKI_CROSS)", "CELESTIAL GUARDIANS (LOLA_STARR, EMBER_MOON)"]
-		},
-		{
-			"number": 8, 
-			"name": "TWISTED BLISS",
-			"members": "ALEXA_BLISS[2]&NIKKI_CROSS[2]",
-			"defenses": ["ASUKA, BLU","AMERICAN PATRIOTS (LINDSEY_SPARKS, POLLY_SEAN)"]
-		},
-		{
-			"number": 9, 
-			"name": "FOX MONEY",
-			"members": "CARMELLA[3]&ALICIA_FOX[1]",
-			"defenses": ["TWISTED BLISS (ALEXA_BLISS, NIKKI_CROSS)", "SUMMER_RAE, EMMA", "AMERICAN PATRIOTS (LINDSEY_SPARKS, POLLY_SEAN)"]
-		},
-		{
-			"number": 10, 
-			"name": "BLACK LOTUS",
-			"members": "CALI[1]&AORI_SATO[1]",
-			"defenses": ["FOX MONEY (CARMELLA, ALICIA_FOX)", "FOX MONEY (CARMELLA, ALICIA_FOX)", "AMERICAN PATRIOTS (LINDSEY_SPARKS, POLLY_SEAN)", "AMERICAN PATRIOTS (LINDSEY_SPARKS, POLLY_SEAN)"]
-		},
-		{
-			"number": 11, 
-			"name": "AMERICAN PATRIOTS",
-			"members": "LINDSEY_SPARKS[1]&POLLY_SEAN[1]",
-			"defenses": ["BLACK LOTUS (CALI, AORI_SATO)", "DARK VIPER (AMY_ORTON, DARK_JENNA)", "BLACK LOTUS (CALI, AORI_SATO)"]
-		},
-		{
-			"number": 12, 
-			"name": "BLACK LOTUS",
-			"members": "CALI[2]&AORI_SATO[2]",
-			"defenses": ["AMERICAN PATRIOTS (LINDSEY_SPARKS, POLLY_SEAN)", "DARK VIPER (AMY_ORTON, DARK_JENNA)", "AMERICAN PATRIOTS (LINDSEY_SPARKS, POLLY_SEAN)"]
-		},
-		{
-			"number": 13, 
-			"name": "DARK VIPER",
-			"members": "AMY_ORTON[1]&DARK_JENNA[1]",
-			"defenses": ["BLACK LOTUS (CALI, AORI_SATO)", "BLACK LOTUS (CALI, AORI_SATO)", "BLACK LOTUS (CALI, AORI_SATO)"]
-		},
-		{
-			"number": 14, 
-			"name": "THE SUNSHINE GIRLS",
-			"members": "MARISSA_SUNSHINE[1]&NICOLE_SUNSHINE[1]",
-			"defenses": ["DARK VIPER (AMY_ORTON, DARK_JENNA)", "AMERICAN PATRIOTS (LINDSEY_SPARKS, POLLY_SEAN)", "CANDYLICKS (LOLA_STARR, GIGI_MONDAY)", "CANDYLICKS (LOLA_STARR, GIGI_MONDAY)", "BLACK LOTUS (CALI, AORI_SATO)"]
-		},
-		{
-			"number": 15, 
-			"name": "CANDYLICKS",
-			"members": "LOLA_STARR[1]&GIGI_MONDAY[1]",
-			"defenses": ["THE SUNSHINE GIRLS (MARISSA_SUNSHINE, NICOLE_SUNSHINE)"]
-		},
-		{
-			"number": 16, 
-			"name": "BLACK LOTUS",
-			"members": "CALI[3]&AORI_SATO[3]",
-			"defenses": ["CANDYLICKS (LOLA_STARR, GIGI_MONDAY)", "DARK VIPER (AMY_ORTON, DARK_JENNA)"]
-		},
-		{
-			"number": 17, 
-			"name": "THE SUNSHINE GIRLS",
-			"members": "MARISSA_SUNSHINE[2]&NICOLE_SUNSHINE[2]",
-			"defenses": ["BLACK LOTUS (CALI, AORI_SATO)", "DARK VIPER (AMY_ORTON, DARK_JENNA)", "BLACK LOTUS (CALI, AORI_SATO)"]
-		},
-		{
-			"number": 18, 
-			"name": "VACATED"
-		},
-		{
-			"number": 19, 
-			"name": "THE MENTORSHIP",
-			"members": "MOLITA[1]&AMBER_LEE[1]",
-			"defenses": ["DARK VIPER (AMY_ORTON, DARK_JENNA)", "CANDYLICKS (LOLA_STARR, GIGI_MONDAY)", "TEAM BESTIES (TRISH_STRATUS, LITA)", "TEAM BESTIES (TRISH_STRATUS, LITA)", "PRETTY GIRL NATION (JICKIE_MAMES, JESSICA_WILD)"]
-		},
-		{
-			"number": 20, 
-			"name": "PRETTY GIRL NATION",
-			"members": "JICKIE_MAMES[1]&JESSICA_WILD[1]",
-			"defenses": ["THE MENTORSHIP (MOLITA, AMBER_LEE)"]
-		},
-		{
-			"number": 21, 
-			"name": "THE MENTORSHIP",
-			"members": "MOLITA[2]&AMBER_LEE[2]",
-			"defenses": ["PRETTY GIRL NATION (JICKIE_MAMES, JESSICA_WILD)", "PRETTY GIRL NATION (JICKIE_MAMES, JESSICA_WILD)", "HARDLETHICS (TORNADO_MAY, OLIVIA_ANNE)", "BLACK LOTUS (CALI, AORI_SATO)", "HARDLETHICS (TORNADO_MAY, OLIVIA_ANNE)"]
-		},
-        	{
-			"number": 22, 
-			"name": "VACATED"
-		},
-		{
-			"number": 23, 
-			"name": "DIVAS UNITE",
-			"members": "KELLY_KELLY[1]&ALIYAH[1]",
-			"defenses": ["TEAM NINJA (KATANA_CHANCE, KAYDEN_CARTER)", "TOXIC ATTRACTION (GIGI_DOLIN, JACY_JAYNE)"]
-		},
-		{
-			"number": 24, 
-			"name": "TOXIC ATTRACTION",
-			"members": "GIGI_DOLIN[1]&JACY_JAYNE[1]",
-			"defenses": ["DIVAS UNITE (KELLY_KELLY, ALIYAH)", "DIVAS UNITE (KELLY_KELLY, ALIYAH)", "DIVAS UNITE (KELLY_KELLY, ALIYAH)", "DAMAGE CTRL (IYO_SKY, DAKOTA_KAI)", "THE WAY (INDI_HARTWELL, CANDICE_LERAE)"]
-		},
-		{
-			"number": 25, 
-			"name": "COSMIC POWER",
-			"members": "MAYU_IWATANI[1]&SARRAY[1]",
-			"defenses": ["TOXIC ATTRACTION (GIGI_DOLIN, JACY_JAYNE)", "THE WAY (INDI_HARTWELL, CANDICE_LERAE)", "TEAM NINJA (KATANA_CHANCE, KAYDEN_CARTER)"]
-		},
-		{
-			"number": 26, 
-			"name": "THE RESISTANCE",
-			"members": "LACEY_EVANS[1]&NATALYA[2]",
-			"defenses": ["COSMIC POWER (MAYU_IWATANI, SARRAY)"]
-		},
-		{
-			"number": 27, 
-			"name": "DAMAGE CTRL",
-			"members": "IYO_SKY[1]&DAKOTA_KAI[1]",
-			"defenses": ["THE RESISTANCE (LACEY_EVANS, NATALYA)", "TOXIC ATTRACTION (GIGI_DOLIN, JACY_JAYNE)", "THE RESISTANCE (LACEY_EVANS, NATALYA)"]
-		},
-		{
-			"number": 28, 
-			"name": "THE RESISTANCE",
-			"members": "LACEY_EVANS[2]&NATALYA[3]",
-			"defenses": ["DAMAGE CTRL (IYO_SKY, DAKOTA_KAI)", "DAMAGE CTRL (IYO_SKY, DAKOTA_KAI)", "TWISTED BLISS (ALEXA_BLISS, NIKKI_CROSS)", "THE WAY (INDI_HARTWELL, CANDICE_LERAE)", "LUNAR RUSH (AZM, SARRAY)"]
-		},
-		{
-			"number": 29, 
-			"name": "LUNAR RUSH",
-			"members": "AZM[1]&SARRAY[2]",
-			"defenses": ["THE RESISTANCE (LACEY_EVANS, NATALYA)", "TOXIC ATTRACTION (GIGI_DOLIN, JACY_JAYNE)", "TEAM NINJA (KATANA_CHANCE, KAYDEN_CARTER)", "TEAM NINJA (KATANA_CHANCE, KAYDEN_CARTER)", "DIVAS UNITE (KELLY_KELLY, ALIYAH)", "DIVAS UNITE (KELLY_KELLY, ALIYAH)", "THE WAY (INDI_HARTWELL, CANDICE_LERAE)"]
-		},
-		{
-			"number": 30, 
-			"name": "TOXIC ATTRACTION (FIRE & DESIRE)",
-			"members": "MANDY_ROSE[2]&SONYA_DEVILLE[1]",
-			"defenses": ["LUNAR RUSH (AZM, SARRAY)"]
-		},
-		{
-			"number": 31, 
-			"name": "LUNAR RUSH",
-			"members": "AZM[2]&SARRAY[3]",
-			"defenses": ["TOXIC ATTRACTION/FIRE & DESIRE (MANDY_ROSE, SONYA_DEVILLE)", "TOXIC ATTRACTION (GIGI_DOLIN, JACY_JAYNE)", "SONYA_DEVILLE&SHAYNA_BASZLER&GIGI_DOLIN&JACY_JAYNE - THE GREAT WAR"]
-		},
-		{
-			"number": 32, 
-			"name": "VACATED"
-		},
-		{
-			"number": 33, 
-			"name": "NEXUS",
-			"members": "ROXANNE_PEREZ[1]&CORA_JADE[1]",
-			"defenses": ["TEAM NINJA (KATANA_CHANCE, KAYDEN_CARTER)", "THE WAY (INDI_HARTWELL, CANDICE_LERAE)", "DAMAGE CTRL (DAKOTA_KAI, BAYLEY)", "THE BEAUTIFUL PEOPLE (ANGELINA_LOVE, VELVET_SKY)", "TEAM NINJA (KATANA_CHANCE, KAYDEN_CARTER)", "TWISTED BLISS (ALEXA_BLISS, NIKKI_CROSS)"]
-		},
-		{
-			"number": 34, 
-			"name": "COUGAR FANTASY",
-			"members": "SABLE[1]&SCARLETT[1]",
-			"defenses": ["NEXUS (ROXANNE_PEREZ, CORA_JADE)", "TWISTED BLISS (ALEXA_BLISS, NIKKI_CROSS)", "THE GUARDIANS (KAIRI, XIA_LI) - DQ", "TWISTED BLISS (ALEXA_BLISS, NIKKI_CROSS)"]
-		},
-		{
-			"number": 35, 
-			"name": "THE GUARDIANS",
-			"members": "KAIRI[1]&XIA_LI[1]",
-			"defenses": ["COUGAR FANTASY (SABLE, SCARLETT)"]
-		},
-		{
-			"number": 36, 
-			"name": "DAMAGE CTRL",
-			"members": "IYO_SKY[2]&DAKOTA_KAI[2]",
-			"defenses": ["THE GUARDIANS (KAIRI, XIA_LI)", "TEAM NINJA (KATANA_CHANCE, KAYDEN_CARTER)"]
-		},
-		{
-			"number": 37, 
-			"name": "ALISON JANS & ROXANNE PEREZ",
-			"members": "ALISON_JANS[1]&ROXANNE_PEREZ[2]",
-			"defenses": ["DAMAGE CTRL (IYO_SKY, DAKOTA_KAI) - WRESTLEMANIA", "TEAM NINJA (KATANA_CHANCE, KAYDEN_CARTER)-DQ", "TEAM NINJA (KATANA_CHANCE, KAYDEN_CARTER)", "DAMAGE CTRL (IYO_SKY, DAKOTA_KAI)"]
-		},
-		{
-			"number": 38, 
-			"name": "THE IICONICS",
-			"members": "PEYTON_ROYCE[1]&BILLIE_KAY[1]",
-			"defenses": ["ALISON_JANS, ROXANNE_PEREZ", "TWISTED BLISS (ALEXA_BLISS, NIKKI_CROSS)", "THE GUARDIANS (XIA_LI, KAIRI)", "THE WAY (INDI_HARTWELL, CANDICE_LERAE)"]
-		},
-		{
-			"number": 39, 
-			"name": "THE WAY",
-			"members": "CANDICE_LERAE[1]&INDI_HARTWELL[1]",
-			"defenses": ["THE IICONICS (PEYTON_ROYCE, BILLIE_KAY)", "DAMAGE CTRL (BAYLEY, DAKOTA_KAI)"]
-		},
-		{
-			"number": 40, 
-			"name": "THE IICONICS",
-			"members": "PEYTON_ROYCE[2]&BILLIE_KAY[2]",
-			"defenses": ["THE WAY (INDI_HARTWELL, CANDICE_LERAE)", "TWISTED BLISS (ALEXA_BLISS, NIKKI_CROSS)"]
-		},
-		{
-			"number": 41, 
-			"name": "THE WAY",
-			"members": "CANDICE_LERAE[2]&INDI_HARTWELL[2]",
-			"defenses": ["THE IICONICS (PEYTON_ROYCE, BILLIE_KAY)", "TEAM NINJA (KATANA_CHANCE, KAYDEN_CARTER)", "DAMAGE CTRL (BAYLEY, DAKOTA_KAI)", "TEAM NINJA (KATANA_CHANCE, KAYDEN_CARTER)", "DOUBLEHIT (MIA_YIM, SHOTZI)"]
-		},
-		{
-			"number": 42, 
-			"name": "BLACK GIRL MAGIC",
-			"members": "NAOMI[1]&JAKARA_JACKSON[1]",
-			"defenses": ["THE WAY (INDI_HARTWELL, CANDICE_LERAE)"]
-		},
-		{
-			"number": 43, 
-			"name": "SILENT ROSE",
-			"members": "CHELSEA_GREEN[1]&MARIAH_MAY[1]",
-			"defenses": ["BLACK GIRL MAGIC (NAOMI, JAKARA_JACKSON)", "THE IICONICS (PEYTON_ROYCE, BILLIE_KAY)", "ALISON_JANS, ROXANNE_PEREZ", "BLACK GIRL MAGIC (NAOMI, JAKARA_JACKSON)", "TOUGH COMPANY (LISA_LOST, JANE_MACK)", "TOUGH COMPANY (LISA_LOST, JANE_MACK)", "TOUGH COMPANY (LISA_LOST, JANE_MACK)", "TOUGH COMPANY (LISA_LOST, JANE_MACK)", "TEAM BAD (NAOMI, TAMINA)"]
-		},
-		{
-			"number": 44, 
-			"name": "THE FALLEN",
-			"members": "LIV_MORGAN[1]&GIGI_DOLIN[2]",
-			"defenses": ["SILENT ROSE (CHELSEA_GREEN, MARIAH_MAY)", "SILENT ROSE (TERESA_SHARP, LAUREN_SNOW)"]
-		},
-		{
-			"number": 45, 
-			"name": "DOUBLE SPICE",
-			"members": "CYNTHIA_RAMIREZ[1]&HALIE_QUINN[1]",
-			"defenses": ["THE FALLEN (LIV_MORGAN, GIGI_DOLIN)"]
-		},
-		{
-			"number": 46, 
-			"name": "HOUSE GIRLS",
-			"members": "ALICIA_HOUSE[1]&MASK_GIRL[1]",
-			"defenses": ["DOUBLE SPICE (CYNTHIA_RAMIREZ, HALIE_QUINN)"]
-		},
-		{
-			"number": 47, 
-			"name": "DOUBLE SPICE",
-			"members": "CYNTHIA_RAMIREZ[2]&HALIE_QUINN[2]",
-			"defenses": ["HOUSE GIRLS (ALICIA_HOUSE, MASK_GIRL)", "HOUSE GIRLS (ALICIA_HOUSE, MASK_GIRL)"]
-		},
-		{
-			"number": 48, 
-			"name": "SILENT ROSE",
-			"members": "TERESA_SHARP[1]&LAUREN_SNOW[1]",
-			"defenses": ["DOUBLE SPICE (CYNTHIA_RAMIREZ, HALIE_QUINN)", "TOUGH COMPANY (LISA_LOST, JANE_MACK)", "TOUGH COMPANY (LISA_LOST, JANE_MACK)"]
-		},
-		{
-			"number": 49, 
-			"name": "THE ATTITUDE",
-			"members": "CRYSTAL[1]&PARIS_MONET[1]",
-			"defenses": ["SILENT ROSE (TERESA_SHARP, LAUREN_SNOW)", "HOUSE GIRLS (ALICIA_HOUSE, MASK_GIRL)", "SILENT ROSE (TERESA_SHARP, LAUREN_SNOW)"]
-		},
-		{
-			"number": 50, 
-			"name": "TOUGH COMPANY",
-			"members": "LISA_LOST[1]&JANE_MACK[1]",
-			"defenses": ["THE ATTITUDE (CRYSTAL, PARIS_MONET)", "THE ATTITUDE (CRYSTAL, PARIS_MONET)"]
-		},
-		{
-			"number": 51, 
-			"name": "JUICY GIRLS",
-			"members": "JESSICA_CUP[1]&JUST_JANINE[1]",
-			"defenses": ["TOUGH COMPANY (LISA_LOST, JANE_MACK)", "HOUSE GIRLS (ALICIA_HOUSE, MASK_GIRL)"]
-		},
-		{
-			"number": 52, 
-			"name": "VACATED"
-		},
-		{
-			"number": 53, 
-			"name": "NEON PARTY",
-			"members": "NELLY_STORM[1]&SLADER[1]",
-			"defenses": ["HOUSE GIRLS (ALICIA_HOUSE, MASK_GIRL)", "METALLIC ANGELS (VERONICA_STEEL, JANE_MACK)", "THE WILDSIDE (JUNGO, JULIET_SUNSET)", "SILENT ROSE (SLOANE, LAUREN_SNOW)"]
-		},
-		{
-			"number": 54, 
-			"name": "METALLIC ANGELS",
-			"members": "JANE_MACK[2]&VERONICA_STEEL[1]",
-			"defenses": ["NEON PARTY (NELLY_STORM, SLADER)", "NEON PARTY (NELLY_STORM, SLADER)", "SILENT ROSE (SLOANE, LAUREN_SNOW)"]
-		},
-		{
-			"number": 55, 
-			"name": "NEON PARTY",
-			"members": "NELLY_STORM[2]&SLADER[2]",
-			"defenses": ["METALLIC ANGELS (VERONICA_STEEL, JANE_MACK)", "METALLIC ANGELS (VERONICA_STEEL, JANE_MACK)", "METALLIC ANGELS (VERONICA_STEEL, JANE_MACK)", "SILENT ROSE (SLOANE, LAUREN_SNOW)", "SILENT ROSE (SLOANE, LAUREN_SNOW)", "THE WILDSIDE (JUNGO, JULIET_SUNSET)", "SILENT ROSE (SLOANE, LAUREN_SNOW)"]
-		},
-		{
-			"number": 56, 
-			"name": "SILENT ROSE",
-			"members": "SLOANE[1]&LAUREN_SNOW[2]",
-			"defenses": ["NEON PARTY (NELLY_STORM, SLADER)", "THE WILDSIDE (JUNGO, JULIET_SUNSET)", "METALLIC ANGELS (VERONICA_STEEL, JANE_MACK)"]
-		},
-		{
-			"number": 57, 
-			"name": "THE WILDSIDE",
-			"members": "JUNGO[1]&JULIET_SUNSET[1]",
-			"defenses": ["SILENT ROSE (SLOANE, LAUREN_SNOW)"]
-		},
-		{
-			"number": 58, 
-			"name": "SILENT ROSE",
-			"members": "SLOANE[2]&LAUREN_SNOW[3]",
-			"defenses": ["THE WILDSIDE (JUNGO, JULIET_SUNSET)", "METALLIC ANGELS (VERONICA_STEEL, JANE_MACK)"]
-		},
-		{
-			"number": 59, 
-			"name": "VACATED"
-		},
-		{
-			"number": 60, 
-			"name": "METALLIC ANGELS",
-			"members": "JANE_MACK[3]&VERONICA_STEEL[2]",
-			"defenses": ["THE WILDSIDE (JUNGO, JULIET_SUNSET)", "THE WILDSIDE (JUNGO, JULIET_SUNSET)", "SILENT ROSE (SLOANE, LAUREN_SNOW)"]
-		},
-		{
-			"number": 61, 
-			"name": "THE WILDSIDE",
-			"members": "JUNGO[2]&JULIET_SUNSET[2]",
-			"defenses": ["METALLIC ANGELS (VERONICA_STEEL, JANE_MACK)", "SILENT ROSE (SLOANE, LAUREN_SNOW)"]
-		},
-		{
-			"number": 62, 
-			"name": "DOUBLE SPICE",
-			"members": "CYNTHIA_RAMIREZ[3]&HALIE_QUINN[3]",
-			"defenses": ["THE WILDSIDE (JUNGO, JULIET_SUNSET)", "METALLIC ANGELS (VERONICA_STEEL, JANE_MACK)", "THE WILDSIDE (JUNGO, JULIET_SUNSET)", "THE WILDSIDE (JUNGO, JULIET_SUNSET)",  "SILENT ROSE (SLOANE, LAUREN_SNOW)",  "SILENT ROSE (SLOANE, LAUREN_SNOW)"]
-		},
-		{
-			"number": 63, 
-			"name": "THE WILDSIDE",
-			"members": "JUNGO[3]&JULIET_SUNSET[3]",
-			"defenses": ["DOUBLE SPICE (CYNTHIA_RAMIREZ, HALIE_QUINN)", "SILENT ROSE (SLOANE, LAUREN_SNOW)"]
-		},
-		{
-			"number": 64, 
-			"name": "TICKLED PINK",
-			"members": "JESSICA_CUP[2]&NATASHA_IVY[1]",
-			"defenses": ["THE WILDSIDE (JUNGO, JULIET_SUNSET)", "THE WILDSIDE (JUNGO, JULIET_SUNSET)", "SILENT ROSE (SLOANE, LAUREN_SNOW)"]
-		},
-		{
-			"number": 65, 
-			"name": "NEON PARTY",
-			"members": "NELLY_STORM[3]&SLADER[3]",
-			"defenses": ["TICKLED PINK (JESSICA_CUP, NATASHA_IVY)", "METALLIC ANGELS (VERONICA_STEEL, JANE_MACK)", "SILENT ROSE (SLOANE, LAUREN_SNOW)", "TICKLED PINK (JESSICA_CUP, NATASHA_IVY)", "TICKLED PINK (JESSICA_CUP, NATASHA_IVY)"]
-		},
-		{
-			"number": 66, 
-			"name": "LA ROSA",
-			"members": "CYNTHIA_RAMIREZ[4]&CARLA_GARCIA[1]",
-			"defenses": ["NEON PARTY (NELLY_STORM, SLADER)", "TICKLED PINK (JESSICA_CUP, NATASHA_IVY)", "SILENT ROSE (SLOANE, LAUREN_SNOW)", "TICKLED PINK (JESSICA_CUP, NATASHA_IVY)", "XXX GIRLS (X_FOUR, X_THREE)", "XXX GIRLS (X_FOUR, X_THREE)", "METALLIC ANGELS (VERONICA_STEEL, JANE_MACK)"]
-		},
-		{
-			"number": 67, 
-			"name": "COUNTRY ROUGH",
-			"members": "TORNADO_MAY[1]&BLAIRE_COUNTY[1]",
-			"defenses": ["LA ROSA (CYNTHIA_RAMIREZ, CARLA_GARCIA)", "LA ROSA (CYNTHIA_RAMIREZ, CARLA_GARCIA)"]
-		},
-		{
-			"number": 68, 
-			"name": "METALLIC ANGELS",
-			"members": "BROOK_TAYLOR[1]&JANE_MACK[4]",
-			"defenses": ["COUNTRY ROUGH (TORNADO_MAY, BLAIRE_COUNTY)", "LA ROSA (CYNTHIA_RAMIREZ, CARLA_GARCIA)", "THE WILDSIDE (JUNGO, JULIET_SUNSET)", "SILENT ROSE (SLOANE, LAUREN_SNOW)"]
-		},
-		{
-			"number": 69, 
-			"name": "SHADOW VIXENS",
-			"members": "CELINE[1]&X_THREE[1]",
-			"defenses": ["METALLIC ANGELS (BROOK_TAYLOR, JANE_MACK)", "LA ROSA (CYNTHIA_RAMIREZ, CARLA_GARCIA)", "SILENT ROSE (SLOANE, SAM_GOLDEN)"]
-		},
-		{
-			"number": 70, 
-			"name": "ALL NATURAL",
-			"members": "LORNA_LIGHT[1]&TORNADO_MAY[2]",
-			"defenses": ["SHADOW VIXENS (CELINE, X_THREE)", "SHADOW VIXENS (CELINE, X_THREE)", "METALLIC ANGELS (SCARLETT_WINGS, VERONICA_STEEL)", "METALLIC ANGELS (SCARLETT_WINGS, VERONICA_STEEL)", "METALLIC ANGELS (BROOK_TAYLOR, VERONICA_STEEL)", "JADE ASSASSINS (JUJU_FUN, SUKARI)"]
-		},
-		{
-			"number": 71, 
-			"name": "METALLIC ANGELS",
-			"members": "BROOK_TAYLOR[2]&NATASHA_IVY[2]",
-			"defenses": ["ALL NATURAL (LORNA_LIGHT, TORNADO_MAY)"]
-		},
-		{
-			"number": 72, 
-			"name": "ALL NATURAL",
-			"members": "LORNA_LIGHT[2]&TORNADO_MAY[3]",
-			"defenses": ["METALLIC ANGELS (BROOK_TAYLOR, VERONICA_STEEL)", "METALLIC ANGELS (BROOK_TAYLOR, VERONICA_STEEL)", "JADE ASSASSINS (JUJU_FUN, SUKARI)", "METALLIC ANGELS (SCARLETT_WINGS, VERONICA_STEEL)"]
-		},
-		{
-			"number": 73, 
-			"name": "FLY HIGH",
-			"members": "JORDAN_SKY[1]&THE_MONARCH[1]",
-			"defenses": ["ALL NATURAL (LORNA_LIGHT, TORNADO_MAY)", "ALL NATURAL (LORNA_LIGHT, TORNADO_MAY)", "METALLIC ANGELS (BROOK_TAYLOR, VERONICA_STEEL)"]
-		},
-		{
-			"number": 74, 
-			"name": "CITY GIRLS",
-			"members": "CRYSTAL[2]&ROSIE_FOX[1]",
-			"defenses": ["FLY HIGH (JORDAN_SKY, THE_MONARCH)", "ALL NATURAL (LORNA_LIGHT, TORNADO_MAY)", "ALL NATURAL (LORNA_LIGHT, TORNADO_MAY)"]
-		},
-		{
-			"number": 75, 
-			"name": "POW POW",
-			"members": "LONI_ENERGY[1]&LEENA[1]",
-			"defenses": ["CITY GIRLS (CRYSTAL, ROSIE_FOX)", "ALL NATURAL (LORNA_LIGHT, TORNADO_MAY)"]
-		},
-		{
-			"number": 76, 
-			"name": "CITY GIRLS",
-			"members": "CRYSTAL[3]&ROSIE_FOX[2]",
-			"defenses": ["POW POW (LONI_ENERGY, LEENA)", "METALLIC ANGELS (BROOK_TAYLOR, VERONICA_STEEL)"]
-		},
-		{
-			"number": 77, 
-			"name": "SKY & HAYES",
-			"members": "JORDAN_SKY[2]&SUMMER_HAYES[1]",
-			"defenses": ["CITY GIRLS (CRYSTAL, ROSIE_FOX)", "METALLIC ANGELS (BROOK_TAYLOR, VERONICA_STEEL)", "CITY GIRLS (CRYSTAL, ROSIE_FOX)"]
-		},
-		{
-			"number": 78, 
-			"name": "METALLIC ANGELS",
-			"members": "BROOK_TAYLOR[3]&VERONICA_STEEL[3]",
-			"defenses": ["SKY & HAYES (JORDAN_SKY, SUMMER_HAYES)"]
-		},
-		{
-			"number": 79, 
-			"name": "CITY GIRLS",
-			"members": "CRYSTAL[4]&ROSIE_FOX[3]",
-			"defenses": ["METALLIC ANGELS (BROOK_TAYLOR, VERONICA_STEEL)", "METALLIC ANGELS (BROOK_TAYLOR, VERONICA_STEEL)", "POW POW (LONI_ENERGY, LEENA)", "METALLIC ANGELS (BROOK_TAYLOR, VERONICA_STEEL)"]
-		},
-		{
-			"number": 80, 
-			"name": "ALL NATURAL",
-			"members": "LORNA_LIGHT[3]&TORNADO_MAY[4]",
-			"defenses": ["CITY GIRLS (CRYSTAL, ROSIE_FOX)", "POW POW (LONI_ENERGY, LEENA)", "POW POW (LONI_ENERGY, LEENA)"]
-		},
-		{
-			"number": 81, 
-			"name": "BIG TIMERS",
-			"members": "THE_MONARCH[2]&TAMINA[2]",
-			"defenses": ["ALL NATURAL (LORNA_LIGHT, TORNADO_MAY)", "ALL NATURAL (LORNA_LIGHT, TORNADO_MAY)", "CITY GIRLS (CRYSTAL, ROSIE_FOX)", "ALL NATURAL (LORNA_LIGHT, TORNADO_MAY)", "POW POW (LONI_ENERGY, LEENA)", "POW POW (LONI_ENERGY, LEENA)"]
-		},
-		{
-			"number": 82, 
-			"name": "GOLDEN SUN",
-			"members": "SUMMER_HAYES[2]&MEI_LING[1]",
-			"defenses": ["BIG TIMERS (THE_MONARCH, TAMINA)"]
-		},
-		{
-			"number": 83, 
-			"name": "HOT BITCHES",
-			"members": "BECCA_FIELDS[1]&GIGI_FITNESS[1]",
-			"defenses": ["GOLDEN SUN (SUMMER_HAYES, MEI_LING)"]
-		},
-		{
-			"number": 84, 
-			"name": "GOLDEN SUN",
-			"members": "SUMMER_HAYES[3]&MEI_LING[2]",
-			"defenses": ["HOT BITCHES (BECCA_FIELDS, GIGI_FITNESS)", "THE PYRAMID (RINA, KEISHA_MILLER)"]
-		}	
+	"NXT": [
+		{ name: "ASUKA", defenses: ["NIKKI_CROSS","EMBER_MOON","TAELER_HENDRIX","SUMMER_RAE","NIKKI_CROSS","EMBER_MOON&BILLIE_KAY","IVORY","KAINE"] },
+		{ name: "VIOLET_JADE", defenses: ["ASUKA","ASUKA","NIKKI_CROSS","SANTANA_GARRETT","KAINE"] },
+		{ name: "MICHELLE_MCCOOL", defenses: ["VIOLET_JADE","VICTORIA_WINTERS"] },
+		"VACATED",
+		{ name: "VIOLET_JADE", defenses: ["SANTANA_GARRETT&SABLE"] },
+		{ name: "SANTANA_GARRETT", defenses: ["NIA_JAX&VIOLET_JADE&KAINE"] },
+		{ name: "KAINE", defenses: ["SANTANA_GARRETT","NIA_JAX"] },
+		"VACATED",
+		{ name: "JELINA_LOPEZ", defenses: ["TIFFANY_COOK","TIFFANY_COOK","GAIL_KIM","TIFFANY_COOK","DARK_JENNA","DARK_JENNA","CHAROLETTE","BLU"] },
+		{ name: "BLU", defenses: ["JELINA_LOPEZ","RONDA_ROUSEY","JELINA_LOPEZ&GIGI_MONDAY","JELINA_LOPEZ"] },
+		"VACATED",
+		{ name: "MIKU", defenses: ["RONDA_ROUSEY&ZELINA_VEGA&SELITA_MENDES","TIFFANY_COOK"] },
+		{ name: "SELITA_MENDES", defenses: ["MIKU","MIKU","SEVEN"] },
+		{ name: "MIKU", defenses: ["SELITA_MENDES","CHAROLETTE","POLLY_SEAN","GAIL_KIM&GIGI_MONDAY"] },
+		{ name: "FLORA", defenses: ["MIKU","TIFFANY_COOK","AMBER_LEE","IRINA_PETROVA","MIKU","AMBER_LEE"] },
+		{ name: "MIKU", defenses: ["MOLITA&FLORA"] },
+		"VACATED",
+		{ name: "RONDA_ROUSEY", defenses: ["BAYLEY&ANGELA_ROSE&CHAROLETTE&SUKI&DANA_BROOKE","TIFFANY_VIOLET-DQ","ANGELA_ROSE","TIFFANY_VIOLET","TIFFANY_VIOLET"] },
+		{ name: "ANGELA_ROSE", defenses: ["RONDA_ROUSEY","SUKI"] },
+		"VACATED",
+		{ name: "NIKKITA_LYONS", defenses: ["ZOEY_STARK&CORA_JADE","ZOEY_STARK"] },
+		{ name: "ROXANNE_PEREZ", defenses: ["NIKKITA_LYONS","ZOEY_STARK","AMI_SOHREI","RAM_KAICHOW-DQ","RAM_KAICHOW","ZOEY_STARK&RAM_KAICHOW&AMI_SOHREI&CORA_JADE"] },
+		{ name: "RIHO", defenses: ["ROXANNE_PEREZ","NIKKITA_LYONS","BIANCA_BELAIR&NIKKITA_LYONS","ZOEY_STARK"] },
+		{ name: "ROXANNE_PEREZ", defenses: ["RIHO"] },
+		{ name: "MAYU_IWATANI", defenses: ["ROXANNE_PEREZ&LACEY_EVANS","LACEY_EVANS-DQ","RONDA_ROUSEY&MANDY_ROSE&LACEY_EVANS - THE GREAT WAR"] },
+		"VACATED",
+		{ name: "RAM_KAICHOW", defenses: ["JAKARA_JACKSON&MARIAH_MAY&ZOEY_STARK","ZOEY_STARK","BIANCA_BELAIR"] },
+		{ name: "ANGELINA_LOVE", defenses: ["RAM_KAICHOW","RAM_KAICHOW","NIKKITA_LYONS","JAKARA_JACKSON","MADISON_RAYNE"] },
+		{ name: "VELVET_SKY", defenses: ["ANGELINA_LOVE&MADISON_RAYNE","MARIAH_MAY"] },
+		{ name: "ANGELINA_LOVE", defenses: ["VELVET_SKY&MADISON_RAYNE"] },
+		{ name: "MADISON_RAYNE", defenses: ["ANGELINA_LOVE","ANGELINA_LOVE","VELVET_SKY"] },
+		{ name: "MICHELLE_VELVET", defenses: ["MADISON_RAYNE","MADISON_RAYNE","SLADER","HALIE_QUINN"] },
+		"VACATED",
+		{ name: "SLADER", defenses: ["KIRA","LISA_LOST","HALIE_QUINN"] },
+		{ name: "NELLY_STORM", defenses: ["SLADER","SLADER&BLAIRE_COUNTY","BELINDA_LEE","SLADER","SLADER","BELINDA_LEE&UPSKIRT_KIRA","NATASHA_IVY"] },
+		{ name: "PARIS_MONET", defenses: ["NELLY_STORM","NATASHA_IVY"] },
+		{ name: "BROOK_TAYLOR", defenses: ["PARIS_MONET","PARIS_MONET","BELINDA_LEE","SAM_GOLDEN"] },
+		{ name: "UPSKIRT_KIRA", defenses: ["BROOK_TAYLOR","BELINDA_LEE","BELINDA_LEE","SAM_GOLDEN","JUJU_FUN","NORI","BLAIRE_COUNTY","NORI"] },
+		{ name: "CELINE", defenses: ["UPSKIRT_KIRA","UPSKIRT_KIRA","UPSKIRT_KIRA","SAM_GOLDEN","SCARLETT_WINGS-DQ","SAM_GOLDEN","X_TWO","X_FOUR","SCARLETT_WINGS","LORNA_LIGHT"] },
+		"VACATED",
+		{ name: "LORNA_LIGHT", defenses: ["BELINDA_LEE&SAM_GOLDEN","SAM_GOLDEN","SAM_GOLDEN"] },
+		{ name: "JORDAN_SKY", defenses: ["LORNA_LIGHT","LORNA_LIGHT","MALA_MALA","BELINDA_LEE","ROSIE_FOX"] },
+		{ name: "LONI_ENERGY", defenses: ["JORDAN_SKY&ROSIE_FOX","BELINDA_LEE","BELINDA_LEE","ROSIE_FOX","LEENA","LEENA"] },
+		{ name: "SUMMER_HAYES", defenses: ["LONI_ENERGY","LONI_ENERGY"] },
+		"VACATED",
+		{ name: "DAISY_MAYFIELD", defenses: ["GIGI_FITNESS","GIGI_FITNESS-DQ","MORGAN_NITRA","SARAH_LAY","SARAH_LAY"] },
+		{ name: "AOD", defenses: ["DAISY_MAYFIELD","DAISY_MAYFIELD","DRIANA","DRIANA","DRIANA","MORGAN_NITRA","MORGAN_NITRA"] },
+		{ name: "QUEEN_AMINAT", defenses: ["DRIANA&AOD"] },
+		{ name: "ALICIA_BLADE", defenses: ["QUEEN_AMINAT","GINA_FONG","TT_SLIM","DRIANA-DQ","DRIANA","QUEEN_AMINAT","BONNIE_REN"] },
+		{ name: "CAROLINA_CHAZ", defenses: ["ALICIA_BLADE&BONNIE_REN&DRIANA&GLENDA_SANCHEZ"] }
 	],
 	"HARDCORE": [
-		{
-			"number": 1,
-			"name": "TIFFANY_VIOLET",
-			"reign": 1,
-			"defenses": ["MIKU&JASMINE_LOVE&SEVEN", "GIGI_MONDAY"]
-		},
-		{
-			"number": 2,
-			"name": "VACATED"
-		},
-		{
-			"number": 3,
-			"name": "STACY_KEIBLER",
-			"reign": 1, 
-			"defenses": ["ALBA_FYRE", "ALBA_FYRE"]
-		},
-		{
-			"number": 4,
-			"name": "SHOTZI",
-			"reign": 1, 
-			"defenses": ["STACY_KEIBLER", "STACY_KEIBLER", "ALBA_FYRE", "NATALYA", "DOUDROP"]
-		},
-		{
-			"number": 5,
-			"name": "STARLIGHT_KID",
-			"reign": 1, 
-			"defenses": ["SHOTZI", "NATALYA"]
-		},
-		{
-			"number": 6,
-			"name": "VACATED"
-		},
-		{
-			"number": 7,
-			"name": "TAM_NAKANO",
-			"reign": 1, 
-			"defenses": ["RAQUEL_RODRIGUEZ&CANDICE_LERAE&XIA_LI&ZELINA_VEGA&AZM&NATALYA&SHOTZI", "RAQUEL_RODRIGUEZ", "SONYA_DEVILLE"]
-		},
-		{
-			"number": 8, 
-			"name": "RHEA_RIPLEY",
-			"reign": 1,
-			"defenses": ["SYURI&MAYU_IWATANI&UNAGI_SAYAKA&TAM_NAKANO-WARGAMES", "TAM_NAKANO", "SARRAY"]
-		},
-		{
-			"number": 9, 
-			"name": "XIA_LI",
-			"reign": 1,
-			"defenses": ["RHEA_RIPLEY"]
-		},
-		{
-			"number": 10, 
-			"name": "ZELINA_VEGA",
-			"reign": 1,
-			"defenses": ["XIA_LI"]
-		},
-		{
-			"number": 11, 
-			"name": "XIA_LI",
-			"reign": 2,
-			"defenses": ["STARLIGHT_KID&ZELINA_VEGA", "RHEA_RIPLEY", "RHEA_RIPLEY"]
-		},
-		{
-			"number": 12, 
-			"name": "SONYA_DEVILLE",
-			"reign": 1,
-			"defenses": ["XIA_LI", "BAYLEY"]
-		},
-		{
-			"number": 13, 
-			"name": "XIA_LI",
-			"reign": 3,
-			"defenses": ["SONYA_DEVILLE", "NATALYA", "NATALYA"]
-		},
-		{
-			"number": 14, 
-			"name": "NATALYA",
-			"reign": 1,
-			"defenses": ["XIA_LI"]
-		},
-		{
-			"number": 15, 
-			"name": "STARLIGHT_KID",
-			"reign": 2,
-			"defenses": ["NATALYA", "SHOTZI", "SONYA_DEVILLE", "NATALYA", "ZELINA_VEGA", "SONYA_DEVILLE&SHAYNA_BASZLER&GIGI_DOLIN&JACY_JAYNE - THE GREAT WAR"]
-		},
-		{
-			"number": 16, 
-			"name": "NAOMI",
-			"reign": 1,
-			"defenses": ["STARLIGHT_KID", "SASHA_BANKS", "ANGELINA_LOVE", "SHOTZI", "BAYLEY", "SHOTZI", "SHOTZI"]
-		},
-		{
-			"number": 17, 
-			"name": "ROXANNE_PEREZ",
-			"reign": 1,
-			"defenses": ["NAOMI", "NAOMI", "SASHA_BANKS", "SHOTZI", "STARLIGHT_KID"]
-		},
-		{
-			"number": 18, 
-			"name": "INDI_HARTWELL",
-			"reign": 1,
-			"defenses": ["ROXANNE_PEREZ", "NAOMI - WRESTLEMANIA", "CORA_JADE", "CORA_JADE"]
-		},
-		{
-			"number": 19, 
-			"name": "EVA_MARIE",
-			"reign": 1,
-			"defenses": ["INDI_HARTWELL"]
-		},
-		{
-			"number": 20, 
-			"name": "ROXANNE_PEREZ",
-			"reign": 2,
-			"defenses": ["EVA_MARIE", "SHOTZI", "ZOEY_STARK", "MIA_YIM", "ZOEY_STARK"]
-		},
-		{
-			"number": 21, 
-			"name": "ZOEY_STARK",
-			"reign": 1,
-			"defenses": ["ROXANNE_PEREZ", "JACY_JAYNE", "SHOTZI", "MIA_YIM", "JACY_JAYNE", "BAYLEY"]
-		},
-		{
-			"number": 22, 
-			"name": "JUNGO",
-			"reign": 1,
-			"defenses": ["ZOEY_STARK", "ROXANNE_PEREZ", "ROXANNE_PEREZ"]
-		},
-		{
-			"number": 23, 
-			"name": "TERESA_SHARP",
-			"reign": 1,
-			"defenses": ["JUNGO", "JUNGO"]
-		},
-		{
-			"number": 24, 
-			"name": "MICHELLE_VELVET",
-			"reign": 1,
-			"defenses": ["TERESA_SHARP", "TERESA_SHARP"]
-		},
-		{
-			"number": 25, 
-			"name": "SLOANE",
-			"reign": 1,
-			"defenses": ["MICHELLE_VELVET", "ROXANNE_PEREZ", "MICHELLE_VELVET", "JUNGO"]
-		},
-		{
-			"number": 26, 
-			"name": "JUNGO",
-			"reign": 2,
-			"defenses": ["SLOANE"]
-		},
-		{
-			"number": 27, 
-			"name": "SLOANE",
-			"reign": 2,
-			"defenses": ["JUNGO", "JANE_MACK", "JUNGO"]
-		},
-		{
-			"number": 28, 
-			"name": "NELLY_STORM",
-			"reign": 1,
-			"defenses": ["SLOANE", "SLOANE", "MICHELLE_VELVET", "JUNGO"]
-		},
-		{
-			"number": 29, 
-			"name": "LAUREN_SNOW",
-			"reign": 1,
-			"defenses": ["NELLY_STORM", "JUNGO", "CRYSTAL", "JUNGO", "CRYSTAL-DQ", "CRYSTAL-DQ", "CRYSTAL", "MICHELLE_VELVET"]
-		},
-		{
-			"number": 30, 
-			"name": "MICHELLE_VELVET",
-			"reign": 2,
-			"defenses": ["LAUREN_SNOW", "ALICIA_HOUSE", "ALICIA_HOUSE", "LAUREN_SNOW"]
-		},
-		{
-			"number": 31, 
-			"name": "LAUREN_SNOW",
-			"reign": 2,
-			"defenses": ["MICHELLE_VELVET"]
-		},
-		{
-			"number": 32,
-			"name": "VACATED"
-		},
-		{
-			"number": 33, 
-			"name": "NATASHA_IVY",
-			"reign": 1,
-			"defenses": ["MICHELLE_VELVET&MASK_GIRL&LISA_LOST", "LISA_LOST", "LISA_LOST"]
-		},
-		{
-			"number": 34, 
-			"name": "MASK_GIRL",
-			"reign": 1,
-			"defenses": ["NATASHA_IVY"]
-		},
-		{
-			"number": 35, 
-			"name": "JUNGO",
-			"reign": 3,
-			"defenses": ["MASK_GIRL&NATASHA_IVY", "NATASHA_IVY", "MICHELLE_VELVET", "MICHELLE_VELVET"]
-		},
-		{
-			"number": 36, 
-			"name": "VACATED"
-		},
-		{
-			"number": 37, 
-			"name": "CELINE",
-			"reign": 1,
-			"defenses": ["JUNGO", "JUNGO", "JULIET_SUNSET", "NATASHA_IVY", "NATASHA_IVY", "BLAIRE_COUNTY", "JUST_JANINE", "SLOANE&JUST_JANINE&LAUREN_SNOW&JULIET_SUNSET&JUNGO", "LAUREN_SNOW", "LAUREN_SNOW&SLOANE", "SLOANE", "JUJU_FUN", "JUJU_FUN"]
-		},
-		{
-			"number": 36, 
-			"name": "JULIET_SUNSET",
-			"reign": 1,
-			"defenses": ["CELINE", "BLAIRE_COUNTY", "BLAIRE_COUNTY", "LISA_LOST", "LAUREN_SNOW"]
-		},
-		{
-			"number": 37, 
-			"name": "SUKARI",
-			"reign": 1,
-			"defenses": ["JULIET_SUNSET", "JULIET_SUNSET", "JUJU_FUN", "NATASHA_IVY"]
-		},
-		{
-			"number": 37, 
-			"name": "SLADER",
-			"reign": 1,
-			"defenses": ["SUKARI", "LAUREN_SNOW"]
-		},
-		{
-			"number": 38, 
-			"name": "MASK_GIRL",
-			"reign": 2,
-			"defenses": ["SLADER", "SLADER"]
-		},
-		{
-			"number": 39, 
-			"name": "SUKARI",
-			"reign": 2,
-			"defenses": ["MASK_GIRL&JULIET_SUNSET", "NATASHA_IVY", "JULIET_SUNSET", "NATASHA_IVY"]
-		},
-		{
-			"number": 40, 
-			"name": "THE_MONARCH",
-			"reign": 1,
-			"defenses": ["SUKARI", "SUKARI&JULIET_SUNSET&JUNGO", "SLADER", "SLADER&AMA_BIG", "AMA_BIG", "JUST_JANINE"]
-		},
-		{
-			"number": 41, 
-			"name": "VACATED"
-		},
-		{
-			"number": 42, 
-			"name": "JULIET_SUNSET",
-			"reign": 2,
-			"defenses": ["SUKARI&JUST_JANINE&JESSICA_CUP", "JESSICA_CUP", "SUKARI", "SUKARI", "NATASHA_IVY", "CRYSTAL", "CRYSTAL", "JUST_JANINE", "CARLA_GARCIA"]
-		},
-		{
-			"number": 43, 
-			"name": "SUKARI",
-			"reign": 3,
-			"defenses": ["JULIET_SUNSET", "JULIET_SUNSET", "JESSICA_CUP"]
-		},
-		{
-			"number": 44, 
-			"name": "CRYSTAL",
-			"reign": 1,
-			"defenses": ["SUKARI", "SUKARI-DQ", "ROSIE_FOX"]
-		},
-		{
-			"number": 45, 
-			"name": "JULIET_SUNSET",
-			"reign": 3,
-			"defenses": ["CRYSTAL"]
-		},
-		{
-			"number": 46, 
-			"name": "SUMMER_HAYES",
-			"reign": 1,
-			"defenses": ["JULIET_SUNSET", "JULIET_SUNSET", "BLAIRE_COUNTY", "JESSICA_CUP", "LORNA_LIGHT", "ROSIE_FOX", "LORNA_LIGHT", "NATASHA_IVY", "CARLA_GARCIA"]
-		},
-		{
-			"number": 47, 
-			"name": "LORNA_LIGHT",
-			"reign": 1,
-			"defenses": ["SUMMER_HAYES", "CARLA_GARCIA", "SUMMER_HAYES-DQ"]
-		},
-		{
-			"number": 48, 
-			"name": "SUMMER_HAYES",
-			"reign": 2,
-			"defenses": ["LORNA_LIGHT", "LORNA_LIGHT", "CELINE", "CARLA_GARCIA", "CARLA_GARCIA", "BELINDA_LEE"]
-		},
-		{
-			"number": 49, 
-			"name": "SUKARI",
-			"reign": 4,
-			"defenses": ["SUMMER_HAYES", "LORNA_LIGHT", "LORNA_LIGHT", "JUJU_FUN"]
-		},
-		{
-			"number": 50, 
-			"name": "JUJU_FUN",
-			"reign": 1,
-			"defenses": ["SUKARI", "BELINDA_LEE", "BLAIRE_COUNTY", "CARLA_GARCIA"]
-		},
-		{
-			"number": 51, 
-			"name": "NATASHA_IVY",
-			"reign": 2,
-			"defenses": ["JUST_JANINE", "CRYSTAL", "CRYSTAL", "CARLA_GARCIA", "BELINDA_LEE"]
-		},
-		{
-			"number": 52, 
-			"name": "VIOLET_JADE",
-			"reign": 1,
-			"defenses": ["NATASHA_IVY", "LORNA_LIGHT", "LORNA_LIGHT"]
-		},
-		{
-			"number": 53, 
-			"name": "RAINY_BRIGHT",
-			"reign": 1,
-			"defenses": ["VIOLET_JADE", "LORNA_LIGHT", "CRYSTAL"]
-		},
-		{
-			"number": 54, 
-			"name": "MORGAN_NITRA",
-			"reign": 1,
-			"defenses": ["RAINY_BRIGHT", "MEI_LING"]
-		}
+		{ name: "TIFFANY_VIOLET", defenses: ["MIKU&JASMINE_LOVE&SEVEN","GIGI_MONDAY"] },
+		"VACATED",
+		{ name: "STACY_KEIBLER", defenses: ["ALBA_FYRE","ALBA_FYRE"] },
+		{ name: "SHOTZI", defenses: ["STACY_KEIBLER","STACY_KEIBLER","ALBA_FYRE","NATALYA","DOUDROP"] },
+		{ name: "STARLIGHT_KID", defenses: ["SHOTZI","NATALYA"] },
+		"VACATED",
+		{ name: "TAM_NAKANO", defenses: ["RAQUEL_RODRIGUEZ&CANDICE_LERAE&XIA_LI&ZELINA_VEGA&AZM&NATALYA&SHOTZI","RAQUEL_RODRIGUEZ","SONYA_DEVILLE"] },
+		{ name: "RHEA_RIPLEY", defenses: ["SYURI&MAYU_IWATANI&UNAGI_SAYAKA&TAM_NAKANO-WARGAMES","TAM_NAKANO","SARRAY"] },
+		{ name: "XIA_LI", defenses: ["RHEA_RIPLEY"] },
+		{ name: "ZELINA_VEGA", defenses: ["XIA_LI"] },
+		{ name: "XIA_LI", defenses: ["STARLIGHT_KID&ZELINA_VEGA","RHEA_RIPLEY","RHEA_RIPLEY"] },
+		{ name: "SONYA_DEVILLE", defenses: ["XIA_LI","BAYLEY"] },
+		{ name: "XIA_LI", defenses: ["SONYA_DEVILLE","NATALYA","NATALYA"] },
+		{ name: "NATALYA", defenses: ["XIA_LI"] },
+		{ name: "STARLIGHT_KID", defenses: ["NATALYA","SHOTZI","SONYA_DEVILLE","NATALYA","ZELINA_VEGA","SONYA_DEVILLE&SHAYNA_BASZLER&GIGI_DOLIN&JACY_JAYNE - THE GREAT WAR"] },
+		{ name: "NAOMI", defenses: ["STARLIGHT_KID","SASHA_BANKS","ANGELINA_LOVE","SHOTZI","BAYLEY","SHOTZI","SHOTZI"] },
+		{ name: "ROXANNE_PEREZ", defenses: ["NAOMI","NAOMI","SASHA_BANKS","SHOTZI","STARLIGHT_KID"] },
+		{ name: "INDI_HARTWELL", defenses: ["ROXANNE_PEREZ","NAOMI - WRESTLEMANIA","CORA_JADE","CORA_JADE"] },
+		{ name: "EVA_MARIE", defenses: ["INDI_HARTWELL"] },
+		{ name: "ROXANNE_PEREZ", defenses: ["EVA_MARIE","SHOTZI","ZOEY_STARK","MIA_YIM","ZOEY_STARK"] },
+		{ name: "ZOEY_STARK", defenses: ["ROXANNE_PEREZ","JACY_JAYNE","SHOTZI","MIA_YIM","JACY_JAYNE","BAYLEY"] },
+		{ name: "JUNGO", defenses: ["ZOEY_STARK","ROXANNE_PEREZ","ROXANNE_PEREZ"] },
+		{ name: "TERESA_SHARP", defenses: ["JUNGO","JUNGO"] },
+		{ name: "MICHELLE_VELVET", defenses: ["TERESA_SHARP","TERESA_SHARP"] },
+		{ name: "SLOANE", defenses: ["MICHELLE_VELVET","ROXANNE_PEREZ","MICHELLE_VELVET","JUNGO"] },
+		{ name: "JUNGO", defenses: ["SLOANE"] },
+		{ name: "SLOANE", defenses: ["JUNGO","JANE_MACK","JUNGO"] },
+		{ name: "NELLY_STORM", defenses: ["SLOANE","SLOANE","MICHELLE_VELVET","JUNGO"] },
+		{ name: "LAUREN_SNOW", defenses: ["NELLY_STORM","JUNGO","CRYSTAL","JUNGO","CRYSTAL-DQ","CRYSTAL-DQ","CRYSTAL","MICHELLE_VELVET"] },
+		{ name: "MICHELLE_VELVET", defenses: ["LAUREN_SNOW","ALICIA_HOUSE","ALICIA_HOUSE","LAUREN_SNOW"] },
+		{ name: "LAUREN_SNOW", defenses: ["MICHELLE_VELVET"] },
+		"VACATED",
+		{ name: "NATASHA_IVY", defenses: ["MICHELLE_VELVET&MASK_GIRL&LISA_LOST","LISA_LOST","LISA_LOST"] },
+		{ name: "MASK_GIRL", defenses: ["NATASHA_IVY"] },
+		{ name: "JUNGO", defenses: ["MASK_GIRL&NATASHA_IVY","NATASHA_IVY","MICHELLE_VELVET","MICHELLE_VELVET"] },
+		"VACATED",
+		{ name: "CELINE", defenses: ["JUNGO","JUNGO","JULIET_SUNSET","NATASHA_IVY","NATASHA_IVY","BLAIRE_COUNTY","JUST_JANINE","SLOANE&JUST_JANINE&LAUREN_SNOW&JULIET_SUNSET&JUNGO","LAUREN_SNOW","LAUREN_SNOW&SLOANE","SLOANE","JUJU_FUN","JUJU_FUN"] },
+		{ name: "JULIET_SUNSET", defenses: ["CELINE","BLAIRE_COUNTY","BLAIRE_COUNTY","LISA_LOST","LAUREN_SNOW"] },
+		{ name: "SUKARI", defenses: ["JULIET_SUNSET","JULIET_SUNSET","JUJU_FUN","NATASHA_IVY"] },
+		{ name: "SLADER", defenses: ["SUKARI","LAUREN_SNOW"] },
+		{ name: "MASK_GIRL", defenses: ["SLADER","SLADER"] },
+		{ name: "SUKARI", defenses: ["MASK_GIRL&JULIET_SUNSET","NATASHA_IVY","JULIET_SUNSET","NATASHA_IVY"] },
+		{ name: "THE_MONARCH", defenses: ["SUKARI","SUKARI&JULIET_SUNSET&JUNGO","SLADER","SLADER&AMA_BIG","AMA_BIG","JUST_JANINE"] },
+		"VACATED",
+		{ name: "JULIET_SUNSET", defenses: ["SUKARI&JUST_JANINE&JESSICA_CUP","JESSICA_CUP","SUKARI","SUKARI","NATASHA_IVY","CRYSTAL","CRYSTAL","JUST_JANINE","CARLA_GARCIA"] },
+		{ name: "SUKARI", defenses: ["JULIET_SUNSET","JULIET_SUNSET","JESSICA_CUP"] },
+		{ name: "CRYSTAL", defenses: ["SUKARI","SUKARI-DQ","ROSIE_FOX"] },
+		{ name: "JULIET_SUNSET", defenses: ["CRYSTAL"] },
+		{ name: "SUMMER_HAYES", defenses: ["JULIET_SUNSET","JULIET_SUNSET","BLAIRE_COUNTY","JESSICA_CUP","LORNA_LIGHT","ROSIE_FOX","LORNA_LIGHT","NATASHA_IVY","CARLA_GARCIA"] },
+		{ name: "LORNA_LIGHT", defenses: ["SUMMER_HAYES","CARLA_GARCIA","SUMMER_HAYES-DQ"] },
+		{ name: "SUMMER_HAYES", defenses: ["LORNA_LIGHT","LORNA_LIGHT","CELINE","CARLA_GARCIA","CARLA_GARCIA","BELINDA_LEE"] },
+		{ name: "SUKARI", defenses: ["SUMMER_HAYES","LORNA_LIGHT","LORNA_LIGHT","JUJU_FUN"] },
+		{ name: "JUJU_FUN", defenses: ["SUKARI","BELINDA_LEE","BLAIRE_COUNTY","CARLA_GARCIA"] },
+		{ name: "NATASHA_IVY", defenses: ["JUST_JANINE","CRYSTAL","CRYSTAL","CARLA_GARCIA","BELINDA_LEE"] },
+		{ name: "VIOLET_JADE", defenses: ["NATASHA_IVY","LORNA_LIGHT","LORNA_LIGHT"] },
+		{ name: "RAINY_BRIGHT", defenses: ["VIOLET_JADE","LORNA_LIGHT","CRYSTAL"] },
+		{ name: "MORGAN_NITRA", defenses: ["RAINY_BRIGHT","MEI_LING"] }
 	],
 	"US": [
-		{
-			"number": 1, 
-			"name": "UNAGI_SAYAKA",
-			"reign": 1,
-			"defenses": ["CAMERON&ALBA_FYRE", "ALBA_FYRE", "TIFFANY_STRATTON"]
-		},
-		{
-			"number": 2, 
-			"name": "SHAYNA_BASZLER",
-			"reign": 1,
-			"defenses": ["SYURI&MAYU_IWATANI&UNAGI_SAYAKA&TAM_NAKANO-WARGAMES", "UNAGI_SAYAKA", "MINA_SHIRAKAWA", "SAYA_KAMITANI"]
-		},
-		{
-			"number": 3, 
-			"name": "UNAGI_SAYAKA",
-			"reign": 2,
-			"defenses": ["SHAYNA_BASZLER", "DANA_BROOKE"]
-		},
-		{
-			"number": 4, 
-			"name": "DOUDROP",
-			"reign": 1,
-			"defenses": ["UNAGI_SAYAKA", "MINA_SHIRAKAWA", "UNAGI_SAYAKA"]
-		},
-		{
-			"number": 5, 
-			"name": "SAYA_KAMITANI",
-			"reign": 1,
-			"defenses": ["DOUDROP", "DOUDROP"]
-		},
-		{
-			"number": 6, 
-			"name": "CARMELLA",
-			"reign": 1,
-			"defenses": ["SAYA_KAMITANI"]
-		},
-		{
-			"number": 7, 
-			"name": "MINA_SHIRAKAWA",
-			"reign": 1,
-			"defenses": ["CARMELLA", "DOUDROP", "CARMELLA", "ALBA_FYRE", "DOUDROP", "SONYA_DEVILLE&SHAYNA_BASZLER&GIGI_DOLIN&JACY_JAYNE - THE GREAT WAR"]
-		},
-		{
-			"number": 8, 
-			"name": "VACATED"
-		},
-		{
-			"number": 9, 
-			"name": "DANA_BROOKE",
-			"reign": 1,
-			"defenses": ["SABLE&CARMELLA&DOUDROP", "CARMELLA", "CARMELLA", "ALIYAH"]
-		},
-		{
-			"number": 10, 
-			"name": "DOUDROP",
-			"reign": 2,
-			"defenses": ["DANA_BROOKE", "DANA_BROOKE"]
-		},
-		{
-			"number": 11, 
-			"name": "AZM",
-			"reign": 1,
-			"defenses": ["DOUDROP", "DANA_BROOKE", "CARMELLA", "ZELINA_VEGA", "SABLE&ALIYAH&ZELINA_VEGA&RAQUEL_RODRIQUEZ - WRESTLEMANIA", "ALIYAH", "ZELINA_VEGA&RAQUEL_RODRIQUEZ", "XIA_LI"]
-		},
-		{
-			"number": 12, 
-			"name": "RAM_KAICHOW",
-			"reign": 1,
-			"defenses": ["AZM", "AZM", "AZM", "LANA"]
-		},
-		{
-			"number": 13, 
-			"name": "AZM",
-			"reign": 2,
-			"defenses": ["RAM_KAICHOW", "RAM_KAICHOW", "STARLIGHT_KID&RAM_KAICHOW"]
-		},
-		{
-			"number": 14, 
-			"name": "RAM_KAICHOW",
-			"reign": 2,
-			"defenses": ["STARLIGHT_KID&AZM"]
-		},
-		{
-			"number": 15, 
-			"name": "STARLIGHT_KID",
-			"reign": 1,
-			"defenses": ["RAM_KAICHOW", "AZM", "DOUDROP", "DOUDROP"]
-		},
-		{
-			"number": 16, 
-			"name": "CARMELLA",
-			"reign": 2,
-			"defenses": ["STARLIGHT_KID", "ZELINA_VEGA", "DANA_BROOKE", "RAQUEL_RODRIQUEZ"]
-		},
-		{
-			"number": 17, 
-			"name": "CYNTHIA_RAMIREZ",
-			"reign": 1,
-			"defenses": ["CARMELLA", "CARMELLA", "NAOMI", "TAMINA", "TAMINA&CARMELLA&UNAGI_SAYAKA", "CARMELLA", "JULIET_SUNSET"]
-		},
-		{
-			"number": 18, 
-			"name": "ALICIA_HOUSE",
-			"reign": 1,
-			"defenses": ["CYNTHIA_RAMIREZ"]
-		},
-		{
-			"number": 19, 
-			"name": "JULIET_SUNSET",
-			"reign": 1,
-			"defenses": ["ALICIA_HOUSE", "JESSICA_CUP", "JUST_JANINE"]
-		},
-		{
-			"number": 20, 
-			"name": "JESSICA_CUP",
-			"reign": 1,
-			"defenses": ["JULIET_SUNSET", "ALICIA_HOUSE", "JULIET_SUNSET"]
-		},
-		{
-			"number": 21, 
-			"name": "JULIET_SUNSET",
-			"reign": 2,
-			"defenses": ["JESSICA_CUP&JUST_JANINE&SLADER", "JUST_JANINE", "JUST_JANINE", "JESSICA_CUP", "SLADER", "SLADER", "SLADER", "JUST_JANINE", "ALICIA_HOUSE", "MASK_GIRL"]
-		},
-		{
-			"number": 22, 
-			"name": "JESSICA_CUP",
-			"reign": 2,
-			"defenses": ["JULIET_SUNSET"]
-		},
-		{
-			"number": 23, 
-			"name": "TERESA_SHARP",
-			"reign": 1,
-			"defenses": ["JESSICA_CUP", "JUJU_FUN", "JULIET_SUNSET", "JULIET_SUNSET"]
-		},
-		{
-			"number": 24, 
-			"name": "JUNGO",
-			"reign": 1,
-			"defenses": ["TERESA_SHARP", "JESSICA_CUP"]
-		},
-		{
-			"number": 25, 
-			"name": "JUJU_FUN",
-			"reign": 1,
-			"defenses": ["JUNGO", "JUNGO", "JULIET_SUNSET", "JULIET_SUNSET", "JUNGO", "TERESA_SHARP", "JULIET_SUNSET"]
-		},
-		{
-			"number": 26, 
-			"name": "TERESA_SHARP",
-			"reign": 2,
-			"defenses": ["JUJU_FUN", "JUJU_FUN", "JUJU_FUN"]
-		},
-		{
-			"number": 27, 
-			"name": "JUNGO",
-			"reign": 2,
-			"defenses": ["TERESA_SHARP", "TERESA_SHARP", "JUJU_FUN"]
-		},
-		{
-			"number": 28, 
-			"name": "VACATED"
-		},
-		{
-			"number": 29, 
-			"name": "CRYSTAL",
-			"reign": 1,
-			"defenses": ["CYNTHIA_RAMIREZ", "NORI-DQ", "ALICIA_HOUSE"]
-		},
-		{
-			"number": 30, 
-			"name": "SCARLETT_WINGS",
-			"reign": 1,
-			"defenses": ["CRYSTAL", "CRYSTAL", "NORI", "NORI", "CARLA_GARCIA", "CARLA_GARCIA"]
-		},
-		{
-			"number": 31, 
-			"name": "CRYSTAL",
-			"reign": 2,
-			"defenses": ["SCARLETT_WINGS", "SCARLETT_WINGS-DQ", "CARLA_GARCIA&NORI&SCARLETT_WINGS"]
-		},
-		{
-			"number": 32, 
-			"name": "NORI",
-			"reign": 1,
-			"defenses": ["CRYSTAL", "ALICIA_HOUSE", "ALICIA_HOUSE", "X_TWO"]
-		},
-		{
-			"number": 32, 
-			"name": "X_THREE",
-			"reign": 1,
-			"defenses": ["NORI", "NORI&X_FOUR&CRYSTAL", "CRYSTAL-DQ"]
-		},
-		{
-			"number": 32, 
-			"name": "CRYSTAL",
-			"reign": 3,
-			"defenses": ["X_THREE", "X_THREE", "X_FOUR", "NORI"]
-		},
-		{
-			"number": 33, 
-			"name": "SCARLETT_WINGS",
-			"reign": 2,
-			"defenses": ["CRYSTAL", "CRYSTAL", "TORNADO_MAY-DQ"]
-		},
-		{
-			"number": 34, 
-			"name": "TORNADO_MAY",
-			"reign": 1,
-			"defenses": ["SCARLETT_WINGS", "CRYSTAL&SCARLETT_WINGS", "CRYSTAL", "ALICIA_HOUSE"]
-		},
-		{
-			"number": 35, 
-			"name": "JORDAN_SKY",
-			"reign": 1,
-			"defenses": ["TORNADO_MAY", "TORNADO_MAY", "CRYSTAL", "CARLA_GARCIA", "CARLA_GARCIA", "TORNADO_MAY&CARLA_GARCIA&CYNTHIA_RAMIREZ", "CYNTHIA_RAMIREZ", "SCARLETT_WINGS"]
-		},
-		{
-			"number": 36, 
-			"name": "JUNGO",
-			"reign": 3,
-			"defenses": ["JORDAN_SKY", "JORDAN_SKY"]
-		},
-		{
-			"number": 36, 
-			"name": "JANE_MACK",
-			"reign": 1,
-			"defenses": ["JUNGO", "VERONICA_STEEL", "VERONICA_STEEL-DQ", "VERONICA_STEEL-DQ", "VERONICA_STEEL", "SCARLETT_WINGS"]
-		},
-		{
-			"number": 37, 
-			"name": "BROOK_TAYLOR",
-			"reign": 1,
-			"defenses": ["JANE_MACK", "JANE_MACK-DQ", "JANE_MACK"]
-		},
-		{
-			"number": 38, 
-			"name": "JANE_MACK",
-			"reign": 2,
-			"defenses": ["BROOK_TAYLOR", "BROOK_TAYLOR", "BROOK_TAYLOR&VERONICA_STEEL&SCARLETT_WINGS", "ALICIA_HOUSE", "ALICIA_HOUSE"]
-		},
-		{
-			"number": 39, 
-			"name": "LAUREN_SNOW",
-			"reign": 1,
-			"defenses": ["JANE_MACK", "JANE_MACK", "JANE_MACK", "ALICIA_HOUSE", "NORI", "LISA_LOST", "LISA_LOST&LEENA&NORI", "SAM_GOLDEN"]
-		},
-		{
-			"number": 40, 
-			"name": "THE_MONARCH",
-			"reign": 1,
-			"defenses": ["LAUREN_SNOW", "LAUREN_SNOW", "VERONICA_STEEL"]
-		},
-		{
-			"number": 37, 
-			"name": "TORNADO_MAY",
-			"reign": 2,
-			"defenses": ["THE_MONARCH", "LEENA", "LEENA", "SAM_GOLDEN", "LISA_LOST", "LEENA", "SAM_GOLDEN", "JUJU_FUN", "LEENA", "LISA_LOST"]
-		},
-		{
-			"number": 38, 
-			"name": "SCARLETT_WINGS",
-			"reign": 3,
-			"defenses": ["TORNADO_MAY", "TORNADO_MAY", "LEENA", "JUJU_FUN"]
-		},
-		{
-			"number": 32, 
-			"name": "X_THREE",
-			"reign": 2,
-			"defenses": ["SCARLETT_WINGS", "X_FOUR", "X_FOUR"]
-		},
-		{
-			"number": 32, 
-			"name": "JORDAN_SKY",
-			"reign": 2,
-			"defenses": ["X_THREE", "X_THREE", "LISA_LOST", "LAUREN_SNOW", "LAUREN_SNOW"]
-		},
-		{
-			"number": 33, 
-			"name": "SUKARI",
-			"reign": 1,
-			"defenses": ["JORDAN_SKY", "X_THREE", "X_THREE"]
-		},
-		{
-			"number": 34, 
-			"name": "DAISY_MAYFIELD",
-			"reign": 1,
-			"defenses": ["SUKARI", "SUKARI", "X_FOUR", "CELINE", "X_THREE"]
-		},
-		{
-			"number": 35, 
-			"name": "SARAH_LAY",
-			"reign": 1,
-			"defenses": ["DAISY_MAYFIELD", "DAISY_MAYFIELD", "DAISY_MAYFIELD"]
-		},
-		{
-			"number": 36, 
-			"name": "DAISY_MAYFIELD",
-			"reign": 2,
-			"defenses": ["SARAH_LAY", "TT_SLIM", "BECCA_FIELDS"]
-		}
+		{ name: "UNAGI_SAYAKA", defenses: ["CAMERON&ALBA_FYRE","ALBA_FYRE","TIFFANY_STRATTON"] },
+		{ name: "SHAYNA_BASZLER", defenses: ["SYURI&MAYU_IWATANI&UNAGI_SAYAKA&TAM_NAKANO-WARGAMES","UNAGI_SAYAKA","MINA_SHIRAKAWA","SAYA_KAMITANI"] },
+		{ name: "UNAGI_SAYAKA", defenses: ["SHAYNA_BASZLER","DANA_BROOKE"] },
+		{ name: "DOUDROP", defenses: ["UNAGI_SAYAKA","MINA_SHIRAKAWA","UNAGI_SAYAKA"] },
+		{ name: "SAYA_KAMITANI", defenses: ["DOUDROP","DOUDROP"] },
+		{ name: "CARMELLA", defenses: ["SAYA_KAMITANI"] },
+		{ name: "MINA_SHIRAKAWA", defenses: ["CARMELLA","DOUDROP","CARMELLA","ALBA_FYRE","DOUDROP","SONYA_DEVILLE&SHAYNA_BASZLER&GIGI_DOLIN&JACY_JAYNE - THE GREAT WAR"] },
+		"VACATED",
+		{ name: "DANA_BROOKE", defenses: ["SABLE&CARMELLA&DOUDROP","CARMELLA","CARMELLA","ALIYAH"] },
+		{ name: "DOUDROP", defenses: ["DANA_BROOKE","DANA_BROOKE"] },
+		{ name: "AZM", defenses: ["DOUDROP","DANA_BROOKE","CARMELLA","ZELINA_VEGA","SABLE&ALIYAH&ZELINA_VEGA&RAQUEL_RODRIQUEZ - WRESTLEMANIA","ALIYAH","ZELINA_VEGA&RAQUEL_RODRIQUEZ","XIA_LI"] },
+		{ name: "RAM_KAICHOW", defenses: ["AZM","AZM","AZM","LANA"] },
+		{ name: "AZM", defenses: ["RAM_KAICHOW","RAM_KAICHOW","STARLIGHT_KID&RAM_KAICHOW"] },
+		{ name: "RAM_KAICHOW", defenses: ["STARLIGHT_KID&AZM"] },
+		{ name: "STARLIGHT_KID", defenses: ["RAM_KAICHOW","AZM","DOUDROP","DOUDROP"] },
+		{ name: "CARMELLA", defenses: ["STARLIGHT_KID","ZELINA_VEGA","DANA_BROOKE","RAQUEL_RODRIQUEZ"] },
+		{ name: "CYNTHIA_RAMIREZ", defenses: ["CARMELLA","CARMELLA","NAOMI","TAMINA","TAMINA&CARMELLA&UNAGI_SAYAKA","CARMELLA","JULIET_SUNSET"] },
+		{ name: "ALICIA_HOUSE", defenses: ["CYNTHIA_RAMIREZ"] },
+		{ name: "JULIET_SUNSET", defenses: ["ALICIA_HOUSE","JESSICA_CUP","JUST_JANINE"] },
+		{ name: "JESSICA_CUP", defenses: ["JULIET_SUNSET","ALICIA_HOUSE","JULIET_SUNSET"] },
+		{ name: "JULIET_SUNSET", defenses: ["JESSICA_CUP&JUST_JANINE&SLADER","JUST_JANINE","JUST_JANINE","JESSICA_CUP","SLADER","SLADER","SLADER","JUST_JANINE","ALICIA_HOUSE","MASK_GIRL"] },
+		{ name: "JESSICA_CUP", defenses: ["JULIET_SUNSET"] },
+		{ name: "TERESA_SHARP", defenses: ["JESSICA_CUP","JUJU_FUN","JULIET_SUNSET","JULIET_SUNSET"] },
+		{ name: "JUNGO", defenses: ["TERESA_SHARP","JESSICA_CUP"] },
+		{ name: "JUJU_FUN", defenses: ["JUNGO","JUNGO","JULIET_SUNSET","JULIET_SUNSET","JUNGO","TERESA_SHARP","JULIET_SUNSET"] },
+		{ name: "TERESA_SHARP", defenses: ["JUJU_FUN","JUJU_FUN","JUJU_FUN"] },
+		{ name: "JUNGO", defenses: ["TERESA_SHARP","TERESA_SHARP","JUJU_FUN"] },
+		"VACATED",
+		{ name: "CRYSTAL", defenses: ["CYNTHIA_RAMIREZ","NORI-DQ","ALICIA_HOUSE"] },
+		{ name: "SCARLETT_WINGS", defenses: ["CRYSTAL","CRYSTAL","NORI","NORI","CARLA_GARCIA","CARLA_GARCIA"] },
+		{ name: "CRYSTAL", defenses: ["SCARLETT_WINGS","SCARLETT_WINGS-DQ","CARLA_GARCIA&NORI&SCARLETT_WINGS"] },
+		{ name: "NORI", defenses: ["CRYSTAL","ALICIA_HOUSE","ALICIA_HOUSE","X_TWO"] },
+		{ name: "X_THREE", defenses: ["NORI","NORI&X_FOUR&CRYSTAL","CRYSTAL-DQ"] },
+		{ name: "CRYSTAL", defenses: ["X_THREE","X_THREE","X_FOUR","NORI"] },
+		{ name: "SCARLETT_WINGS", defenses: ["CRYSTAL","CRYSTAL","TORNADO_MAY-DQ"] },
+		{ name: "TORNADO_MAY", defenses: ["SCARLETT_WINGS","CRYSTAL&SCARLETT_WINGS","CRYSTAL","ALICIA_HOUSE"] },
+		{ name: "JORDAN_SKY", defenses: ["TORNADO_MAY","TORNADO_MAY","CRYSTAL","CARLA_GARCIA","CARLA_GARCIA","TORNADO_MAY&CARLA_GARCIA&CYNTHIA_RAMIREZ","CYNTHIA_RAMIREZ","SCARLETT_WINGS"] },
+		{ name: "JUNGO", defenses: ["JORDAN_SKY","JORDAN_SKY"] },
+		{ name: "JANE_MACK", defenses: ["JUNGO","VERONICA_STEEL","VERONICA_STEEL-DQ","VERONICA_STEEL-DQ","VERONICA_STEEL","SCARLETT_WINGS"] },
+		{ name: "BROOK_TAYLOR", defenses: ["JANE_MACK","JANE_MACK-DQ","JANE_MACK"] },
+		{ name: "JANE_MACK", defenses: ["BROOK_TAYLOR","BROOK_TAYLOR","BROOK_TAYLOR&VERONICA_STEEL&SCARLETT_WINGS","ALICIA_HOUSE","ALICIA_HOUSE"] },
+		{ name: "LAUREN_SNOW", defenses: ["JANE_MACK","JANE_MACK","JANE_MACK","ALICIA_HOUSE","NORI","LISA_LOST","LISA_LOST&LEENA&NORI","SAM_GOLDEN"] },
+		{ name: "THE_MONARCH", defenses: ["LAUREN_SNOW","LAUREN_SNOW","VERONICA_STEEL"] },
+		{ name: "TORNADO_MAY", defenses: ["THE_MONARCH","LEENA","LEENA","SAM_GOLDEN","LISA_LOST","LEENA","SAM_GOLDEN","JUJU_FUN","LEENA","LISA_LOST"] },
+		{ name: "SCARLETT_WINGS", defenses: ["TORNADO_MAY","TORNADO_MAY","LEENA","JUJU_FUN"] },
+		{ name: "X_THREE", defenses: ["SCARLETT_WINGS","X_FOUR","X_FOUR"] },
+		{ name: "JORDAN_SKY", defenses: ["X_THREE","X_THREE","LISA_LOST","LAUREN_SNOW","LAUREN_SNOW"] },
+		{ name: "SUKARI", defenses: ["JORDAN_SKY","X_THREE","X_THREE"] },
+		{ name: "DAISY_MAYFIELD", defenses: ["SUKARI","SUKARI","X_FOUR","CELINE","X_THREE"] },
+		{ name: "SARAH_LAY", defenses: ["DAISY_MAYFIELD","DAISY_MAYFIELD","DAISY_MAYFIELD"] },
+		{ name: "DAISY_MAYFIELD", defenses: ["SARAH_LAY","TT_SLIM","BECCA_FIELDS"] }
 	],
-	"ALPHA-TOP":[
-		{
-			"number": 1, 
-			"name": "DREW_GULAK",
-			"reign": 1,
-			"defenses": ["JOHNNY_GARGANO&MR_ENVIRONMENT&LA_KNIGHT"]
-		},
-		{
-			"number": 2, 
-			"name": "JOHNNY_GARGANO",
-			"reign": 1,
-			"defenses": ["DREW_GULAK", "DREW_GULAK"]
-		},
-		{
-			"number": 3, 
-			"name": "ILJA_DRAGUNOV",
-			"reign": 1,
-			"defenses": ["JOHNNY_GARGANO", "DREW_GULAK"]
-		},
-		{
-			"number": 4, 
-			"name": "DREW_GULAK",
-			"reign": 2,
-			"defenses": ["ILJA_DRAGUNOV", "JOHNNY_GARGANO", "DEXTER_LUMIS-DQ", "ILJA_DRAGUNOV", "JOHNNY_GARGANO", "DEXTER_LUMIS", "JOHNNY_GARGANO", "GIOVANNI_VINCI", "JOHNNY_GARGANO", "FANDANGO"]
-		},
-		{
-			"number": 5, 
-			"name": "GIOVANNI_VINCI",
-			"reign": 1,
-			"defenses": ["DREW_GULAK", "LA_KNIGHT", "ADAM_PEARCE"]
-		},
-		{
-			"number": 6, 
-			"name": "DREW_GULAK",
-			"reign": 3,
-			"defenses": ["GIOVANNI_VINCI", "GIOVANNI_VINCI"]
-		},
-		{
-			"number": 7, 
-			"name": "JOHNNY_GARGANO",
-			"reign": 2,
-			"defenses": ["DREW_GULAK", "FANDANGO", "ILJA_DRAGUNOV", "ILJA_DRAGUNOV", "CASH_WHEELER"]
-		},
-		{
-			"number": 8, 
-			"name": "GIOVANNI_VINCI",
-			"reign": 2,
-			"defenses": ["JOHNNY_GARGANO", "DEXTER_LUMIS", "RIDGE_HOLLAND"]
-		},
-		{
-			"number": 9, 
-			"name": "RIDGE_HOLLAND",
-			"reign": 1,
-			"defenses": ["GIOVANNI_VINCI", "LA_KNIGHT", "GIOVANNI_VINCI", "JOHNNY_GARGANO", "JOHNNY_GARGANO", "FANDANGO"]
-		},
-		{
-			"number": 10, 
-			"name": "GIOVANNI_VINCI",
-			"reign": 3,
-			"defenses": ["RIDGE_HOLLAND"]
-		},
-		{
-			"number": 11, 
-			"name": "RIDGE_HOLLAND",
-			"reign": 2,
-			"defenses": ["GIOVANNI_VINCI", "JOHNNY_GARGANO", "FANDANGO"]
-		},
-		{
-			"number": 12, 
-			"name": "CASH_WHEELER",
-			"reign": 1,
-			"defenses": ["RIDGE_HOLLAND", "FANDANGO", "DOLPH_ZIGGLER", "RIDGE_HOLLAND&FANDANGO"]
-		},
-		{
-			"number": 13, 
-			"name": "DOLPH_ZIGGLER",
-			"reign": 1,
-			"defenses": ["RIDGE_HOLLAND&CASH_WHEELER", "RIDGE_HOLLAND", "JOHNNY_GARGANO", "CASH_WHEELER"]
-		},
-		{
-			"number": 14, 
-			"name": "DEXTER_LUMIS",
-			"reign": 1,
-			"defenses": ["DOLPH_ZIGGLER", "RIDGE_HOLLAND", "GIOVANNI_VINCI", "DOLPH_ZIGGLER"]
-		},
-		{
-			"number": 15, 
-			"name": "CASH_WHEELER",
-			"reign": 2,
-			"defenses": ["DEXTER_LUMIS", "JOHNNY_GARGANO-DQ", "DEXTER_LUMIS-DQ"]
-		},
-		{
-			"number": 16, 
-			"name": "AJ_STYLES",
-			"reign": 1,
-			"defenses": ["CASH_WHEELER", "RIDGE_HOLLAND"]
-		},
-		{
-			"number": 17, 
-			"name": "CASH_WHEELER",
-			"reign": 3,
-			"defenses": ["AJ_STYLES", "AJ_STYLES", "DOLPH_ZIGGLER", "JULIUS_CREED", "LA_KNIGHT"]
-		},
-		{
-			"number": 18, 
-			"name": "KOTA_IBUSHI",
-			"reign": 1,
-			"defenses": ["CASH_WHEELER", "JOHN_MORRISON", "LA_KNIGHT"]
-		},
-		{
-			"number": 19, 
-			"name": "VACATED"
-		},
-		{
-			"number": 20, 
-			"name": "JOHN_MORRISON",
-			"reign": 1,
-			"defenses": ["CASH_WHEELER", "AJ_STYLES"]
-		},
-		{
-			"number": 21, 
-			"name": "RIDGE_HOLLAND",
-			"reign": 3,
-			"defenses": ["JOHN_MORRISON&AJ_STYLES&ADAM_COLE", "ADAM_COLE", "JULIUS_CREED", "DANIEL_BRYAN"]
-		},
-		{
-			"number": 22, 
-			"name": "THE_MIZ",
-			"reign": 1,
-			"defenses": ["DREW_GULAK&RIDGE_HOLLAND&FANDANGO&CASH_WHEELER&JULIUS_CREED-EC", "DOLPH_ZIGGLER", "JULIUS_CREED"]
-		},
-		{
-			"number": 23, 
-			"name": "JULIUS_CREED",
-			"reign": 1,
-			"defenses": ["THE_MIZ", "LA_KNIGHT"]
-		},
-		{
-			"number": 24, 
-			"name": "GIOVANNI_VINCI",
-			"reign": 4,
-			"defenses": ["JULIUS_CREED", "JOHN_MORRISON", "LA_KNIGHT"]
-		},
-		{
-			"number": 25, 
-			"name": "JULIUS_CREED",
-			"reign": 2,
-			"defenses": ["GIOVANNI_VINCI - WRESTLEMANIA", "ADAM_COLE", "CASH_WHEELER", "FANDANGO", "ADAM_PEARCE", "SHANE_MCMAHON", "KOTA_IBUSHI"]
-		},
-		{
-			"number": 26, 
-			"name": "BUDDY_MURPHY",
-			"reign": 1,
-			"defenses": ["JULIUS_CREED&DREW_GULAK&SHANE_HASTE", "JULIUS_CREED", "SHANE_HASTE", "JOHNNY_GARGANO", "DREW_GULAK", "SHANE_HASTE", "FANDANGO", "DREW_GULAK", "JULIUS_CREED"]
-		},
-		{
-			"number": 27, 
-			"name": "CASH_WHEELER",
-			"reign": 4,
-			"defenses": ["BUDDY_MURPHY", "BUDDY_MURPHY", "LA_KNIGHT", "THE_MIZ", "AUSTIN_THEORY"]
-		},
-		{
-			"number": 28, 
-			"name": "DEXTER_LUMIS",
-			"reign": 2,
-			"defenses": ["CASH_WHEELER", "AJ_STYLES", "AUSTIN_THEORY"]
-		},
-		{
-			"number": 29, 
-			"name": "AUSTIN_THEORY",
-			"reign": 1,
-			"defenses": ["DEXTER_LUMIS", "AJ_STYLES"]
-		},
-		{
-			"number": 30, 
-			"name": "KRIPPLER",
-			"reign": 1,
-			"defenses": ["AUSTIN_THEORY", "POSI", "JASON_HONEY", "POSI", "POSI"]
-		},
-		{
-			"number": 31, 
-			"name": "BRENT_HUNTER",
-			"reign": 1,
-			"defenses": ["BRETT_HUNTER&POSI&JASON_HONEY&KRIPPLER&CLIFF_LEMON", "JASON_HONEY"]
-		},
-		{
-			"number": 32, 
-			"name": "VACATED"
-		},
-		{
-			"number": 33, 
-			"name": "JASON_HONEY",
-			"reign": 1,
-			"defenses": ["BRENT_HUNTER&POSI&JASON_HONEY&CLIFF_LEMON&RUSSELL_RUSH", "POSI", "RUSSELL_RUSH"]
-		},
-		{
-			"number": 34, 
-			"name": "CLIFF_LEMON",
-			"reign": 1,
-			"defenses": ["JASON_HONEY", "JASON_HONEY", "BRENT_HUNTER", "POSI", "JOHNNY_AMERICA", "JOHNNY_AMERICA"]
-		},
-		{
-			"number": 35, 
-			"name": "JOHNNY_AMERICA",
-			"reign": 1,
-			"defenses": ["CLIFF_LEMON", "CLIFF_LEMON", "POSI", "CLIFF_LEMON", "RUSSELL_RUSH", "RUSSELL_RUSH"]
-		},
-		{
-			"number": 36, 
-			"name": "FRED_CHATTY",
-			"reign": 1,
-			"defenses": ["JOHNNY_AMERICA"]
-		},
-		{
-			"number": 37, 
-			"name": "RUSSELL_RUSH",
-			"reign": 1,
-			"defenses": ["FRED_CHATTY", "JOHNNY_AMERICA", "FRED_CHATTY", "JOHNNY_AMERICA", "JOHNNY_AMERICA", "TONY_TORNADO"]
-		},
-		{
-			"number": 38, 
-			"name": "JOHNNY_AMERICA",
-			"reign": 2,
-			"defenses": ["RUSSELL_RUSH", "FRED_CHATTY", "FRED_CHATTY", "JASON_HONEY"]
-		},
-		{
-			"number": 39, 
-			"name": "WYATT_WIPER",
-			"reign": 1,
-			"defenses": ["JOHNNY_AMERICA", "JOHNNY_AMERICA", "POSI", "JOHNNY_AMERICA", "JOEY_JET"]
-		},
-		{
-			"number": 40, 
-			"name": "JOEY_JET",
-			"reign": 1,
-			"defenses": ["WYATT_WIPER", "WYATT_WIPER", "JASON_HONEY"]
-		},
-		{
-			"number": 41, 
-			"name": "JOHNNY_AMERICA",
-			"reign": 3,
-			"defenses": ["JOEY_JET"]
-		},
-		{
-			"number": 42, 
-			"name": "WYATT_WIPER",
-			"reign": 2,
-			"defenses": ["JOHNNY_AMERICA", "JOEY_JET", "JOEY_JET", "FRED_CHATTY"]
-		},
-		{
-			"number": 43, 
-			"name": "JOHNNY_AMERICA",
-			"reign": 4,
-			"defenses": ["WYATT_WIPER", "POSI", "JASON_HONEY"]
-		},
-		{
-			"number": 44, 
-			"name": "JOEY_JET",
-			"reign": 2,
-			"defenses": ["JOHNNY_AMERICA", "POSI"]
-		},
-		{
-			"number": 45, 
-			"name": "JOHNNY_AMERICA",
-			"reign": 5,
-			"defenses": ["JOEY_JET", "JASON_HONEY"]
-		},
-		{
-			"number": 46, 
-			"name": "HENRY_TATE",
-			"reign": 1,
-			"defenses": ["JOHNNY_AMERICA", "JOHNNY_AMERICA", "RYAN_PAGE", "RYAN_PAGE", "JASON_HONEY", "JASON_HONEY"]
-		},
-		{
-			"number": 47, 
-			"name": "WYATT_WIPER",
-			"reign": 3,
-			"defenses": ["HENRY_TATE", "HENRY_TATE", "TURBO", "TURBO", "CLIP_MAVERICK", "POSI"]
-		},
-		{
-			"number": 48, 
-			"name": "TONY_DASHER",
-			"reign": 1,
-			"defenses": ["WYATT_WIPER"]
-		},
-		{
-			"number": 49, 
-			"name": "HENRY_TATE",
-			"reign": 2,
-			"defenses": ["TONY_DASHER", "WILL_PHERBY", "WILL_PHERBY", "POSI", "WYATT_WIPER", "WILL_PHERBY&WYATT_WIPER", "DADDY_TODD"]
-		},
-		{
-			"number": 50, 
-			"name": "MERCENARY",
-			"reign": 1,
-			"defenses": ["HENRY_TATE", "HENRY_TATE", "HENRY_TATE", "NICK_GOODE", "NICK_GOODE"]
-		},
-		{
-			"number": 51, 
-			"name": "NICK_GOODE",
-			"reign": 1,
-			"defenses": ["MERCENARY", "MERCENARY", "WILL_PHERBY"]
-		},
-		{
-			"number": 52, 
-			"name": "MERCENARY",
-			"reign": 2,
-			"defenses": ["NICK_GOODE", "NICK_GOODE", "TURBO", "TURBO"]
-		},
-		{
-			"number": 53, 
-			"name": "WILL_PHERBY",
-			"reign": 1,
-			"defenses": ["NICK_GOODE&MERCENARY", "NICK_GOODE", "MERCENARY", "TURBO", "DANNY_PUMPKIN", "TONY_TORNADO"]
-		},
-		{
-			"number": 54, 
-			"name": "ALEX_CONNOR",
-			"reign": 1,
-			"defenses": ["WILL_PHERBY", "NICK_GOODE", "NICK_GOODE", "TONY_TORNADO", "DANNY_PUMPKIN", "TURBO", "POSI"]
-		},
-		{
-			"number": 55, 
-			"name": "VACATED"
-		},
-		{
-			"number": 56, 
-			"name": "CLIFF_LEMON",
-			"reign": 2,
-			"defenses": ["WILL_PHERBY&MERCENARY&TURBO&DANNY_PUMPKIN&TONY_DASHER&POSI", "POSI", "POSI", "ALEX_CONNOR", "ALEX_CONNOR-DQ", "ALEX_CONNOR", "TURBO"]
-		},
-		{
-			"number": 57, 
-			"name": "WILL_PHERBY",
-			"reign": 2,
-			"defenses": ["CLIFF_LEMON", "CLIFF_LEMON&POSI", "ALEX_CONNOR", "CLIFF_LEMON", "CLIP_MAVERICK", "JOEY_JET"]
-		},
-		{
-			"number": 58, 
-			"name": "DAMON_KNIGHT",
-			"reign": 1,
-			"defenses": ["WILL_PHERBY", "TURBO", "TONY_DASHER"]
-		},
-		{
-			"number": 59, 
-			"name": "MERCENARY",
-			"reign": 3,
-			"defenses": ["DAMON_KNIGHT", "TURBO", "POSI"]
-		},
-		{
-			"number": 60, 
-			"name": "DANNY_PUMPKIN",
-			"reign": 1,
-			"defenses": ["MERCENARY", "TURBO", "KRIPPLER", "JASON_HONEY"]
-		},
-		{
-			"number": 61, 
-			"name": "PLAYBOY_CAM",
-			"reign": 1,
-			"defenses": ["DANNY_PUMPKIN", "TURBO", "JASON_HONEY", "FRED_CHATTY", "TONY_TORNADO&JASON_HONEY&MERCENARY"]
-		},
-		{
-			"number": 62, 
-			"name": "MERCENARY",
-			"reign": 4,
-			"defenses": ["PLAYBOY_CAM", "POSI"]
-		},
-		{
-			"number": 63, 
-			"name": "PLAYBOY_CAM",
-			"reign": 2,
-			"defenses": ["MERCENARY"]
-		},
-		{
-			"number": 64, 
-			"name": "MERCENARY",
-			"reign": 5,
-			"defenses": ["PLAYBOY_CAM", "LOGAN_GURT", "TURBO", "TURBO"]
-		},
-		{
-			"number": 65, 
-			"name": "ALEX_CONNOR",
-			"reign": 2,
-			"defenses": ["MERCENARY", "MERCENARY", "ANGELO_KNIGHT", "HARDBEAR", "DADDY_TODD", "TURBO"]
-		},
-		{
-			"number": 66, 
-			"name": "VIKTOR_MAXX",
-			"reign": 1,
-			"defenses": ["ALEX_CONNOR", "MERCENARY", "ANGELO_KNIGHT", "TONY_TORNADO", "TONY_TORNADO", "TURBO", "MERCENARY&HARDBEAR", "DANNY_PUMPKIN", "WILL_PHERBY"]
-		},
-		{
-			"number": 67, 
-			"name": "VACATED"
-		},
-		{
-			"number": 68, 
-			"name": "TOBASCO_CRUZ",
-			"reign": 1,
-			"defenses": ["TRAVIS_WEST"]
-		},
-		{
-			"number": 69, 
-			"name": "TRAVIS_WEST",
-			"reign": 1,
-			"defenses": ["TOBASCO_CRUZ&NOAH_ACE", "HUGGIE_HOBBS", "TOBASCO_WEST", "BRADLY_WEST", "TOBASCO_WEST&BRADLY_WEST"]
-		},
-		{
-			"number": 70, 
-			"name": "BRADLY_WEST",
-			"reign": 1,
-			"defenses": ["TRAVIS_WEST", "BILLY_PONG"]
-		}
+	"ALPHA-TOP": [
+		{ name: "DREW_GULAK", defenses: ["JOHNNY_GARGANO&MR_ENVIRONMENT&LA_KNIGHT"] },
+		{ name: "JOHNNY_GARGANO", defenses: ["DREW_GULAK","DREW_GULAK"] },
+		{ name: "ILJA_DRAGUNOV", defenses: ["JOHNNY_GARGANO","DREW_GULAK"] },
+		{ name: "DREW_GULAK", defenses: ["ILJA_DRAGUNOV","JOHNNY_GARGANO","DEXTER_LUMIS-DQ","ILJA_DRAGUNOV","JOHNNY_GARGANO","DEXTER_LUMIS","JOHNNY_GARGANO","GIOVANNI_VINCI","JOHNNY_GARGANO","FANDANGO"] },
+		{ name: "GIOVANNI_VINCI", defenses: ["DREW_GULAK","LA_KNIGHT","ADAM_PEARCE"] },
+		{ name: "DREW_GULAK", defenses: ["GIOVANNI_VINCI","GIOVANNI_VINCI"] },
+		{ name: "JOHNNY_GARGANO", defenses: ["DREW_GULAK","FANDANGO","ILJA_DRAGUNOV","ILJA_DRAGUNOV","CASH_WHEELER"] },
+		{ name: "GIOVANNI_VINCI", defenses: ["JOHNNY_GARGANO","DEXTER_LUMIS","RIDGE_HOLLAND"] },
+		{ name: "RIDGE_HOLLAND", defenses: ["GIOVANNI_VINCI","LA_KNIGHT","GIOVANNI_VINCI","JOHNNY_GARGANO","JOHNNY_GARGANO","FANDANGO"] },
+		{ name: "GIOVANNI_VINCI", defenses: ["RIDGE_HOLLAND"] },
+		{ name: "RIDGE_HOLLAND", defenses: ["GIOVANNI_VINCI","JOHNNY_GARGANO","FANDANGO"] },
+		{ name: "CASH_WHEELER", defenses: ["RIDGE_HOLLAND","FANDANGO","DOLPH_ZIGGLER","RIDGE_HOLLAND&FANDANGO"] },
+		{ name: "DOLPH_ZIGGLER", defenses: ["RIDGE_HOLLAND&CASH_WHEELER","RIDGE_HOLLAND","JOHNNY_GARGANO","CASH_WHEELER"] },
+		{ name: "DEXTER_LUMIS", defenses: ["DOLPH_ZIGGLER","RIDGE_HOLLAND","GIOVANNI_VINCI","DOLPH_ZIGGLER"] },
+		{ name: "CASH_WHEELER", defenses: ["DEXTER_LUMIS","JOHNNY_GARGANO-DQ","DEXTER_LUMIS-DQ"] },
+		{ name: "AJ_STYLES", defenses: ["CASH_WHEELER","RIDGE_HOLLAND"] },
+		{ name: "CASH_WHEELER", defenses: ["AJ_STYLES","AJ_STYLES","DOLPH_ZIGGLER","JULIUS_CREED","LA_KNIGHT"] },
+		{ name: "KOTA_IBUSHI", defenses: ["CASH_WHEELER","JOHN_MORRISON","LA_KNIGHT"] },
+		"VACATED",
+		{ name: "JOHN_MORRISON", defenses: ["CASH_WHEELER","AJ_STYLES"] },
+		{ name: "RIDGE_HOLLAND", defenses: ["JOHN_MORRISON&AJ_STYLES&ADAM_COLE","ADAM_COLE","JULIUS_CREED","DANIEL_BRYAN"] },
+		{ name: "THE_MIZ", defenses: ["DREW_GULAK&RIDGE_HOLLAND&FANDANGO&CASH_WHEELER&JULIUS_CREED-EC","DOLPH_ZIGGLER","JULIUS_CREED"] },
+		{ name: "JULIUS_CREED", defenses: ["THE_MIZ","LA_KNIGHT"] },
+		{ name: "GIOVANNI_VINCI", defenses: ["JULIUS_CREED","JOHN_MORRISON","LA_KNIGHT"] },
+		{ name: "JULIUS_CREED", defenses: ["GIOVANNI_VINCI - WRESTLEMANIA","ADAM_COLE","CASH_WHEELER","FANDANGO","ADAM_PEARCE","SHANE_MCMAHON","KOTA_IBUSHI"] },
+		{ name: "BUDDY_MURPHY", defenses: ["JULIUS_CREED&DREW_GULAK&SHANE_HASTE","JULIUS_CREED","SHANE_HASTE","JOHNNY_GARGANO","DREW_GULAK","SHANE_HASTE","FANDANGO","DREW_GULAK","JULIUS_CREED"] },
+		{ name: "CASH_WHEELER", defenses: ["BUDDY_MURPHY","BUDDY_MURPHY","LA_KNIGHT","THE_MIZ","AUSTIN_THEORY"] },
+		{ name: "DEXTER_LUMIS", defenses: ["CASH_WHEELER","AJ_STYLES","AUSTIN_THEORY"] },
+		{ name: "AUSTIN_THEORY", defenses: ["DEXTER_LUMIS","AJ_STYLES"] },
+		{ name: "KRIPPLER", defenses: ["AUSTIN_THEORY","POSI","JASON_HONEY","POSI","POSI"] },
+		{ name: "BRENT_HUNTER", defenses: ["BRETT_HUNTER&POSI&JASON_HONEY&KRIPPLER&CLIFF_LEMON","JASON_HONEY"] },
+		"VACATED",
+		{ name: "JASON_HONEY", defenses: ["BRENT_HUNTER&POSI&JASON_HONEY&CLIFF_LEMON&RUSSELL_RUSH","POSI","RUSSELL_RUSH"] },
+		{ name: "CLIFF_LEMON", defenses: ["JASON_HONEY","JASON_HONEY","BRENT_HUNTER","POSI","JOHNNY_AMERICA","JOHNNY_AMERICA"] },
+		{ name: "JOHNNY_AMERICA", defenses: ["CLIFF_LEMON","CLIFF_LEMON","POSI","CLIFF_LEMON","RUSSELL_RUSH","RUSSELL_RUSH"] },
+		{ name: "FRED_CHATTY", defenses: ["JOHNNY_AMERICA"] },
+		{ name: "RUSSELL_RUSH", defenses: ["FRED_CHATTY","JOHNNY_AMERICA","FRED_CHATTY","JOHNNY_AMERICA","JOHNNY_AMERICA","TONY_TORNADO"] },
+		{ name: "JOHNNY_AMERICA", defenses: ["RUSSELL_RUSH","FRED_CHATTY","FRED_CHATTY","JASON_HONEY"] },
+		{ name: "WYATT_WIPER", defenses: ["JOHNNY_AMERICA","JOHNNY_AMERICA","POSI","JOHNNY_AMERICA","JOEY_JET"] },
+		{ name: "JOEY_JET", defenses: ["WYATT_WIPER","WYATT_WIPER","JASON_HONEY"] },
+		{ name: "JOHNNY_AMERICA", defenses: ["JOEY_JET"] },
+		{ name: "WYATT_WIPER", defenses: ["JOHNNY_AMERICA","JOEY_JET","JOEY_JET","FRED_CHATTY"] },
+		{ name: "JOHNNY_AMERICA", defenses: ["WYATT_WIPER","POSI","JASON_HONEY"] },
+		{ name: "JOEY_JET", defenses: ["JOHNNY_AMERICA","POSI"] },
+		{ name: "JOHNNY_AMERICA", defenses: ["JOEY_JET","JASON_HONEY"] },
+		{ name: "HENRY_TATE", defenses: ["JOHNNY_AMERICA","JOHNNY_AMERICA","RYAN_PAGE","RYAN_PAGE","JASON_HONEY","JASON_HONEY"] },
+		{ name: "WYATT_WIPER", defenses: ["HENRY_TATE","HENRY_TATE","TURBO","TURBO","CLIP_MAVERICK","POSI"] },
+		{ name: "TONY_DASHER", defenses: ["WYATT_WIPER"] },
+		{ name: "HENRY_TATE", defenses: ["TONY_DASHER","WILL_PHERBY","WILL_PHERBY","POSI","WYATT_WIPER","WILL_PHERBY&WYATT_WIPER","DADDY_TODD"] },
+		{ name: "MERCENARY", defenses: ["HENRY_TATE","HENRY_TATE","HENRY_TATE","NICK_GOODE","NICK_GOODE"] },
+		{ name: "NICK_GOODE", defenses: ["MERCENARY","MERCENARY","WILL_PHERBY"] },
+		{ name: "MERCENARY", defenses: ["NICK_GOODE","NICK_GOODE","TURBO","TURBO"] },
+		{ name: "WILL_PHERBY", defenses: ["NICK_GOODE&MERCENARY","NICK_GOODE","MERCENARY","TURBO","DANNY_PUMPKIN","TONY_TORNADO"] },
+		{ name: "ALEX_CONNOR", defenses: ["WILL_PHERBY","NICK_GOODE","NICK_GOODE","TONY_TORNADO","DANNY_PUMPKIN","TURBO","POSI"] },
+		"VACATED",
+		{ name: "CLIFF_LEMON", defenses: ["WILL_PHERBY&MERCENARY&TURBO&DANNY_PUMPKIN&TONY_DASHER&POSI","POSI","POSI","ALEX_CONNOR","ALEX_CONNOR-DQ","ALEX_CONNOR","TURBO"] },
+		{ name: "WILL_PHERBY", defenses: ["CLIFF_LEMON","CLIFF_LEMON&POSI","ALEX_CONNOR","CLIFF_LEMON","CLIP_MAVERICK","JOEY_JET"] },
+		{ name: "DAMON_KNIGHT", defenses: ["WILL_PHERBY","TURBO","TONY_DASHER"] },
+		{ name: "MERCENARY", defenses: ["DAMON_KNIGHT","TURBO","POSI"] },
+		{ name: "DANNY_PUMPKIN", defenses: ["MERCENARY","TURBO","KRIPPLER","JASON_HONEY"] },
+		{ name: "PLAYBOY_CAM", defenses: ["DANNY_PUMPKIN","TURBO","JASON_HONEY","FRED_CHATTY","TONY_TORNADO&JASON_HONEY&MERCENARY"] },
+		{ name: "MERCENARY", defenses: ["PLAYBOY_CAM","POSI"] },
+		{ name: "PLAYBOY_CAM", defenses: ["MERCENARY"] },
+		{ name: "MERCENARY", defenses: ["PLAYBOY_CAM","LOGAN_GURT","TURBO","TURBO"] },
+		{ name: "ALEX_CONNOR", defenses: ["MERCENARY","MERCENARY","ANGELO_KNIGHT","HARDBEAR","DADDY_TODD","TURBO"] },
+		{ name: "VIKTOR_MAXX", defenses: ["ALEX_CONNOR","MERCENARY","ANGELO_KNIGHT","TONY_TORNADO","TONY_TORNADO","TURBO","MERCENARY&HARDBEAR","DANNY_PUMPKIN","WILL_PHERBY"] },
+		"VACATED",
+		{ name: "TOBASCO_CRUZ", defenses: ["TRAVIS_WEST"] },
+		{ name: "TRAVIS_WEST", defenses: ["TOBASCO_CRUZ&NOAH_ACE","HUGGIE_HOBBS","TOBASCO_WEST","BRADLY_WEST","TOBASCO_WEST&BRADLY_WEST"] },
+		{ name: "BRADLY_WEST", defenses: ["TRAVIS_WEST","BILLY_PONG"] }
 	],
-	"WORLD-TOP":[
-		{
-			"number": 1, 
-			"name": "KARRION_KROSS",
-			"reign": 1,
-			"defenses": ["THE_MIZ&ILJA_DRAGUNOV&MATT_CARDONA", "MR_ENVIRONMENT", "THE_MIZ", "RIDGE_HOLLAND", "RIDGE_HOLLAND", "MATT_CARDONA"]
-		},
-		{
-			"number": 2, 
-			"name": "AJ_STYLES",
-			"reign": 1,
-			"defenses": ["KARRION_KROSS", "ADAM_PEARCE", "MATT_CARDONA"]
-		},
-		{
-			"number": 3, 
-			"name": "KARRION_KROSS",
-			"reign": 2,
-			"defenses": ["AJ_STYLES&MATT_CARDONA", "AJ_STYLES", "ADAM_PEARCE", "MATT_CARDONA"]
-		},
-		{
-			"number": 4, 
-			"name": "FINN_BALOR",
-			"reign": 1,
-			"defenses": ["KARRION_KROSS", "AJ_STYLES"]
-		},
-		{
-			"number": 5, 
-			"name": "MATT_CARDONA",
-			"reign": 1,
-			"defenses": ["FINN_BALOR&AJ_STYLES", "FINN_BALOR"]
-		},
-		{
-			"number": 6, 
-			"name": "ADAM_PEARCE",
-			"reign": 1,
-			"defenses": ["MATT_CARDONA"]
-		},
-		{
-			"number": 7, 
-			"name": "FINN_BALOR",
-			"reign": 2,
-			"defenses": ["ADAM_PEARCE", "RIDGE_HOLLAND", "MATT_CARDONA", "AJ_STYLES", "DREW_GULAK"]
-		},
-		{
-			"number": 8, 
-			"name": "JON_MOXLEY",
-			"reign": 1,
-			"defenses": ["FINN_BALOR", "ADAM_PEARCE", "KARRION_KROSS-DQ", "DANIEL_BRYAN", "KARRION_KROSS", "DREW_GULAK", "MATT_CARDONA", "FINN_BALOR&DANIEL_BRYAN"]
-		},
-		{
-			"number": 9, 
-			"name": "FINN_BALOR",
-			"reign": 3,
-			"defenses": ["JON_MOXLEY", "KARRION_KROSS&DREW_GULAK&JON_MOXLEY", "JON_MOXLEY", "DREW_GULAK"]
-		},
-		{
-			"number": 10, 
-			"name": "DREW_GULAK",
-			"reign": 1,
-			"defenses": ["AJ_STYLES&FINN_BALOR", "FINN_BALOR", "KARRION_KROSS", "ADAM_PEARCE&FINN_BALOR"]
-		},
-		{
-			"number": 11, 
-			"name": "KARRION_KROSS",
-			"reign": 3,
-			"defenses": ["DREW_GULAK", "ADAM_PEARCE"]
-		},
-		{
-			"number": 12, 
-			"name": "FINN_BALOR",
-			"reign": 4,
-			"defenses": ["KARRION_KROSS", "KARRION_KROSS", "ADAM_COLE", "MATT_CARDONA"]
-		},
-		{
-			"number": 13, 
-			"name": "THE_MIZ",
-			"reign": 1,
-			"defenses": ["FINN_BALOR", "AJ_STYLES", "ADAM_PEARCE", "ADAM_COLE"]
-		},
-		{
-			"number": 14, 
-			"name": "FINN_BALOR",
-			"reign": 5,
-			"defenses": ["THE_MIZ", "AJ_STYLES", "DANIEL_BRYAN", "DREW_GULAK", "KARRION_KROSS", "SHANE_MCMAHON"]
-		},
-		{
-			"number": 15, 
-			"name": "JON_MOXLEY",
-			"reign": 2,
-			"defenses": ["KARRION_KROSS&FINN_BALOR", "FINN_BALOR", "ADAM_COLE", "THE_MIZ", "RIDGE_HOLLAND-MITB", "ADAM_COLE", "ADAM_COLE", "KARRION_KROSS"]
-		},
-		{
-			"number": 16, 
-			"name": "KENNY_OMEGA",
-			"reign": 1,
-			"defenses": ["JON_MOXLEY", "JON_MOXLEY", "KARRION_KROSS", "DANIEL_BRYAN", "JON_MOXLEY", "RIDGE_HOLLAND", "FINN_BALOR - WRESTLEMANIA"], 
-		},
-		{
-			"number": 17, 
-			"name": "DOLPH_ZIGGLER",
-			"reign": 1,
-			"defenses": ["KENNY_OMEGA&KARRION_KROSS", "KARRION_KROSS", "THE_MIZ", "MATT_CARDONA", "THE_MIZ", "RIDGE_HOLLAND", "KARRION_KROSS"], 
-		},
-		{
-			"number": 18, 
-			"name": "KARRION_KROSS",
-			"reign": 4,
-			"defenses": ["DOLPH_ZIGGLER"], 
-		},
-		{
-			"number": 19, 
-			"name": "LIV_MORGAN",
-			"reign": 1,
-			"defenses": ["KARRION_KROSS", "KARRION_KROSS - DQ", "KARRION_KROSS", "FINN_BALOR - DQ"], 
-		},
-		{
-			"number": 20, 
-			"name": "VACATED"
-		},
-		{
-			"number": 21, 
-			"name": "DANIEL_BRYAN",
-			"reign": 1,
-			"defenses": ["KARRION_KROSS&FINN_BALOR&RIDGE_HOLLAND&CASH_WHEELER", "LA_KNIGHT", "RIDGE_HOLLAND"], 
-		},
-		{
-			"number": 22, 
-			"name": "PAC",
-			"reign": 1,
-			"defenses": ["DANIEL_BRYAN", "CASH_WHEELER", "LA_KNIGHT"], 
-		},
-		{
-			"number": 23, 
-			"name": "KENNY_OMEGA",
-			"reign": 2,
-			"defenses": ["PAC"], 
-		},
-		{
-			"number": 24, 
-			"name": "PAC",
-			"reign": 2,
-			"defenses": ["KARRION_KROSS&KENNY_OMEGA", "RIDGE_HOLLAND", "FINN_BALOR"], 
-		},
-		{
-			"number": 25, 
-			"name": "FINN_BALOR",
-			"reign": 6,
-			"defenses": ["PAC", "PAC", "RIDGE_HOLLAND", "DANIEL_BRYAN", "JON_MOXLEY-DQ"], 
-		},
-		{
-			"number": 26, 
-			"name": "JON_MOXLEY",
-			"reign": 3,
-			"defenses": ["FINN_BALOR", "FINN_BALOR&LA_KNIGHT", "PAC"], 
-		},
-		{
-			"number": 27, 
-			"name": "KENNY_OMEGA",
-			"reign": 3,
-			"defenses": ["JON_MOXLEY", "RIDGE_HOLLAND", "LA_KNIGHT", "SHANE_HASTE"], 
-		},
-		{
-			"number": 28, 
-			"name": "JON_MOXLEY",
-			"reign": 4,
-			"defenses": ["KENNY_OMEGA", "JULIUS_CREED-MITB", "PAC", "RIDGE_HOLLAND", "RIDGE_HOLLAND", "SHANE_HASTE", "SHANE_MCMAHON", "RIDGE_HOLLAND&SHANE_HASTE", "SHANE_HASTE", "PAC"], 
-		},
-		{
-			"number": 29, 
-			"name": "SHANE_HASTE",
-			"reign": 1,
-			"defenses": ["JON_MOXLEY", "JON_MOXLEY"], 
-		},
-		{
-			"number": 30, 
-			"name": "FINN_BALOR",
-			"reign": 7,
-			"defenses": ["SHANE_HASTE"], 
-		},
-		{
-			"number": 31, 
-			"name": "CALLUM_WOLF",
-			"reign": 1,
-			"defenses": ["FINN_BALOR", "FINN_BALOR", "AJ_STYLES", "AJ_STYLES"], 
-		},
-		{
-			"number": 32, 
-			"name": "TYSON_EVERETT",
-			"reign": 1,
-			"defenses": ["CALLUM_WOLF"], 
-		},
-		{
-			"number": 33, 
-			"name": "CALLUM_WOLF",
-			"reign": 2,
-			"defenses": ["TYSON_EVERETT", "ADAM_PEARCE", "ADAM_PEARCE&TYSON_EVERETT", "KARRION_KROSS", "TYSON_EVERETT-DQ"], 
-		},
-		{
-			"number": 34, 
-			"name": "ADAM_PEARCE",
-			"reign": 2,
-			"defenses": ["TYSON_EVERETT&BEN_SEED&CALLUM_WOLF"], 
-		},
-		{
-			"number": 35, 
-			"name": "CALLUM_WOLF",
-			"reign": 3,
-			"defenses": ["ADAM_PEARCE", "TYSON_EVERETT", "BEN_SEED-DQ"], 
-		},
-		{
-			"number": 36, 
-			"name": "BEN_SEED",
-			"reign": 1,
-			"defenses": ["CALLUM_WOLF", "CALLUM_WOLF", "CALLUM_WOLF", "TYSON_EVERETT", "DANIEL_BRYAN"], 
-		},
-		{
-			"number": 37, 
-			"name": "KARRION_KROSS",
-			"reign": 5,
-			"defenses": ["BEN_SEED", "CALLUM_WOLF-DQ"], 
-		},
-		{
-			"number": 38, 
-			"name": "BEN_SEED",
-			"reign": 2,
-			"defenses": ["KARRION_KROSS&CALLUM_WOLF", "KARRION_KROSS", "MR_ENVIRONMENT"], 
-		},
-		{
-			"number": 39, 
-			"name": "MR_ENVIRONMENT",
-			"reign": 1,
-			"defenses": ["BEN_SEED", "BEN_SEED", "BEN_SEED&TYSON_EVERETT", "CALLUM_WOLF", "TYSON_EVERETT", "KRIPPLER", "KRIPPLER"], 
-		},
-		{
-			"number": 40, 
-			"name": "BEN_SEED",
-			"reign": 3,
-			"defenses": ["MR_ENVIRONMENT", "CALLUM_WOLF", "MR_ENVIRONMENT", "KRIPPLER", "TYSON_EVERETT", "MR_ENVIRONMENT", "CALLUM_WOLF"], 
-		},
-		{
-			"number": 41, 
-			"name": "CLIFF_LEMON",
-			"reign": 1,
-			"defenses": ["BEN_SEED", "MR_ENVIRONMENT"], 
-		},
-		{
-			"number": 42, 
-			"name": "MR_ENVIRONMENT",
-			"reign": 2,
-			"defenses": ["CLIFF_LEMON", "CLIFF_LEMON", "BEN_SEED"], 
-		},
-		{
-			"number": 43, 
-			"name": "CLIFF_LEMON",
-			"reign": 2,
-			"defenses": ["MR_ENVIRONMENT", "MR_ENVIRONMENT", "BEN_SEED"], 
-		},
-		{
-			"number": 44, 
-			"name": "TYSON_EVERETT",
-			"reign": 2,
-			"defenses": ["CLIFF_LEMON&MR_ENVIRONMENT", "MR_ENVIRONMENT", "CLIFF_LEMON", "CLIFF_LEMON", "KRIPPLER", "KRIPPLER"], 
-		},
-		{
-			"number": 45, 
-			"name": "CALLUM_WOLF",
-			"reign": 4,
-			"defenses": ["TYSON_EVERETT", "CLIFF_LEMON", "KRIPPLER", "KRIPPLER", "RUSSELL_RUSH", "BEN_SEED", "BEN_SEED&MR_ENVIRONMENT", "CLIFF_LEMON", "KENNY_OMEGA", "MR_ENVIRONMENT", "TYSON_EVERETT", "BEN_SEED"], 
-		},
-		{
-			"number": 46, 
-			"name": "VACATED"
-		},
-		{
-			"number": 47, 
-			"name": "BEN_SEED",
-			"reign": 4,
-			"defenses": ["MR_ENVIRONMENT&CLIFF_LEMON&TYSON_EVERETT", "FRED_CHATTY"], 
-		},
-		{
-			"number": 48, 
-			"name": "RUSSELL_RUSH",
-			"reign": 1,
-			"defenses": ["BEN_SEED", "BEN_SEED-DQ", "MR_ENVIRONMENT", "MR_ENVIRONMENT-DQ", "TYSON_EVERETT"], 
-		},
-		{
-			"number": 49, 
-			"name": "CALLUM_WOLF",
-			"reign": 5,
-			"defenses": ["RUSSELL_RUSH", "RUSSELL_RUSH", "BEN_SEED&MR_ENVIRONMENT"], 
-		},
-		{
-			"number": 50, 
-			"name": "BEN_SEED",
-			"reign": 5,
-			"defenses": ["CALLUM_WOLF&MR_ENVIRONMENT", "CALLUM_WOLF", "RUSSELL_RUSH", "CALLUM_WOLF-DQ"], 
-		},
-		{
-			"number": 51, 
-			"name": "TONY_TORNADO",
-			"reign": 1,
-			"defenses": ["BEN_SEED", "BEN_SEED"], 
-		},
-		{
-			"number": 52, 
-			"name": "MR_ENVIRONMENT",
-			"reign": 3,
-			"defenses": ["TONY_TORNADO", "TONY_TORNADO", "BEN_SEED"], 
-		},
-		{
-			"number": 53, 
-			"name": "RUSSELL_RUSH",
-			"reign": 2,
-			"defenses": ["MR_ENVIRONMENT", "MR_ENVIRONMENT", "MR_ENVIRONMENT", "TONY_TORNADO", "CLIFF_LEMON", "CLIFF_LEMON", "KRIPPLER", "MR_ENVIRONMENT"], 
-		},
-		{
-			"number": 54, 
-			"name": "CALLUM_WOLF",
-			"reign": 6,
-			"defenses": ["RUSSELL_RUSH"], 
-		},
-		{
-			"number": 55, 
-			"name": "ALEX_CONNOR",
-			"reign": 1,
-			"defenses": ["CALLUM_WOLF", "RUSSELL_RUSH"], 
-		},
-		{
-			"number": 56, 
-			"name": "BEN_SEED",
-			"reign": 6,
-			"defenses": ["ALEX_CONNOR", "RUSSELL_RUSH", "CALLUM_WOLF"], 
-		},
-		{
-			"number": 57, 
-			"name": "BRETT_HUNTER",
-			"reign": 1,
-			"defenses": ["BEN_SEED", "MR_ENVIRONMENT", "BEN_SEED", "TONY_TORNADO"], 
-		},
-		{
-			"number": 58, 
-			"name": "CALLUM_WOLF",
-			"reign": 7,
-			"defenses": ["BRETT_HUNTER", "BRETT_HUNTER", "RUSSELL_RUSH", "JOHNNY_AMERICA-DQ", "TONY_TORNADO&JOHNNY_AMERICA", "TONY_TORNADO"], 
-		},
-		{
-			"number": 59, 
-			"name": "JOHNNY_AMERICA",
-			"reign": 1,
-			"defenses": ["CALLUM_WOLF", "CALLUM_WOLF-DQ"], 
-		},
-		{
-			"number": 60, 
-			"name": "RUSSELL_RUSH",
-			"reign": 3,
-			"defenses": ["JOHNNY_AMERICA", "JOHNNY_AMERICA", "CALLUM_WOLF", "CALLUM_WOLF", "BEN_SEED", "BEN_SEED", "TONY_TORNADO", "TONY_TORNADO", "BEN_SEED"], 
-		},
-		{
-			"number": 61, 
-			"name": "MR_ENVIRONMENT",
-			"reign": 4,
-			"defenses": ["RUSSELL_RUSH", "TONY_TORNADO", "TONY_TORNADO", "BRETT_HUNTER", "JOHNNY_AMERICA", "JOHNNY_AMERICA", "TYSON_EVERETT", "TYSON_EVERETT"], 
-		},
-		{
-			"number": 62, 
-			"name": "JOHNNY_AMERICA",
-			"reign": 2,
-			"defenses": ["MR_ENVIRONMENT&TYSON_EVERETT"], 
-		},
-		{
-			"number": 63, 
-			"name": "MR_ENVIRONMENT",
-			"reign": 5,
-			"defenses": ["JOHNNY_AMERICA", "JOHNNY_AMERICA", "TONY_TORNADO", "BEN_SEED"], 
-		},
-		{
-			"number": 64, 
-			"name": "RUSSELL_RUSH",
-			"reign": 4,
-			"defenses": ["MR_ENVIRONMENT"], 
-		},
-		{
-			"number": 65, 
-			"name": "BRETT_HUNTER",
-			"reign": 2,
-			"defenses": ["RUSSELL_RUSH", "MR_ENVIRONMENT", "MR_ENVIRONMENT", "CLIFF_LEMON", "CLIFF_LEMON", "BRENT_HUNTER", "BRENT_HUNTER"], 
-		},
-		{
-			"number": 66, 
-			"name": "RUSSELL_RUSH",
-			"reign": 5,
-			"defenses": ["BRETT_HUNTER&BRENT_HUNTER", "BRETT_HUNTER", "ALEX_CONNOR", "DANNY_PUMPKIN", "ALEX_CONNOR", "MR_ENVIRONMENT"], 
-		},
-		{
-			"number": 67, 
-			"name": "CALLUM_WOLF",
-			"reign": 8,
-			"defenses": ["RUSSELL_RUSH", "RUSSELL_RUSH", "MR_ENVIRONMENT", "BEN_SEED", "CLIFF_LEMON", "TONY_TORNADO"], 
-		},
-		{
-			"number": 68, 
-			"name": "BRENT_HUNTER",
-			"reign": 1,
-			"defenses": ["CALLUM_WOLF&BRETT_HUNTER", "BRETT_HUNTER", "ALEX_CONNOR"], 
-		},
-		{
-			"number": 69, 
-			"name": "MR_ENVIRONMENT",
-			"reign": 6,
-			"defenses": ["BRENT_HUNTER", "BRETT_HUNTER", "BRETT_HUNTER", "BEN_SEED&ALEX_CONNOR", "ALEX_CONNOR"], 
-		},
-		{
-			"number": 70, 
-			"name": "KRIPPLER",
-			"reign": 1,
-			"defenses": ["MR_ENVIRONMENT", "BEN_SEED", "BEN_SEED", "RYAN_PAGE", "JOHNNY_AMERICA", "TONY_TORNADO", "TONY_TORNADO"], 
-		},
-		{
-			"number": 71, 
-			"name": "WYATT_WIPER",
-			"reign": 1,
-			"defenses": ["KRIPPLER", "KRIPPLER", "BRENT_HUNTER", "BRENT_HUNTER"], 
-		},
-		{
-			"number": 72, 
-			"name": "MR_ENVIRONMENT",
-			"reign": 7,
-			"defenses": ["WYATT_WIPER", "WYATT_WIPER", "RUSSELL_RUSH", "BEN_SEED", "BEN_SEED&BRENT_HUNTER"], 
-		},
-		{
-			"number": 73, 
-			"name": "HENRY_TATE",
-			"reign": 1,
-			"defenses": ["MR_ENVIRONMENT", "MR_ENVIRONMENT&BEN_SEED", "BEN_SEED", "BEN_SEED", "WYATT_WIPER&MR_ENVIRONMENT"], 
-		},
-		{
-			"number": 74, 
-			"name": "KRIPPLER",
-			"reign": 2,
-			"defenses": ["HENRY_TATE", "HENRY_TATE&MR_ENVIRONMENT"], 
-		},
-		{
-			"number": 75, 
-			"name": "RUSSELL_RUSH",
-			"reign": 6,
-			"defenses": ["KRIPPLER", "CALLUM_WOLF", "CALLUM_WOLF"], 
-		},
-		{
-			"number": 76, 
-			"name": "WYATT_WIPER",
-			"reign": 2,
-			"defenses": ["RUSSELL_RUSH", "RUSSELL_RUSH", "JOHNNY_AMERICA", "BEN_SEED", "HENRY_TATE", "MR_ENVIRONMENT"], 
-		},
-		{
-			"number": 77, 
-			"name": "RUSSELL_RUSH",
-			"reign": 7,
-			"defenses": ["WYATT_WIPER", "WYATT_WIPER&BEN_SEED", "HENRY_TATE", "HENRY_TATE", "RYAN_PAGE", "KRIPPLER"], 
-		},
-		{
-			"number": 78, 
-			"name": "TYSON_EVERETT",
-			"reign": 3,
-			"defenses": ["RUSSELL_RUSH", "WYATT_WIPER", "KRIPPLER", "JASON_HONEY"], 
-		},
-		{
-			"number": 79, 
-			"name": "HENRY_TATE",
-			"reign": 2,
-			"defenses": ["TYSON_EVERETT", "TYSON_EVERETT"], 
-		},
-		{
-			"number": 80, 
-			"name": "TONY_TORNADO",
-			"reign": 2,
-			"defenses": ["HENRY_TATE", "HENRY_TATE", "JOHNNY_AMERICA"], 
-		},
-		{
-			"number": 81, 
-			"name": "HENRY_TATE",
-			"reign": 3,
-			"defenses": ["TONY_TORNADO", "TONY_TORNADO", "BEN_SEED", "MR_ENVIRONMENT"], 
-		},
-		{
-			"number": 82, 
-			"name": "CALLUM_WOLF",
-			"reign": 9,
-			"defenses": ["HENRY_TATE", "RUSSELL_RUSH&HENRY_TATE", "TONY_TORNADO", "TONY_TORNADO", "MR_ENVIRONMENT", "WYATT_WIPER"], 
-		},
-		{
-			"number": 83, 
-			"name": "BRETT_HUNTER",
-			"reign": 3,
-			"defenses": ["CALLUM_WOLF"], 
-		},
-		{
-			"number": 84, 
-			"name": "HENRY_TATE",
-			"reign": 4,
-			"defenses": ["BRETT_HUNTER", "CALLUM_WOLF", "BRENT_HUNTER&BRETT_HUNTER"], 
-		},
-		{
-			"number": 85, 
-			"name": "JOEY_JET",
-			"reign": 1,
-			"defenses": ["HENRY_TATE", "HENRY_TATE", "BRENT_HUNTER"], 
-		},
-		{
-			"number": 86, 
-			"name": "WYATT_WIPER",
-			"reign": 3,
-			"defenses": ["JOEY_JET", "JOEY_JET", "BRENT_HUNTER", "BRENT_HUNTER", "CALLUM_WOLF", "CALLUM_WOLF", "MR_ENVIRONMENT", "TYSON_EVERETT", "TYSON_EVERETT"], 
-		},
-		{
-			"number": 87, 
-			"name": "MR_ENVIRONMENT",
-			"reign": 8,
-			"defenses": ["WYATT_WIPER", "BEN_SEED", "TONY_TORNADO", "JOEY_JET"], 
-		},
-		{
-			"number": 88, 
-			"name": "WYATT_WIPER",
-			"reign": 4,
-			"defenses": ["MR_ENVIRONMENT"], 
-		},
-		{
-			"number": 89, 
-			"name": "PLAYBOY_CAM",
-			"reign": 1,
-			"defenses": ["WYATT_WIPER", "WYATT_WIPER", "JOEY_JET", "JOHNNY_AMERICA", "JOHNNY_AMERICA", "BEN_SEED", "CALLUM_WOLF", "BRENT_HUNTER", "RUSSELL_RUSH"], 
-		},
-		{
-			"number": 90, 
-			"name": "WYATT_WIPER",
-			"reign": 5,
-			"defenses": ["MR_ENVIRONMENT&PLAYBOY_CAM", "PLAYBOY_CAM", "PLAYBOY_CAM", "TONY_TORNADO"], 
-		},
-		{
-			"number": 91,
-			"name": "RUSSELL_RUSH",
-			"reign": 8,
-			"defenses": ["WYATT_WIPER", "PLAYBOY_CAM", "PLAYBOY_CAM"], 
-		},
-		{
-			"number": 92, 
-			"name": "VACATED"
-		},
-		{
-			"number": 93,
-			"name": "VIKTOR_MAXX",
-			"reign": 1,
-			"defenses": ["CLARKSON_WILDE", "BRAD_WOODS", "BRAD_WOODS&CLARKSON_WILDE"], 
-		},
-		{
-			"number": 94,
-			"name": "CLARKSON_WILDE",
-			"reign": 1,
-			"defenses": ["VIKTOR_MAXX", "KYLER_BLAKE-DQ", "BRADLY_WEST-DQ", "KYLER_BLAKE"], 
-		},
-		{
-			"number": 95,
-			"name": "BRAD_WOODS",
-			"reign": 1,
-			"defenses": ["CLARKSON_WILDE"], 
-		},
-		{
-			"number": 96,
-			"name": "CLARKSON_WILDE",
-			"reign": 2,
-			"defenses": ["BRAD_WOODS", "BILLY_PONG"], 
-		}
+	"WORLD-TOP": [
+		{ name: "KARRION_KROSS", defenses: ["THE_MIZ&ILJA_DRAGUNOV&MATT_CARDONA","MR_ENVIRONMENT","THE_MIZ","RIDGE_HOLLAND","RIDGE_HOLLAND","MATT_CARDONA"] },
+		{ name: "AJ_STYLES", defenses: ["KARRION_KROSS","ADAM_PEARCE","MATT_CARDONA"] },
+		{ name: "KARRION_KROSS", defenses: ["AJ_STYLES&MATT_CARDONA","AJ_STYLES","ADAM_PEARCE","MATT_CARDONA"] },
+		{ name: "FINN_BALOR", defenses: ["KARRION_KROSS","AJ_STYLES"] },
+		{ name: "MATT_CARDONA", defenses: ["FINN_BALOR&AJ_STYLES","FINN_BALOR"] },
+		{ name: "ADAM_PEARCE", defenses: ["MATT_CARDONA"] },
+		{ name: "FINN_BALOR", defenses: ["ADAM_PEARCE","RIDGE_HOLLAND","MATT_CARDONA","AJ_STYLES","DREW_GULAK"] },
+		{ name: "JON_MOXLEY", defenses: ["FINN_BALOR","ADAM_PEARCE","KARRION_KROSS-DQ","DANIEL_BRYAN","KARRION_KROSS","DREW_GULAK","MATT_CARDONA","FINN_BALOR&DANIEL_BRYAN"] },
+		{ name: "FINN_BALOR", defenses: ["JON_MOXLEY","KARRION_KROSS&DREW_GULAK&JON_MOXLEY","JON_MOXLEY","DREW_GULAK"] },
+		{ name: "DREW_GULAK", defenses: ["AJ_STYLES&FINN_BALOR","FINN_BALOR","KARRION_KROSS","ADAM_PEARCE&FINN_BALOR"] },
+		{ name: "KARRION_KROSS", defenses: ["DREW_GULAK","ADAM_PEARCE"] },
+		{ name: "FINN_BALOR", defenses: ["KARRION_KROSS","KARRION_KROSS","ADAM_COLE","MATT_CARDONA"] },
+		{ name: "THE_MIZ", defenses: ["FINN_BALOR","AJ_STYLES","ADAM_PEARCE","ADAM_COLE"] },
+		{ name: "FINN_BALOR", defenses: ["THE_MIZ","AJ_STYLES","DANIEL_BRYAN","DREW_GULAK","KARRION_KROSS","SHANE_MCMAHON"] },
+		{ name: "JON_MOXLEY", defenses: ["KARRION_KROSS&FINN_BALOR","FINN_BALOR","ADAM_COLE","THE_MIZ","RIDGE_HOLLAND-MITB","ADAM_COLE","ADAM_COLE","KARRION_KROSS"] },
+		{ name: "KENNY_OMEGA", defenses: ["JON_MOXLEY","JON_MOXLEY","KARRION_KROSS","DANIEL_BRYAN","JON_MOXLEY","RIDGE_HOLLAND","FINN_BALOR - WRESTLEMANIA"] },
+		{ name: "DOLPH_ZIGGLER", defenses: ["KENNY_OMEGA&KARRION_KROSS","KARRION_KROSS","THE_MIZ","MATT_CARDONA","THE_MIZ","RIDGE_HOLLAND","KARRION_KROSS"] },
+		{ name: "KARRION_KROSS", defenses: ["DOLPH_ZIGGLER"] },
+		{ name: "LIV_MORGAN", defenses: ["KARRION_KROSS","KARRION_KROSS - DQ","KARRION_KROSS","FINN_BALOR - DQ"] },
+		"VACATED",
+		{ name: "DANIEL_BRYAN", defenses: ["KARRION_KROSS&FINN_BALOR&RIDGE_HOLLAND&CASH_WHEELER","LA_KNIGHT","RIDGE_HOLLAND"] },
+		{ name: "PAC", defenses: ["DANIEL_BRYAN","CASH_WHEELER","LA_KNIGHT"] },
+		{ name: "KENNY_OMEGA", defenses: ["PAC"] },
+		{ name: "PAC", defenses: ["KARRION_KROSS&KENNY_OMEGA","RIDGE_HOLLAND","FINN_BALOR"] },
+		{ name: "FINN_BALOR", defenses: ["PAC","PAC","RIDGE_HOLLAND","DANIEL_BRYAN","JON_MOXLEY-DQ"] },
+		{ name: "JON_MOXLEY", defenses: ["FINN_BALOR","FINN_BALOR&LA_KNIGHT","PAC"] },
+		{ name: "KENNY_OMEGA", defenses: ["JON_MOXLEY","RIDGE_HOLLAND","LA_KNIGHT","SHANE_HASTE"] },
+		{ name: "JON_MOXLEY", defenses: ["KENNY_OMEGA","JULIUS_CREED-MITB","PAC","RIDGE_HOLLAND","RIDGE_HOLLAND","SHANE_HASTE","SHANE_MCMAHON","RIDGE_HOLLAND&SHANE_HASTE","SHANE_HASTE","PAC"] },
+		{ name: "SHANE_HASTE", defenses: ["JON_MOXLEY","JON_MOXLEY"] },
+		{ name: "FINN_BALOR", defenses: ["SHANE_HASTE"] },
+		{ name: "CALLUM_WOLF", defenses: ["FINN_BALOR","FINN_BALOR","AJ_STYLES","AJ_STYLES"] },
+		{ name: "TYSON_EVERETT", defenses: ["CALLUM_WOLF"] },
+		{ name: "CALLUM_WOLF", defenses: ["TYSON_EVERETT","ADAM_PEARCE","ADAM_PEARCE&TYSON_EVERETT","KARRION_KROSS","TYSON_EVERETT-DQ"] },
+		{ name: "ADAM_PEARCE", defenses: ["TYSON_EVERETT&BEN_SEED&CALLUM_WOLF"] },
+		{ name: "CALLUM_WOLF", defenses: ["ADAM_PEARCE","TYSON_EVERETT","BEN_SEED-DQ"] },
+		{ name: "BEN_SEED", defenses: ["CALLUM_WOLF","CALLUM_WOLF","CALLUM_WOLF","TYSON_EVERETT","DANIEL_BRYAN"] },
+		{ name: "KARRION_KROSS", defenses: ["BEN_SEED","CALLUM_WOLF-DQ"] },
+		{ name: "BEN_SEED", defenses: ["KARRION_KROSS&CALLUM_WOLF","KARRION_KROSS","MR_ENVIRONMENT"] },
+		{ name: "MR_ENVIRONMENT", defenses: ["BEN_SEED","BEN_SEED","BEN_SEED&TYSON_EVERETT","CALLUM_WOLF","TYSON_EVERETT","KRIPPLER","KRIPPLER"] },
+		{ name: "BEN_SEED", defenses: ["MR_ENVIRONMENT","CALLUM_WOLF","MR_ENVIRONMENT","KRIPPLER","TYSON_EVERETT","MR_ENVIRONMENT","CALLUM_WOLF"] },
+		{ name: "CLIFF_LEMON", defenses: ["BEN_SEED","MR_ENVIRONMENT"] },
+		{ name: "MR_ENVIRONMENT", defenses: ["CLIFF_LEMON","CLIFF_LEMON","BEN_SEED"] },
+		{ name: "CLIFF_LEMON", defenses: ["MR_ENVIRONMENT","MR_ENVIRONMENT","BEN_SEED"] },
+		{ name: "TYSON_EVERETT", defenses: ["CLIFF_LEMON&MR_ENVIRONMENT","MR_ENVIRONMENT","CLIFF_LEMON","CLIFF_LEMON","KRIPPLER","KRIPPLER"] },
+		{ name: "CALLUM_WOLF", defenses: ["TYSON_EVERETT","CLIFF_LEMON","KRIPPLER","KRIPPLER","RUSSELL_RUSH","BEN_SEED","BEN_SEED&MR_ENVIRONMENT","CLIFF_LEMON","KENNY_OMEGA","MR_ENVIRONMENT","TYSON_EVERETT","BEN_SEED"] },
+		"VACATED",
+		{ name: "BEN_SEED", defenses: ["MR_ENVIRONMENT&CLIFF_LEMON&TYSON_EVERETT","FRED_CHATTY"] },
+		{ name: "RUSSELL_RUSH", defenses: ["BEN_SEED","BEN_SEED-DQ","MR_ENVIRONMENT","MR_ENVIRONMENT-DQ","TYSON_EVERETT"] },
+		{ name: "CALLUM_WOLF", defenses: ["RUSSELL_RUSH","RUSSELL_RUSH","BEN_SEED&MR_ENVIRONMENT"] },
+		{ name: "BEN_SEED", defenses: ["CALLUM_WOLF&MR_ENVIRONMENT","CALLUM_WOLF","RUSSELL_RUSH","CALLUM_WOLF-DQ"] },
+		{ name: "TONY_TORNADO", defenses: ["BEN_SEED","BEN_SEED"] },
+		{ name: "MR_ENVIRONMENT", defenses: ["TONY_TORNADO","TONY_TORNADO","BEN_SEED"] },
+		{ name: "RUSSELL_RUSH", defenses: ["MR_ENVIRONMENT","MR_ENVIRONMENT","MR_ENVIRONMENT","TONY_TORNADO","CLIFF_LEMON","CLIFF_LEMON","KRIPPLER","MR_ENVIRONMENT"] },
+		{ name: "CALLUM_WOLF", defenses: ["RUSSELL_RUSH"] },
+		{ name: "ALEX_CONNOR", defenses: ["CALLUM_WOLF","RUSSELL_RUSH"] },
+		{ name: "BEN_SEED", defenses: ["ALEX_CONNOR","RUSSELL_RUSH","CALLUM_WOLF"] },
+		{ name: "BRETT_HUNTER", defenses: ["BEN_SEED","MR_ENVIRONMENT","BEN_SEED","TONY_TORNADO"] },
+		{ name: "CALLUM_WOLF", defenses: ["BRETT_HUNTER","BRETT_HUNTER","RUSSELL_RUSH","JOHNNY_AMERICA-DQ","TONY_TORNADO&JOHNNY_AMERICA","TONY_TORNADO"] },
+		{ name: "JOHNNY_AMERICA", defenses: ["CALLUM_WOLF","CALLUM_WOLF-DQ"] },
+		{ name: "RUSSELL_RUSH", defenses: ["JOHNNY_AMERICA","JOHNNY_AMERICA","CALLUM_WOLF","CALLUM_WOLF","BEN_SEED","BEN_SEED","TONY_TORNADO","TONY_TORNADO","BEN_SEED"] },
+		{ name: "MR_ENVIRONMENT", defenses: ["RUSSELL_RUSH","TONY_TORNADO","TONY_TORNADO","BRETT_HUNTER","JOHNNY_AMERICA","JOHNNY_AMERICA","TYSON_EVERETT","TYSON_EVERETT"] },
+		{ name: "JOHNNY_AMERICA", defenses: ["MR_ENVIRONMENT&TYSON_EVERETT"] },
+		{ name: "MR_ENVIRONMENT", defenses: ["JOHNNY_AMERICA","JOHNNY_AMERICA","TONY_TORNADO","BEN_SEED"] },
+		{ name: "RUSSELL_RUSH", defenses: ["MR_ENVIRONMENT"] },
+		{ name: "BRETT_HUNTER", defenses: ["RUSSELL_RUSH","MR_ENVIRONMENT","MR_ENVIRONMENT","CLIFF_LEMON","CLIFF_LEMON","BRENT_HUNTER","BRENT_HUNTER"] },
+		{ name: "RUSSELL_RUSH", defenses: ["BRETT_HUNTER&BRENT_HUNTER","BRETT_HUNTER","ALEX_CONNOR","DANNY_PUMPKIN","ALEX_CONNOR","MR_ENVIRONMENT"] },
+		{ name: "CALLUM_WOLF", defenses: ["RUSSELL_RUSH","RUSSELL_RUSH","MR_ENVIRONMENT","BEN_SEED","CLIFF_LEMON","TONY_TORNADO"] },
+		{ name: "BRENT_HUNTER", defenses: ["CALLUM_WOLF&BRETT_HUNTER","BRETT_HUNTER","ALEX_CONNOR"] },
+		{ name: "MR_ENVIRONMENT", defenses: ["BRENT_HUNTER","BRETT_HUNTER","BRETT_HUNTER","BEN_SEED&ALEX_CONNOR","ALEX_CONNOR"] },
+		{ name: "KRIPPLER", defenses: ["MR_ENVIRONMENT","BEN_SEED","BEN_SEED","RYAN_PAGE","JOHNNY_AMERICA","TONY_TORNADO","TONY_TORNADO"] },
+		{ name: "WYATT_WIPER", defenses: ["KRIPPLER","KRIPPLER","BRENT_HUNTER","BRENT_HUNTER"] },
+		{ name: "MR_ENVIRONMENT", defenses: ["WYATT_WIPER","WYATT_WIPER","RUSSELL_RUSH","BEN_SEED","BEN_SEED&BRENT_HUNTER"] },
+		{ name: "HENRY_TATE", defenses: ["MR_ENVIRONMENT","MR_ENVIRONMENT&BEN_SEED","BEN_SEED","BEN_SEED","WYATT_WIPER&MR_ENVIRONMENT"] },
+		{ name: "KRIPPLER", defenses: ["HENRY_TATE","HENRY_TATE&MR_ENVIRONMENT"] },
+		{ name: "RUSSELL_RUSH", defenses: ["KRIPPLER","CALLUM_WOLF","CALLUM_WOLF"] },
+		{ name: "WYATT_WIPER", defenses: ["RUSSELL_RUSH","RUSSELL_RUSH","JOHNNY_AMERICA","BEN_SEED","HENRY_TATE","MR_ENVIRONMENT"] },
+		{ name: "RUSSELL_RUSH", defenses: ["WYATT_WIPER","WYATT_WIPER&BEN_SEED","HENRY_TATE","HENRY_TATE","RYAN_PAGE","KRIPPLER"] },
+		{ name: "TYSON_EVERETT", defenses: ["RUSSELL_RUSH","WYATT_WIPER","KRIPPLER","JASON_HONEY"] },
+		{ name: "HENRY_TATE", defenses: ["TYSON_EVERETT","TYSON_EVERETT"] },
+		{ name: "TONY_TORNADO", defenses: ["HENRY_TATE","HENRY_TATE","JOHNNY_AMERICA"] },
+		{ name: "HENRY_TATE", defenses: ["TONY_TORNADO","TONY_TORNADO","BEN_SEED","MR_ENVIRONMENT"] },
+		{ name: "CALLUM_WOLF", defenses: ["HENRY_TATE","RUSSELL_RUSH&HENRY_TATE","TONY_TORNADO","TONY_TORNADO","MR_ENVIRONMENT","WYATT_WIPER"] },
+		{ name: "BRETT_HUNTER", defenses: ["CALLUM_WOLF"] },
+		{ name: "HENRY_TATE", defenses: ["BRETT_HUNTER","CALLUM_WOLF","BRENT_HUNTER&BRETT_HUNTER"] },
+		{ name: "JOEY_JET", defenses: ["HENRY_TATE","HENRY_TATE","BRENT_HUNTER"] },
+		{ name: "WYATT_WIPER", defenses: ["JOEY_JET","JOEY_JET","BRENT_HUNTER","BRENT_HUNTER","CALLUM_WOLF","CALLUM_WOLF","MR_ENVIRONMENT","TYSON_EVERETT","TYSON_EVERETT"] },
+		{ name: "MR_ENVIRONMENT", defenses: ["WYATT_WIPER","BEN_SEED","TONY_TORNADO","JOEY_JET"] },
+		{ name: "WYATT_WIPER", defenses: ["MR_ENVIRONMENT"] },
+		{ name: "PLAYBOY_CAM", defenses: ["WYATT_WIPER","WYATT_WIPER","JOEY_JET","JOHNNY_AMERICA","JOHNNY_AMERICA","BEN_SEED","CALLUM_WOLF","BRENT_HUNTER","RUSSELL_RUSH"] },
+		{ name: "WYATT_WIPER", defenses: ["MR_ENVIRONMENT&PLAYBOY_CAM","PLAYBOY_CAM","PLAYBOY_CAM","TONY_TORNADO"] },
+		{ name: "RUSSELL_RUSH", defenses: ["WYATT_WIPER","PLAYBOY_CAM","PLAYBOY_CAM"] },
+		"VACATED",
+		{ name: "VIKTOR_MAXX", defenses: ["CLARKSON_WILDE","BRAD_WOODS","BRAD_WOODS&CLARKSON_WILDE"] },
+		{ name: "CLARKSON_WILDE", defenses: ["VIKTOR_MAXX","KYLER_BLAKE-DQ","BRADLY_WEST-DQ","KYLER_BLAKE"] },
+		{ name: "BRAD_WOODS", defenses: ["CLARKSON_WILDE"] },
+		{ name: "CLARKSON_WILDE", defenses: ["BRAD_WOODS","BILLY_PONG"] }
 	],
-	"MENS-NXT":[
-		{
-			"number": 1, 
-			"name": "BUDDY_MURPHY",
-			"reign": 1,
-			"defenses": ["SHANE_HASTE", "BEN_SEED", "MIKE_KANELLIS", "BRETT_HUNTER"]
-		},
-		{
-			"number": 2, 
-			"name": "SHANE_HASTE",
-			"reign": 1,
-			"defenses": ["BUDDY_MURPHY", "MIKE_KANELLIS&BUDDY_MURPHY", "BUDDY_MURPHY"]
-		},
-		{
-			"number": 3, 
-			"name": "MIKE_KANELLIS",
-			"reign": 1,
-			"defenses": ["SHANE_HASTE", "MR_ENVIRONMENT"]
-		},
-		{
-			"number": 4, 
-			"name": "BUDDY_MURPHY",
-			"reign": 2,
-			"defenses": ["SHANE_HASTE&MIKE_KANELLIS", "SHANE_HASTE", "SHANE_HASTE", "MIKE_KANELLIS", "SHANE_HASTE"]
-		},
-		{
-			"number": 5, 
-			"name": "SHANE_HASTE",
-			"reign": 2,
-			"defenses": ["BUDDY_MURPHY&BEN_SEED&MIKE_KANELLIS", "BUDDY_MURPHY"]
-		},
-		{
-			"number": 6, 
-			"name": "KRIPPLER",
-			"reign": 1,
-			"defenses": ["SHANE_HASTE", "BRENT_HUNTER"]
-		},
-		{
-			"number": 7, 
-			"name": "KILLIAN_MCMURPHY",
-			"reign": 1,
-			"defenses": ["KRIPPLER"]
-		},
-		{
-			"number": 8, 
-			"name": "KRIPPLER",
-			"reign": 2,
-			"defenses": ["MIKE_KANELLIS&KILLIAN_MCMURPHY&MR_ENVIRONMENT&BEN_SEED", "MR_ENVIRONMENT", "KILLIAN_MCMURPHY"]
-		},
-		{
-			"number": 9, 
-			"name": "MR_ENVIRONMENT",
-			"reign": 1,
-			"defenses": ["KRIPPLER", "BEN_SEED", "BEN_SEED", "BRETT_HUNTER", "KRIPPLER"]
-		},
-		{
-			"number": 10, 
-			"name": "CALLUM_WOLF",
-			"reign": 1,
-			"defenses": ["MR_ENVIRONMENT", "BEN_SEED", "KRIPPLER", "CLIFF_LEMON", "CLIFF_LEMON-DQ", "CLIFF_LEMON", "FRED_CHATTY", "MR_ENVIRONMENT", "BEN_SEED", "POSI", "BEN_SEED"]
-		},
-		{
-			"number": 11,
-			"name": "VACATED"
-		},
-		{
-			"number": 12, 
-			"name": "MR_ENVIRONMENT",
-			"reign": 2,
-			"defenses": ["BEN_SEED&BRENT_HUNTER&BRETT_HUNTER", "BEN_SEED"]
-		},
-		{
-			"number": 13, 
-			"name": "JOHNNY_AMERICA",
-			"reign": 1,
-			"defenses": ["MR_ENVIRONMENT", "RYAN_PAGE", "FRED_CHATTY", "FRED_CHATTY&TURBO", "TURBO&RYAN_PAGE", "TURBO"]
-		},
-		{
-			"number": 14, 
-			"name": "RYAN_PAGE",
-			"reign": 1,
-			"defenses": ["JOHNNY_AMERICA", "DADDY_TODD", "HARDBEAR", "TONY_DASHER", "TURBO-DQ", "TURBO"]
-		},
-		{
-			"number": 15, 
-			"name": "ALEX_CONNOR",
-			"reign": 1,
-			"defenses": ["RYAN_PAGE", "RYAN_PAGE", "RYAN_PAGE", "ANGELO_KNIGHT", "HARDBEAR", "DANNY_PUMPKIN"]
-		},
-		{
-			"number": 16,
-			"name": "VACATED"
-		},
-		{
-			"number": 17, 
-			"name": "LOGAN_GURT",
-			"reign": 1,
-			"defenses": ["DANNY_PUMPKIN", "WILL_PHERBY"]
-		},
-		{
-			"number": 18, 
-			"name": "WILL_PHERBY",
-			"reign": 1,
-			"defenses": ["LOGAN_GURT", "WYATT_WIPER"]
-		},
-		{
-			"number": 19, 
-			"name": "DAMON_KNIGHT",
-			"reign": 1,
-			"defenses": ["LOGAN_GURT&WILL_PHERBY", "WYATT_WIPER", "LOGAN_GURT", "ANGELO_KNIGHT", "ANGELO_KNIGHT", "WILL_PHERBY", "DADDY_TODD", "TURBO", "TURBO"]
-		},
-		{
-			"number": 20, 
-			"name": "WILL_PHERBY",
-			"reign": 2,
-			"defenses": ["DAMON_KNIGHT", "LOGAN_GURT", "ANGELO_KNIGHT&DAMON_KNIGHT", "DADDY_TODD"]
-		},
-		{
-			"number": 21, 
-			"name": "DADDY_TODD",
-			"reign": 1,
-			"defenses": ["WILL_PHERBY"]
-		},
-		{
-			"number": 22, 
-			"name": "WILL_PHERBY",
-			"reign": 3,
-			"defenses": ["DADDY_TODD", "DADDY_TODD", "DANNY_PUMPKIN", "HARDBEAR", "HARDBEAR", "TONY_DASHER"]
-		},
-		{
-			"number": 23, 
-			"name": "DANNY_PUMPKIN",
-			"reign": 1,
-			"defenses": ["WILL_PHERBY", "WILL_PHERBY", "LOGAN_GURT"]
-		},
-		{
-			"number": 24, 
-			"name": "NICK_GOODE",
-			"reign": 1,
-			"defenses": ["DANNY_PUMPKIN", "WILL_PHERBY", "HARDBEAR", "ANGELO_KNIGHT", "HARDBEAR", "HARDBEAR", "HARDBEAR"]
-		},{
-			"number": 25,
-			"name": "VACATED"
-		},
-		{
-			"number": 26, 
-			"name": "DADDY_TODD",
-			"reign": 2,
-			"defenses": ["ANGELO_KNIGHT&DAMON_KNIGHT&HARDBEAR&LOGAN_GURT", "ANGELO_KNIGHT"]
-		},
-		{
-			"number": 27, 
-			"name": "PLAYBOY_CAM",
-			"reign": 1,
-			"defenses": ["DADDY_TODD", "LOGAN_GURT&DAMON_KNIGHT", "LOGAN_GURT", "DAMON_KNIGHT", "ANGELO_KNIGHT", "ANGELO_KNIGHT", "HARDBEAR"]
-		},{
-			"number": 28,
-			"name": "VACATED"
-		},
-		{
-			"number": 29, 
-			"name": "BRAD_WOODS",
-			"reign": 1,
-			"defenses": ["TOBASCO_CRUZ&CLARKSON_WILDE&VIKTOR_MAXX", "PETER_PONG&VIKTOR_MAXX", "PETER_PONG", "PETER_PONG&BILLY_PONG", "NOAH_ACE", "KYLER_BLAKE", "HUGGIE_HOBBS"]
-		},
-		{
-			"number": 30, 
-			"name": "ELI_BOLTON",
-			"reign": 1,
-			"defenses": ["BRAD_WOODS"]
-		},
-		{
-			"number": 31, 
-			"name": "BRADLY_WEST",
-			"reign": 1,
-			"defenses": ["ELI_BOLTON", "ELI_BOLTON"]
-		},
-		{
-			"number": 32, 
-			"name": "ELI_BOLTON",
-			"reign": 2,
-			"defenses": ["BRADLY_WEST", "FENIX", "FENIX"]
-		}
+	"MENS-NXT": [
+		{ name: "BUDDY_MURPHY", defenses: ["SHANE_HASTE","BEN_SEED","MIKE_KANELLIS","BRETT_HUNTER"] },
+		{ name: "SHANE_HASTE", defenses: ["BUDDY_MURPHY","MIKE_KANELLIS&BUDDY_MURPHY","BUDDY_MURPHY"] },
+		{ name: "MIKE_KANELLIS", defenses: ["SHANE_HASTE","MR_ENVIRONMENT"] },
+		{ name: "BUDDY_MURPHY", defenses: ["SHANE_HASTE&MIKE_KANELLIS","SHANE_HASTE","SHANE_HASTE","MIKE_KANELLIS","SHANE_HASTE"] },
+		{ name: "SHANE_HASTE", defenses: ["BUDDY_MURPHY&BEN_SEED&MIKE_KANELLIS","BUDDY_MURPHY"] },
+		{ name: "KRIPPLER", defenses: ["SHANE_HASTE","BRENT_HUNTER"] },
+		{ name: "KILLIAN_MCMURPHY", defenses: ["KRIPPLER"] },
+		{ name: "KRIPPLER", defenses: ["MIKE_KANELLIS&KILLIAN_MCMURPHY&MR_ENVIRONMENT&BEN_SEED","MR_ENVIRONMENT","KILLIAN_MCMURPHY"] },
+		{ name: "MR_ENVIRONMENT", defenses: ["KRIPPLER","BEN_SEED","BEN_SEED","BRETT_HUNTER","KRIPPLER"] },
+		{ name: "CALLUM_WOLF", defenses: ["MR_ENVIRONMENT","BEN_SEED","KRIPPLER","CLIFF_LEMON","CLIFF_LEMON-DQ","CLIFF_LEMON","FRED_CHATTY","MR_ENVIRONMENT","BEN_SEED","POSI","BEN_SEED"] },
+		"VACATED",
+		{ name: "MR_ENVIRONMENT", defenses: ["BEN_SEED&BRENT_HUNTER&BRETT_HUNTER","BEN_SEED"] },
+		{ name: "JOHNNY_AMERICA", defenses: ["MR_ENVIRONMENT","RYAN_PAGE","FRED_CHATTY","FRED_CHATTY&TURBO","TURBO&RYAN_PAGE","TURBO"] },
+		{ name: "RYAN_PAGE", defenses: ["JOHNNY_AMERICA","DADDY_TODD","HARDBEAR","TONY_DASHER","TURBO-DQ","TURBO"] },
+		{ name: "ALEX_CONNOR", defenses: ["RYAN_PAGE","RYAN_PAGE","RYAN_PAGE","ANGELO_KNIGHT","HARDBEAR","DANNY_PUMPKIN"] },
+		"VACATED",
+		{ name: "LOGAN_GURT", defenses: ["DANNY_PUMPKIN","WILL_PHERBY"] },
+		{ name: "WILL_PHERBY", defenses: ["LOGAN_GURT","WYATT_WIPER"] },
+		{ name: "DAMON_KNIGHT", defenses: ["LOGAN_GURT&WILL_PHERBY","WYATT_WIPER","LOGAN_GURT","ANGELO_KNIGHT","ANGELO_KNIGHT","WILL_PHERBY","DADDY_TODD","TURBO","TURBO"] },
+		{ name: "WILL_PHERBY", defenses: ["DAMON_KNIGHT","LOGAN_GURT","ANGELO_KNIGHT&DAMON_KNIGHT","DADDY_TODD"] },
+		{ name: "DADDY_TODD", defenses: ["WILL_PHERBY"] },
+		{ name: "WILL_PHERBY", defenses: ["DADDY_TODD","DADDY_TODD","DANNY_PUMPKIN","HARDBEAR","HARDBEAR","TONY_DASHER"] },
+		{ name: "DANNY_PUMPKIN", defenses: ["WILL_PHERBY","WILL_PHERBY","LOGAN_GURT"] },
+		{ name: "NICK_GOODE", defenses: ["DANNY_PUMPKIN","WILL_PHERBY","HARDBEAR","ANGELO_KNIGHT","HARDBEAR","HARDBEAR","HARDBEAR"] },
+		"VACATED",
+		{ name: "DADDY_TODD", defenses: ["ANGELO_KNIGHT&DAMON_KNIGHT&HARDBEAR&LOGAN_GURT","ANGELO_KNIGHT"] },
+		{ name: "PLAYBOY_CAM", defenses: ["DADDY_TODD","LOGAN_GURT&DAMON_KNIGHT","LOGAN_GURT","DAMON_KNIGHT","ANGELO_KNIGHT","ANGELO_KNIGHT","HARDBEAR"] },
+		"VACATED",
+		{ name: "BRAD_WOODS", defenses: ["TOBASCO_CRUZ&CLARKSON_WILDE&VIKTOR_MAXX","PETER_PONG&VIKTOR_MAXX","PETER_PONG","PETER_PONG&BILLY_PONG","NOAH_ACE","KYLER_BLAKE","HUGGIE_HOBBS"] },
+		{ name: "ELI_BOLTON", defenses: ["BRAD_WOODS"] },
+		{ name: "BRADLY_WEST", defenses: ["ELI_BOLTON","ELI_BOLTON"] },
+		{ name: "ELI_BOLTON", defenses: ["BRADLY_WEST","FENIX","FENIX"] }
 	],
-	"DOM-TOP":[
-		{
-			"number": 1, 
-			"name": "DOLPH_ZIGGLER",
-			"reign": 1,
-			"defenses": ["PAC", "SHANE_HASTE", "DANIEL_BRYAN", "DREW_GULAK"]
-		},
-		{
-			"number": 2, 
-			"name": "LA_KNIGHT",
-			"reign": 1,
-			"defenses": ["DOLPH_ZIGGLER", "JOHN_MORRISON", "JOHNNY_GARGANO", "AJ_STYLES"]
-		},
-		{
-			"number": 3, 
-			"name": "FANDANGO",
-			"reign": 1,
-			"defenses": ["LA_KNIGHT", "GIOVANNI_VINCI", "DREW_GULAK"]
-		},
-		{
-			"number": 4,
-			"name": "VACATED"
-		},
-		{
-			"number": 5, 
-			"name": "BEN_SEED",
-			"reign": 1,
-			"defenses": ["MR_ENVIRONMENT&CLIFF_LEMON&TYSON_EVERETT", "FANDANGO", "RUSSELL_RUSH", "RUSSELL_RUSH", "KRIPPLER-DQ"]
-		},
-		{
-			"number": 6, 
-			"name": "KRIPPLER",
-			"reign": 1,
-			"defenses": ["BEN_SEED", "CLIFF_LEMON", "RUSSELL_RUSH", "LA_KNIGHT", "RUSSELL_RUSH"]
-		},
-		{
-			"number": 7, 
-			"name": "CLIFF_LEMON",
-			"reign": 1,
-			"defenses": ["KRIPPLER", "JASON_HONEY"]
-		},
-		{
-			"number": 8, 
-			"name": "TYSON_EVERETT",
-			"reign": 1,
-			"defenses": ["CLIFF_LEMON", "JASON_HONEY"]
-		},
-		{
-			"number": 9, 
-			"name": "ALEX_CONNOR",
-			"reign": 1,
-			"defenses": ["TYSON_EVERETT", "POSI", "KRIPPLER"]
-		},
-		{
-			"number": 10, 
-			"name": "CALLUM_WOLF",
-			"reign": 1,
-			"defenses": ["ALEX_CONNOR", "BRETT_HUNTER", "BRETT_HUNTER", "BRETT_HUNTER&BRENT_HUNTER"]
-		},
-		{
-			"number": 11, 
-			"name": "ALEX_CONNOR",
-			"reign": 2,
-			"defenses": ["CALLUM_WOLF&BRETT_HUNTER&BRENT_HUNTER", "BRENT_HUNTER", "BRENT_HUNTER", "KRIPPLER"]
-		},
-		{
-			"number": 12, 
-			"name": "BRENT_HUNTER",
-			"reign": 1,
-			"defenses": ["ALEX_CONNOR"]
-		},
-		{
-			"number": 13, 
-			"name": "BRETT_HUNTER",
-			"reign": 1,
-			"defenses": ["BRENT_HUNTER", "BRENT_HUNTER-DQ", "BRENT_HUNTER-DQ", "BRENT_HUNTER"]
-		},
-		{
-			"number": 14, 
-			"name": "BRENT_HUNTER",
-			"reign": 2,
-			"defenses": ["BRETT_HUNTER", "BRETT_HUNTER-DQ"]
-		},
-		{
-			"number": 15, 
-			"name": "RYAN_PAGE",
-			"reign": 1,
-			"defenses": ["BRENT_HUNTER", "BRETT_HUNTER", "BRETT_HUNTER&BRENT_HUNTER"]
-		},
-		{
-			"number": 16, 
-			"name": "BRETT_HUNTER",
-			"reign": 2,
-			"defenses": ["RYAN_PAGE", "RYAN_PAGE"]
-		},
-		{
-			"number": 17, 
-			"name": "BRENT_HUNTER",
-			"reign": 3,
-			"defenses": ["BRETT_HUNTER", "BRETT_HUNTER", "BRETT_HUNTER-DQ"]
-		},
-		{
-			"number": 18, 
-			"name": "WYATT_WIPER",
-			"reign": 1,
-			"defenses": ["BRENT_HUNTER", "BRETT_HUNTER", "ALEX_CONNOR", "ALEX_CONNOR", "BEN_SEED"]
-		},
-		{
-			"number": 19, 
-			"name": "RETIRED",
-			"reign": 1,
-			"defenses": ["BELT IS RETIRED"]
-		}
+	"DOM-TOP": [
+		{ name: "DOLPH_ZIGGLER", defenses: ["PAC","SHANE_HASTE","DANIEL_BRYAN","DREW_GULAK"] },
+		{ name: "LA_KNIGHT", defenses: ["DOLPH_ZIGGLER","JOHN_MORRISON","JOHNNY_GARGANO","AJ_STYLES"] },
+		{ name: "FANDANGO", defenses: ["LA_KNIGHT","GIOVANNI_VINCI","DREW_GULAK"] },
+		"VACATED",
+		{ name: "BEN_SEED", defenses: ["MR_ENVIRONMENT&CLIFF_LEMON&TYSON_EVERETT","FANDANGO","RUSSELL_RUSH","RUSSELL_RUSH","KRIPPLER-DQ"] },
+		{ name: "KRIPPLER", defenses: ["BEN_SEED","CLIFF_LEMON","RUSSELL_RUSH","LA_KNIGHT","RUSSELL_RUSH"] },
+		{ name: "CLIFF_LEMON", defenses: ["KRIPPLER","JASON_HONEY"] },
+		{ name: "TYSON_EVERETT", defenses: ["CLIFF_LEMON","JASON_HONEY"] },
+		{ name: "ALEX_CONNOR", defenses: ["TYSON_EVERETT","POSI","KRIPPLER"] },
+		{ name: "CALLUM_WOLF", defenses: ["ALEX_CONNOR","BRETT_HUNTER","BRETT_HUNTER","BRETT_HUNTER&BRENT_HUNTER"] },
+		{ name: "ALEX_CONNOR", defenses: ["CALLUM_WOLF&BRETT_HUNTER&BRENT_HUNTER","BRENT_HUNTER","BRENT_HUNTER","KRIPPLER"] },
+		{ name: "BRENT_HUNTER", defenses: ["ALEX_CONNOR"] },
+		{ name: "BRETT_HUNTER", defenses: ["BRENT_HUNTER","BRENT_HUNTER-DQ","BRENT_HUNTER-DQ","BRENT_HUNTER"] },
+		{ name: "BRENT_HUNTER", defenses: ["BRETT_HUNTER","BRETT_HUNTER-DQ"] },
+		{ name: "RYAN_PAGE", defenses: ["BRENT_HUNTER","BRETT_HUNTER","BRETT_HUNTER&BRENT_HUNTER"] },
+		{ name: "BRETT_HUNTER", defenses: ["RYAN_PAGE","RYAN_PAGE"] },
+		{ name: "BRENT_HUNTER", defenses: ["BRETT_HUNTER","BRETT_HUNTER","BRETT_HUNTER-DQ"] },
+		{ name: "WYATT_WIPER", defenses: ["BRENT_HUNTER","BRETT_HUNTER","ALEX_CONNOR","ALEX_CONNOR","BEN_SEED"] },
+		{ name: "RETIRED", defenses: ["BELT IS RETIRED"] }
 	],
-	"MENS-TAG":[
-		{
-			"number": 1, 
-			"name": "THE BRO JOBS",
-			"members": "JOHN_MORRISON[1]&THE_MIZ[1]",
-			"defenses": ["THE WAY (JOHNNY_GARGANO, DEXTER_LUMIS) & HARSH PUNISHMENT (ILJA_DRAGUNOV, JON_MOXLEY) & EIFFEL TOWER (FANDANGO, GIOVANNI_VINCI)"]
-		},
-		{
-			"number": 2, 
-			"name": "THE WAY",
-			"members": "JOHNNY_GARGANO[1]&DEXTER_LUMIS[1]",
-			"defenses": ["THE BRO JOBS (JOHN_MORRISON, THE_MIZ)", "HARSH PUNISHMENT (ILJA_DRAGUNOV, JON_MOXLEY)", "ALPHA ACADEMY (CHAD_GABLE, OTIS)"]
-		},
-		{
-			"number": 3, 
-			"name": "EIFFEL TOWER",
-			"members": "FANDANGO[1]&GIOVANNI_VINCI[1]",
-			"defenses": ["THE WAY (JOHNNY_GARGANO, DEXTER_LUMIS)", "HARSH PUNISHMENT (ILJA_DRAGUNOV, JON_MOXLEY)", "HARSH PUNISHMENT (ILJA_DRAGUNOV, JON_MOXLEY)", "ALPHA ACADEMY (CHAD_GABLE, OTIS)"]
-		},
-		{
-			"number": 4, 
-			"name": "HARSH PUNISHMENT",
-			"members": "ILJA_DRAGUNOV[1]&JON_MOXLEY[1]",
-			"defenses": ["EIFFEL TOWER (FANDANGO, GIOVANNI_VINCI)", "EIFFEL TOWER (FANDANGO, GIOVANNI_VINCI)", "ALPHA ACADEMY (CHAD_GABLE, OTIS)", "EIFFEL TOWER (FANDANGO, GIOVANNI_VINCI)", "ALPHA ACADEMY (CHAD_GABLE, OTIS)", "CORPORATE DADDIES (ADAM_PEARCE, SHANE_MCMAHON)", "THE WAY (JOHNNY_GARGANO, DEXTER_LUMIS)"]
-		},
-		{
-			"number": 5, 
-			"name": "THE BRO JOBS",
-			"members": "DOLPH_ZIGGLER[1]&THE_MIZ[2]",
-			"defenses": ["HARSH PUNISHMENT (ILJA_DRAGUNOV, JON_MOXLEY)", "ALPHA ACADEMY (CHAD_GABLE, OTIS)", "THE WAY (JOHNNY_GARGANO, DEXTER_LUMIS)", "GOLDEN LOVERS (KENNY_OMEGA, KOTA_IBUSHI)"]
-		},
-		{
-			"number": 6, 
-			"name": "GOLDEN LOVERS",
-			"members": "KENNY_OMEGA[1]&KOTA_IBUSHI[1]",
-			"defenses": ["THE BRO JOBS (DOLPH_ZIGGLER, THE_MIZ)", "CORPORATE DADDIES (ADAM_PEARCE, SHANE_MCMAHON)", "THE BRO JOBS (MATT_CARDONA, JOHN_MORRISON)", "ALPHA ACADEMY (CHAD_GABLE, OTIS)", "THE HUNTER BROTHERS (BRETT_HUNTER, BRENT_HUNTER)", "EIFFEL TOWER (FANDANGO, GIOVANNI_VINCI)", "THE BRO JOBS (THE_MIZ, JOHN_MORRISON)", "EIFFEL TOWER (FANDANGO, GIOVANNI_VINCI)", "ALPHA ACADEMY (CHAD_GABLE, OTIS)", "HARSH PUNISHMENT (ILJA_DRAGUNOV, JON_MOXLEY)", "MALE ALLURE (DANIEL_BRYAN, SAMMY) - DQ"]
-		},
-		{
-			"number": 7, 
-			"name": "VACATED"
-		},
-		{
-			"number": 8, 
-			"name": "THE WAY",
-			"members": "JOHNNY_GARGANO[2]&DEXTER_LUMIS[2]",
-			"defenses": ["ALPHA ACADEMY (CHAD_GABLE, OTIS)", "CORPORATE DADDIES (ADAM_PEARCE, SHANE_MCMAHON)", "MALE ALLURE (DANIEL_BRYAN, SAMMY)", "ALPHA ACADEMY (CHAD_GABLE, OTIS)", "MALE ALLURE (DANIEL_BRYAN, SAMMY)", "MALE ALLURE (DANIEL_BRYAN, SAMMY)", "EIFFEL TOWER (FANDANGO, GIOVANNI_VINCI)"]
-		},
-		{
-			"number": 9, 
-			"name": "FLY BOYS",
-			"members": "JOHN_MORRISON[2]&AJ_STYLES[1]",
-			"defenses": ["THE WAY (JOHNNY_GARGANO, DEXTER_LUMIS)", "HARSH PUNISHMENT (ILJA_DRAGUNOV, JON_MOXLEY)", "THE BRO JOBS (THE_MIZ, MATT_CARDONA)", "EIFFEL TOWER (FANDANGO, GIOVANNI_VINCI)"]
-		},
-		{
-			"number": 10, 
-			"name": "DUELING FORCES",
-			"members": "JOHNNY_GARGANO[3]&DREW_GULAK[1]",
-			"defenses": ["FLY BOYS (JOHN_MORRISON, AJ_STYLES) - WRESTLEMANIA", "HARSH PUNISHMENT (ILJA_DRAGUNOV, JON_MOXLEY)", "ALPHA ACADEMY (CHAD_GABLE, OTIS)", "EIFFEL TOWER (FANDANGO, GIOVANNI_VINCI)", "CORPORATE DADDIES (ADAM_PEARCE, SHANE_MCMAHON)", "HARSH PUNISHMENT (ILJA_DRAGUNOV, JON_MOXLEY)", "FLY BOYS (JOHN_MORRISON, AJ_STYLES)"]
-		},
-		{
-			"number": 11, 
-			"name": "KNIGHTS IN LOVE",
-			"members": "LA_KNIGHT[1]&SAMMY_KNIGHT[1]",
-			"defenses": ["DUELING FORCES (JOHNNY_GARGANO, DREW_GULAK)", "HARSH PUNISHMENT (ILJA_DRAGUNOV, JON_MOXLEY) - DQ", "HARSH PUNISHMENT (ILJA_DRAGUNOV, JON_MOXLEY)"]
-		},
-		{
-			"number": 12, 
-			"name": "FLY BOYS",
-			"members": "JOHN_MORRISON[3]&AJ_STYLES[2]",
-			"defenses": ["KNIGHTS IN LOVE (LA_KNIGHT, SAMMY_KNIGHT)", "DUELING FORCES (JOHNNY_GARGANO, DREW_GULAK)", "KNIGHTS IN LOVE (LA_KNIGHT, SAMMY_KNIGHT)", "DUELING FORCES (JOHNNY_GARGANO, DREW_GULAK)"]
-		},
-		{
-			"number": 13, 
-			"name": "NEVERLAND",
-			"members": "HOOK[1]&DANIEL_BRYAN[1]",
-			"defenses": ["FLY BOYS (JOHN_MORRISON, AJ_STYLES)", "EIFFEL TOWER (FANDANGO, GIOVANNI_VINCI)", "DREAM COME TRUE (SHANE_HASTE, DARBY_ALLIN)", "KNIGHTS IN LOVE (LA_KNIGHT, SAMMY_KNIGHT)", "HARSH PUNISHMENT, KNIGHTS IN LOVE, DREAM COME TRUE"]
-		},
-		{
-			"number": 14, 
-			"name": "DREAM COME TRUE",
-			"members": "DARBY_ALLIN[1]&SHANE_HASTE[1]",
-			"defenses": ["NEVERLAND (HOOK, DANIEL_BRYAN)", "KNIGHTS IN LOVE (LA_KNIGHT, SAMMY_KNIGHT)", "HARSH PUNISHMENT (ILJA_DRAGUNOV, JON_MOXLEY)"]
-		},
-		{
-			"number": 15, 
-			"name": "DUELING FORCES",
-			"members": "JOHNNY_GARGANO[4]&DREW_GULAK[2]",
-			"defenses": ["DREAM COME TRUE (DARBY_ALLIN, SHANE_HASTE)", "NEVERLAND (HOOK, DANIEL_BRYAN)", "HARSH PUNISHMENT (ILJA_DRAGUNOV, JON_MOXLEY)"]
-		},
-		{
-			"number": 16, 
-			"name": "DREAM COME TRUE",
-			"members": "DARBY_ALLIN[2]&SHANE_HASTE[2]",
-			"defenses": ["DUELING FORCES (JOHNNY_GARGANO, DREW_GULAK)"]
-		},
-		{
-			"number": 17, 
-			"name": "THE DP BOYS",
-			"members": "AUSTIN_THEORY[1]&JULIUS_CREED[1]",
-			"defenses": ["DREAM COME TRUE (DARBY_ALLIN, SHANE_HASTE)", "NEVERLAND (HOOK, DANIEL_BRYAN)", "DUELING FORCES (JOHNNY_GARGANO, DREW_GULAK)"]
-		},
-		{
-			"number": 18, 
-			"name": "NEVERLAND",
-			"members": "HOOK[2]&DANIEL_BRYAN[2]",
-			"defenses": ["THE DP BOYS (AUSTIN_THEORY, JULIUS_CREED)","THE DP BOYS (AUSTIN_THEORY, JULIUS_CREED)","DREAM COME TRUE (DARBY_ALLIN, SHANE_HASTE)"]
-		},
-		{
-			"number": 19, 
-			"name": "ALPHA ACADEMY",
-			"members": "CHAD_GABLE[1]&OTIS[1]",
-			"defenses": ["NEVERLAND (HOOK, DANIEL_BRYAN)","THE DP BOYS (AUSTIN_THEORY, JULIUS_CREED)", "DUELING FORCES (JOHNNY_GARGANO, DREW_GULAK)"]
-		},
-		{
-			"number": 20, 
-			"name": "DREAM COME TRUE",
-			"members": "DARBY_ALLIN[3]&SHANE_HASTE[3]",
-			"defenses": ["ALPHA ACADEMY (CHAD_GABLE, OTIS)"]
-		},
-		{
-			"number": 21, 
-			"name": "THE HUNTER BROTHERS",
-			"members": "BRETT_HUNTER[1]&BRENT_HUNTER[1]",
-			"defenses": ["DREAM COME TRUE (DARBY_ALLIN, SHANE_HASTE)", "LEMON RUSH (CLIFF_LEMON, RUSSELL_RUSH)"]
-		},
-		{
-			"number": 22, 
-			"name": "GLOBAL PROTECTORS",
-			"members": "CLIP_MAVERICK[1]&MR_ENVIRONMENT[1]",
-			"defenses": ["THE HUNTER BROTHERS (BRETT_HUNTER, BRENT_HUNTER)", "LEMON RUSH (CLIFF_LEMON, RUSSELL_RUSH)"]
-		},
-		{
-			"number": 23, 
-			"name": "THE HUNTER BROTHERS",
-			"members": "BRETT_HUNTER[2]&BRENT_HUNTER[2]",
-			"defenses": ["GLOBAL PROTECTORS (CLIP_MAVERICK, MR_ENVIRONMENT)", "GLOBAL PROTECTORS (CLIP_MAVERICK, MR_ENVIRONMENT)", "GLOBAL PROTECTORS (CLIP_MAVERICK, MR_ENVIRONMENT)", "HONEY CHAT (FRED_CHATTY, JASON_HONEY)", "HONEY CHAT (FRED_CHATTY, JASON_HONEY)", "HONEY CHAT (FRED_CHATTY, JASON_HONEY)", "LEMON CLIP (CLIFF_LEMON, CLIP_MAVERICK)"]
-		},
-		{
-			"number": 24, 
-			"name": "LEMON CLIP",
-			"members": "CLIP_MAVERICK[2]&CLIFF_LEMON[1]",
-			"defenses": ["THE HUNTER BROTHERS (BRETT_HUNTER, BRENT_HUNTER)"]
-		},
-		{
-			"number": 25, 
-			"name": "THE HUNTER BROTHERS",
-			"members": "BRETT_HUNTER[3]&BRENT_HUNTER[3]",
-			"defenses": ["LEMON CLIP (CLIFF_LEMON, CLIP_MAVERICK)", "HONEY CHAT (FRED_CHATTY, JASON_HONEY)"]
-		},
-		{
-			"number": 26, 
-			"name": "LOUNGEWEAR",
-			"members": "MERCENARY[1]&KRIPPLER[1]",
-			"defenses": ["HONEY CHAT (FRED_CHATTY, JASON_HONEY) & THE HUNTER BROTHERS (BRETT_HUNTER, BRENT_HUNTER) & AROUSAL CHOCOLATE (POSI, TONY_TORNADO)", "AROUSAL CHOCOLATE (POSI, TONY_TORNADO)", "AROUSAL CHOCOLATE (POSI, TONY_TORNADO)", "HONEY CHAT (FRED_CHATTY, JASON_HONEY)", "THE HUNTER BROTHERS (BRETT_HUNTER, BRENT_HUNTER)"]
-		},
-		{
-			"number": 26, 
-			"name": "HONEY CHAT",
-			"members": "JASON_HONEY[1]&FRED_CHATTY[1]",
-			"defenses": ["LOUNGEWEAR (MERCENARY, KRIPPLER)", "LEMON CLIP (CLIFF_LEMON, CLIP_MAVERICK)"]
-		},
-		{
-			"number": 27, 
-			"name": "THE HUNTER BROTHERS",
-			"members": "BRETT_HUNTER[4]&BRENT_HUNTER[4]",
-			"defenses": ["HONEY CHAT (FRED_CHATTY, JASON_HONEY)"]
-		},
-		{
-			"number": 28, 
-			"name": "LOUNGEWEAR",
-			"members": "MERCENARY[2]&KRIPPLER[2]",
-			"defenses": ["LEMON CLIP (CLIFF_LEMON, CLIP_MAVERICK) & THE HUNTER BROTHERS (BRETT_HUNTER, BRENT_HUNTER)", "HONEY CHAT (FRED_CHATTY, JASON_HONEY)", "AROUSAL CHOCOLATE (POSI, TONY_TORNADO)", "AROUSAL CHOCOLATE (POSI, TONY_TORNADO)"]
-		},
-		{
-			"number": 29, 
-			"name": "AROUSAL CHOCOLATE",
-			"members": "TONY_TORNADO[1]&POSI[1]",
-			"defenses": ["LOUNGEWEAR (MERCENARY, KRIPPLER)"]
-		},
-		{
-			"number": 30, 
-			"name": "LOUNGEWEAR",
-			"members": "MERCENARY[3]&KRIPPLER[3]",
-			"defenses": ["AROUSAL CHOCOLATE (POSI, TONY_TORNADO)", "AROUSAL CHOCOLATE (POSI, TONY_TORNADO)", "LEMON CLIP (CLIFF_LEMON, CLIP_MAVERICK)", "LEMON CLIP (CLIFF_LEMON, CLIP_MAVERICK)"]
-		},
-		{
-			"number": 30, 
-			"name": "TOTAL DOMINATION",
-			"members": "FRED_CHATTY[2]&TYSON_EVERETT[1]",
-			"defenses": ["LOUNGEWEAR (MERCENARY, KRIPPLER)", "AROUSAL CHOCOLATE (POSI, TONY_TORNADO)", "LEMON CLIP (CLIFF_LEMON, CLIP_MAVERICK)"]
-		},
-		{
-			"number": 31, 
-			"name": "VACATION TIME",
-			"members": "DANNY_PUMPKIN[1]&JOEY_JET[1]",
-			"defenses": ["TOTAL DOMINATION (FRED_CHATTY, TYSON_EVERETT)"]
-		},
-		{
-			"number": 32, 
-			"name": "THE BANG BROS",
-			"members": "ALEX_CONNOR[1]&WYATT_WIPER[1]",
-			"defenses": ["VACATION TIME (DANNY_PUMPKIN, JOEY_JET)", "VACATION TIME (DANNY_PUMPKIN, JOEY_JET)", "TOTAL DOMINATION (FRED_CHATTY, TYSON_EVERETT)", "VACATION TIME (DANNY_PUMPKIN, JOEY_JET)", "AROUSAL CHOCOLATE (POSI, TONY_TORNADO)", "AROUSAL CHOCOLATE (POSI, TONY_TORNADO)"]
-		},
-		{
-			"number": 33, 
-			"name": "BIG BROTHERS",
-			"members": "MR_ENVIRONMENT[2]&RYAN_PAGE[1]",
-			"defenses": ["THE BANG BROS (ALEX_CONNOR, WYATT_WIPER)", "TOTAL DOMINATION (FRED_CHATTY, TYSON_EVERETT)", "TOTAL DOMINATION (FRED_CHATTY, TYSON_EVERETT)", "VACATION TIME (DANNY_PUMPKIN, JOEY_JET)"]
-		},
-		{
-			"number": 34, 
-			"name": "THE FRATERNITY",
-			"members": "RUSSELL_RUSH[1]&BEN_SEED[1]",
-			"defenses": ["BIG BROTHERS (MR_ENVIRONMENT, RYAN_PAGE)", "VACATION TIME (DANNY_PUMPKIN, JOEY_JET)", "TOTAL DOMINATION (FRED_CHATTY, TYSON_EVERETT)", "VACATION TIME (DANNY_PUMPKIN, JOEY_JET)", "VACATION TIME (DANNY_PUMPKIN, JOEY_JET)", "VACATION TIME (DANNY_PUMPKIN, JOEY_JET)"]
-		},
-		{
-			"number": 35, 
-			"name": "THE BANG BROS",
-			"members": "ALEX_CONNOR[2]&WYATT_WIPER[2]",
-			"defenses": ["THE FRATERNITY (RUSSELL_RUSH, BEN_SEED)", "TOTAL DOMINATION (FRED_CHATTY, TYSON_EVERETT)", "TOTAL DOMINATION (FRED_CHATTY, TYSON_EVERETT)"]
-		},
-		{
-			"number": 36, 
-			"name": "THE GOOD BOYS",
-			"members": "WILL_PHERBY[1]&JOEY_JET[2]",
-			"defenses": ["THE BANG BROS (ALEX_CONNOR, WYATT_WIPER)", "THE BANG BROS (ALEX_CONNOR, WYATT_WIPER)"]
-		},
-		{
-			"number": 37, 
-			"name": "THE FRATERNITY",
-			"members": "RUSSELL_RUSH[2]&BEN_SEED[2]",
-			"defenses": ["THE GOOD BOYS (WILL_PHERBY, JOEY_JET)", "THE GOOD BOYS (WILL_PHERBY, JOEY_JET)", "THE GOOD BOYS (WILL_PHERBY, JOEY_JET)", "THE GOOD BOYS (WILL_PHERBY, JOEY_JET)"]
-		},
-		{
-			"number": 38, 
-			"name": "AROUSAL CHOCOLATE",
-			"members": "TONY_TORNADO[2]&POSI[2]",
-			"defenses": ["THE FRATERNITY (RUSSELL_RUSH, BEN_SEED)", "LOUNGEWEAR (MERCENARY, KRIPPLER)"]
-		},
-		{
-			"number": 38, 
-			"name": "THE FRATERNITY",
-			"members": "BRENT_HUNTER[5]&TYSON_EVERETT[2]",
-			"defenses": ["AROUSAL CHOCOLATE (TONY_TORNADO, POSI)", "LOUNGEWEAR (MERCENARY, KRIPPLER)", "LOUNGEWEAR (MERCENARY, KRIPPLER)"]
-		},
-		{
-			"number": 39, 
-			"name": "TONY TIME",
-			"members": "TONY_DASHER[1]&TONY_TORNADO[3]",
-			"defenses": ["THE FRATERNITY (BRENT_HUNTER, TYSON_EVERETT)", "THE GOOD BOYS (WILL_PHERBY, JOEY_JET)", "THE GOOD BOYS (WILL_PHERBY, JOEY_JET)", "LOUNGEWEAR (MERCENARY, KRIPPLER)", "THE FRATERNITY (BRENT_HUNTER, TYSON_EVERETT)"]
-		},
-		{
-			"number": 40, 
-			"name": "THE FRATERNITY",
-			"members": "BRENT_HUNTER[6]&TYSON_EVERETT[3]",
-			"defenses": ["TONY TIME (TONY_DASHER, TONY_TORNADO)"]
-		},
-		{
-			"number": 41, 
-			"name": "GOT SPIKES?",
-			"members": "DAMON_KNIGHT[1]&DADDY_TODD[1]",
-			"defenses": ["THE FRATERNITY (BRENT_HUNTER, TYSON_EVERETT)", "THE FRATERNITY (BRENT_HUNTER, TYSON_EVERETT)", "TONY TIME (TONY_DASHER, TONY_TORNADO)", "LOUNGEWEAR (MERCENARY, KRIPPLER)", "LOUNGEWEAR (MERCENARY, KRIPPLER)"]
-		},{
-			"number": 42, 
-			"name": "THE HUNTER BROTHERS",
-			"members": "BRETT_HUNTER[5]&BRENT_HUNTER[7]",
-			"defenses": ["GOT SPIKES? (DAMON_KNIGHT, DADDY_TODD)", "THE FRATERNITY (BEN_SEED, TYSON_EVERETT)", "GOT SPIKES? (DAMON_KNIGHT, DADDY_TODD)", "THE FRATERNITY (BEN_SEED, TYSON_EVERETT)"]
-		},
-		{
-			"number": 43, 
-			"name": "TONY TIME",
-			"members": "TONY_DASHER[2]&TONY_TORNADO[4]",
-			"defenses": ["THE HUNTER BROTHERS (BRETT_HUNTER, BRENT_HUNTER)", "THE HUNTER BROTHERS (BRETT_HUNTER, BRENT_HUNTER)", "THE HUNTER BROTHERS (BRETT_HUNTER, BRENT_HUNTER)"]
-		},
-		{
-			"number": 44, 
-			"name": "PONG BROS",
-			"members": "BILLY_PONG[1]&PETER_PONG[1]",
-			"defenses": ["TONY TIME (TONY_DASHER, TONY_TORNADO)"]
-		},
-		{
-			"number": 45, 
-			"name": "KARATE KIDZ",
-			"members": "KYLER_BLAKE[1]&XION_OWENS[1]",
-			"defenses": ["PONG BROS (BILLY_PONG, PETER_PONG)", "HUGGIE & NOAH (HUGGIE_HOBBS, NOAH_ACE)"]
-		},
-		{
-			"number": 46, 
-			"name": "FLYING FUEGOS",
-			"members": "TRAVIS_WEST[1]&TOBASCO_CRUZ[1]",
-			"defenses": ["KARATE KIDZ (KYLER_BLAKE, XION_OWENS)", "PONG BROS (BILLY_PONG, PETER_PONG)", "PONG BROS (BILLY_PONG, PETER_PONG)", "KARATE KIDZ (KYLER_BLAKE, XION_OWENS)"]
-		}
-		
+	"TAG": [
+		{ name: "DIVAS OF DOOM", members: ["BETH_PHOENIX","NATALYA"], defenses: ["FAB LOVE (JASMINE_LOVE, CARMELLA)","BELLA TWINS","AMBER_LEE, GAIL_KIM"] },
+		{ name: "FAB LOVE", members: ["JASMINE_LOVE","CARMELLA"], defenses: ["DIVAS OF DOOM (BETH_PHOENIX, NATALYA)"] },
+		{ name: "HEAVY PUNISHERS", members: ["HEAVY_FLO","TAMINA"], defenses: ["FAB LOVE (JASMINE_LOVE, CARMELLA)","CELESTIAL GUARDIANS (LOLA_STARR, EMBER_MOON)","GIGI_MONDAY, ZELINA_VEGA"] },
+		{ name: "TWISTED BLISS", members: ["ALEXA_BLISS","NIKKI_CROSS"], defenses: ["HEAVY PUNISHERS (HEAVY_FLO, TAMINA)"] },
+		{ name: "FAB LOVE", members: ["JASMINE_LOVE","CARMELLA"], defenses: ["TWISTED BLISS (ALEXA_BLISS, NIKKI_CROSS)","TWISTED BLISS (ALEXA_BLISS, NIKKI_CROSS)","RED & GOLD (MANDY_ROSE, EVA_MARIE)","AMBER_LEE, GAIL_KIM","HEAVY PUNISHERS (HEAVY_FLO, TAMINA)"] },
+		{ name: "RED & GOLD", members: ["MANDY_ROSE","EVA_MARIE"], defenses: ["FAB LOVE (JASMINE_LOVE, CARMELLA)","HEAVY PUNISHERS (HEAVY_FLO, TAMINA)","CELESTIAL GUARDIANS (LOLA_STARR, EMBER_MOON)"] },
+		{ name: "ASUKA, BLU", members: ["ASUKA","BLU"], defenses: ["RED & GOLD (MANDY_ROSE, EVA_MARIE)","HEAVY PUNISHERS (HEAVY_FLO, TAMINA)","TWISTED BLISS (ALEXA_BLISS, NIKKI_CROSS)","CELESTIAL GUARDIANS (LOLA_STARR, EMBER_MOON)"] },
+		{ name: "TWISTED BLISS", members: ["ALEXA_BLISS","NIKKI_CROSS"], defenses: ["ASUKA, BLU","AMERICAN PATRIOTS (LINDSEY_SPARKS, POLLY_SEAN)"] },
+		{ name: "FOX MONEY", members: ["CARMELLA","ALICIA_FOX"], defenses: ["TWISTED BLISS (ALEXA_BLISS, NIKKI_CROSS)","SUMMER_RAE, EMMA","AMERICAN PATRIOTS (LINDSEY_SPARKS, POLLY_SEAN)"] },
+		{ name: "BLACK LOTUS", members: ["CALI","AORI_SATO"], defenses: ["FOX MONEY (CARMELLA, ALICIA_FOX)","FOX MONEY (CARMELLA, ALICIA_FOX)","AMERICAN PATRIOTS (LINDSEY_SPARKS, POLLY_SEAN)","AMERICAN PATRIOTS (LINDSEY_SPARKS, POLLY_SEAN)"] },
+		{ name: "AMERICAN PATRIOTS", members: ["LINDSEY_SPARKS","POLLY_SEAN"], defenses: ["BLACK LOTUS (CALI, AORI_SATO)","DARK VIPER (AMY_ORTON, DARK_JENNA)","BLACK LOTUS (CALI, AORI_SATO)"] },
+		{ name: "BLACK LOTUS", members: ["CALI","AORI_SATO"], defenses: ["AMERICAN PATRIOTS (LINDSEY_SPARKS, POLLY_SEAN)","DARK VIPER (AMY_ORTON, DARK_JENNA)","AMERICAN PATRIOTS (LINDSEY_SPARKS, POLLY_SEAN)"] },
+		{ name: "DARK VIPER", members: ["AMY_ORTON","DARK_JENNA"], defenses: ["BLACK LOTUS (CALI, AORI_SATO)","BLACK LOTUS (CALI, AORI_SATO)","BLACK LOTUS (CALI, AORI_SATO)"] },
+		{ name: "THE SUNSHINE GIRLS", members: ["MARISSA_SUNSHINE","NICOLE_SUNSHINE"], defenses: ["DARK VIPER (AMY_ORTON, DARK_JENNA)","AMERICAN PATRIOTS (LINDSEY_SPARKS, POLLY_SEAN)","CANDYLICKS (LOLA_STARR, GIGI_MONDAY)","CANDYLICKS (LOLA_STARR, GIGI_MONDAY)","BLACK LOTUS (CALI, AORI_SATO)"] },
+		{ name: "CANDYLICKS", members: ["LOLA_STARR","GIGI_MONDAY"], defenses: ["THE SUNSHINE GIRLS (MARISSA_SUNSHINE, NICOLE_SUNSHINE)"] },
+		{ name: "BLACK LOTUS", members: ["CALI","AORI_SATO"], defenses: ["CANDYLICKS (LOLA_STARR, GIGI_MONDAY)","DARK VIPER (AMY_ORTON, DARK_JENNA)"] },
+		{ name: "THE SUNSHINE GIRLS", members: ["MARISSA_SUNSHINE","NICOLE_SUNSHINE"], defenses: ["BLACK LOTUS (CALI, AORI_SATO)","DARK VIPER (AMY_ORTON, DARK_JENNA)","BLACK LOTUS (CALI, AORI_SATO)"] },
+		"VACATED",
+		{ name: "THE MENTORSHIP", members: ["MOLITA","AMBER_LEE"], defenses: ["DARK VIPER (AMY_ORTON, DARK_JENNA)","CANDYLICKS (LOLA_STARR, GIGI_MONDAY)","TEAM BESTIES (TRISH_STRATUS, LITA)","TEAM BESTIES (TRISH_STRATUS, LITA)","PRETTY GIRL NATION (JICKIE_MAMES, JESSICA_WILD)"] },
+		{ name: "PRETTY GIRL NATION", members: ["JICKIE_MAMES","JESSICA_WILD"], defenses: ["THE MENTORSHIP (MOLITA, AMBER_LEE)"] },
+		{ name: "THE MENTORSHIP", members: ["MOLITA","AMBER_LEE"], defenses: ["PRETTY GIRL NATION (JICKIE_MAMES, JESSICA_WILD)","PRETTY GIRL NATION (JICKIE_MAMES, JESSICA_WILD)","HARDLETHICS (TORNADO_MAY, OLIVIA_ANNE)","BLACK LOTUS (CALI, AORI_SATO)","HARDLETHICS (TORNADO_MAY, OLIVIA_ANNE)"] },
+		"VACATED",
+		{ name: "DIVAS UNITE", members: ["KELLY_KELLY","ALIYAH"], defenses: ["TEAM NINJA (KATANA_CHANCE, KAYDEN_CARTER)","TOXIC ATTRACTION (GIGI_DOLIN, JACY_JAYNE)"] },
+		{ name: "TOXIC ATTRACTION", members: ["GIGI_DOLIN","JACY_JAYNE"], defenses: ["DIVAS UNITE (KELLY_KELLY, ALIYAH)","DIVAS UNITE (KELLY_KELLY, ALIYAH)","DIVAS UNITE (KELLY_KELLY, ALIYAH)","DAMAGE CTRL (IYO_SKY, DAKOTA_KAI)","THE WAY (INDI_HARTWELL, CANDICE_LERAE)"] },
+		{ name: "COSMIC POWER", members: ["MAYU_IWATANI","SARRAY"], defenses: ["TOXIC ATTRACTION (GIGI_DOLIN, JACY_JAYNE)","THE WAY (INDI_HARTWELL, CANDICE_LERAE)","TEAM NINJA (KATANA_CHANCE, KAYDEN_CARTER)"] },
+		{ name: "THE RESISTANCE", members: ["LACEY_EVANS","NATALYA"], defenses: ["COSMIC POWER (MAYU_IWATANI, SARRAY)"] },
+		{ name: "DAMAGE CTRL", members: ["IYO_SKY","DAKOTA_KAI"], defenses: ["THE RESISTANCE (LACEY_EVANS, NATALYA)","TOXIC ATTRACTION (GIGI_DOLIN, JACY_JAYNE)","THE RESISTANCE (LACEY_EVANS, NATALYA)"] },
+		{ name: "THE RESISTANCE", members: ["LACEY_EVANS","NATALYA"], defenses: ["DAMAGE CTRL (IYO_SKY, DAKOTA_KAI)","DAMAGE CTRL (IYO_SKY, DAKOTA_KAI)","TWISTED BLISS (ALEXA_BLISS, NIKKI_CROSS)","THE WAY (INDI_HARTWELL, CANDICE_LERAE)","LUNAR RUSH (AZM, SARRAY)"] },
+		{ name: "LUNAR RUSH", members: ["AZM","SARRAY"], defenses: ["THE RESISTANCE (LACEY_EVANS, NATALYA)","TOXIC ATTRACTION (GIGI_DOLIN, JACY_JAYNE)","TEAM NINJA (KATANA_CHANCE, KAYDEN_CARTER)","TEAM NINJA (KATANA_CHANCE, KAYDEN_CARTER)","DIVAS UNITE (KELLY_KELLY, ALIYAH)","DIVAS UNITE (KELLY_KELLY, ALIYAH)","THE WAY (INDI_HARTWELL, CANDICE_LERAE)"] },
+		{ name: "TOXIC ATTRACTION (FIRE & DESIRE)", members: ["MANDY_ROSE","SONYA_DEVILLE"], defenses: ["LUNAR RUSH (AZM, SARRAY)"] },
+		{ name: "LUNAR RUSH", members: ["AZM","SARRAY"], defenses: ["TOXIC ATTRACTION/FIRE & DESIRE (MANDY_ROSE, SONYA_DEVILLE)","TOXIC ATTRACTION (GIGI_DOLIN, JACY_JAYNE)","SONYA_DEVILLE&SHAYNA_BASZLER&GIGI_DOLIN&JACY_JAYNE - THE GREAT WAR"] },
+		"VACATED",
+		{ name: "NEXUS", members: ["ROXANNE_PEREZ","CORA_JADE"], defenses: ["TEAM NINJA (KATANA_CHANCE, KAYDEN_CARTER)","THE WAY (INDI_HARTWELL, CANDICE_LERAE)","DAMAGE CTRL (DAKOTA_KAI, BAYLEY)","THE BEAUTIFUL PEOPLE (ANGELINA_LOVE, VELVET_SKY)","TEAM NINJA (KATANA_CHANCE, KAYDEN_CARTER)","TWISTED BLISS (ALEXA_BLISS, NIKKI_CROSS)"] },
+		{ name: "COUGAR FANTASY", members: ["SABLE","SCARLETT"], defenses: ["NEXUS (ROXANNE_PEREZ, CORA_JADE)","TWISTED BLISS (ALEXA_BLISS, NIKKI_CROSS)","THE GUARDIANS (KAIRI, XIA_LI) - DQ","TWISTED BLISS (ALEXA_BLISS, NIKKI_CROSS)"] },
+		{ name: "THE GUARDIANS", members: ["KAIRI","XIA_LI"], defenses: ["COUGAR FANTASY (SABLE, SCARLETT)"] },
+		{ name: "DAMAGE CTRL", members: ["IYO_SKY","DAKOTA_KAI"], defenses: ["THE GUARDIANS (KAIRI, XIA_LI)","TEAM NINJA (KATANA_CHANCE, KAYDEN_CARTER)"] },
+		{ name: "ALISON JANS & ROXANNE PEREZ", members: ["ALISON_JANS","ROXANNE_PEREZ"], defenses: ["DAMAGE CTRL (IYO_SKY, DAKOTA_KAI) - WRESTLEMANIA","TEAM NINJA (KATANA_CHANCE, KAYDEN_CARTER)-DQ","TEAM NINJA (KATANA_CHANCE, KAYDEN_CARTER)","DAMAGE CTRL (IYO_SKY, DAKOTA_KAI)"] },
+		{ name: "THE IICONICS", members: ["PEYTON_ROYCE","BILLIE_KAY"], defenses: ["ALISON_JANS, ROXANNE_PEREZ","TWISTED BLISS (ALEXA_BLISS, NIKKI_CROSS)","THE GUARDIANS (XIA_LI, KAIRI)","THE WAY (INDI_HARTWELL, CANDICE_LERAE)"] },
+		{ name: "THE WAY", members: ["CANDICE_LERAE","INDI_HARTWELL"], defenses: ["THE IICONICS (PEYTON_ROYCE, BILLIE_KAY)","DAMAGE CTRL (BAYLEY, DAKOTA_KAI)"] },
+		{ name: "THE IICONICS", members: ["PEYTON_ROYCE","BILLIE_KAY"], defenses: ["THE WAY (INDI_HARTWELL, CANDICE_LERAE)","TWISTED BLISS (ALEXA_BLISS, NIKKI_CROSS)"] },
+		{ name: "THE WAY", members: ["CANDICE_LERAE","INDI_HARTWELL"], defenses: ["THE IICONICS (PEYTON_ROYCE, BILLIE_KAY)","TEAM NINJA (KATANA_CHANCE, KAYDEN_CARTER)","DAMAGE CTRL (BAYLEY, DAKOTA_KAI)","TEAM NINJA (KATANA_CHANCE, KAYDEN_CARTER)","DOUBLEHIT (MIA_YIM, SHOTZI)"] },
+		{ name: "BLACK GIRL MAGIC", members: ["NAOMI","JAKARA_JACKSON"], defenses: ["THE WAY (INDI_HARTWELL, CANDICE_LERAE)"] },
+		{ name: "SILENT ROSE", members: ["CHELSEA_GREEN","MARIAH_MAY"], defenses: ["BLACK GIRL MAGIC (NAOMI, JAKARA_JACKSON)","THE IICONICS (PEYTON_ROYCE, BILLIE_KAY)","ALISON_JANS, ROXANNE_PEREZ","BLACK GIRL MAGIC (NAOMI, JAKARA_JACKSON)","TOUGH COMPANY (LISA_LOST, JANE_MACK)","TOUGH COMPANY (LISA_LOST, JANE_MACK)","TOUGH COMPANY (LISA_LOST, JANE_MACK)","TOUGH COMPANY (LISA_LOST, JANE_MACK)","TEAM BAD (NAOMI, TAMINA)"] },
+		{ name: "THE FALLEN", members: ["LIV_MORGAN","GIGI_DOLIN"], defenses: ["SILENT ROSE (CHELSEA_GREEN, MARIAH_MAY)","SILENT ROSE (TERESA_SHARP, LAUREN_SNOW)"] },
+		{ name: "DOUBLE SPICE", members: ["CYNTHIA_RAMIREZ","HALIE_QUINN"], defenses: ["THE FALLEN (LIV_MORGAN, GIGI_DOLIN)"] },
+		{ name: "HOUSE GIRLS", members: ["ALICIA_HOUSE","MASK_GIRL"], defenses: ["DOUBLE SPICE (CYNTHIA_RAMIREZ, HALIE_QUINN)"] },
+		{ name: "DOUBLE SPICE", members: ["CYNTHIA_RAMIREZ","HALIE_QUINN"], defenses: ["HOUSE GIRLS (ALICIA_HOUSE, MASK_GIRL)","HOUSE GIRLS (ALICIA_HOUSE, MASK_GIRL)"] },
+		{ name: "SILENT ROSE", members: ["TERESA_SHARP","LAUREN_SNOW"], defenses: ["DOUBLE SPICE (CYNTHIA_RAMIREZ, HALIE_QUINN)","TOUGH COMPANY (LISA_LOST, JANE_MACK)","TOUGH COMPANY (LISA_LOST, JANE_MACK)"] },
+		{ name: "THE ATTITUDE", members: ["CRYSTAL","PARIS_MONET"], defenses: ["SILENT ROSE (TERESA_SHARP, LAUREN_SNOW)","HOUSE GIRLS (ALICIA_HOUSE, MASK_GIRL)","SILENT ROSE (TERESA_SHARP, LAUREN_SNOW)"] },
+		{ name: "TOUGH COMPANY", members: ["LISA_LOST","JANE_MACK"], defenses: ["THE ATTITUDE (CRYSTAL, PARIS_MONET)","THE ATTITUDE (CRYSTAL, PARIS_MONET)"] },
+		{ name: "JUICY GIRLS", members: ["JESSICA_CUP","JUST_JANINE"], defenses: ["TOUGH COMPANY (LISA_LOST, JANE_MACK)","HOUSE GIRLS (ALICIA_HOUSE, MASK_GIRL)"] },
+		"VACATED",
+		{ name: "NEON PARTY", members: ["NELLY_STORM","SLADER"], defenses: ["HOUSE GIRLS (ALICIA_HOUSE, MASK_GIRL)","METALLIC ANGELS (VERONICA_STEEL, JANE_MACK)","THE WILDSIDE (JUNGO, JULIET_SUNSET)","SILENT ROSE (SLOANE, LAUREN_SNOW)"] },
+		{ name: "METALLIC ANGELS", members: ["JANE_MACK","VERONICA_STEEL"], defenses: ["NEON PARTY (NELLY_STORM, SLADER)","NEON PARTY (NELLY_STORM, SLADER)","SILENT ROSE (SLOANE, LAUREN_SNOW)"] },
+		{ name: "NEON PARTY", members: ["NELLY_STORM","SLADER"], defenses: ["METALLIC ANGELS (VERONICA_STEEL, JANE_MACK)","METALLIC ANGELS (VERONICA_STEEL, JANE_MACK)","METALLIC ANGELS (VERONICA_STEEL, JANE_MACK)","SILENT ROSE (SLOANE, LAUREN_SNOW)","SILENT ROSE (SLOANE, LAUREN_SNOW)","THE WILDSIDE (JUNGO, JULIET_SUNSET)","SILENT ROSE (SLOANE, LAUREN_SNOW)"] },
+		{ name: "SILENT ROSE", members: ["SLOANE","LAUREN_SNOW"], defenses: ["NEON PARTY (NELLY_STORM, SLADER)","THE WILDSIDE (JUNGO, JULIET_SUNSET)","METALLIC ANGELS (VERONICA_STEEL, JANE_MACK)"] },
+		{ name: "THE WILDSIDE", members: ["JUNGO","JULIET_SUNSET"], defenses: ["SILENT ROSE (SLOANE, LAUREN_SNOW)"] },
+		{ name: "SILENT ROSE", members: ["SLOANE","LAUREN_SNOW"], defenses: ["THE WILDSIDE (JUNGO, JULIET_SUNSET)","METALLIC ANGELS (VERONICA_STEEL, JANE_MACK)"] },
+		"VACATED",
+		{ name: "METALLIC ANGELS", members: ["JANE_MACK","VERONICA_STEEL"], defenses: ["THE WILDSIDE (JUNGO, JULIET_SUNSET)","THE WILDSIDE (JUNGO, JULIET_SUNSET)","SILENT ROSE (SLOANE, LAUREN_SNOW)"] },
+		{ name: "THE WILDSIDE", members: ["JUNGO","JULIET_SUNSET"], defenses: ["METALLIC ANGELS (VERONICA_STEEL, JANE_MACK)","SILENT ROSE (SLOANE, LAUREN_SNOW)"] },
+		{ name: "DOUBLE SPICE", members: ["CYNTHIA_RAMIREZ","HALIE_QUINN"], defenses: ["THE WILDSIDE (JUNGO, JULIET_SUNSET)","METALLIC ANGELS (VERONICA_STEEL, JANE_MACK)","THE WILDSIDE (JUNGO, JULIET_SUNSET)","THE WILDSIDE (JUNGO, JULIET_SUNSET)","SILENT ROSE (SLOANE, LAUREN_SNOW)","SILENT ROSE (SLOANE, LAUREN_SNOW)"] },
+		{ name: "THE WILDSIDE", members: ["JUNGO","JULIET_SUNSET"], defenses: ["DOUBLE SPICE (CYNTHIA_RAMIREZ, HALIE_QUINN)","SILENT ROSE (SLOANE, LAUREN_SNOW)"] },
+		{ name: "TICKLED PINK", members: ["JESSICA_CUP","NATASHA_IVY"], defenses: ["THE WILDSIDE (JUNGO, JULIET_SUNSET)","THE WILDSIDE (JUNGO, JULIET_SUNSET)","SILENT ROSE (SLOANE, LAUREN_SNOW)"] },
+		{ name: "NEON PARTY", members: ["NELLY_STORM","SLADER"], defenses: ["TICKLED PINK (JESSICA_CUP, NATASHA_IVY)","METALLIC ANGELS (VERONICA_STEEL, JANE_MACK)","SILENT ROSE (SLOANE, LAUREN_SNOW)","TICKLED PINK (JESSICA_CUP, NATASHA_IVY)","TICKLED PINK (JESSICA_CUP, NATASHA_IVY)"] },
+		{ name: "LA ROSA", members: ["CYNTHIA_RAMIREZ","CARLA_GARCIA"], defenses: ["NEON PARTY (NELLY_STORM, SLADER)","TICKLED PINK (JESSICA_CUP, NATASHA_IVY)","SILENT ROSE (SLOANE, LAUREN_SNOW)","TICKLED PINK (JESSICA_CUP, NATASHA_IVY)","XXX GIRLS (X_FOUR, X_THREE)","XXX GIRLS (X_FOUR, X_THREE)","METALLIC ANGELS (VERONICA_STEEL, JANE_MACK)"] },
+		{ name: "COUNTRY ROUGH", members: ["TORNADO_MAY","BLAIRE_COUNTY"], defenses: ["LA ROSA (CYNTHIA_RAMIREZ, CARLA_GARCIA)","LA ROSA (CYNTHIA_RAMIREZ, CARLA_GARCIA)"] },
+		{ name: "METALLIC ANGELS", members: ["BROOK_TAYLOR","JANE_MACK"], defenses: ["COUNTRY ROUGH (TORNADO_MAY, BLAIRE_COUNTY)","LA ROSA (CYNTHIA_RAMIREZ, CARLA_GARCIA)","THE WILDSIDE (JUNGO, JULIET_SUNSET)","SILENT ROSE (SLOANE, LAUREN_SNOW)"] },
+		{ name: "SHADOW VIXENS", members: ["CELINE","X_THREE"], defenses: ["METALLIC ANGELS (BROOK_TAYLOR, JANE_MACK)","LA ROSA (CYNTHIA_RAMIREZ, CARLA_GARCIA)","SILENT ROSE (SLOANE, SAM_GOLDEN)"] },
+		{ name: "ALL NATURAL", members: ["LORNA_LIGHT","TORNADO_MAY"], defenses: ["SHADOW VIXENS (CELINE, X_THREE)","SHADOW VIXENS (CELINE, X_THREE)","METALLIC ANGELS (SCARLETT_WINGS, VERONICA_STEEL)","METALLIC ANGELS (SCARLETT_WINGS, VERONICA_STEEL)","METALLIC ANGELS (BROOK_TAYLOR, VERONICA_STEEL)","JADE ASSASSINS (JUJU_FUN, SUKARI)"] },
+		{ name: "METALLIC ANGELS", members: ["BROOK_TAYLOR","NATASHA_IVY"], defenses: ["ALL NATURAL (LORNA_LIGHT, TORNADO_MAY)"] },
+		{ name: "ALL NATURAL", members: ["LORNA_LIGHT","TORNADO_MAY"], defenses: ["METALLIC ANGELS (BROOK_TAYLOR, VERONICA_STEEL)","METALLIC ANGELS (BROOK_TAYLOR, VERONICA_STEEL)","JADE ASSASSINS (JUJU_FUN, SUKARI)","METALLIC ANGELS (SCARLETT_WINGS, VERONICA_STEEL)"] },
+		{ name: "FLY HIGH", members: ["JORDAN_SKY","THE_MONARCH"], defenses: ["ALL NATURAL (LORNA_LIGHT, TORNADO_MAY)","ALL NATURAL (LORNA_LIGHT, TORNADO_MAY)","METALLIC ANGELS (BROOK_TAYLOR, VERONICA_STEEL)"] },
+		{ name: "CITY GIRLS", members: ["CRYSTAL","ROSIE_FOX"], defenses: ["FLY HIGH (JORDAN_SKY, THE_MONARCH)","ALL NATURAL (LORNA_LIGHT, TORNADO_MAY)","ALL NATURAL (LORNA_LIGHT, TORNADO_MAY)"] },
+		{ name: "POW POW", members: ["LONI_ENERGY","LEENA"], defenses: ["CITY GIRLS (CRYSTAL, ROSIE_FOX)","ALL NATURAL (LORNA_LIGHT, TORNADO_MAY)"] },
+		{ name: "CITY GIRLS", members: ["CRYSTAL","ROSIE_FOX"], defenses: ["POW POW (LONI_ENERGY, LEENA)","METALLIC ANGELS (BROOK_TAYLOR, VERONICA_STEEL)"] },
+		{ name: "SKY & HAYES", members: ["JORDAN_SKY","SUMMER_HAYES"], defenses: ["CITY GIRLS (CRYSTAL, ROSIE_FOX)","METALLIC ANGELS (BROOK_TAYLOR, VERONICA_STEEL)","CITY GIRLS (CRYSTAL, ROSIE_FOX)"] },
+		{ name: "METALLIC ANGELS", members: ["BROOK_TAYLOR","VERONICA_STEEL"], defenses: ["SKY & HAYES (JORDAN_SKY, SUMMER_HAYES)"] },
+		{ name: "CITY GIRLS", members: ["CRYSTAL","ROSIE_FOX"], defenses: ["METALLIC ANGELS (BROOK_TAYLOR, VERONICA_STEEL)","METALLIC ANGELS (BROOK_TAYLOR, VERONICA_STEEL)","POW POW (LONI_ENERGY, LEENA)","METALLIC ANGELS (BROOK_TAYLOR, VERONICA_STEEL)"] },
+		{ name: "ALL NATURAL", members: ["LORNA_LIGHT","TORNADO_MAY"], defenses: ["CITY GIRLS (CRYSTAL, ROSIE_FOX)","POW POW (LONI_ENERGY, LEENA)","POW POW (LONI_ENERGY, LEENA)"] },
+		{ name: "BIG TIMERS", members: ["THE_MONARCH","TAMINA"], defenses: ["ALL NATURAL (LORNA_LIGHT, TORNADO_MAY)","ALL NATURAL (LORNA_LIGHT, TORNADO_MAY)","CITY GIRLS (CRYSTAL, ROSIE_FOX)","ALL NATURAL (LORNA_LIGHT, TORNADO_MAY)","POW POW (LONI_ENERGY, LEENA)","POW POW (LONI_ENERGY, LEENA)"] },
+		{ name: "GOLDEN SUN", members: ["SUMMER_HAYES","MEI_LING"], defenses: ["BIG TIMERS (THE_MONARCH, TAMINA)"] },
+		{ name: "HOT BITCHES", members: ["BECCA_FIELDS","GIGI_FITNESS"], defenses: ["GOLDEN SUN (SUMMER_HAYES, MEI_LING)"] },
+		{ name: "GOLDEN SUN", members: ["SUMMER_HAYES","MEI_LING"], defenses: ["HOT BITCHES (BECCA_FIELDS, GIGI_FITNESS)","THE PYRAMID (RINA, KEISHA_MILLER)"] }
 	],
-	"TRIOS":[
-		{
-			"number": 1, 
-			"name": "THE STARDOM THREEDOM",
-			"members": "KAIRI[1]&IYO_SKY[1]&MAYU_IWATANI[1]",
-			"defenses": ["RONDA_ROUSEY&MANDY_ROSE&LACEY_EVANS - THE GREAT WAR"]
-		},
-		{
-			"number": 2, 
-			"name": "VACATED"
-		},
-		{
-			"number": 3, 
-			"name": "THE GUARDIANS",
-			"members": "KAIRI[2]&ASUKA[1]&XIA_LI[1]",
-			"defenses": ["THE BEAUTIFUL PEOPLE (ANGELINA_LOVE, VELVET_SKY, MADISON_RAYNE)", "THE BEAUTIFUL PEOPLE (ANGELINA_LOVE, VELVET_SKY, MADISON_RAYNE)"]
-		},
-		{
-			"number": 4, 
-			"name": "DAMAGE CTRL",
-			"members": "DAKOTA_KAI[1]&BAYLEY[1]&IYO_SKY[2]",
-			"defenses": ["THE GUARDIANS (KAIRI, ASUKA, XIA_LI)", "BLACK GIRL MAGIC (SASHA_BANKS, NAOMI, JAKARA_JACKSON)", "BLACK GIRL MAGIC (SASHA_BANKS, NAOMI, JAKARA_JACKSON)"]
-		},
-		{
-			"number": 5, 
-			"name": "BLACK GIRL MAGIC",
-			"members": "NAOMI[1]&SASHA_BANKS[1]&JAKARA_JACKSON[1]",
-			"defenses": ["DAMAGE CTRL (DAKOTA_KAI, BAYLEY, IYO_SKY)", "DAMAGE CTRL (DAKOTA_KAI, BAYLEY, IYO_SKY)", "DAMAGE CTRL (DAKOTA_KAI, BAYLEY, IYO_SKY)"]
-		},
-		{
-			"number": 6, 
-			"name": "VACATED"
-		},
-		{
-			"number": 7, 
-			"name": "SILENT ROSE",
-			"members": "CORA_JADE[1]&GIGI_DOLIN[1]&TERESA_SHARP[1]",
-			"defenses": ["BLACK GIRL MAGIC (SASHA_BANKS, NAOMI, JAKARA_JACKSON)", "TEAM BAD (CARMELLA, NAOMI, TAMINA)"]
-		},
-		{
-			"number": 8, 
-			"name": "TEAM BAD",
-			"members": "NAOMI[2]&CARMELLA[1]&TAMINA[1]",
-			"defenses": ["SILENT ROSE (CORA_JADE, GIGI_DOLIN, TERESA_SHARP)", "SILENT ROSE (CORA_JADE, GIGI_DOLIN, TERESA_SHARP)"]
-		},
-		{
-			"number": 9, 
-			"name": "SILENT ROSE",
-			"members": "CORA_JADE[2]&GIGI_DOLIN[2]&SCARLETT[1]",
-			"defenses": ["TEAM BAD (CARMELLA, NAOMI, TAMINA)", "TEAM BAD (CARMELLA, NAOMI, TAMINA)", "TEAM BAD (CARMELLA, NAOMI, TAMINA)"]
-		},
-		{
-			"number": 10, 
-			"name": "VACATED"
-		},
-		{
-			"number": 11, 
-			"name": "SILENT ROSE",
-			"members": "TERESA_SHARP[2]&CORA_JADE[3]&LAUREN_SNOW[1]",
-			"defenses": ["TEAM BAD (CARMELLA, NAOMI, TAMINA)"]
-		},
-		{
-			"number": 12, 
-			"name": "VACATED"
-		},
-		{
-			"number": 13, 
-			"name": "METALLIC ANGELS",
-			"members": "JANE_MACK[1]&BROOK_TAYLOR[1]&VERONICA_STEEL[1]",
-			"defenses": ["SILENT ROSE (SLOANE, TERESA_SHARP, CORA_JADE)", "TEAM BAD (CARMELLA, NAOMI, TAMINA)", "SILENT ROSE (SLOANE, TERESA_SHARP, CORA_JADE)", "SILENT ROSE (SLOANE, TERESA_SHARP, CORA_JADE)"]
-		},
-		{
-			"number": 14, 
-			"name": "SILENT ROSE",
-			"members": "GIGI_DOLIN[3]&CORA_JADE[4]&LAUREN_SNOW[2]",
-			"defenses": ["METALLIC ANGELS (JANE_MACK, BROOK_TAYLOR, VERONICA_STEEL)", "METALLIC ANGELS (JANE_MACK, BROOK_TAYLOR, VERONICA_STEEL)"]
-		},
-		{
-			"number": 15, 
-			"name": "THE BIG THREE",
-			"members": "AMA_BIG[1]&PARIS_MONET[1]&TAMINA[2]",
-			"defenses": ["SILENT ROSE (GIGI_DOLIN, CORA_JADE, LAUREN_SNOW)", "METALLIC ANGELS (JANE_MACK, BROOK_TAYLOR, VERONICA_STEEL)"]
-		},
-		{
-			"number": 16, 
-			"name": "METALLIC ANGELS",
-			"members": "JANE_MACK[2]&BROOK_TAYLOR[2]&VERONICA_STEEL[2]",
-			"defenses": ["THE BIG THREE (AMA_BIG, PARIS_MONET, TAMINA)" ,"SILENT ROSE (SLOANE, TERESA_SHARP, CORA_JADE)", "TEAM BAD (CARMELLA, NAOMI, TAMINA)", "SILENT ROSE (SLOANE, TERESA_SHARP, CORA_JADE)", "SILENT ROSE (SLOANE, TERESA_SHARP, CORA_JADE)"]
-		},
-		{
-			"number": 17, 
-			"name": "PROJECT: WEAPONS",
-			"members": "MICHELLE_VELVET[1]&MASK_GIRL[1]&SLADER[1]",
-			"defenses": ["METALLIC ANGELS (JANE_MACK, BROOK_TAYLOR, VERONICA_STEEL)"]
-		},
-		{
-			"number": 18, 
-			"name": "METALLIC ANGELS",
-			"members": "JANE_MACK[3]&BROOK_TAYLOR[3]&VERONICA_STEEL[3]",
-			"defenses": ["PROJECT: WEAPONS (MICHELLE_VELVET, MASK_GIRL, SLADER)", "PROJECT: WEAPONS (MICHELLE_VELVET, MASK_GIRL, SLADER)", "PROJECT: WEAPONS (MICHELLE_VELVET, MASK_GIRL, SLADER)", "PROJECT: WEAPONS (MICHELLE_VELVET, MASK_GIRL, SLADER)"]
-		},
-		{
-			"number": 19, 
-			"name": "TRIPLE HEAT",
-			"members": "CYNTHIA_RAMIREZ[1]&CARLA_GARCIA[1]&HALIE_QUINN[1]",
-			"defenses": ["METALLIC ANGELS (JANE_MACK, BROOK_TAYLOR, VERONICA_STEEL)", "PROJECT: WEAPONS (MICHELLE_VELVET, MASK_GIRL, SLADER)","METALLIC ANGELS (JANE_MACK, BROOK_TAYLOR, VERONICA_STEEL)"]
-		},
-		{
-			"number": 20, 
-			"name": "XXX GIRLS",
-			"members": "X_FOUR[1]&X_THREE[1]&X_TWO[1]",
-			"defenses": ["TRIPLE HEAT (CYNTHIA_RAMIREZ, HALIE_QUINN, CARLA_GARCIA)", "TRIPLE HEAT (CYNTHIA_RAMIREZ, HALIE_QUINN, CARLA_GARCIA)", "SILENT ROSE (SLOANE, TERESA_SHARP, CORA_JADE)", "SILENT ROSE (SLOANE, TERESA_SHARP, CORA_JADE)", "SILENT ROSE (SLOANE, TERESA_SHARP, CORA_JADE)"]
-		},
-		{
-			"number": 21, 
-			"name": "METALLIC ANGELS",
-			"members": "JANE_MACK[4]&BROOK_TAYLOR[4]&VERONICA_STEEL[4]",
-			"defenses": ["XXX GIRLS (X_TWO, X_THREE, X_FOUR)"]
-		},
-		{
-			"number": 22, 
-			"name": "XXX GIRLS",
-			"members": "X_FOUR[2]&X_THREE[2]&X_TWO[2]",
-			"defenses": ["METALLIC ANGELS (JANE_MACK, BROOK_TAYLOR, VERONICA_STEEL)"]
-		},
-		{
-			"number": 23, 
-			"name": "METALLIC ANGELS",
-			"members": "JANE_MACK[5]&BROOK_TAYLOR[5]&VERONICA_STEEL[5]",
-			"defenses": ["XXX GIRLS (X_TWO, X_THREE, X_FOUR)"]
-		},
-		{
-			"number": 24, 
-			"name": "JADE ASSASSINS",
-			"members": "SUKARI[1]&AMA_BIG[2]&JUJU_FUN[1]",
-			"defenses": ["METALLIC ANGELS (JANE_MACK, BROOK_TAYLOR, VERONICA_STEEL)", "METALLIC ANGELS (JANE_MACK, BROOK_TAYLOR, VERONICA_STEEL)", "METALLIC ANGELS (JANE_MACK, BROOK_TAYLOR, VERONICA_STEEL)"]
-		},
-		{
-			"number": 25, 
-			"name": "SILENT ROSE",
-			"members": "TERESA_SHARP[3]&X_TWO[3]&LAUREN_SNOW[3]",
-			"defenses": ["JADE ASSASSINS (SUKARI, AMA_BIG, JUJU_FUN)", "JADE ASSASSINS (SUKARI, AMA_BIG, JUJU_FUN)", "JADE ASSASSINS (SUKARI, AMA_BIG, JUJU_FUN)", "METALLIC ANGELS (JANE_MACK, BROOK_TAYLOR, VERONICA_STEEL)"]
-		},
-		{
-			"number": 26, 
-			"name": "LINGERIE GALS",
-			"members": "HALIE_QUINN[2]&ALICIA_HOUSE[1]&CRYSTAL[1]",
-			"defenses": ["SILENT ROSE (TERESA_SHARP, X_TWO, LAUREN_SNOW)", "JADE ASSASSINS (SUKARI, AMA_BIG, JUJU_FUN)"]
-		},
-		{
-			"number": 27, 
-			"name": "JADE ASSASSINS",
-			"members": "SUKARI[2]&NATASHA_IVY[1]&JUJU_FUN[2]",
-			"defenses": ["LINGERIE GALS (HALIE_QUINN, ALICIA_HOUSE, CRYSTAL)", "LINGERIE GALS (HALIE_QUINN, ALICIA_HOUSE, CRYSTAL)", "METALLIC ANGELS (JANE_MACK, BROOK_TAYLOR, VERONICA_STEEL)", "METALLIC ANGELS (JANE_MACK, BROOK_TAYLOR, VERONICA_STEEL)", "METALLIC ANGELS (JANE_MACK, BROOK_TAYLOR, VERONICA_STEEL)"]
-		},
-		{
-			"number": 28, 
-			"name": "METALLIC ANGELS",
-			"members": "BROOK_TAYLOR[6]&SCARLETT_WINGS[1]&VERONICA_STEEL[6]",
-			"defenses": ["JADE ASSASSINS (SUKARI, NATASHA_IVY, JUJU_FUN)", "JADE ASSASSINS (SUKARI, NATASHA_IVY, JUJU_FUN)", "JADE ASSASSINS (SUKARI, NATASHA_IVY, JUJU_FUN)"]
-		},
-		{
-			"number": 29, 
-			"name": "POW POW",
-			"members": "LEENA[1]&X_FOUR[3]&LONI_ENERGY[1]",
-			"defenses": ["METALLIC ANGELS (SCARLETT_WINGS, BROOK_TAYLOR, VERONICA_STEEL)", "METALLIC ANGELS (SCARLETT_WINGS, BROOK_TAYLOR, VERONICA_STEEL)"]
-		},
-		{
-			"number": 30, 
-			"name": "THE PYRAMID",
-			"members": "KEISHA_MILLER[1]&QUEEN_AMINAT[1]&RINA[1]",
-			"defenses": ["POW POW (LEENA, X_FOUR, LONI_ENERGY)"]
-		}
-	]
+	"MENS-TAG": [
+		{ name: "THE BRO JOBS", members: ["JOHN_MORRISON","THE_MIZ"], defenses: ["THE WAY (JOHNNY_GARGANO, DEXTER_LUMIS) & HARSH PUNISHMENT (ILJA_DRAGUNOV, JON_MOXLEY) & EIFFEL TOWER (FANDANGO, GIOVANNI_VINCI)"] },
+		{ name: "THE WAY", members: ["JOHNNY_GARGANO","DEXTER_LUMIS"], defenses: ["THE BRO JOBS (JOHN_MORRISON, THE_MIZ)","HARSH PUNISHMENT (ILJA_DRAGUNOV, JON_MOXLEY)","ALPHA ACADEMY (CHAD_GABLE, OTIS)"] },
+		{ name: "EIFFEL TOWER", members: ["FANDANGO","GIOVANNI_VINCI"], defenses: ["THE WAY (JOHNNY_GARGANO, DEXTER_LUMIS)","HARSH PUNISHMENT (ILJA_DRAGUNOV, JON_MOXLEY)","HARSH PUNISHMENT (ILJA_DRAGUNOV, JON_MOXLEY)","ALPHA ACADEMY (CHAD_GABLE, OTIS)"] },
+		{ name: "HARSH PUNISHMENT", members: ["ILJA_DRAGUNOV","JON_MOXLEY"], defenses: ["EIFFEL TOWER (FANDANGO, GIOVANNI_VINCI)","EIFFEL TOWER (FANDANGO, GIOVANNI_VINCI)","ALPHA ACADEMY (CHAD_GABLE, OTIS)","EIFFEL TOWER (FANDANGO, GIOVANNI_VINCI)","ALPHA ACADEMY (CHAD_GABLE, OTIS)","CORPORATE DADDIES (ADAM_PEARCE, SHANE_MCMAHON)","THE WAY (JOHNNY_GARGANO, DEXTER_LUMIS)"] },
+		{ name: "THE BRO JOBS", members: ["DOLPH_ZIGGLER","THE_MIZ"], defenses: ["HARSH PUNISHMENT (ILJA_DRAGUNOV, JON_MOXLEY)","ALPHA ACADEMY (CHAD_GABLE, OTIS)","THE WAY (JOHNNY_GARGANO, DEXTER_LUMIS)","GOLDEN LOVERS (KENNY_OMEGA, KOTA_IBUSHI)"] },
+		{ name: "GOLDEN LOVERS", members: ["KENNY_OMEGA","KOTA_IBUSHI"], defenses: ["THE BRO JOBS (DOLPH_ZIGGLER, THE_MIZ)","CORPORATE DADDIES (ADAM_PEARCE, SHANE_MCMAHON)","THE BRO JOBS (MATT_CARDONA, JOHN_MORRISON)","ALPHA ACADEMY (CHAD_GABLE, OTIS)","THE HUNTER BROTHERS (BRETT_HUNTER, BRENT_HUNTER)","EIFFEL TOWER (FANDANGO, GIOVANNI_VINCI)","THE BRO JOBS (THE_MIZ, JOHN_MORRISON)","EIFFEL TOWER (FANDANGO, GIOVANNI_VINCI)","ALPHA ACADEMY (CHAD_GABLE, OTIS)","HARSH PUNISHMENT (ILJA_DRAGUNOV, JON_MOXLEY)","MALE ALLURE (DANIEL_BRYAN, SAMMY) - DQ"] },
+		"VACATED",
+		{ name: "THE WAY", members: ["JOHNNY_GARGANO","DEXTER_LUMIS"], defenses: ["ALPHA ACADEMY (CHAD_GABLE, OTIS)","CORPORATE DADDIES (ADAM_PEARCE, SHANE_MCMAHON)","MALE ALLURE (DANIEL_BRYAN, SAMMY)","ALPHA ACADEMY (CHAD_GABLE, OTIS)","MALE ALLURE (DANIEL_BRYAN, SAMMY)","MALE ALLURE (DANIEL_BRYAN, SAMMY)","EIFFEL TOWER (FANDANGO, GIOVANNI_VINCI)"] },
+		{ name: "FLY BOYS", members: ["JOHN_MORRISON","AJ_STYLES"], defenses: ["THE WAY (JOHNNY_GARGANO, DEXTER_LUMIS)","HARSH PUNISHMENT (ILJA_DRAGUNOV, JON_MOXLEY)","THE BRO JOBS (THE_MIZ, MATT_CARDONA)","EIFFEL TOWER (FANDANGO, GIOVANNI_VINCI)"] },
+		{ name: "DUELING FORCES", members: ["JOHNNY_GARGANO","DREW_GULAK"], defenses: ["FLY BOYS (JOHN_MORRISON, AJ_STYLES) - WRESTLEMANIA","HARSH PUNISHMENT (ILJA_DRAGUNOV, JON_MOXLEY)","ALPHA ACADEMY (CHAD_GABLE, OTIS)","EIFFEL TOWER (FANDANGO, GIOVANNI_VINCI)","CORPORATE DADDIES (ADAM_PEARCE, SHANE_MCMAHON)","HARSH PUNISHMENT (ILJA_DRAGUNOV, JON_MOXLEY)","FLY BOYS (JOHN_MORRISON, AJ_STYLES)"] },
+		{ name: "KNIGHTS IN LOVE", members: ["LA_KNIGHT","SAMMY_KNIGHT"], defenses: ["DUELING FORCES (JOHNNY_GARGANO, DREW_GULAK)","HARSH PUNISHMENT (ILJA_DRAGUNOV, JON_MOXLEY) - DQ","HARSH PUNISHMENT (ILJA_DRAGUNOV, JON_MOXLEY)"] },
+		{ name: "FLY BOYS", members: ["JOHN_MORRISON","AJ_STYLES"], defenses: ["KNIGHTS IN LOVE (LA_KNIGHT, SAMMY_KNIGHT)","DUELING FORCES (JOHNNY_GARGANO, DREW_GULAK)","KNIGHTS IN LOVE (LA_KNIGHT, SAMMY_KNIGHT)","DUELING FORCES (JOHNNY_GARGANO, DREW_GULAK)"] },
+		{ name: "NEVERLAND", members: ["HOOK","DANIEL_BRYAN"], defenses: ["FLY BOYS (JOHN_MORRISON, AJ_STYLES)","EIFFEL TOWER (FANDANGO, GIOVANNI_VINCI)","DREAM COME TRUE (SHANE_HASTE, DARBY_ALLIN)","KNIGHTS IN LOVE (LA_KNIGHT, SAMMY_KNIGHT)","HARSH PUNISHMENT, KNIGHTS IN LOVE, DREAM COME TRUE"] },
+		{ name: "DREAM COME TRUE", members: ["DARBY_ALLIN","SHANE_HASTE"], defenses: ["NEVERLAND (HOOK, DANIEL_BRYAN)","KNIGHTS IN LOVE (LA_KNIGHT, SAMMY_KNIGHT)","HARSH PUNISHMENT (ILJA_DRAGUNOV, JON_MOXLEY)"] },
+		{ name: "DUELING FORCES", members: ["JOHNNY_GARGANO","DREW_GULAK"], defenses: ["DREAM COME TRUE (DARBY_ALLIN, SHANE_HASTE)","NEVERLAND (HOOK, DANIEL_BRYAN)","HARSH PUNISHMENT (ILJA_DRAGUNOV, JON_MOXLEY)"] },
+		{ name: "DREAM COME TRUE", members: ["DARBY_ALLIN","SHANE_HASTE"], defenses: ["DUELING FORCES (JOHNNY_GARGANO, DREW_GULAK)"] },
+		{ name: "THE DP BOYS", members: ["AUSTIN_THEORY","JULIUS_CREED"], defenses: ["DREAM COME TRUE (DARBY_ALLIN, SHANE_HASTE)","NEVERLAND (HOOK, DANIEL_BRYAN)","DUELING FORCES (JOHNNY_GARGANO, DREW_GULAK)"] },
+		{ name: "NEVERLAND", members: ["HOOK","DANIEL_BRYAN"], defenses: ["THE DP BOYS (AUSTIN_THEORY, JULIUS_CREED)","THE DP BOYS (AUSTIN_THEORY, JULIUS_CREED)","DREAM COME TRUE (DARBY_ALLIN, SHANE_HASTE)"] },
+		{ name: "ALPHA ACADEMY", members: ["CHAD_GABLE","OTIS"], defenses: ["NEVERLAND (HOOK, DANIEL_BRYAN)","THE DP BOYS (AUSTIN_THEORY, JULIUS_CREED)","DUELING FORCES (JOHNNY_GARGANO, DREW_GULAK)"] },
+		{ name: "DREAM COME TRUE", members: ["DARBY_ALLIN","SHANE_HASTE"], defenses: ["ALPHA ACADEMY (CHAD_GABLE, OTIS)"] },
+		{ name: "THE HUNTER BROTHERS", members: ["BRETT_HUNTER","BRENT_HUNTER"], defenses: ["DREAM COME TRUE (DARBY_ALLIN, SHANE_HASTE)","LEMON RUSH (CLIFF_LEMON, RUSSELL_RUSH)"] },
+		{ name: "GLOBAL PROTECTORS", members: ["CLIP_MAVERICK","MR_ENVIRONMENT"], defenses: ["THE HUNTER BROTHERS (BRETT_HUNTER, BRENT_HUNTER)","LEMON RUSH (CLIFF_LEMON, RUSSELL_RUSH)"] },
+		{ name: "THE HUNTER BROTHERS", members: ["BRETT_HUNTER","BRENT_HUNTER"], defenses: ["GLOBAL PROTECTORS (CLIP_MAVERICK, MR_ENVIRONMENT)","GLOBAL PROTECTORS (CLIP_MAVERICK, MR_ENVIRONMENT)","GLOBAL PROTECTORS (CLIP_MAVERICK, MR_ENVIRONMENT)","HONEY CHAT (FRED_CHATTY, JASON_HONEY)","HONEY CHAT (FRED_CHATTY, JASON_HONEY)","HONEY CHAT (FRED_CHATTY, JASON_HONEY)","LEMON CLIP (CLIFF_LEMON, CLIP_MAVERICK)"] },
+		{ name: "LEMON CLIP", members: ["CLIP_MAVERICK","CLIFF_LEMON"], defenses: ["THE HUNTER BROTHERS (BRETT_HUNTER, BRENT_HUNTER)"] },
+		{ name: "THE HUNTER BROTHERS", members: ["BRETT_HUNTER","BRENT_HUNTER"], defenses: ["LEMON CLIP (CLIFF_LEMON, CLIP_MAVERICK)","HONEY CHAT (FRED_CHATTY, JASON_HONEY)"] },
+		{ name: "LOUNGEWEAR", members: ["MERCENARY","KRIPPLER"], defenses: ["HONEY CHAT (FRED_CHATTY, JASON_HONEY) & THE HUNTER BROTHERS (BRETT_HUNTER, BRENT_HUNTER) & AROUSAL CHOCOLATE (POSI, TONY_TORNADO)","AROUSAL CHOCOLATE (POSI, TONY_TORNADO)","AROUSAL CHOCOLATE (POSI, TONY_TORNADO)","HONEY CHAT (FRED_CHATTY, JASON_HONEY)","THE HUNTER BROTHERS (BRETT_HUNTER, BRENT_HUNTER)"] },
+		{ name: "HONEY CHAT", members: ["JASON_HONEY","FRED_CHATTY"], defenses: ["LOUNGEWEAR (MERCENARY, KRIPPLER)","LEMON CLIP (CLIFF_LEMON, CLIP_MAVERICK)"] },
+		{ name: "THE HUNTER BROTHERS", members: ["BRETT_HUNTER","BRENT_HUNTER"], defenses: ["HONEY CHAT (FRED_CHATTY, JASON_HONEY)"] },
+		{ name: "LOUNGEWEAR", members: ["MERCENARY","KRIPPLER"], defenses: ["LEMON CLIP (CLIFF_LEMON, CLIP_MAVERICK) & THE HUNTER BROTHERS (BRETT_HUNTER, BRENT_HUNTER)","HONEY CHAT (FRED_CHATTY, JASON_HONEY)","AROUSAL CHOCOLATE (POSI, TONY_TORNADO)","AROUSAL CHOCOLATE (POSI, TONY_TORNADO)"] },
+		{ name: "AROUSAL CHOCOLATE", members: ["TONY_TORNADO","POSI"], defenses: ["LOUNGEWEAR (MERCENARY, KRIPPLER)"] },
+		{ name: "LOUNGEWEAR", members: ["MERCENARY","KRIPPLER"], defenses: ["AROUSAL CHOCOLATE (POSI, TONY_TORNADO)","AROUSAL CHOCOLATE (POSI, TONY_TORNADO)","LEMON CLIP (CLIFF_LEMON, CLIP_MAVERICK)","LEMON CLIP (CLIFF_LEMON, CLIP_MAVERICK)"] },
+		{ name: "TOTAL DOMINATION", members: ["FRED_CHATTY","TYSON_EVERETT"], defenses: ["LOUNGEWEAR (MERCENARY, KRIPPLER)","AROUSAL CHOCOLATE (POSI, TONY_TORNADO)","LEMON CLIP (CLIFF_LEMON, CLIP_MAVERICK)"] },
+		{ name: "VACATION TIME", members: ["DANNY_PUMPKIN","JOEY_JET"], defenses: ["TOTAL DOMINATION (FRED_CHATTY, TYSON_EVERETT)"] },
+		{ name: "THE BANG BROS", members: ["ALEX_CONNOR","WYATT_WIPER"], defenses: ["VACATION TIME (DANNY_PUMPKIN, JOEY_JET)","VACATION TIME (DANNY_PUMPKIN, JOEY_JET)","TOTAL DOMINATION (FRED_CHATTY, TYSON_EVERETT)","VACATION TIME (DANNY_PUMPKIN, JOEY_JET)","AROUSAL CHOCOLATE (POSI, TONY_TORNADO)","AROUSAL CHOCOLATE (POSI, TONY_TORNADO)"] },
+		{ name: "BIG BROTHERS", members: ["MR_ENVIRONMENT","RYAN_PAGE"], defenses: ["THE BANG BROS (ALEX_CONNOR, WYATT_WIPER)","TOTAL DOMINATION (FRED_CHATTY, TYSON_EVERETT)","TOTAL DOMINATION (FRED_CHATTY, TYSON_EVERETT)","VACATION TIME (DANNY_PUMPKIN, JOEY_JET)"] },
+		{ name: "THE FRATERNITY", members: ["RUSSELL_RUSH","BEN_SEED"], defenses: ["BIG BROTHERS (MR_ENVIRONMENT, RYAN_PAGE)","VACATION TIME (DANNY_PUMPKIN, JOEY_JET)","TOTAL DOMINATION (FRED_CHATTY, TYSON_EVERETT)","VACATION TIME (DANNY_PUMPKIN, JOEY_JET)","VACATION TIME (DANNY_PUMPKIN, JOEY_JET)","VACATION TIME (DANNY_PUMPKIN, JOEY_JET)"] },
+		{ name: "THE BANG BROS", members: ["ALEX_CONNOR","WYATT_WIPER"], defenses: ["THE FRATERNITY (RUSSELL_RUSH, BEN_SEED)","TOTAL DOMINATION (FRED_CHATTY, TYSON_EVERETT)","TOTAL DOMINATION (FRED_CHATTY, TYSON_EVERETT)"] },
+		{ name: "THE GOOD BOYS", members: ["WILL_PHERBY","JOEY_JET"], defenses: ["THE BANG BROS (ALEX_CONNOR, WYATT_WIPER)","THE BANG BROS (ALEX_CONNOR, WYATT_WIPER)"] },
+		{ name: "THE FRATERNITY", members: ["RUSSELL_RUSH","BEN_SEED"], defenses: ["THE GOOD BOYS (WILL_PHERBY, JOEY_JET)","THE GOOD BOYS (WILL_PHERBY, JOEY_JET)","THE GOOD BOYS (WILL_PHERBY, JOEY_JET)","THE GOOD BOYS (WILL_PHERBY, JOEY_JET)"] },
+		{ name: "AROUSAL CHOCOLATE", members: ["TONY_TORNADO","POSI"], defenses: ["THE FRATERNITY (RUSSELL_RUSH, BEN_SEED)","LOUNGEWEAR (MERCENARY, KRIPPLER)"] },
+		{ name: "THE FRATERNITY", members: ["BRENT_HUNTER","TYSON_EVERETT"], defenses: ["AROUSAL CHOCOLATE (TONY_TORNADO, POSI)","LOUNGEWEAR (MERCENARY, KRIPPLER)","LOUNGEWEAR (MERCENARY, KRIPPLER)"] },
+		{ name: "TONY TIME", members: ["TONY_DASHER","TONY_TORNADO"], defenses: ["THE FRATERNITY (BRENT_HUNTER, TYSON_EVERETT)","THE GOOD BOYS (WILL_PHERBY, JOEY_JET)","THE GOOD BOYS (WILL_PHERBY, JOEY_JET)","LOUNGEWEAR (MERCENARY, KRIPPLER)","THE FRATERNITY (BRENT_HUNTER, TYSON_EVERETT)"] },
+		{ name: "THE FRATERNITY", members: ["BRENT_HUNTER","TYSON_EVERETT"], defenses: ["TONY TIME (TONY_DASHER, TONY_TORNADO)"] },
+		{ name: "GOT SPIKES?", members: ["DAMON_KNIGHT","DADDY_TODD"], defenses: ["THE FRATERNITY (BRENT_HUNTER, TYSON_EVERETT)","THE FRATERNITY (BRENT_HUNTER, TYSON_EVERETT)","TONY TIME (TONY_DASHER, TONY_TORNADO)","LOUNGEWEAR (MERCENARY, KRIPPLER)","LOUNGEWEAR (MERCENARY, KRIPPLER)"] },
+		{ name: "THE HUNTER BROTHERS", members: ["BRETT_HUNTER","BRENT_HUNTER"], defenses: ["GOT SPIKES? (DAMON_KNIGHT, DADDY_TODD)","THE FRATERNITY (BEN_SEED, TYSON_EVERETT)","GOT SPIKES? (DAMON_KNIGHT, DADDY_TODD)","THE FRATERNITY (BEN_SEED, TYSON_EVERETT)"] },
+		{ name: "TONY TIME", members: ["TONY_DASHER","TONY_TORNADO"], defenses: ["THE HUNTER BROTHERS (BRETT_HUNTER, BRENT_HUNTER)","THE HUNTER BROTHERS (BRETT_HUNTER, BRENT_HUNTER)","THE HUNTER BROTHERS (BRETT_HUNTER, BRENT_HUNTER)"] },
+		{ name: "PONG BROS", members: ["BILLY_PONG","PETER_PONG"], defenses: ["TONY TIME (TONY_DASHER, TONY_TORNADO)"] },
+		{ name: "KARATE KIDZ", members: ["KYLER_BLAKE","XION_OWENS"], defenses: ["PONG BROS (BILLY_PONG, PETER_PONG)","HUGGIE & NOAH (HUGGIE_HOBBS, NOAH_ACE)"] },
+		{ name: "FLYING FUEGOS", members: ["TRAVIS_WEST","TOBASCO_CRUZ"], defenses: ["KARATE KIDZ (KYLER_BLAKE, XION_OWENS)","PONG BROS (BILLY_PONG, PETER_PONG)","PONG BROS (BILLY_PONG, PETER_PONG)","KARATE KIDZ (KYLER_BLAKE, XION_OWENS)"] }
+	],
+	"TRIOS": [
+		{ name: "THE STARDOM THREEDOM", members: ["KAIRI","IYO_SKY","MAYU_IWATANI"], defenses: ["RONDA_ROUSEY&MANDY_ROSE&LACEY_EVANS - THE GREAT WAR"] },
+		"VACATED",
+		{ name: "THE GUARDIANS", members: ["KAIRI","ASUKA","XIA_LI"], defenses: ["THE BEAUTIFUL PEOPLE (ANGELINA_LOVE, VELVET_SKY, MADISON_RAYNE)","THE BEAUTIFUL PEOPLE (ANGELINA_LOVE, VELVET_SKY, MADISON_RAYNE)"] },
+		{ name: "DAMAGE CTRL", members: ["DAKOTA_KAI","BAYLEY","IYO_SKY"], defenses: ["THE GUARDIANS (KAIRI, ASUKA, XIA_LI)","BLACK GIRL MAGIC (SASHA_BANKS, NAOMI, JAKARA_JACKSON)","BLACK GIRL MAGIC (SASHA_BANKS, NAOMI, JAKARA_JACKSON)"] },
+		{ name: "BLACK GIRL MAGIC", members: ["NAOMI","SASHA_BANKS","JAKARA_JACKSON"], defenses: ["DAMAGE CTRL (DAKOTA_KAI, BAYLEY, IYO_SKY)","DAMAGE CTRL (DAKOTA_KAI, BAYLEY, IYO_SKY)","DAMAGE CTRL (DAKOTA_KAI, BAYLEY, IYO_SKY)"] },
+		"VACATED",
+		{ name: "SILENT ROSE", members: ["CORA_JADE","GIGI_DOLIN","TERESA_SHARP"], defenses: ["BLACK GIRL MAGIC (SASHA_BANKS, NAOMI, JAKARA_JACKSON)","TEAM BAD (CARMELLA, NAOMI, TAMINA)"] },
+		{ name: "TEAM BAD", members: ["NAOMI","CARMELLA","TAMINA"], defenses: ["SILENT ROSE (CORA_JADE, GIGI_DOLIN, TERESA_SHARP)","SILENT ROSE (CORA_JADE, GIGI_DOLIN, TERESA_SHARP)"] },
+		{ name: "SILENT ROSE", members: ["CORA_JADE","GIGI_DOLIN","SCARLETT"], defenses: ["TEAM BAD (CARMELLA, NAOMI, TAMINA)","TEAM BAD (CARMELLA, NAOMI, TAMINA)","TEAM BAD (CARMELLA, NAOMI, TAMINA)"] },
+		"VACATED",
+		{ name: "SILENT ROSE", members: ["TERESA_SHARP","CORA_JADE","LAUREN_SNOW"], defenses: ["TEAM BAD (CARMELLA, NAOMI, TAMINA)"] },
+		"VACATED",
+		{ name: "METALLIC ANGELS", members: ["JANE_MACK","BROOK_TAYLOR","VERONICA_STEEL"], defenses: ["SILENT ROSE (SLOANE, TERESA_SHARP, CORA_JADE)","TEAM BAD (CARMELLA, NAOMI, TAMINA)","SILENT ROSE (SLOANE, TERESA_SHARP, CORA_JADE)","SILENT ROSE (SLOANE, TERESA_SHARP, CORA_JADE)"] },
+		{ name: "SILENT ROSE", members: ["GIGI_DOLIN","CORA_JADE","LAUREN_SNOW"], defenses: ["METALLIC ANGELS (JANE_MACK, BROOK_TAYLOR, VERONICA_STEEL)","METALLIC ANGELS (JANE_MACK, BROOK_TAYLOR, VERONICA_STEEL)"] },
+		{ name: "THE BIG THREE", members: ["AMA_BIG","PARIS_MONET","TAMINA"], defenses: ["SILENT ROSE (GIGI_DOLIN, CORA_JADE, LAUREN_SNOW)","METALLIC ANGELS (JANE_MACK, BROOK_TAYLOR, VERONICA_STEEL)"] },
+		{ name: "METALLIC ANGELS", members: ["JANE_MACK","BROOK_TAYLOR","VERONICA_STEEL"], defenses: ["THE BIG THREE (AMA_BIG, PARIS_MONET, TAMINA)","SILENT ROSE (SLOANE, TERESA_SHARP, CORA_JADE)","TEAM BAD (CARMELLA, NAOMI, TAMINA)","SILENT ROSE (SLOANE, TERESA_SHARP, CORA_JADE)","SILENT ROSE (SLOANE, TERESA_SHARP, CORA_JADE)"] },
+		{ name: "PROJECT: WEAPONS", members: ["MICHELLE_VELVET","MASK_GIRL","SLADER"], defenses: ["METALLIC ANGELS (JANE_MACK, BROOK_TAYLOR, VERONICA_STEEL)"] },
+		{ name: "METALLIC ANGELS", members: ["JANE_MACK","BROOK_TAYLOR","VERONICA_STEEL"], defenses: ["PROJECT: WEAPONS (MICHELLE_VELVET, MASK_GIRL, SLADER)","PROJECT: WEAPONS (MICHELLE_VELVET, MASK_GIRL, SLADER)","PROJECT: WEAPONS (MICHELLE_VELVET, MASK_GIRL, SLADER)","PROJECT: WEAPONS (MICHELLE_VELVET, MASK_GIRL, SLADER)"] },
+		{ name: "TRIPLE HEAT", members: ["CYNTHIA_RAMIREZ","CARLA_GARCIA","HALIE_QUINN"], defenses: ["METALLIC ANGELS (JANE_MACK, BROOK_TAYLOR, VERONICA_STEEL)","PROJECT: WEAPONS (MICHELLE_VELVET, MASK_GIRL, SLADER)","METALLIC ANGELS (JANE_MACK, BROOK_TAYLOR, VERONICA_STEEL)"] },
+		{ name: "XXX GIRLS", members: ["X_FOUR","X_THREE","X_TWO"], defenses: ["TRIPLE HEAT (CYNTHIA_RAMIREZ, HALIE_QUINN, CARLA_GARCIA)","TRIPLE HEAT (CYNTHIA_RAMIREZ, HALIE_QUINN, CARLA_GARCIA)","SILENT ROSE (SLOANE, TERESA_SHARP, CORA_JADE)","SILENT ROSE (SLOANE, TERESA_SHARP, CORA_JADE)","SILENT ROSE (SLOANE, TERESA_SHARP, CORA_JADE)"] },
+		{ name: "METALLIC ANGELS", members: ["JANE_MACK","BROOK_TAYLOR","VERONICA_STEEL"], defenses: ["XXX GIRLS (X_TWO, X_THREE, X_FOUR)"] },
+		{ name: "XXX GIRLS", members: ["X_FOUR","X_THREE","X_TWO"], defenses: ["METALLIC ANGELS (JANE_MACK, BROOK_TAYLOR, VERONICA_STEEL)"] },
+		{ name: "METALLIC ANGELS", members: ["JANE_MACK","BROOK_TAYLOR","VERONICA_STEEL"], defenses: ["XXX GIRLS (X_TWO, X_THREE, X_FOUR)"] },
+		{ name: "JADE ASSASSINS", members: ["SUKARI","AMA_BIG","JUJU_FUN"], defenses: ["METALLIC ANGELS (JANE_MACK, BROOK_TAYLOR, VERONICA_STEEL)","METALLIC ANGELS (JANE_MACK, BROOK_TAYLOR, VERONICA_STEEL)","METALLIC ANGELS (JANE_MACK, BROOK_TAYLOR, VERONICA_STEEL)"] },
+		{ name: "SILENT ROSE", members: ["TERESA_SHARP","X_TWO","LAUREN_SNOW"], defenses: ["JADE ASSASSINS (SUKARI, AMA_BIG, JUJU_FUN)","JADE ASSASSINS (SUKARI, AMA_BIG, JUJU_FUN)","JADE ASSASSINS (SUKARI, AMA_BIG, JUJU_FUN)","METALLIC ANGELS (JANE_MACK, BROOK_TAYLOR, VERONICA_STEEL)"] },
+		{ name: "LINGERIE GALS", members: ["HALIE_QUINN","ALICIA_HOUSE","CRYSTAL"], defenses: ["SILENT ROSE (TERESA_SHARP, X_TWO, LAUREN_SNOW)","JADE ASSASSINS (SUKARI, AMA_BIG, JUJU_FUN)"] },
+		{ name: "JADE ASSASSINS", members: ["SUKARI","NATASHA_IVY","JUJU_FUN"], defenses: ["LINGERIE GALS (HALIE_QUINN, ALICIA_HOUSE, CRYSTAL)","LINGERIE GALS (HALIE_QUINN, ALICIA_HOUSE, CRYSTAL)","METALLIC ANGELS (JANE_MACK, BROOK_TAYLOR, VERONICA_STEEL)","METALLIC ANGELS (JANE_MACK, BROOK_TAYLOR, VERONICA_STEEL)","METALLIC ANGELS (JANE_MACK, BROOK_TAYLOR, VERONICA_STEEL)"] },
+		{ name: "METALLIC ANGELS", members: ["BROOK_TAYLOR","SCARLETT_WINGS","VERONICA_STEEL"], defenses: ["JADE ASSASSINS (SUKARI, NATASHA_IVY, JUJU_FUN)","JADE ASSASSINS (SUKARI, NATASHA_IVY, JUJU_FUN)","JADE ASSASSINS (SUKARI, NATASHA_IVY, JUJU_FUN)"] },
+		{ name: "POW POW", members: ["LEENA","X_FOUR","LONI_ENERGY"], defenses: ["METALLIC ANGELS (SCARLETT_WINGS, BROOK_TAYLOR, VERONICA_STEEL)","METALLIC ANGELS (SCARLETT_WINGS, BROOK_TAYLOR, VERONICA_STEEL)"] },
+		{ name: "THE PYRAMID", members: ["KEISHA_MILLER","QUEEN_AMINAT","RINA"], defenses: ["POW POW (LEENA, X_FOUR, LONI_ENERGY)"] },
+		"VACATED"
+	],
+	"ELIMINATION_CHAMBER": {
+	"ALISON_JANS": 1,
+	"SUMMER_RAE": 1,
+	"JELINA_LOPEZ": 1,
+	"HEAVY_FLO": 1,
+	"AMY_ORTON": 1,
+	"TIFFANY_VIOLET": 1,
+	"NICOLE_SUNSHINE": 1,
+	"ADAM_PEARCE": 1,
+	"MANDY_ROSE": 1,
+	"LIV_MORGAN": 1,
+	"THE_MIZ": 1,
+	"BRENT_HUNTER": 1,
+	"LISA_LOST": 1,
+	"BILLY_PONG": 1
+},
+	"MITB": {
+	"JELINA_LOPEZ": 1,
+	"SUKI": 1,
+	"FLORA": 1,
+	"TERRI_RENNELS": 1,
+	"VICTORIA_WINTERS": 1,
+	"TIFFANY_VIOLET": 1,
+	"DANA_BROOKE": 1,
+	"RIDGE_HOLLAND": 1,
+	"UNAGI_SAYAKA": 1,
+	"STARLIGHT_KID": 1,
+	"JULIUS_CREED": 1,
+	"HALIE_QUINN": 1,
+	"JOHNNY_AMERICA": 1,
+	"CRYSTAL": 1,
+	"TONY_TORNADO": 1,
+	"DANNY_PUMPKIN": 1,
+	"SLADER": 1,
+	"JOEY_JET": 1
+},
+	"ROYAL_RUMBLE": {
+	"ASUKA": 1
+}
+};
+
+// --- Build the final titleHistory object used by the rest of the app ---
+const titleHistory = {
+	"RAW": processTitle(rawTitleData["RAW"]),
+	"SMACKDOWN": processTitle(rawTitleData["SMACKDOWN"]),
+	"NXT": processTitle(rawTitleData["NXT"]),
+	"HARDCORE": processTitle(rawTitleData["HARDCORE"]),
+	"US": processTitle(rawTitleData["US"]),
+	"ALPHA-TOP": processTitle(rawTitleData["ALPHA-TOP"]),
+	"WORLD-TOP": processTitle(rawTitleData["WORLD-TOP"]),
+	"MENS-NXT": processTitle(rawTitleData["MENS-NXT"]),
+	"DOM-TOP": processTitle(rawTitleData["DOM-TOP"]),
+	"TAG": processTagTitle(rawTitleData["TAG"]),
+	"MENS-TAG": processTagTitle(rawTitleData["MENS-TAG"]),
+	"TRIOS": processTagTitle(rawTitleData["TRIOS"]),
+	"ELIMINATION_CHAMBER": rawTitleData["ELIMINATION_CHAMBER"],
+	"MITB": rawTitleData["MITB"],
+	"ROYAL_RUMBLE": rawTitleData["ROYAL_RUMBLE"]
 };
