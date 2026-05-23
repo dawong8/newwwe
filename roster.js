@@ -42,7 +42,7 @@ const rosterArray = [ {
   gender: "F" 
 },{
   name: "GLENDA_SANCHEZ", 
-  brand: "NXT",
+  brand: "RAW",
   gender: "F" 
 },{
   name: "BRADLY_WEST", 
@@ -152,7 +152,7 @@ const rosterArray = [ {
 },
   {
   name: "DRIANA", 
-  brand: "NXT",
+  brand: "SD",
   gender: "F" 
 },
 {
