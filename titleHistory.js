@@ -180,7 +180,9 @@ const rawTitleData = {
 		{ name: "SUMMER_HAYES", defenses: ["ASUKA"] },
 		{ name: "AOD", defenses: ["SUMMER_HAYES","SUMMER_HAYES","SUMMER_HAYES", "ALICIA_BLADE", "ALICIA_BLADE"] },
 		{ name: "ALICIA_BLADE", defenses: ["AOD", "AOD", "GIGI_FITNESS", "GIGI_FITNESS", "SUMMER_HAYES", "AOD"] },
-		{ name: "GIGI_FITNESS", defenses: ["ALICIA_BLADE", "ALICIA_BLADE-DQ"] }
+		{ name: "GIGI_FITNESS", defenses: ["ALICIA_BLADE", "ALICIA_BLADE-DQ", "AOD", "ALICIA_BLADE", "ALICIA_BLADE-DQ", "RAINY_BRIGHT"] },
+		{ name: "ALICIA_BLADE", defenses: ["GIGI_FITNESS"] },
+		{ name: "RAINY_BRIGHT", defenses: ["ALICIA_BLADE"] },
 	],
 	"SMACKDOWN": [
 		{ name: "PAIGE", defenses: ["KAITLYN&TORRIE_WILSON&ASUKA","MANDY_ROSE","KAITLYN","KAITLYN","KAITLYN"] },
@@ -286,7 +288,7 @@ const rawTitleData = {
 		{ name: "JORDAN_SKY", defenses: ["SCARLETT_WINGS","SCARLETT_WINGS","JUNGO","JUNGO","MALA_MALA","ALICIA_HOUSE","MALA_MALA&CELINE"] },
 		{ name: "SCARLETT_WINGS", defenses: ["JORDAN_SKY","JORDAN_SKY-DQ","X_FOUR","CELINE"] },
 		{ name: "JORDAN_SKY", defenses: ["SCARLETT_WINGS","CELINE","CELINE","X_FOUR","MALA_MALA","LAUREN_SNOW","LAUREN_SNOW","SCARLETT_WINGS","DAISY_MAYFIELD","TT_SLIM"] },
-		{ name: "DRIANA", defenses: ["JORDAN_SKY", "SARAH_LAY", "SARAH_LAY", "JORDAN_SKY"] }
+		{ name: "DRIANA", defenses: ["JORDAN_SKY", "SARAH_LAY", "SARAH_LAY", "JORDAN_SKY", "SARAH_LAY"] }
 	],
 	"NXT": [
 		{ name: "ASUKA", defenses: ["NIKKI_CROSS","EMBER_MOON","TAELER_HENDRIX","SUMMER_RAE","NIKKI_CROSS","EMBER_MOON&BILLIE_KAY","IVORY","KAINE"] },
@@ -401,7 +403,8 @@ const rawTitleData = {
 		{ name: "RAINY_BRIGHT", defenses: ["VIOLET_JADE","LORNA_LIGHT","CRYSTAL"] },
 		{ name: "MORGAN_NITRA", defenses: ["RAINY_BRIGHT","MEI_LING", "GIGI_FITNESS"] },
 		{ name: "GINA_FONG", defenses: ["MORGAN_NITRA", "GLENDA_SANCHEZ&RAINY_BRIGHT"] },
-		{ name: "GLENDA_SANCHEZ", defenses: ["GINA_FONG"] }
+		{ name: "GLENDA_SANCHEZ", defenses: ["GINA_FONG", "MORGAN_NITRA"] },
+		{ name: "MORGAN_NITRA", defenses: ["GINA_FONG&GLENDA_SANCHEZ", "GLENDA_SANCHEZ"] },
 	],
 	"US": [
 		{ name: "UNAGI_SAYAKA", defenses: ["CAMERON&ALBA_FYRE","ALBA_FYRE","TIFFANY_STRATTON"] },
@@ -458,7 +461,9 @@ const rawTitleData = {
 		{ name: "QUEEN_AMINAT", defenses: ["DAISY_MAYFIELD", "BECCA_FIELDS"] },
 		{ name: "DAISY_MAYFIELD", defenses: ["QUEEN_AMINAT", "QUEEN_AMINAT", "KEISHA_MILLER", "QUEEN_AMINAT", "QUEEN_AMINAT", "QUEEN_AMINAT"] },
 		{ name: "TT_SLIM", defenses: ["DAISY_MAYFIELD"] },
-		{ name: "RINA", defenses: ["TT_SLIM"] }
+		{ name: "RINA", defenses: ["TT_SLIM", "TT-SLIM-DQ", "TT_SLIM", "DAISY_MAYFIELD"] },
+		{ name: "DAISY_MAYFIELD", defenses: ["RINA"] },
+		{ name: "RINA", defenses: ["DAISY_MAYFIELD"] },
 	],
 	"ALPHA-TOP": [
 		{ name: "DREW_GULAK", defenses: ["JOHNNY_GARGANO&MR_ENVIRONMENT&LA_KNIGHT"] },
@@ -533,7 +538,7 @@ const rawTitleData = {
 		{ name: "BRADLY_WEST", defenses: ["TRAVIS_WEST","BILLY_PONG", "TRAVIS_WEST", "TOBASCO_CRUZ"] },
 		{ name: "NOAH_ACE", defenses: ["BRADLY_WEST", "TOBASCO_CRUZ"] },
 		{ name: "TRAVIS_WEST", defenses: ["NOAH_ACE"] },
-		{ name: "TOBASCO_CRUZ", defenses: ["TRAVIS_WEST"] }
+		{ name: "TOBASCO_CRUZ", defenses: ["TRAVIS_WEST", "BRADLY_WEST", "TRAVIS_WEST", "TRAVIS_WEST"] }
 	],
 	"WORLD-TOP": [
 		{ name: "KARRION_KROSS", defenses: ["THE_MIZ&ILJA_DRAGUNOV&MATT_CARDONA","MR_ENVIRONMENT","THE_MIZ","RIDGE_HOLLAND","RIDGE_HOLLAND","MATT_CARDONA"] },
@@ -633,8 +638,8 @@ const rawTitleData = {
 		{ name: "BRAD_WOODS", defenses: ["CLARKSON_WILDE"] },
 		{ name: "CLARKSON_WILDE", defenses: ["BRAD_WOODS","BILLY_PONG"] },
 		{ name: "PETER_PONG", defenses: ["CLARKSON_WILDE","BILLY_PONG"] },
-		{ name: "VIKTOR_MAXX", defenses: ["PETER_PONG","NOAH_ACE", "BRAD_WOODS-DQ", "BRAD_WOODS", "XION_OWENS", "BRAD_WOODS-DQ", "CLARKSON_WILDE"] }
-
+		{ name: "VIKTOR_MAXX", defenses: ["PETER_PONG","NOAH_ACE", "BRAD_WOODS-DQ", "BRAD_WOODS", "XION_OWENS", "BRAD_WOODS-DQ", "CLARKSON_WILDE", "CLARKSON_WILDE"] },
+		{ name: "BRAD_WOODS", defenses: ["VIKTOR_MAXX"] },
 	],
 	"MENS-NXT": [
 		{ name: "BUDDY_MURPHY", defenses: ["SHANE_HASTE","BEN_SEED","MIKE_KANELLIS","BRETT_HUNTER"] },
@@ -670,7 +675,8 @@ const rawTitleData = {
 		{ name: "BRADLY_WEST", defenses: ["ELI_BOLTON","ELI_BOLTON"] },
 		{ name: "ELI_BOLTON", defenses: ["BRADLY_WEST","FENIX","FENIX"] },
 		{ name: "FENIX", defenses: ["ELI_BOLTON", "STEVEN_VULGAR"] },
-		{ name: "STEVEN_VULGAR", defenses: ["FENIX"] }
+		{ name: "STEVEN_VULGAR", defenses: ["FENIX", "ELI_BOLTON"] },
+		{ name: "ELI_BOLTON", defenses: ["FENIX&STEVEN_VULGAR"] }
 	],
 	"DOM-TOP": [
 		{ name: "DOLPH_ZIGGLER", defenses: ["PAC","SHANE_HASTE","DANIEL_BRYAN","DREW_GULAK"] },
@@ -779,7 +785,8 @@ const rawTitleData = {
 		{ name: "HOT BITCHES", members: ["BECCA_FIELDS","GIGI_FITNESS"], defenses: ["GOLDEN SUN (SUMMER_HAYES, MEI_LING)"] },
 		{ name: "GOLDEN SUN", members: ["SUMMER_HAYES","MEI_LING"], defenses: ["HOT BITCHES (BECCA_FIELDS, GIGI_FITNESS)","THE PYRAMID (RINA, KEISHA_MILLER)", "THE PYRAMID (RINA, KEISHA_MILLER)", "THE PYRAMID (RINA, KEISHA_MILLER)"] },
 		{ name: "THE PYRAMID", members: ["KEISHA_MILLER","RINA"], defenses: ["GOLDEN SUN (SUMMER_HAYES, MEI_LING)", "BECCA & DAISY (BECCA_FIELDS, DAISY_MAYFIELD)", "GOLDEN SUN (SUMMER_HAYES, MEI_LING)", "BECCA & DAISY (BECCA_FIELDS, DAISY_MAYFIELD)", "BECCA & DAISY (BECCA_FIELDS, DAISY_MAYFIELD)-DQ"] },
-		{ name: "BECCA & DAISY", members: ["BECCA_FIELDS","DAISY_MAYFIELD"], defenses: ["THE PYRAMID (RINA, KEISHA_MILLER)"] },
+		{ name: "BECCA & DAISY", members: ["BECCA_FIELDS","DAISY_MAYFIELD"], defenses: ["THE PYRAMID (RINA, KEISHA_MILLER)", "THE PYRAMID (QUEEN_AMINAT, KEISHA_MILLER)"] },
+		{ name: "THE PYRAMID", members: ["QUEEN_AMINAT","KEISHA_MILLER"], defenses: ["BECCA & DAISY (BECCA_FIELDS, DAISY_MAYFIELD)", "BECCA & DAISY (BECCA_FIELDS, DAISY_MAYFIELD)", "GOLDEN SUN (SUMMER_HAYES, MEI_LING)"] },
 	],
 	"MENS-TAG": [
 		{ name: "THE BRO JOBS", members: ["JOHN_MORRISON","THE_MIZ"], defenses: ["THE WAY (JOHNNY_GARGANO, DEXTER_LUMIS) & HARSH PUNISHMENT (ILJA_DRAGUNOV, JON_MOXLEY) & EIFFEL TOWER (FANDANGO, GIOVANNI_VINCI)"] },
@@ -832,7 +839,7 @@ const rawTitleData = {
 		{ name: "KARATE KIDZ", members: ["KYLER_BLAKE","XION_OWENS"], defenses: ["PONG BROS (BILLY_PONG, PETER_PONG)","HUGGIE & NOAH (HUGGIE_HOBBS, NOAH_ACE)"] },
 		{ name: "FLYING FUEGOS", members: ["TRAVIS_WEST","TOBASCO_CRUZ"], defenses: ["KARATE KIDZ (KYLER_BLAKE, XION_OWENS)","PONG BROS (BILLY_PONG, PETER_PONG)","PONG BROS (BILLY_PONG, PETER_PONG)","KARATE KIDZ (KYLER_BLAKE, XION_OWENS)"] },
 		{ name: "KARATE KIDZ", members: ["KYLER_BLAKE","XION_OWENS"], defenses: ["FLYING FUEGOS (TRAVIS_WEST, TOBASCO_CRUZ)", "FLYING FUEGOS (TRAVIS_WEST, TOBASCO_CRUZ)"] },
-		{ name: "PONG BROS", members: ["PETER_PONG","BILLY_PONG"], defenses: ["KARATE KIDZ (KYLER_BLAKE, XION_OWENS)", "KARATE KIDZ (KYLER_BLAKE, XION_OWENS)"] },
+		{ name: "PONG BROS", members: ["PETER_PONG","BILLY_PONG"], defenses: ["KARATE KIDZ (KYLER_BLAKE, XION_OWENS)", "KARATE KIDZ (KYLER_BLAKE, XION_OWENS)", "KARATE KIDZ (KYLER_BLAKE, XION_OWENS)", "HUGGIE & NOAH (HUGGIE_HOBBS, NOAH_ACE)", "KARATE KIDZ (KYLER_BLAKE, XION_OWENS)" ] },
 	],
 	"TRIOS": [
 		{ name: "THE STARDOM THREEDOM", members: ["KAIRI","IYO_SKY","MAYU_IWATANI"], defenses: ["RONDA_ROUSEY&MANDY_ROSE&LACEY_EVANS - THE GREAT WAR"] },
