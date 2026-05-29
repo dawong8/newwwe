@@ -1,19 +1,19 @@
 const rosterArray = [ {
   name: "ELLA_THORN", 
-  brand: "NXT",
+  brand: "SD",
   gender: "F" 
 },
                      {
   name: "YESSICA_PEREZ", 
-  brand: "NXT",
+  brand: "RAW",
   gender: "F" 
 },{
   name: "STEVEN_VULGAR", 
-  brand: "NXT",
+  brand: "RAW",
   gender: "M" 
 },{
   name: "BONNIE_REN", 
-  brand: "NXT",
+  brand: "SD",
   gender: "F" 
 },
 {
