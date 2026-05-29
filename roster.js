@@ -172,66 +172,7 @@ const rosterArray = [ {
 },
   
   // currrent roster
-{
-  name: "GIGI_DOLIN", 
-  brand: "SD", 
-  gender: "F"
-},
-{
-  name: "NORI", 
-  brand: "RAW", 
-  gender: "F"
-},
-{
-  name: "BLAIRE_COUNTY", 
-  brand: "RAW", 
-  gender: "F"
-},
-{
-  name: "TORNADO_MAY", 
-  brand: "RAW", 
-  gender: "F"
-},
-{
-  name: "SUKARI", 
-  brand: "SD", 
-  gender: "F"
-},
-{
-  name: "MALA_MALA", 
-  brand: "SD", 
-  gender: "F"
-},
-  {
-  name: "X_FOUR", 
-  brand: "SD", 
-  gender: "F"
-},
-  {
-  name: "X_THREE", 
-  brand: "SD", 
-  gender: "F"
-},
-  {
-  name: "X_TWO", 
-  brand: "RAW", 
-  gender: "F"
-},
-  {
-  name: "LORNA_LIGHT", 
-  brand: "RAW", 
-  gender: "F"
-},
-  {
-  name: "CELINE", 
-  brand: "SD", 
-  gender: "F"
-},
-  {
-  name: "SCARLETT_WINGS", 
-  brand: "SD", 
-  gender: "F"
-},
+
 {
   name: "CALLUM_WOLF", 
   brand: "RAW", 
