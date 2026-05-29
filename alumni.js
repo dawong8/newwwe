@@ -1,5 +1,60 @@
 const alumniArray = [
     {
+  name: "NORI", 
+  brand: "ALUMNI", 
+  gender: "F"
+},
+{
+  name: "BLAIRE_COUNTY", 
+  brand: "ALUMNI", 
+  gender: "F"
+},
+{
+  name: "TORNADO_MAY", 
+  brand: "ALUMNI", 
+  gender: "F"
+},
+{
+  name: "SUKARI", 
+  brand: "ALUMNI", 
+  gender: "F"
+},
+{
+  name: "MALA_MALA", 
+  brand: "ALUMNI", 
+  gender: "F"
+},
+  {
+  name: "X_FOUR", 
+  brand: "ALUMNI", 
+  gender: "F"
+},
+  {
+  name: "X_THREE", 
+  brand: "ALUMNI", 
+  gender: "F"
+},
+  {
+  name: "X_TWO", 
+  brand: "ALUMNI", 
+  gender: "F"
+},
+  {
+  name: "LORNA_LIGHT", 
+  brand: "ALUMNI", 
+  gender: "F"
+},
+  {
+  name: "CELINE", 
+  brand: "ALUMNI", 
+  gender: "F"
+},
+  {
+  name: "SCARLETT_WINGS", 
+  brand: "ALUMNI", 
+  gender: "F"
+},
+    {
   name: "LOGAN_GURT", 
   brand: "ALUMNI", 
   gender: "M"
