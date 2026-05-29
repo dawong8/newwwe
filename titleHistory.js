@@ -461,7 +461,7 @@ const rawTitleData = {
 		{ name: "QUEEN_AMINAT", defenses: ["DAISY_MAYFIELD", "BECCA_FIELDS"] },
 		{ name: "DAISY_MAYFIELD", defenses: ["QUEEN_AMINAT", "QUEEN_AMINAT", "KEISHA_MILLER", "QUEEN_AMINAT", "QUEEN_AMINAT", "QUEEN_AMINAT"] },
 		{ name: "TT_SLIM", defenses: ["DAISY_MAYFIELD"] },
-		{ name: "RINA", defenses: ["TT_SLIM", "TT-SLIM-DQ", "TT_SLIM", "DAISY_MAYFIELD"] },
+		{ name: "RINA", defenses: ["TT_SLIM", "TT_SLIM-DQ", "TT_SLIM", "DAISY_MAYFIELD"] },
 		{ name: "DAISY_MAYFIELD", defenses: ["RINA"] },
 		{ name: "RINA", defenses: ["DAISY_MAYFIELD"] },
 	],
