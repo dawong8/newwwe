@@ -18,7 +18,7 @@ const rosterArray = [ {
 },
 {
   name: "FENIX", 
-  brand: "NXT",
+  brand: "RAW",
   gender: "M" 
 },{
   name: "ALICIA_BLADE", 
@@ -86,7 +86,7 @@ const rosterArray = [ {
   gender: "M" 
 },
     {
-  name: "BRAD_WOODS", 
+  name: "BRAD_HOLLYWOOD", 
   brand: "RAW",
   gender: "M" 
 },
@@ -147,7 +147,7 @@ const rosterArray = [ {
 },
   {
   name: "GRETCHEN", 
-  brand: "NXT",
+  brand: "SD",
   gender: "F" 
 },
   {
