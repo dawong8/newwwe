@@ -680,7 +680,8 @@ const rawTitleData = {
 		{ name: "ELI_BOLTON", defenses: ["BRADLY_WEST","FENIX","FENIX"] },
 		{ name: "FENIX", defenses: ["ELI_BOLTON", "STEVEN_VULGAR"] },
 		{ name: "STEVEN_VULGAR", defenses: ["FENIX", "ELI_BOLTON"] },
-		{ name: "ELI_BOLTON", defenses: ["FENIX&STEVEN_VULGAR"] }
+		{ name: "ELI_BOLTON", defenses: ["FENIX&STEVEN_VULGAR"] },
+		{ name: "RYAN_TAMER", defenses: ["ELI_BOLTON"] }
 	],
 	"DOM-TOP": [
 		{ name: "DOLPH_ZIGGLER", defenses: ["PAC","SHANE_HASTE","DANIEL_BRYAN","DREW_GULAK"] },
