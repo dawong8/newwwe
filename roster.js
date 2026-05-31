@@ -6,6 +6,14 @@ const rosterArray = [ {
   name: "ELISA_WATERS", 
   brand: "NXT",
   gender: "F" 
+},{
+  name: "SHAYLA_LA", 
+  brand: "NXT",
+  gender: "F" 
+},{
+  name: "TIM_TALL", 
+  brand: "NXT",
+  gender: "M" 
 },
                      {
   name: "RYAN_TAMER", 
