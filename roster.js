@@ -47,7 +47,7 @@ const rosterArray = [ {
   gender: "F" 
 },{
   name: "CAROLINA_CHAZ", 
-  brand: "NXT",
+  brand: "RAW",
   gender: "F" 
 },{
   name: "KEISHA_MILLER", 
