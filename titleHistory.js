@@ -290,7 +290,7 @@ const rawTitleData = {
 		{ name: "SCARLETT_WINGS", defenses: ["JORDAN_SKY","JORDAN_SKY-DQ","X_FOUR","CELINE"] },
 		{ name: "JORDAN_SKY", defenses: ["SCARLETT_WINGS","CELINE","CELINE","X_FOUR","MALA_MALA","LAUREN_SNOW","LAUREN_SNOW","SCARLETT_WINGS","DAISY_MAYFIELD","TT_SLIM"] },
 		{ name: "DRIANA", defenses: ["JORDAN_SKY", "SARAH_LAY", "SARAH_LAY", "JORDAN_SKY", "SARAH_LAY", "ELLA_THORN"] },
-		{ name: "ELLA_THORN", defenses: ["DRIANA"] },
+		{ name: "ELLA_THORN", defenses: ["DRIANA", "DAISY_MAYFIELD"] },
 	],
 	"NXT": [
 		{ name: "ASUKA", defenses: ["NIKKI_CROSS","EMBER_MOON","TAELER_HENDRIX","SUMMER_RAE","NIKKI_CROSS","EMBER_MOON&BILLIE_KAY","IVORY","KAINE"] },
