@@ -183,7 +183,7 @@ const rawTitleData = {
 		{ name: "GIGI_FITNESS", defenses: ["ALICIA_BLADE", "ALICIA_BLADE-DQ", "AOD", "ALICIA_BLADE", "ALICIA_BLADE-DQ", "RAINY_BRIGHT"] },
 		{ name: "ALICIA_BLADE", defenses: ["GIGI_FITNESS"] },
 		{ name: "RAINY_BRIGHT", defenses: ["ALICIA_BLADE"] },
-		{ name: "ALICIA_BLADE", defenses: ["RAINY_BRIGHT"] },
+		{ name: "ALICIA_BLADE", defenses: ["RAINY_BRIGHT", "AOD"] },
 	],
 	"SMACKDOWN": [
 		{ name: "PAIGE", defenses: ["KAITLYN&TORRIE_WILSON&ASUKA","MANDY_ROSE","KAITLYN","KAITLYN","KAITLYN"] },
@@ -291,6 +291,7 @@ const rawTitleData = {
 		{ name: "JORDAN_SKY", defenses: ["SCARLETT_WINGS","CELINE","CELINE","X_FOUR","MALA_MALA","LAUREN_SNOW","LAUREN_SNOW","SCARLETT_WINGS","DAISY_MAYFIELD","TT_SLIM"] },
 		{ name: "DRIANA", defenses: ["JORDAN_SKY", "SARAH_LAY", "SARAH_LAY", "JORDAN_SKY", "SARAH_LAY", "ELLA_THORN"] },
 		{ name: "ELLA_THORN", defenses: ["DRIANA", "DAISY_MAYFIELD"] },
+		{ name: "JORDAN_SKY", defenses: ["ELLA_THORN"] },
 	],
 	"NXT": [
 		{ name: "ASUKA", defenses: ["NIKKI_CROSS","EMBER_MOON","TAELER_HENDRIX","SUMMER_RAE","NIKKI_CROSS","EMBER_MOON&BILLIE_KAY","IVORY","KAINE"] },
