@@ -345,7 +345,7 @@ const rawTitleData = {
 		{ name: "CAROLINA_CHAZ", defenses: ["ALICIA_BLADE&BONNIE_REN&DRIANA&GLENDA_SANCHEZ", "BONNIE_REN", "DRIANA&ELLA_THORN"] },
 		{ name: "GRETCHEN", defenses: ["CAROLINA_CHAZ&BONNIE_REN&YESSICA_PEREZ&ELLA_THORN"] },
 		{ name: "CAROLINA_CHAZ", defenses: ["GRETCHEN"] },
-		{ name: "ELISA_WATERS", defenses: ["CAROLINA_CHAZ", "CAROLINA_CHAZ", "SHAYLA_LA"] }
+		{ name: "ELISA_WATERS", defenses: ["CAROLINA_CHAZ", "CAROLINA_CHAZ", "SHAYLA_LA", "KATIE_LANG"] }
 	],
 	"HARDCORE": [
 		{ name: "TIFFANY_VIOLET", defenses: ["MIKU&JASMINE_LOVE&SEVEN","GIGI_MONDAY"] },
