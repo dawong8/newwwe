@@ -550,7 +550,7 @@ const rawTitleData = {
 		{ name: "TRAVIS_WEST", defenses: ["NOAH_ACE"] },
 		{ name: "TOBASCO_CRUZ", defenses: ["TRAVIS_WEST", "BRADLY_WEST", "TRAVIS_WEST", "TRAVIS_WEST", "BRADLY_WEST", "BRADLY_WEST-DQ"] },
 		{ name: "BRADLY_WEST", defenses: ["TOBASCO_CRUZ", "TRAVIS_WEST"] },
-		{ name: "BILLY_PONG", defenses: ["BRADLY_WEST"] },
+		{ name: "BILLY_PONG", defenses: ["BRADLY_WEST", "TOBASCO_CRUZ"] },
 	],
 	"WORLD-TOP": [
 		{ name: "KARRION_KROSS", defenses: ["THE_MIZ&ILJA_DRAGUNOV&MATT_CARDONA","MR_ENVIRONMENT","THE_MIZ","RIDGE_HOLLAND","RIDGE_HOLLAND","MATT_CARDONA"] },
