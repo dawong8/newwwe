@@ -293,7 +293,7 @@ const rawTitleData = {
 		{ name: "DRIANA", defenses: ["JORDAN_SKY", "SARAH_LAY", "SARAH_LAY", "JORDAN_SKY", "SARAH_LAY", "ELLA_THORN"] },
 		{ name: "ELLA_THORN", defenses: ["DRIANA", "DAISY_MAYFIELD"] },
 		{ name: "JORDAN_SKY", defenses: ["ELLA_THORN"] },
-		{ name: "RINA", defenses: ["JORDAN_SKY&DRIANA&QUEEN_AMINAT"] },
+		{ name: "RINA", defenses: ["JORDAN_SKY&DRIANA&QUEEN_AMINAT", "DRIANA"] },
 	],
 	"NXT": [
 		{ name: "ASUKA", defenses: ["NIKKI_CROSS","EMBER_MOON","TAELER_HENDRIX","SUMMER_RAE","NIKKI_CROSS","EMBER_MOON&BILLIE_KAY","IVORY","KAINE"] },
@@ -807,7 +807,7 @@ const rawTitleData = {
 		{ name: "THE PYRAMID", members: ["QUEEN_AMINAT","KEISHA_MILLER"], defenses: ["BECCA & DAISY (BECCA_FIELDS, DAISY_MAYFIELD)", "BECCA & DAISY (BECCA_FIELDS, DAISY_MAYFIELD)", "GOLDEN SUN (SUMMER_HAYES, MEI_LING)"] },
 		{ name: "MYSTIC ENCHANT", members: ["DRIANA","GRETCHEN"], defenses: ["THE PYRAMID (QUEEN_AMINAT, KEISHA_MILLER)"] },
 		{ name: "GOLDEN SUN", members: ["SUMMER_HAYES","MEI_LING"], defenses: ["MYSTIC ENCHANT (DRIANA, GRETCHEN)", "THE PYRAMID (QUEEN_AMINAT, KEISHA_MILLER)", "CAROLINA CHAZ & GLENDA SANCHEZ-DQ"] },
-		{ name: "TWICE EFFECT", members: ["MORA","STACY"], defenses: ["GOLDEN SUN (SUMMER_HAYES, MEI_LING)"] },
+		{ name: "TWICE EFFECT", members: ["MORA","STACY"], defenses: ["GOLDEN SUN (SUMMER_HAYES, MEI_LING)", "GOLDEN SUN (SUMMER_HAYES, MEI_LING)"] },
 	],
 	"MENS-TAG": [
 		{ name: "THE BRO JOBS", members: ["JOHN_MORRISON","THE_MIZ"], defenses: ["THE WAY (JOHNNY_GARGANO, DEXTER_LUMIS) & HARSH PUNISHMENT (ILJA_DRAGUNOV, JON_MOXLEY) & EIFFEL TOWER (FANDANGO, GIOVANNI_VINCI)"] },
@@ -864,6 +864,8 @@ const rawTitleData = {
 		{ name: "ROUGH RIDERS", members: ["NOAH_ACE","CLARKSON_WILDE"], defenses: ["PONG BROS (BILLY_PONG, PETER_PONG)"] },
 		{ name: "PONG BROS", members: ["PETER_PONG","BILLY_PONG"], defenses: [ "ROUGH RIDERS (NOAH_ACE, CLARKSON_WILDE)" ] },
 		{ name: "DOS SPICY", members: ["FENIX","HUGGIE_HOBBS"], defenses: [ "PONG BROS (BILLY_PONG, PETER_PONG)",  "KARATE KIDZ (KYLER_BLAKE, XION_OWENS)-DQ"] },
+		{ name: "KARATE KIDZ", members: ["KYLER_BLAKE","XION_OWENS"], defenses: ["DOS SPICY (FENIX, HUGGIE_HOBBS)"] },
+
 	],
 	"TRIOS": [
 		{ name: "THE STARDOM THREEDOM", members: ["KAIRI","IYO_SKY","MAYU_IWATANI"], defenses: ["RONDA_ROUSEY&MANDY_ROSE&LACEY_EVANS - THE GREAT WAR"] },
