@@ -277,6 +277,17 @@ $(document).on("click", ".superstar-container:not(.nonclickable)", function() {
 			$(".accolates").append(`<p class='nav-title'>${titleHistory[special][name]}x ${special} WINNER</p>`);
 		}
 	});
+	// --- Top 5 Opponents ---
+	$(".accolates").append(`<hr class="opponents-divider">`);
+	const topOpponents = getTopOpponents(name, gender);
+	if (topOpponents.length > 0) {
+		let oppsHtml = `<p class='nav-title opponents-header'>TOP OPPONENTS</p>`;
+		topOpponents.forEach(({ opp, wins, losses, total }) => {
+			const wlLabel = `${wins}W-${losses}L`;
+			oppsHtml += `<p class='nav-title opponent-entry'>${opp.replace(/_/g, " ")} <span class="opp-record">(${total} matches · ${wlLabel})</span></p>`;
+		});
+		$(".accolates").append(oppsHtml);
+	}
 });
 
 $(".wrestler-modal").click(function() {
