@@ -108,6 +108,74 @@ const generateChampPage = () => {
 	return champsArray;
 };
 
+function getTopOpponents(name, gender) {
+	const soloTitles = gender === "F"
+		? ["RAW", "SMACKDOWN", "NXT", "HARDCORE", "US"]
+		: ["WORLD-TOP", "DOM-TOP", "ALPHA-TOP", "MENS-NXT"];
+
+	// Normalize a defense string into individual opponent names,
+	// stripping suffixes like -DQ, -MITB, " - WARGAMES", " - THE GREAT WAR" etc.
+	function parseOpponents(defense) {
+		// Remove anything after " - " (space-dash-space) like " - THE GREAT WAR"
+		const beforeNote = defense.split(" - ")[0].trim();
+		// Split multi-person by &
+		return beforeNote.split("&").map(o => {
+			// Strip dash-suffixes like -DQ, -MITB, -WARGAMES, -GIVEN etc.
+			return o.trim().replace(/-\S+$/, "").trim();
+		}).filter(o => o.length > 0);
+	}
+
+	// Returns true if `defense` string should be excluded (ends in -DQ variant)
+	function isDQ(defense) {
+		// Covers "OPP-DQ", "OPP - DQ", "OPP-DQ extra", etc.
+		return /[-\s]DQ/i.test(defense);
+	}
+
+	// Build a map: opponentName -> { wins, losses }
+	const record = {};
+
+	function ensureEntry(opp) {
+		if (!record[opp]) record[opp] = { wins: 0, losses: 0 };
+	}
+
+	soloTitles.forEach(title => {
+		titleHistory[title].forEach(reign => {
+			if (reign.name === "VACATED") return;
+
+			if (reign.name === name) {
+				// These are our defenses = WINS for `name`
+				(reign.defenses || []).forEach(defense => {
+					if (isDQ(defense)) return; // skip DQ
+					parseOpponents(defense).forEach(opp => {
+						if (opp && opp !== name) {
+							ensureEntry(opp);
+							record[opp].wins++;
+						}
+					});
+				});
+			} else {
+				// Check if `name` appears in this other champion's defenses = LOSSES for `name`
+				(reign.defenses || []).forEach(defense => {
+					if (isDQ(defense)) return; // skip DQ
+					const opps = parseOpponents(defense);
+					if (opps.includes(name)) {
+						const champ = reign.name;
+						ensureEntry(champ);
+						record[champ].losses++;
+					}
+				});
+			}
+		});
+	});
+
+	// Total matches = wins + losses; sort by total desc
+	return Object.entries(record)
+		.map(([opp, { wins, losses }]) => ({ opp, wins, losses, total: wins + losses }))
+		.filter(e => e.total > 0)
+		.sort((a, b) => b.total - a.total)
+		.slice(0, 5);
+}
+
 // --- Navigation ---
 $("#home").click(function() {
 	$(".selected-page").removeClass("selected-page");
