@@ -277,17 +277,20 @@ $(document).on("click", ".superstar-container:not(.nonclickable)", function() {
 			$(".accolates").append(`<p class='nav-title'>${titleHistory[special][name]}x ${special} WINNER</p>`);
 		}
 	});
-	// --- Top 5 Opponents ---
-	$(".accolates").append(`<hr class="opponents-divider">`);
-	const topOpponents = getTopOpponents(name, gender);
-	if (topOpponents.length > 0) {
-		let oppsHtml = `<p class='nav-title opponents-header'>TOP OPPONENTS</p>`;
-		topOpponents.forEach(({ opp, wins, losses, total }) => {
-			const wlLabel = `${wins}W-${losses}L`;
-			oppsHtml += `<p class='nav-title opponent-entry'>${opp.replace(/_/g, " ")} <span class="opp-record">(${total} matches · ${wlLabel})</span></p>`;
-		});
-		$(".accolates").append(oppsHtml);
-	}
+    // --- Top 5 Opponents ---
+    $(".top-opponents-list").empty();
+    const topOpponents = getTopOpponents(name, gender);
+    topOpponents.forEach(({ opp, wins, losses }) => {
+        const displayName = opp.replace(/_/g, " ");
+        const imgUrl = formatUrl(opp);
+        $(".top-opponents-list").append(`
+            <div class="opponent-row">
+                <img class="opponent-thumb" src="${imgUrl}" onerror="this.style.visibility='hidden'">
+                <span class="opponent-name">${displayName}</span>
+                <span class="opponent-record">${wins}W - ${losses}L</span>
+            </div>
+        `);
+    });
 });
 
 $(".wrestler-modal").click(function() {
