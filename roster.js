@@ -33,12 +33,12 @@ const rosterArray = [ {
   gender: "F" 
 },{
   name: "TIM_TALL", 
-  brand: "NXT",
+  brand: "RAW",
   gender: "M" 
 },
                      {
   name: "RYAN_TAMER", 
-  brand: "NXT",
+  brand: "RAW",
   gender: "M" 
 },
                      {
@@ -150,7 +150,7 @@ const rosterArray = [ {
 },
   {
   name: "ELI_BOLTON", 
-  brand: "NXT",
+  brand: "RAW",
   gender: "M" 
 },
   {
