@@ -9,6 +9,46 @@
   flex-wrap: wrap;
 }
 
+.opponents-section-title {
+    margin-top: 16px;
+}
+
+.opponent-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 4px 8px;
+    border-left: 3px solid rgba(255,255,255,0.15);
+    margin-bottom: 6px;
+}
+
+.opponent-thumb {
+    width: 36px;
+    height: 36px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 50%;
+    flex-shrink: 0;
+    background: rgba(255,255,255,0.05);
+}
+
+.opponent-name {
+    flex: 1;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.opponent-record {
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    color: rgba(255,255,255,0.6);
+    white-space: nowrap;
+}
+
 .champs {
   height: 3.75em !important;
   bottom: -12px !important;
