@@ -3,6 +3,21 @@ const rosterArray = [ {
   brand: "RAW",
   gender: "F" 
 },
+                     {
+  name: "R_BABY", 
+  brand: "RAW",
+  gender: "M" 
+},
+                     {
+  name: "VALERIA", 
+  brand: "NXT",
+  gender: "F" 
+},
+                     {
+  name: "G_BABY", 
+  brand: "NXT",
+  gender: "F" 
+},
 {
   name: "MORA", 
   brand: "RAW",
