@@ -568,6 +568,7 @@ const rawTitleData = {
 		{ name: "BRADLY_WEST", defenses: ["FENIX", "NOAH_ACE", "TOBASCO_CRUZ"] },
 		{ name: "RYAN_TAMER", defenses: ["BRADLY_WEST", "BRADLY_WEST", "TRAVIS_WEST"] },
 		{ name: "TOBASCO_CRUZ", defenses: ["RYAN_TAMER", "XION_OWENS", "XION_OWENS", "BRADLY_WEST"] },
+		{ name: "NOAH_ACE", defenses: ["TOBASCO_CRUZ"] },
 	],
 	"WORLD-TOP": [
 		{ name: "KARRION_KROSS", defenses: ["THE_MIZ&ILJA_DRAGUNOV&MATT_CARDONA","MR_ENVIRONMENT","THE_MIZ","RIDGE_HOLLAND","RIDGE_HOLLAND","MATT_CARDONA"] },
@@ -893,7 +894,8 @@ const rawTitleData = {
 		{ name: "PONG BROS", members: ["PETER_PONG","BILLY_PONG"], defenses: [ "KARATE KIDZ (KYLER_BLAKE, XION_OWENS)",  "KARATE KIDZ (KYLER_BLAKE, XION_OWENS)"] },
 		{ name: "DOS SPICY", members: ["FENIX","HUGGIE_HOBBS"], defenses: [ "PONG BROS (BILLY_PONG, PETER_PONG)"] },
 		{ name: "THE POWER BOYS", members: ["ELI_BOLTON","BRADLY_WEST"], defenses: ["DOS SPICY (FENIX, HUGGIE_HOBBS)", "PONG BROS (BILLY_PONG, PETER_PONG)-DQ", "DOS SPICY (FENIX, HUGGIE_HOBBS)"] },
-		{ name: "PONG BROS", members: ["PETER_PONG","BILLY_PONG"], defenses: [ "THE POWER BOYS (ELI_BOLTON, BRADLY_WEST)"] },
+		{ name: "PONG BROS", members: ["PETER_PONG","BILLY_PONG"], defenses: [ "THE POWER BOYS (ELI_BOLTON, BRADLY_WEST)", "THE HUNTER BROTHERS (BRETT_HUNTER, BRENT_HUNTER)"] },
+		{ name: "CHOCOLATE THUNDER", members: ["ELI_BOLTON","HUGGIE_HOBBS"], defenses: [ "PONG BROS (BILLY_PONG, PETER_PONG)"] },
 	],
 	"TRIOS": [
 		{ name: "THE STARDOM THREEDOM", members: ["KAIRI","IYO_SKY","MAYU_IWATANI"], defenses: ["RONDA_ROUSEY&MANDY_ROSE&LACEY_EVANS - THE GREAT WAR"] },
