@@ -189,6 +189,7 @@ const rawTitleData = {
 		{ name: "ALICIA_BLADE", defenses: ["AOD"] },
 		{ name: "AOD", defenses: ["ALICIA_BLADE", "YESSICA_PEREZ"] },
 		{ name: "JORDAN_SKY", defenses: ["AOD", "YESSICA_PEREZ"] },
+		"VACATED",
 	],
 	"SMACKDOWN": [
 		{ name: "PAIGE", defenses: ["KAITLYN&TORRIE_WILSON&ASUKA","MANDY_ROSE","KAITLYN","KAITLYN","KAITLYN"] },
