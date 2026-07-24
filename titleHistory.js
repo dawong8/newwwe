@@ -190,6 +190,7 @@ const rawTitleData = {
 		{ name: "AOD", defenses: ["ALICIA_BLADE", "YESSICA_PEREZ"] },
 		{ name: "JORDAN_SKY", defenses: ["AOD", "YESSICA_PEREZ"] },
 		"VACATED",
+		{ name: "STACY", defenses: ["AOD"] },
 	],
 	"SMACKDOWN": [
 		{ name: "PAIGE", defenses: ["KAITLYN&TORRIE_WILSON&ASUKA","MANDY_ROSE","KAITLYN","KAITLYN","KAITLYN"] },
@@ -358,6 +359,7 @@ const rawTitleData = {
 		{ name: "CAROLINA_CHAZ", defenses: ["GRETCHEN"] },
 		{ name: "ELISA_WATERS", defenses: ["CAROLINA_CHAZ", "CAROLINA_CHAZ", "SHAYLA_LA", "KATIE_LANG", "AMELIA_HOPE", "GRETCHEN", "AMELIA_HOPE&SHAYLA_LA"] },
 		{ name: "SHAYLA_LA", defenses: ["ELISA_WATERS", "LILY_JUNE", "VALERIA"] },
+		{ name: "AMELIA_HOPE", defenses: ["SHAYLA_LA"] },
 	],
 	"HARDCORE": [
 		{ name: "TIFFANY_VIOLET", defenses: ["MIKU&JASMINE_LOVE&SEVEN","GIGI_MONDAY"] },
