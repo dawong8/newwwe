@@ -44,7 +44,7 @@ const rosterArray = [ {
   gender: "F" 
 },{
   name: "SHAYLA_LA", 
-  brand: "NXT",
+  brand: "RAW",
   gender: "F" 
 },{
   name: "TIM_TALL", 
