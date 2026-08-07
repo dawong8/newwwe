@@ -1,4 +1,16 @@
 const rosterArray = [ {
+  name: "DEO_SPROUTS", 
+  brand: "RAW",
+  gender: "M" 
+},{
+  name: "OLIVER_CHASE", 
+  brand: "RAW",
+  gender: "M" 
+},{
+  name: "PRINCE_EVEREST", 
+  brand: "RAW",
+  gender: "M" 
+},{
   name: "STACY", 
   brand: "RAW",
   gender: "F" 
@@ -36,7 +48,7 @@ const rosterArray = [ {
   gender: "F" 
 },{
   name: "AMELIA_HOPE", 
-  brand: "NXT",
+  brand: "RAW",
   gender: "F" 
 },{
   name: "ELISA_WATERS", 
