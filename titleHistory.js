@@ -590,7 +590,7 @@ const rawTitleData = {
 		{ name: "FENIX", defenses: ["NOAH_ACE", "XION_OWENS", "R_BABY"] },
 		{ name: "R_BABY", defenses: ["FENIX&TOBASCO_CRUZ&TRAVIS_WEST"] },
 		{ name: "NOAH_ACE", defenses: ["R_BABY", "R_BABY", "TOBASCO_CRUZ", "BRADLY_WEST"] },
-		{ name: "FENIX", defenses: ["NOAH_ACE", "TOBASCO_CRUZ", "TRAVIS_WEST", "R_BABY", "OLIVER_CHASE"] },
+		{ name: "FENIX", defenses: ["NOAH_ACE", "TOBASCO_CRUZ", "TRAVIS_WEST", "R_BABY", "DILLY_DAMN"] },
 		{ name: "BRADLY_WEST", defenses: ["FENIX"] },
 		{ name: "BRAD_HOLLYWOOD", defenses: ["BRADLY_WEST"] },
 		{ name: "BRADLY_WEST", defenses: ["BRAD_HOLLYWOOD"] },
