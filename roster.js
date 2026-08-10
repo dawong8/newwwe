@@ -44,7 +44,7 @@ const rosterArray = [ {
   gender: "F" 
 },{
   name: "LILY_JUNE", 
-  brand: "NXT",
+  brand: "RAW",
   gender: "F" 
 },{
   name: "KATIE_LANG", 
@@ -196,7 +196,7 @@ const rosterArray = [ {
 },
   {
   name: "MEI_LING", 
-  brand: "RAW",
+  brand: "SD",
   gender: "F" 
 },
   {
