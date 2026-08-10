@@ -317,31 +317,7 @@ const rosterArray = [ {
   brand: "RAW", 
   gender: "M"
 },
-{
-  name: "RYAN_PAGE", 
-  brand: "RAW", 
-  gender: "M"
-},
-{
-  name: "HARDBEAR", 
-  brand: "RAW", 
-  gender: "M"
-},
-{
-  name: "DADDY_TODD", 
-  brand: "RAW", 
-  gender: "M"
-},
-{
-  name: "PLAYBOY_CAM", 
-  brand: "RAW", 
-  gender: "M"
-},
-{
-  name: "LONI_ENERGY", 
-  brand: "SD", 
-  gender: "F"
-},
+
 {
   name: "SUMMER_HAYES", 
   brand: "SD", 
