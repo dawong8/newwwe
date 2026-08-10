@@ -1,5 +1,30 @@
 const alumniArray = [
     {
+  name: "RYAN_PAGE", 
+  brand: "ALUMNI", 
+  gender: "M"
+},
+{
+  name: "HARDBEAR", 
+  brand: "ALUMNI", 
+  gender: "M"
+},
+{
+  name: "DADDY_TODD", 
+  brand: "ALUMNI", 
+  gender: "M"
+},
+{
+  name: "PLAYBOY_CAM", 
+  brand: "ALUMNI", 
+  gender: "M"
+},
+{
+  name: "LONI_ENERGY", 
+  brand: "ALUMNI", 
+  gender: "F"
+},
+    {
   name: "NORI", 
   brand: "ALUMNI", 
   gender: "F"
