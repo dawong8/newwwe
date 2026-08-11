@@ -275,7 +275,7 @@ $(document).on("click", ".superstar-container:not(.nonclickable)", function() {
 			: figureReignCount(desiredTitle, name);
 
 		if (reignCount !== 0) {
-			$(".accolates").append(`<p class='nav-title'>${reignCount}x ${title} CHAMPION</p>`);
+			$(".accolates").append(`<p class='nav-title'>${reignCount}x ${title === "COED-TAG" ? "MIXED-TAG" : title} CHAMPION</p>`);
 		}
 	});
 
