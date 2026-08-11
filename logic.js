@@ -60,6 +60,13 @@ const generateChampPage = () => {
 		{ name: getLastChamp("MENS-TAG").name, members: getLastChamp("MENS-TAG").members.match(/\w+(?=\[\d+\])/g), titleName: "Mens Tag" }
 	];
 
+	if (titleHistory["COED-TAG"].length > 0) {
+		const coedLastChamp = getLastChamp("COED-TAG");
+		if (coedLastChamp.name !== "VACATED") {
+			tagArray.push({ name: coedLastChamp.name, members: coedLastChamp.members.match(/\w+(?=\[\d+\])/g), titleName: "Mixed Tag" });
+		}
+	}
+
 	const triosData = getLastChamp("TRIOS");
 	const triosMembers = (triosData.members || "").match(/\w+(?=\[\d+\])/g);
 	const triosObj = { name: triosData.name, members: triosMembers || [], titleName: "TRIOS" };
@@ -256,7 +263,7 @@ $(document).on("click", ".superstar-container:not(.nonclickable)", function() {
 	$(".select-name").text(name.replace("_", " "));
 	$(".wrestler-modal").removeClass("hide");
 
-	const tagTitles = gender === "F" ? ["TAG", "TRIOS"] : ["MENS-TAG"];
+	const tagTitles = gender === "F" ? ? ["TAG", "TRIOS", "COED-TAG"] : ["MENS-TAG", "COED-TAG"];
 	const soloTitles = gender === "F"
 		? ["RAW", "SMACKDOWN", "NXT", "HARDCORE", "US"]
 		: ["WORLD-TOP", "DOM-TOP", "ALPHA-TOP", "MENS-NXT"];
