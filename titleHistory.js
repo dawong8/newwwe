@@ -940,6 +940,11 @@ const rawTitleData = {
 		{ name: "COLOR RANGERS", members: ["DEO_SPROUTS","HUGGIE_HOBBS"], defenses: [ "TWO BRADS (BRADLY_WEST, BRAD_HOLLYWOOD)", "PONG BROS (BILLY_PONG, PETER_PONG)"] },
 		{ name: "PONG BROS", members: ["PETER_PONG","BILLY_PONG"], defenses: [ "COLOR RANGERS (DEO_SPROUTS, HUGGIE_HOBBS)", "COLOR RANGERS (DEO_SPROUTS, HUGGIE_HOBBS)"] },
 	],
+	"COED-TAG": [
+		// New co-ed tag title — starts fresh, no history yet.
+		// Add your first champions here once you're ready to crown them, e.g.:
+		// { name: "TEAM_NAME", members: ["MEMBER1","MEMBER2"], defenses: ["OPPOSING TEAM (m1, m2)"] }
+	],
 	"TRIOS": [
 		{ name: "THE STARDOM THREEDOM", members: ["KAIRI","IYO_SKY","MAYU_IWATANI"], defenses: ["RONDA_ROUSEY&MANDY_ROSE&LACEY_EVANS - THE GREAT WAR"] },
 		"VACATED",
@@ -1031,6 +1036,7 @@ const titleHistory = {
 	"DOM-TOP": processTitle(rawTitleData["DOM-TOP"]),
 	"TAG": processTagTitle(rawTitleData["TAG"]),
 	"MENS-TAG": processTagTitle(rawTitleData["MENS-TAG"]),
+	"COED-TAG": processTagTitle(rawTitleData["COED-TAG"]),
 	"TRIOS": processTagTitle(rawTitleData["TRIOS"]),
 	"ELIMINATION_CHAMBER": rawTitleData["ELIMINATION_CHAMBER"],
 	"MITB": rawTitleData["MITB"],
