@@ -3,7 +3,7 @@ const $reignList = $("#reign-list");
 const generateReign = (titleName) => {
 	$reignList.empty();
 
-	const isTag = titleName === "TAG" || titleName === "TRIOS" || titleName === "MENS-TAG";
+	const isTag = titleName === "TAG" || titleName === "TRIOS" || titleName === "MENS-TAG" || titleName === "COED-TAG";
 	const isTrios = titleName === "TRIOS";
 	const arr = [...titleHistory[titleName]].reverse();
 
@@ -88,7 +88,7 @@ const generateReign = (titleName) => {
 const reignTabs = {
 	rawreign: "RAW", sdreign: "SMACKDOWN", usreign: "US", hdreign: "HARDCORE",
 	triosreign: "TRIOS", tagreign: "TAG", worldreign: "WORLD-TOP",
-	alphareign: "ALPHA-TOP", mtagreign: "MENS-TAG", nxtreign: "NXT", mnxtreign: "MENS-NXT"
+	alphareign: "ALPHA-TOP", mtagreign: "MENS-TAG", nxtreign: "NXT", mnxtreign: "MENS-NXT", coedtagreign: "COED-TAG",
 };
 
 Object.entries(reignTabs).forEach(([id, titleName]) => {
@@ -107,7 +107,7 @@ $(".sort").click(function() {
 	$reignList.empty();
 
 	const titleName = $(".sort").attr("data-sort");
-	const isTag = titleName === "TAG" || titleName === "TRIOS" || titleName === "MENS-TAG";
+	const isTag = titleName === "TAG" || titleName === "TRIOS" || titleName === "MENS-TAG" || titleName === "COED-TAG";
 
 	const reignCounts = {};
 	titleHistory[titleName].forEach(entry => {
