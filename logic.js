@@ -263,7 +263,7 @@ $(document).on("click", ".superstar-container:not(.nonclickable)", function() {
 	$(".select-name").text(name.replace("_", " "));
 	$(".wrestler-modal").removeClass("hide");
 
-	const tagTitles = gender === "F" ? ? ["TAG", "TRIOS", "COED-TAG"] : ["MENS-TAG", "COED-TAG"];
+	const tagTitles = gender === "F" ? ["TAG", "TRIOS", "COED-TAG"] : ["MENS-TAG", "COED-TAG"];
 	const soloTitles = gender === "F"
 		? ["RAW", "SMACKDOWN", "NXT", "HARDCORE", "US"]
 		: ["WORLD-TOP", "DOM-TOP", "ALPHA-TOP", "MENS-NXT"];
