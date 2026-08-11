@@ -941,9 +941,7 @@ const rawTitleData = {
 		{ name: "PONG BROS", members: ["PETER_PONG","BILLY_PONG"], defenses: [ "COLOR RANGERS (DEO_SPROUTS, HUGGIE_HOBBS)", "COLOR RANGERS (DEO_SPROUTS, HUGGIE_HOBBS)"] },
 	],
 	"COED-TAG": [
-		// New co-ed tag title — starts fresh, no history yet.
-		// Add your first champions here once you're ready to crown them, e.g.:
-		// { name: "TEAM_NAME", members: ["MEMBER1","MEMBER2"], defenses: ["OPPOSING TEAM (m1, m2)"] }
+		{ name: "PONG BROS", members: ["PETER_PONG","BILLY_PONG"], defenses: [ "COLOR RANGERS (DEO_SPROUTS, HUGGIE_HOBBS)", "COLOR RANGERS (DEO_SPROUTS, HUGGIE_HOBBS)"] },
 	],
 	"TRIOS": [
 		{ name: "THE STARDOM THREEDOM", members: ["KAIRI","IYO_SKY","MAYU_IWATANI"], defenses: ["RONDA_ROUSEY&MANDY_ROSE&LACEY_EVANS - THE GREAT WAR"] },
