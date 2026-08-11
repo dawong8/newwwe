@@ -753,7 +753,7 @@ const rawTitleData = {
 		{ name: "TIM_TALL", defenses: ["RYAN_TAMER"] },
 		{ name: "RYAN_TAMER", defenses: ["TIM_TALL", "ELI_BOLTON", "ELI_BOLTON", "BILLY_PONG"] },
 		{ name: "BILLY_PONG", defenses: ["RYAN_TAMER", "NOAH_ACE", "TRAVIS_WEST", "R_BABY", "R_BABY&NOAH_ACE&PRINCE_EVEREST", "DEO_SPROUTS", "PRINCE_EVEREST"] },
-		{ name: "PETER_PONG", defenses: ["BILLY_PONG", "PRINCE_EVEREST"] },
+		{ name: "PETER_PONG", defenses: ["BILLY_PONG", "PRINCE_EVEREST", "DILLY_DAM&PRINCE_EVEREST"] },
 	],
 	"DOM-TOP": [
 		{ name: "DOLPH_ZIGGLER", defenses: ["PAC","SHANE_HASTE","DANIEL_BRYAN","DREW_GULAK"] },
@@ -941,7 +941,8 @@ const rawTitleData = {
 		{ name: "PONG BROS", members: ["PETER_PONG","BILLY_PONG"], defenses: [ "COLOR RANGERS (DEO_SPROUTS, HUGGIE_HOBBS)", "COLOR RANGERS (DEO_SPROUTS, HUGGIE_HOBBS)"] },
 	],
 	"COED-TAG": [
-		{ name: "PONG BROS", members: ["PETER_PONG","BILLY_PONG"], defenses: [ "COLOR RANGERS (DEO_SPROUTS, HUGGIE_HOBBS)", "COLOR RANGERS (DEO_SPROUTS, HUGGIE_HOBBS)"] },
+		{ name: "GOLDEN SWEETIES", members: ["LILY_JUNE","R_BABY"], defenses: [ "TOURNAMENT"] },
+		{ name: "COLOR RANGERS", members: ["MORGAN_NITRA","DEO_SPROUTS"], defenses: [ "GOLDEN SWEETIES (LILY_JUNE, R_BABY)"] },
 	],
 	"TRIOS": [
 		{ name: "THE STARDOM THREEDOM", members: ["KAIRI","IYO_SKY","MAYU_IWATANI"], defenses: ["RONDA_ROUSEY&MANDY_ROSE&LACEY_EVANS - THE GREAT WAR"] },
