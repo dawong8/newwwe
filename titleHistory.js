@@ -194,7 +194,8 @@ const rawTitleData = {
 		{ name: "AOD", defenses: ["STACY", "MORA", "BECCA_FIELDS"] },
 		{ name: "STACY", defenses: ["AOD", "BECCA_FIELDS", "RAINY_BRIGHT", "YESSICA_PEREZ", "AMELIA_HOPE", "QUEEN_AMINAT"] },
 		{ name: "AMELIA_HOPE", defenses: ["STACY&ELISA_WATERS", "STACY", "MORA", "ELISA_WATERS"] },
-		{ name: "ELISA_WATERS", defenses: ["AMELIA_HOPE", "AMELIA_HOPE"] }
+		{ name: "ELISA_WATERS", defenses: ["AMELIA_HOPE", "AMELIA_HOPE"] },
+		{ name: "MORA", defenses: ["ELISA_WATERS&STACY&AOD&AMELIA_HOPE"] }
 	],
 	"SMACKDOWN": [
 		{ name: "PAIGE", defenses: ["KAITLYN&TORRIE_WILSON&ASUKA","MANDY_ROSE","KAITLYN","KAITLYN","KAITLYN"] },
@@ -508,7 +509,7 @@ const rawTitleData = {
 		{ name: "BONNIE_REN", defenses: ["ELLA_THORN", "ELLA_THORN", "ELLA_THORN&SARAH_LAY&GLENDA_SANCHEZ", "GIGI_FITNESS"] },
 		{ name: "GLENDA_SANCHEZ", defenses: ["BONNIE_REN", "SARAH_LAY"] },
 		{ name: "SARAH_LAY", defenses: ["GLENDA_SANCHEZ", "CAROLINA_CHAZ", "ELLA_THORN", "GLENDA_SANCHEZ-DQ", "GLENDA_SANCHEZ", "GIGI_FITNESS"] },
-		{ name: "GIGI_FITNESS", defenses: ["SARAH_LAY", "MEI_LING", "SARAH_LAY", "SARAH_LAY"] }		
+		{ name: "GIGI_FITNESS", defenses: ["SARAH_LAY", "MEI_LING", "SARAH_LAY", "SARAH_LAY", "GLENDA_SANCHEZ"] }		
 	],
 	"ALPHA-TOP": [
 		{ name: "DREW_GULAK", defenses: ["JOHNNY_GARGANO&MR_ENVIRONMENT&LA_KNIGHT"] },
