@@ -7,7 +7,7 @@ const rosterArray = [ {
   brand: "RAW",
   gender: "M" 
 },{
-  name: "ROD_LEE", 
+  name: "BIG_ROD", 
   brand: "RAW",
   gender: "M" 
 },{
