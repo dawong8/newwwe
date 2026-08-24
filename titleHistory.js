@@ -716,8 +716,8 @@ const rawTitleData = {
 		{ name: "CLARKSON_WILDE", defenses: ["VIKTOR_MAXX"] },
 		{ name: "RYAN_TAMER", defenses: ["VIKTOR_MAXX&CLARKSON_WILDE", "STEVEN_VULGAR", "ELI_BOLTON", "CLARKSON_WILDE"] },
 		{ name: "TOBASCO_CRUZ", defenses: ["RYAN_TAMER", "TRAVIS_WEST"] },
-		{ name: "VIKTOR_MAXX", defenses: ["TOBASCO_CRUZ", "BILLY_PONG", "OLIVER_CHASE", "TOBASCO_CRUZ", "BRADLY_WEST", "ROD_LEE", "ROD_LEE"] },
-		{ name: "ROD_LEE", defenses: ["KYLER_BLAKE&VIKTOR_MAXX", "VIKTOR_MAXX-DQ"] }
+		{ name: "VIKTOR_MAXX", defenses: ["TOBASCO_CRUZ", "BILLY_PONG", "OLIVER_CHASE", "TOBASCO_CRUZ", "BRADLY_WEST", "BIG_ROD", "BIG_ROD"] },
+		{ name: "BIG_ROD", defenses: ["KYLER_BLAKE&VIKTOR_MAXX", "VIKTOR_MAXX-DQ"] }
 	],
 	"MENS-NXT": [
 		{ name: "BUDDY_MURPHY", defenses: ["SHANE_HASTE","BEN_SEED","MIKE_KANELLIS","BRETT_HUNTER"] },
