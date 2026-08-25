@@ -3,6 +3,10 @@ const rosterArray = [ {
   brand: "RAW",
   gender: "M" 
 },{
+  name: "LAGUNA_BLUE", 
+  brand: "NXT",
+  gender: "F" 
+},{
   name: "COLE_FARRIS", 
   brand: "RAW",
   gender: "M" 
@@ -16,7 +20,7 @@ const rosterArray = [ {
   gender: "M" 
 },{
   name: "SARITA", 
-  brand: "NXT",
+  brand: "RAW",
   gender: "NXT" 
 },{
   name: "DILLY_DAM", 
