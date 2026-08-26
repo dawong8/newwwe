@@ -606,7 +606,7 @@ const rawTitleData = {
 		{ name: "BRADLY_WEST", defenses: ["BRAD_HOLLYWOOD"] },
 		{ name: "BRAD_HOLLYWOOD", defenses: ["BRADLY_WEST"] },
 		{ name: "OLIVER_CHASE", defenses: ["BRAD_HOLLYWOOD&BRADLY_WEST"] },
-		{ name: "DILLY_DAM", defenses: ["OLIVER_CHASE", "OLIVER_CHASE", "FENIX"] } 
+		{ name: "DILLY_DAM", defenses: ["OLIVER_CHASE", "OLIVER_CHASE", "FENIX", "TIM_TALL"] } 
 	],
 	"WORLD-TOP": [
 		{ name: "KARRION_KROSS", defenses: ["THE_MIZ&ILJA_DRAGUNOV&MATT_CARDONA","MR_ENVIRONMENT","THE_MIZ","RIDGE_HOLLAND","RIDGE_HOLLAND","MATT_CARDONA"] },
