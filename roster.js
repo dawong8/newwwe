@@ -21,7 +21,7 @@ const rosterArray = [ {
 },{
   name: "SARITA", 
   brand: "RAW",
-  gender: "NXT" 
+  gender: "F" 
 },{
   name: "DILLY_DAM", 
   brand: "RAW",
