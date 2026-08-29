@@ -3,7 +3,7 @@ const rosterArray = [ {
   brand: "RAW",
   gender: "M" 
 },{
-  name: "TASHA_BUZZER", 
+  name: "TASHA_BEE", 
   brand: "NXT",
   gender: "F" 
 },{
