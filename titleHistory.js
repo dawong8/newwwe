@@ -3,7 +3,7 @@
 // ============================================================
 // HOW TO ADD A NEW REIGN:
 //   Solo title: { name: "WRESTLER_NAME", defenses: ["OPPONENT1", "OPPONENT2"] }
-//   Tag title:  { name: "TEAM_NAME", members: ["MEMBER1", "MEMBER2"], defenses: ["OPPOSING TEAM (member1, member2)"] }
+//   Tag title:  { name: "TEAM_NAME", members: ["MEMBER1", "MEMBER2"], defenses: ["OPPOSING TEAM (member1, member2)"] }S
 //   Trios:      { name: "TEAM_NAME", members: ["M1", "M2", "M3"], defenses: ["OPPOSING TEAM (m1, m2, m3)"] }
 //   Vacated:    "VACATED"
 //
@@ -970,7 +970,7 @@ const rawTitleData = {
 		{ name: "COLOR RANGERS", members: ["MORGAN_NITRA","DEO_SPROUTS"], defenses: [ "GOLDEN SWEETIES (LILY_JUNE, R_BABY)", "LOVE'S INFERNO (CAROLINA_CHAZ, FENIX)"] },
 		{ name: "URBAN LEGENDS", members: ["TT_SLIM","TRAVIS_WEST"], defenses: [ "COLOR RANGERS (MORGAN_NITRA, DEO_SPROUTS)", "COLOR RANGERS (MORGAN_NITRA, DEO_SPROUTS)", "COLOR RANGERS (MORGAN_NITRA, DEO_SPROUTS)-DQ", "MASTERCLASS (MEI_LING, BRAD_HOLLYWOOD)", "MASTERCLASS (MEI_LING, BRAD_HOLLYWOOD)"] },
 		{ name: "THE GIANTS", members: ["DRIANA","TIM_TALL"], defenses: [ "URBAN LEGENDS (TT_SLIM, TRAVIS_WEST", "GOLDEN SWEETIES (LILY_JUNE, R_BABY)", "THE IT COUPLE (BECCA_FIELDS, STEVEN_VULGAR)"] },
-		{ name: "THE IT COUPLE", members: ["BECCA_FIELD","STEVEN_VULGAR"], defenses: [ "THE GIANTS (DRIANA, TIM_TALL)"] },
+		{ name: "THE IT COUPLE", members: ["BECCA_FIELDS","STEVEN_VULGAR"], defenses: [ "THE GIANTS (DRIANA, TIM_TALL)"] },
 	],
 	"TRIOS": [
 		{ name: "THE STARDOM THREEDOM", members: ["KAIRI","IYO_SKY","MAYU_IWATANI"], defenses: ["RONDA_ROUSEY&MANDY_ROSE&LACEY_EVANS - THE GREAT WAR"] },
