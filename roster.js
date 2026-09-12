@@ -48,7 +48,7 @@ const rosterArray = [ {
   gender: "M" 
 },{
   name: "STACY", 
-  brand: "RAW",
+  brand: "SD",
   gender: "F" 
 },
                      {
@@ -58,12 +58,12 @@ const rosterArray = [ {
 },
                      {
   name: "VALERIA", 
-  brand: "NXT",
+  brand: "RAW",
   gender: "F" 
 },
                      {
   name: "GIA_GO", 
-  brand: "SD",
+  brand: "RAW",
   gender: "F" 
 },
 {
@@ -72,11 +72,11 @@ const rosterArray = [ {
   gender: "F" 
 },{
   name: "ELLA_THORN", 
-  brand: "SD",
+  brand: "RAW",
   gender: "F" 
 },{
   name: "LILY_JUNE", 
-  brand: "RAW",
+  brand: "SD",
   gender: "F" 
 },{
   name: "KATIE_LANG", 
@@ -84,7 +84,7 @@ const rosterArray = [ {
   gender: "F" 
 },{
   name: "AMELIA_HOPE", 
-  brand: "RAW",
+  brand: "SD",
   gender: "F" 
 },{
   name: "ELISA_WATERS", 
@@ -123,7 +123,7 @@ const rosterArray = [ {
   gender: "M" 
 },{
   name: "ALICIA_BLADE", 
-  brand: "SD",
+  brand: "RAW",
   gender: "F" 
 },{
   name: "TT_SLIM", 
@@ -131,7 +131,7 @@ const rosterArray = [ {
   gender: "F" 
 },{
   name: "CAROLINA_CHAZ", 
-  brand: "SD",
+  brand: "RAW",
   gender: "F" 
 },{
   name: "KEISHA_MILLER", 
@@ -238,7 +238,7 @@ const rosterArray = [ {
 },
   {
   name: "SARAH_LAY", 
-  brand: "SD",
+  brand: "RAW",
   gender: "F" 
 },
   {
@@ -253,7 +253,7 @@ const rosterArray = [ {
 },
   {
   name: "DRIANA", 
-  brand: "SD",
+  brand: "RAW",
   gender: "F" 
 },
 {
