@@ -106,7 +106,7 @@ const rosterArray = [ {
 },
                      {
   name: "YESSICA_PEREZ", 
-  brand: "RAW",
+  brand: "SD",
   gender: "F" 
 },{
   name: "STEVEN_VULGAR", 
@@ -143,7 +143,7 @@ const rosterArray = [ {
   gender: "F" 
 },{
   name: "GLENDA_SANCHEZ", 
-  brand: "SD",
+  brand: "RAW",
   gender: "F" 
 },{
   name: "BRADLY_WEST", 
@@ -218,7 +218,7 @@ const rosterArray = [ {
 },
   {
   name: "RAINY_BRIGHT", 
-  brand: "RAW",
+  brand: "SD",
   gender: "F" 
 },
   {
@@ -263,7 +263,7 @@ const rosterArray = [ {
 },
   {
   name: "AOD", 
-  brand: "RAW",
+  brand: "SD",
   gender: "F" 
 },
   {
