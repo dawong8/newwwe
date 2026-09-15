@@ -1,4 +1,8 @@
 const rosterArray = [ {
+  name: "ADAM_LOCKY", 
+  brand: "RAW",
+  gender: "M" 
+},{
   name: "DEO_SPROUTS", 
   brand: "RAW",
   gender: "M" 
