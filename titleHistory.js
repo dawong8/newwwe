@@ -202,7 +202,7 @@ const rawTitleData = {
 		{ name: "AMELIA_HOPE", defenses: ["ELISA_WATERS"] },
 		{ name: "ELISA_WATERS", defenses: ["AMELIA_HOPE", "LILY_JUNE", "AOD", "SHAYLA_LA", "SHAYLA_LA", "AOD"] },
 		{ name: "AOD", defenses: ["ELISA_WATERS&SHAYLA_LA"] },
-		{ name: "ELISA_WATERS", defenses: ["AMELIA_HOPE&AOD&JORDAN_SKY"] },
+		{ name: "ELISA_WATERS", defenses: ["AMELIA_HOPE&AOD&JORDAN_SKY", "ELLA_THORN"] },
 	],
 	"SMACKDOWN": [
 		{ name: "PAIGE", defenses: ["KAITLYN&TORRIE_WILSON&ASUKA","MANDY_ROSE","KAITLYN","KAITLYN","KAITLYN"] },
@@ -467,6 +467,7 @@ const rawTitleData = {
 		{ name: "QUEEN_AMINAT", defenses: ["LILY_JUNE&KEISHA_MILLER"] },
 		{ name: "SARITA", defenses: ["QUEEN_AMINAT"] },
 		{ name: "KEISHA_MILLER", defenses: ["SARITA"] },
+		{ name: "SARITA", defenses: ["KEISHA_MILLER", "QUEEN_AMINAT", "KEISHA_MILLER", "KEISHA_MILLER"] },
 	],
 	"US": [
 		{ name: "UNAGI_SAYAKA", defenses: ["CAMERON&ALBA_FYRE","ALBA_FYRE","TIFFANY_STRATTON"] },
@@ -630,7 +631,7 @@ const rawTitleData = {
 		{ name: "OLIVER_CHASE", defenses: ["BRAD_HOLLYWOOD&BRADLY_WEST"] },
 		{ name: "DILLY_DAM", defenses: ["OLIVER_CHASE", "OLIVER_CHASE", "FENIX", "TIM_TALL", "TOBASCO_CRUZ", "BRAD_HOLLYWOOD", "ELI_BOLTON", "TOBASCO_CRUZ-DQ", "TOBASCO_CRUZ"] },
 		{ name: "BILLY_PONG", defenses: ["DILLY_DAM", "DILLY_DAM", "FENIX"] },
-		{ name: "DEO_SPROUTS", defenses: ["BILLY_PONG", "TOBASCO_CRUZ", "BRAD_HOLLYWOOD"] }
+		{ name: "DEO_SPROUTS", defenses: ["BILLY_PONG", "TOBASCO_CRUZ", "BRAD_HOLLYWOOD", "R_BABY"] }
 	],
 	"WORLD-TOP": [
 		{ name: "KARRION_KROSS", defenses: ["THE_MIZ&ILJA_DRAGUNOV&MATT_CARDONA","MR_ENVIRONMENT","THE_MIZ","RIDGE_HOLLAND","RIDGE_HOLLAND","MATT_CARDONA"] },
