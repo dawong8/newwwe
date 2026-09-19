@@ -139,7 +139,7 @@ const rosterArray = [ {
   gender: "F" 
 },{
   name: "KEISHA_MILLER", 
-  brand: "RAW",
+  brand: "SD",
   gender: "F" 
 },{
   name: "RINA", 
