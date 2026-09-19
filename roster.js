@@ -131,7 +131,7 @@ const rosterArray = [ {
   gender: "F" 
 },{
   name: "TT_SLIM", 
-  brand: "RAW",
+  brand: "SD",
   gender: "F" 
 },{
   name: "CAROLINA_CHAZ", 
@@ -143,7 +143,7 @@ const rosterArray = [ {
   gender: "F" 
 },{
   name: "RINA", 
-  brand: "SD",
+  brand: "RAW",
   gender: "F" 
 },{
   name: "GLENDA_SANCHEZ", 
