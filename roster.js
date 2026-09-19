@@ -16,11 +16,11 @@ const rosterArray = [ {
   gender: "F" 
 },{
   name: "TASHA_BEE", 
-  brand: "NXT",
+  brand: "SD",
   gender: "F" 
 },{
   name: "HONEY_BEATRIX", 
-  brand: "NXT",
+  brand: "SD",
   gender: "F" 
 },{
   name: "LAGUNA_BLUE", 
@@ -72,7 +72,7 @@ const rosterArray = [ {
 },
 {
   name: "MORA", 
-  brand: "RAW",
+  brand: "SD",
   gender: "F" 
 },{
   name: "ELLA_THORN", 
@@ -262,7 +262,7 @@ const rosterArray = [ {
 },
 {
   name: "DAISY_MAYFIELD", 
-  brand: "SD",
+  brand: "RAW",
   gender: "F" 
 },
   {
