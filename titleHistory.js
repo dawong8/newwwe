@@ -204,7 +204,7 @@ const rawTitleData = {
 		{ name: "AOD", defenses: ["ELISA_WATERS&SHAYLA_LA"] },
 		{ name: "ELISA_WATERS", defenses: ["AMELIA_HOPE&AOD&JORDAN_SKY", "ELLA_THORN", "ALICIA_BLADE", "ALICIA_BLADE", "ALICIA_BLADE", "ALICIA_BLADE",] },
 		{ name: "RINA", defenses: ["ELISA_WATERS", "ELLA_THORN"] },
-		{ name: "GIA_GO", defenses: ["RINA"] },
+		{ name: "GIA_GO", defenses: ["RINA", "ALICIA_BLADE"] },
 	],
 	"SMACKDOWN": [
 		{ name: "PAIGE", defenses: ["KAITLYN&TORRIE_WILSON&ASUKA","MANDY_ROSE","KAITLYN","KAITLYN","KAITLYN"] },
@@ -324,6 +324,7 @@ const rawTitleData = {
 		{ name: "SUMMER_HAYES", defenses: ["DAISY_MAYFIELD", "ELLA_THORN"] },
 		{ name: "DAISY_MAYFIELD", defenses: ["SUMMER_HAYES", "DRIANA", "AMELIA_HOPE"] },
 		{ name: "LILY_JUNE", defenses: ["DAISY_MAYFIELD", "AOD-DQ"] },
+		"VACATED",
 	],
 	"NXT": [
 		{ name: "ASUKA", defenses: ["NIKKI_CROSS","EMBER_MOON","TAELER_HENDRIX","SUMMER_RAE","NIKKI_CROSS","EMBER_MOON&BILLIE_KAY","IVORY","KAINE"] },
@@ -997,6 +998,7 @@ const rawTitleData = {
 		{ name: "CHOCO THUNDER", members: ["ELI_BOLTON","HUGGIE_HOBBS"], defenses: [ "PONG BROS (BILLY_PONG, PETER_PONG)"] },
 		{ name: "BILLY & DILLY", members: ["BILLY_PONG","DILLY_DAM"], defenses: [ "CHOCO THUNDER (ELI_BOLTON, HUGGIE_HOBBS)", "THE FRATERNITY (OLIVER_CHASE, ADAM_LOCKY)", "THE FRATERNITY (OLIVER_CHASE, ADAM_LOCKY)-DQ", "THE FRATERNITY (OLIVER_CHASE, ADAM_LOCKY)", "THE FRATERNITY (OLIVER_CHASE, ADAM_LOCKY)"] },
 		{ name: "THE FRATERNITY", members: ["OLIVER_CHASE","ADAM_LOCKY"], defenses: [ "BILLY & DILLY (BILLY_PONG, DILLY_DAM)", "LATIN HEAT (FENIX, TOBASCO_CRUZ)"] },
+		{ name: "LATIN HEAT", members: ["TOBASCO_CRUZ","FENIX"], defenses: [ "THE FRATERNITY (OLIVER_CHASE, ADAM_LOCKY)"] },
 	],
 	"COED-TAG": [
 		{ name: "GOLDEN SWEETIES", members: ["LILY_JUNE","R_BABY"], defenses: [ "TOURNAMENT"] },
