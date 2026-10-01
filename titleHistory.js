@@ -325,6 +325,7 @@ const rawTitleData = {
 		{ name: "DAISY_MAYFIELD", defenses: ["SUMMER_HAYES", "DRIANA", "AMELIA_HOPE"] },
 		{ name: "LILY_JUNE", defenses: ["DAISY_MAYFIELD", "AOD-DQ"] },
 		"VACATED",
+		{ name: "AOD", defenses: ["BONNIE_REN&AMELIA_HOPE&GIGI_FITNESS"] },
 	],
 	"NXT": [
 		{ name: "ASUKA", defenses: ["NIKKI_CROSS","EMBER_MOON","TAELER_HENDRIX","SUMMER_RAE","NIKKI_CROSS","EMBER_MOON&BILLIE_KAY","IVORY","KAINE"] },
