@@ -1093,7 +1093,9 @@ const rawTitleData = {
 },
 	"ROYAL_RUMBLE": {
 	"ASUKA": 1
-}
+},
+	"PAC_TRIBUTE_BATTLE_ROYALE": {
+	}
 };
 
 // --- Build the final titleHistory object used by the rest of the app ---
@@ -1113,5 +1115,6 @@ const titleHistory = {
 	"TRIOS": processTagTitle(rawTitleData["TRIOS"]),
 	"ELIMINATION_CHAMBER": rawTitleData["ELIMINATION_CHAMBER"],
 	"MITB": rawTitleData["MITB"],
-	"ROYAL_RUMBLE": rawTitleData["ROYAL_RUMBLE"]
+	"ROYAL_RUMBLE": rawTitleData["ROYAL_RUMBLE"],
+	"PAC_TRIBUTE_BATTLE_ROYALE": rawTitleData["PAC_TRIBUTE_BATTLE_ROYALE"]
 };
