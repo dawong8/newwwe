@@ -279,7 +279,7 @@ $(document).on("click", ".superstar-container:not(.nonclickable)", function() {
 		}
 	});
 
-	["MITB", "ELIMINATION_CHAMBER", "ROYAL_RUMBLE"].forEach(special => {
+	["MITB", "ELIMINATION_CHAMBER", "ROYAL_RUMBLE", "PAC_TRIBUTE_BATTLE_ROYALE"].forEach(special => {
 		if (Object.hasOwn(titleHistory[special], name)) {
 			$(".accolates").append(`<p class='nav-title'>${titleHistory[special][name]}x ${special} WINNER</p>`);
 		}
