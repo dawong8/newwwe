@@ -1095,6 +1095,7 @@ const rawTitleData = {
 	"ASUKA": 1
 },
 	"PAC_TRIBUTE_BATTLE_ROYALE": {
+		"BILLY_PONG": 1
 	}
 };
 
