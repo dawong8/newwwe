@@ -206,6 +206,7 @@ const rawTitleData = {
 		{ name: "RINA", defenses: ["ELISA_WATERS", "ELLA_THORN"] },
 		{ name: "GIA_GO", defenses: ["RINA", "ALICIA_BLADE", "DAISY_MAYFIELD"] },
 		{ name: "RINA", defenses: ["GIA_GO", "SHAYLA_LA"] },
+		{ name: "DAISY_MAYFIELD", defenses: ["RINA", "SHAYLA_LA"] },
 	],
 	"SMACKDOWN": [
 		{ name: "PAIGE", defenses: ["KAITLYN&TORRIE_WILSON&ASUKA","MANDY_ROSE","KAITLYN","KAITLYN","KAITLYN"] },
@@ -328,6 +329,7 @@ const rawTitleData = {
 		"VACATED",
 		{ name: "AOD", defenses: ["BONNIE_REN&AMELIA_HOPE&GIGI_FITNESS"] },
 		{ name: "AMELIA_HOPE", defenses: ["AOD", "LILY_JUNE", "BONNIE_REN"] },
+		{ name: "GIGI_FITNESS", defenses: ["AMELIA_HOPE"] },
 	],
 	"NXT": [
 		{ name: "ASUKA", defenses: ["NIKKI_CROSS","EMBER_MOON","TAELER_HENDRIX","SUMMER_RAE","NIKKI_CROSS","EMBER_MOON&BILLIE_KAY","IVORY","KAINE"] },
@@ -544,7 +546,7 @@ const rawTitleData = {
 		{ name: "GIGI_FITNESS", defenses: ["SARAH_LAY", "MEI_LING", "SARAH_LAY", "SARAH_LAY", "GLENDA_SANCHEZ", "CAROLINA_CHAZ"] },
 		{ name: "BONNIE_REN", defenses: ["GIGI_FITNESS&MEI_LING", "MEI_LING"] },
 		{ name: "GIGI_FITNESS", defenses: ["BONNIE_REN"] },
-		{ name: "RAINY_BRIGHT", defenses: ["GIGI_FITNESS", "YESSICA_PEREZ", "MEI_LING"] },
+		{ name: "RAINY_BRIGHT", defenses: ["GIGI_FITNESS", "YESSICA_PEREZ", "MEI_LING", "YESSICA_PEREZ"] },
 	],
 	"ALPHA-TOP": [
 		{ name: "DREW_GULAK", defenses: ["JOHNNY_GARGANO&MR_ENVIRONMENT&LA_KNIGHT"] },
@@ -1016,6 +1018,7 @@ const rawTitleData = {
 		{ name: "THE IT COUPLE", members: ["BECCA_FIELDS","STEVEN_VULGAR"], defenses: [ "THE GIANTS (DRIANA, TIM_TALL)"] },
 		{ name: "ROLE MODELS", members: ["MEI_LING","BRAD_HOLLYWOOD"], defenses: [ "THE IT COUPLE (BECCA_FIELDS, STEVEN_VULGAR)", "URBAN LEGENDS (TT_SLIM, TRAVIS_WEST)", "GOLDEN SWEETIES (LILY_JUNE, R_BABY)", "THE KINGDOM (ELISA_WATERS, RYAN_TAMER)", "THE KINGDOM (ELISA_WATERS, RYAN_TAMER)"] },
 		{ name: "THE KINGDOM", members: ["ELISA_WATERS","RYAN_TAMER"], defenses: [ "ROLE MODELS (MEI_LING, BRAD_HOLLYWOOD)", "COLOR RANGERS (MORGAN_NITRA, DEO_SPROUTS)",  "THE IT COUPLE (BECCA_FIELDS, STEVEN_VULGAR)", "ROLE MODELS (MEI_LING, BRAD_HOLLYWOOD)"] },
+		{ name: "GOLDEN SWEETIES", members: ["LILY_JUNE","R_BABY"], defenses: [ "THE KINGDOM (ELISA_WATERS, RYAN_TAMER)"] },
 	],
 	"TRIOS": [
 		{ name: "THE STARDOM THREEDOM", members: ["KAIRI","IYO_SKY","MAYU_IWATANI"], defenses: ["RONDA_ROUSEY&MANDY_ROSE&LACEY_EVANS - THE GREAT WAR"] },
