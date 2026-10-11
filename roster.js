@@ -24,7 +24,7 @@ const rosterArray = [ {
   gender: "F" 
 },{
   name: "LAGUNA_BLUE", 
-  brand: "NXT",
+  brand: "SD",
   gender: "F" 
 },{
   name: "COLE_FARRIS", 
