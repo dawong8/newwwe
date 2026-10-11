@@ -207,7 +207,7 @@ const rawTitleData = {
 		{ name: "GIA_GO", defenses: ["RINA", "ALICIA_BLADE", "DAISY_MAYFIELD"] },
 		{ name: "RINA", defenses: ["GIA_GO", "SHAYLA_LA"] },
 		{ name: "DAISY_MAYFIELD", defenses: ["RINA", "SHAYLA_LA"] },
-		{ name: "GIA_GO", defenses: ["DAISY_MAYFIELD", "CAROLINA_CHAZ", "CAROLINA_CHAZ-DQ] },
+		{ name: "GIA_GO", defenses: ["DAISY_MAYFIELD", "CAROLINA_CHAZ", "CAROLINA_CHAZ-DQ"] },
 		{ name: "DAISY_MAYFIELD", defenses: ["GIA_GO&CAROLINA_CHAZ"] },
 	],
 	"SMACKDOWN": [
