@@ -257,7 +257,7 @@ const rosterArray = [ {
 },
   {
   name: "DRIANA", 
-  brand: "RAW",
+  brand: "SD",
   gender: "F" 
 },
 {
