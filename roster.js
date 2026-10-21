@@ -12,7 +12,7 @@ const rosterArray = [ {
   gender: "F" 
 },{
   name: "BRITNEY_ROSE", 
-  brand: "NXT",
+  brand: "RAW",
   gender: "F" 
 },{
   name: "DEO_SPROUTS", 
@@ -24,7 +24,7 @@ const rosterArray = [ {
   gender: "F" 
 },{
   name: "YUNI_JANS", 
-  brand: "NXT",
+  brand: "RAW",
   gender: "F" 
 },{
   name: "TASHA_BEE", 
