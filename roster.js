@@ -52,7 +52,7 @@ const rosterArray = [ {
   gender: "M" 
 },{
   name: "SARITA", 
-  brand: "RAW",
+  brand: "SD",
   gender: "F" 
 },{
   name: "DILLY_DAM", 
@@ -104,7 +104,7 @@ const rosterArray = [ {
   gender: "F" 
 },{
   name: "ELISA_WATERS", 
-  brand: "RAW",
+  brand: "SD",
   gender: "F" 
 },{
   name: "SHAYLA_LA", 
