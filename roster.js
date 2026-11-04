@@ -7,7 +7,7 @@ const rosterArray = [ {
   brand: "NXT",
   gender: "F" 
 },{
-  name: "EVA_STORM", 
+  name: "EVA_HALE", 
   brand: "NXT",
   gender: "F" 
 },{
