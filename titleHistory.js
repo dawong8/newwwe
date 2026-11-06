@@ -212,6 +212,7 @@ const rawTitleData = {
 		{ name: "GIA_GO", defenses: ["DAISY_MAYFIELD"] },
 		{ name: "DAISY_MAYFIELD", defenses: ["GIA_GO", "ALICIA_BLADE", "ALICIA_BLADE", "GIA_GO", "RINA-DQ", "RINA"] },
 		{ name: "RINA", defenses: ["DAISY_MAYFIELD", "GIA_GO"] },
+		{ name: "BRITNEY_ROSE", defenses: ["RINA"] },
 	],
 	"SMACKDOWN": [
 		{ name: "PAIGE", defenses: ["KAITLYN&TORRIE_WILSON&ASUKA","MANDY_ROSE","KAITLYN","KAITLYN","KAITLYN"] },
@@ -1123,6 +1124,7 @@ const rawTitleData = {
 	"SLADER": 1,
 	"JOEY_JET": 1,
 	"BILLY_PONG": 1,
+	"BRITNEY_ROSE": 1,
 },
 	"ROYAL_RUMBLE": {
 	"ASUKA": 1
