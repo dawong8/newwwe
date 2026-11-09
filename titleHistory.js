@@ -667,7 +667,7 @@ const rawTitleData = {
 		{ name: "CLARKSON_WILDE", defenses: ["ELI_BOLTON", "TOBASCO_CRUZ", "PRINCE_EVEREST", "DILLY_DAM"] },
 		{ name: "TOBASCO_CRUZ", defenses: ["CLARKSON_WILDE&DILLY_DAM", "TRAVIS_WEST"] },
 		{ name: "DILLY_DAM", defenses: ["TOBASCO_CRUZ"] },
-		{ name: "OLIVER_CHASE", defenses: ["DILLY_DAM"] },,
+		{ name: "OLIVER_CHASE", defenses: ["DILLY_DAM"] },
 		{ name: "DILLY_DAM", defenses: ["TOBASCO_CRUZ"] },
 	],
 	"WORLD-TOP": [
