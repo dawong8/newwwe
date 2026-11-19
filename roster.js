@@ -72,7 +72,7 @@ const rosterArray = [ {
   gender: "M" 
 },{
   name: "PRINCE_EVEREST", 
-  brand: "RAW",
+  brand: "NXT",
   gender: "M" 
 },{
   name: "STACY", 
@@ -226,8 +226,21 @@ const rosterArray = [ {
 },
     {
   name: "XION_OWENS", 
-  brand: "RAW",
+  brand: "NXT",
   gender: "M" 
+},
+                         {
+  name: "CAMERON_CROSS", 
+  brand: "NXT",
+  gender: "M" 
+},    {
+  name: "MAURICE_STEVENS", 
+  brand: "NXT",
+  gender: "M" 
+},    {
+  name: "AMBER_BORNE", 
+  brand: "NXT",
+  gender: "F" 
 },
     {
   name: "BILLY_PONG", 
