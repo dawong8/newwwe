@@ -213,7 +213,8 @@ const rawTitleData = {
 		{ name: "DAISY_MAYFIELD", defenses: ["GIA_GO", "ALICIA_BLADE", "ALICIA_BLADE", "GIA_GO", "RINA-DQ", "RINA"] },
 		{ name: "RINA", defenses: ["DAISY_MAYFIELD", "GIA_GO"] },
 		{ name: "BRITNEY_ROSE", defenses: ["RINA", "RINA"] },
-		{ name: "RINA", defenses: ["BRITNEY_ROSE", "ELLA_THORN"] },
+		{ name: "RINA", defenses: ["BRITNEY_ROSE", "ELLA_THORN", "GIA_GO"] },
+		{ name: "BRITNEY_ROSE", defenses: ["RINA"] },
 	],
 	"SMACKDOWN": [
 		{ name: "PAIGE", defenses: ["KAITLYN&TORRIE_WILSON&ASUKA","MANDY_ROSE","KAITLYN","KAITLYN","KAITLYN"] },
@@ -343,6 +344,7 @@ const rawTitleData = {
 		{ name: "AOD", defenses: ["GIGI_FITNESS&DRIANA&AMELIA_HOPE", "AMELIA_HOPE", "SARITA", "DRIANA"] },
 		{ name: "ELISA_WATERS", defenses: ["AOD", "DRIANA", "AMELIA_HOPE", "AOD"] },
 		{ name: "LILY_JUNE", defenses: ["ELISA_WATERS"] },
+		{ name: "ELISA_WATERS", defenses: ["LILY_JUNE"] },
 	],
 	"NXT": [
 		{ name: "ASUKA", defenses: ["NIKKI_CROSS","EMBER_MOON","TAELER_HENDRIX","SUMMER_RAE","NIKKI_CROSS","EMBER_MOON&BILLIE_KAY","IVORY","KAINE"] },
@@ -496,7 +498,7 @@ const rawTitleData = {
 		{ name: "CAROLINA_CHAZ", defenses: ["SARITA"] },
 		{ name: "MORGAN_NITRA", defenses: ["CAROLINA_CHAZ", "QUEEN_AMINAT"] },
 		{ name: "YUNI_JANS", defenses: ["MORGAN_NITRA", "GINA_FONG", "KATIE_LANG", "KEISHA_MILLER", "KEISHA_MILLER"] },
-		{ name: "KATIE_LANG", defenses: ["YUNI_JANS", "GINA_FONG", "MORGAN_NITRA"] },
+		{ name: "KATIE_LANG", defenses: ["YUNI_JANS", "GINA_FONG", "MORGAN_NITRA", "SHAYLA_LA"] },
 	],
 	"US": [
 		{ name: "UNAGI_SAYAKA", defenses: ["CAMERON&ALBA_FYRE","ALBA_FYRE","TIFFANY_STRATTON"] },
@@ -567,7 +569,7 @@ const rawTitleData = {
 		{ name: "GIGI_FITNESS", defenses: ["BONNIE_REN"] },
 		{ name: "RAINY_BRIGHT", defenses: ["GIGI_FITNESS", "YESSICA_PEREZ", "MEI_LING", "YESSICA_PEREZ", "LAGUNA_BLUE", "LAGUNA_BLUE", "YESSICA_PEREZ"] },
 		{ name: "BONNIE_REN", defenses: ["RAINY_BRIGHT", "YESSICA_PEREZ", "LILY_JUNE", "LILY_JUNE", "LAGUNA_BLUE"] },
-		{ name: "TASHA_BEE", defenses: ["BONNIE_REN&YESSICA_PEREZ&LILY_JUNE&LAGUNA_BLUE", "LAGUNA_BLUE", "LAGUNA_BLUE"] },
+		{ name: "TASHA_BEE", defenses: ["BONNIE_REN&YESSICA_PEREZ&LILY_JUNE&LAGUNA_BLUE", "LAGUNA_BLUE", "LAGUNA_BLUE", "LAGUNA_BLUE"] },
 	],
 	"ALPHA-TOP": [
 		{ name: "DREW_GULAK", defenses: ["JOHNNY_GARGANO&MR_ENVIRONMENT&LA_KNIGHT"] },
@@ -669,7 +671,7 @@ const rawTitleData = {
 		{ name: "TOBASCO_CRUZ", defenses: ["CLARKSON_WILDE&DILLY_DAM", "TRAVIS_WEST"] },
 		{ name: "DILLY_DAM", defenses: ["TOBASCO_CRUZ"] },
 		{ name: "OLIVER_CHASE", defenses: ["DILLY_DAM"] },
-		{ name: "DILLY_DAM", defenses: ["TOBASCO_CRUZ"] },
+		{ name: "DILLY_DAM", defenses: ["TOBASCO_CRUZ", "FENIX"] },
 	],
 	"WORLD-TOP": [
 		{ name: "KARRION_KROSS", defenses: ["THE_MIZ&ILJA_DRAGUNOV&MATT_CARDONA","MR_ENVIRONMENT","THE_MIZ","RIDGE_HOLLAND","RIDGE_HOLLAND","MATT_CARDONA"] },
@@ -791,7 +793,7 @@ const rawTitleData = {
 		{ name: "RYAN_TAMER", defenses: ["PETER_PONG", "BILLY_PONG"] },
 		{ name: "KYLER_BLAKE", defenses: ["RYAN_TAMER", "BRADLY_WEST&VIKTOR_MAXX", "DILLY_DAM", "STEVEN_VULGAR", "VIKTOR_MAXX"] },
 		{ name: "BIG_ROD", defenses: ["KYLER_BLAKE", "BRADLY_WEST"] },
-		{ name: "CLARKSON_WILDE", defenses: ["BIG_ROD"] },
+		{ name: "CLARKSON_WILDE", defenses: ["BIG_ROD", "BRADLY_WEST"] },
 	],
 	"MENS-NXT": [
 		{ name: "BUDDY_MURPHY", defenses: ["SHANE_HASTE","BEN_SEED","MIKE_KANELLIS","BRETT_HUNTER"] },
@@ -1056,7 +1058,7 @@ const rawTitleData = {
 		{ name: "MAYFIELD ACES", members: ["DAISY_MAYFIELD","NOAH_ACE"], defenses: [ "GOLDEN SWEETIES (LILY_JUNE, R_BABY)", "URBAN LEGENDS (TT_SLIM, TRAVIS_WEST)", "THE IT COUPLE (BECCA_FIELDS, STEVEN_VULGAR)"] },
 		{ name: "ROLE MODELS", members: ["MEI_LING","BRAD_HOLLYWOOD"], defenses: [ "MAYFIELD ACES (DAISY_MAYFIELD, NOAH_ACE)"] },
 		{ name: "SOLAR FLARES", members: ["CAROLINA_CHAZ","FENIX"], defenses: [ "ROLE MODELS (MEI_LING, BRAD_HOLLYWOOD)"] },
-		{ name: "ROLE MODELS", members: ["MEI_LING","BRAD_HOLLYWOOD"], defenses: [ "SOLAR FLARES (CAROLINA_CHAZ, FENIX)", "URBAN LEGENDS (TT_SLIM, TRAVIS_WEST)", "THE IT COUPLE (BECCA_FIELDS, STEVEN_VULGAR)"] },
+		{ name: "ROLE MODELS", members: ["MEI_LING","BRAD_HOLLYWOOD"], defenses: [ "SOLAR FLARES (CAROLINA_CHAZ, FENIX)", "URBAN LEGENDS (TT_SLIM, TRAVIS_WEST)", "THE IT COUPLE (BECCA_FIELDS, STEVEN_VULGAR)", "URBAN LEGENDS (TT_SLIM, TRAVIS_WEST)"] },
 	],
 	"TRIOS": [
 		{ name: "THE STARDOM THREEDOM", members: ["KAIRI","IYO_SKY","MAYU_IWATANI"], defenses: ["RONDA_ROUSEY&MANDY_ROSE&LACEY_EVANS - THE GREAT WAR"] },
